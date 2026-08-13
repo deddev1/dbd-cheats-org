@@ -1,5 +1,5 @@
-# CI Workers Builds project name (repo: tarkovcheats)
-name = "tarkovcheats"
+# CI Workers Builds project name (repo: tarkov-cheats-.org → Worker: tarkov-cheats--org)
+name = "tarkov-cheats--org"
 compatibility_date = "2026-01-01"
 main = "src/worker.ts"
 

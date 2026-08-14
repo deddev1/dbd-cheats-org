@@ -39,6 +39,9 @@ const moreReviews = [1, 2, 3].map(
 	(offset) => customerReviews[(currentIndex + offset) % customerReviews.length],
 );
 
+const priceValidUntil = '2027-12-31';
+const offerPrices = productInfo.plans.map((plan) => plan.price);
+
 const extraGraph: Record<string, unknown>[] = [
 	{
 		'@type': 'Review',
@@ -62,6 +65,25 @@ const extraGraph: Record<string, unknown>[] = [
 			image: photo.url,
 			brand: { '@type': 'Brand', name: productInfo.brand },
 			url: `${siteConfig.url}/`,
+			offers: {
+				'@type': 'AggregateOffer',
+				lowPrice: Math.min(...offerPrices).toFixed(2),
+				highPrice: Math.max(...offerPrices).toFixed(2),
+				priceCurrency: productInfo.currency,
+				offerCount: productInfo.plans.length,
+				availability: 'https://schema.org/InStock',
+				url: siteConfig.checkoutUrl,
+				offers: productInfo.plans.map((plan) => ({
+					'@type': 'Offer',
+					name: `${productInfo.name} ${plan.label}`,
+					price: plan.price.toFixed(2),
+					priceCurrency: productInfo.currency,
+					priceValidUntil,
+					availability: 'https://schema.org/InStock',
+					url: siteConfig.checkoutUrl,
+					seller: { '@id': `${siteConfig.url}/#organization` },
+				})),
+			},
 		},
 		publisher: { '@id': `${siteConfig.url}/#organization` },
 	},

@@ -3,6 +3,15 @@ name = "theislehacks"
 compatibility_date = "2026-01-01"
 main = "src/worker.ts"
 
+# Attach apex + www to this Worker on deploy (Cloudflare creates proxied DNS when the zone is on the account).
+[[routes]]
+pattern = "theislehacks.org"
+custom_domain = true
+
+[[routes]]
+pattern = "www.theislehacks.org"
+custom_domain = true
+
 # Local/CLI deploy: Wrangler runs this before upload. Workers Builds also uses postinstall.
 [build]
 command = "npm run build"

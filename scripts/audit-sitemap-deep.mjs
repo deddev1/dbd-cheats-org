@@ -48,21 +48,14 @@ function htmlPathFor(urlPath) {
 }
 
 const REDIRECT_MAP = (() => {
-	const text = readFileSync(path.join(ROOT, 'public/_redirects'), 'utf8');
 	const map = new Map();
-	for (const line of text.split(/\r?\n/)) {
-		const t = line.trim();
-		if (!t || t.startsWith('#')) continue;
-		const parts = t.split(/\s+/);
-		if (parts.length < 3) continue;
-		const [from, to, status] = parts;
-		if (status === '301' || status === '302') map.set(from, to);
-	}
-	try {
-		const json = JSON.parse(readFileSync(path.join(ROOT, 'functions/cannibal-redirects.json'), 'utf8'));
-		for (const [from, to] of Object.entries(json)) map.set(from, to);
-	} catch {
-		/* optional */
+	for (const file of ['functions/path-redirects.json', 'functions/cannibal-redirects.json']) {
+		try {
+			const json = JSON.parse(readFileSync(path.join(ROOT, file), 'utf8'));
+			for (const [from, to] of Object.entries(json)) map.set(from, to);
+		} catch {
+			/* optional */
+		}
 	}
 	return map;
 })();

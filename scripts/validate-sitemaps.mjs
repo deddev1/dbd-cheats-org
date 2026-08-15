@@ -212,7 +212,9 @@ async function main() {
 	const sitemapI18n = await readFile(path.join(DIST, 'sitemap-i18n.xml'), 'utf8');
 	const sitemapImages = await readFile(path.join(DIST, 'sitemap-images.xml'), 'utf8');
 	const robots = await readFile(path.join(ROOT, 'public', 'robots.txt'), 'utf8');
-	const redirects = await readFile(path.join(ROOT, 'public', '_redirects'), 'utf8');
+	const pathRedirects = JSON.parse(
+		await readFile(path.join(ROOT, 'functions', 'path-redirects.json'), 'utf8'),
+	);
 
 	const indexLocs = extractLocs(sitemapIndex);
 	const enLocs = extractLocs(sitemapEn);
@@ -234,10 +236,10 @@ async function main() {
 		ok('sitemap-index.xml not emitted (legacy URL redirects to sitemap.xml)');
 	}
 
-	if (!redirects.includes('/sitemap-index.xml /sitemap.xml 301')) {
-		fail('_redirects missing 301: /sitemap-index.xml → /sitemap.xml');
+	if (pathRedirects['/sitemap-index.xml'] !== '/sitemap.xml') {
+		fail('path-redirects.json missing 301: /sitemap-index.xml → /sitemap.xml');
 		bump();
-	} else ok('_redirects 301s sitemap-index.xml → sitemap.xml');
+	} else ok('path-redirects.json 301s sitemap-index.xml → sitemap.xml');
 
 	// Per-locale sitemap files
 	const localeSitemapLocs = {};

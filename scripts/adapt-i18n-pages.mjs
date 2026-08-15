@@ -52,7 +52,7 @@ const REPLACEMENTS = [
 	['Easy Anti-Cheat Bypass', 'Easy Anti-Cheat Bypass'],
 	['Easy Anti-Cheat', 'Easy Anti-Cheat'],
 	['eac', 'eac'],
-	['support@theislehack.org', 'support@theislehack.org'],
+	['support@theislehacks.org', 'support@theislehacks.org'],
 	['Isla Spire, forests, and river zones', 'Isla Spire, forests, and river zones'],
 	['Isla Spire, forests and river zones', 'Isla Spire, forests and river zones'],
 	['nest fights', 'nest fights'],

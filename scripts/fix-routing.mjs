@@ -21,7 +21,7 @@ const REPLACEMENTS = [
 	['isle-radar-hack', 'isle-radar-hack'],
 	['isle-hacks-2026', 'isle-hacks-2026'],
 	['eac-bypass', 'eac-bypass'],
-	['theislehack.org', 'theislehack.org'],
+	['theislehacks.org', 'theislehacks.org'],
 	['trucos-isla', 'trucos-isla'],
 	['triche-isla', 'triche-isla'],
 	['the-isle-hacks', 'the-isle-hacks'],

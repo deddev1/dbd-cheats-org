@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * One-time migration: Tarkov Cheats → The Isle Hacks (The Isle).
- * Domain: theislehack.org
+ * Domain: theislehacks.org
  * Run from project root: node scripts/adapt-theisle.mjs
  */
 import { readFile, writeFile, readdir, rename } from 'node:fs/promises';
@@ -30,11 +30,11 @@ const RENAME_PAGE_DIRS = [
 
 /** Ordered replacements — specific patterns first. */
 const REPLACEMENTS = [
-	['https://www.tarkovcheats.org', 'https://www.theislehack.org'],
-	['https://tarkovcheats.org', 'https://theislehack.org'],
-	['www.tarkovcheats.org', 'www.theislehack.org'],
-	['tarkovcheats.org', 'theislehack.org'],
-	['support@tarkovcheats.org', 'support@theislehack.org'],
+	['https://www.tarkovcheats.org', 'https://www.theislehacks.org'],
+	['https://tarkovcheats.org', 'https://theislehacks.org'],
+	['www.tarkovcheats.org', 'www.theislehacks.org'],
+	['tarkovcheats.org', 'theislehacks.org'],
+	['support@tarkovcheats.org', 'support@theislehacks.org'],
 	['https://www.escapefromtarkov.com/support', 'https://store.steampowered.com/app/376210/The_Isle/'],
 	['https://www.escapefromtarkov.com/', 'https://store.steampowered.com/app/376210/The_Isle/'],
 	['www.escapefromtarkov.com/support', 'store.steampowered.com/app/376210/The_Isle'],
@@ -395,7 +395,7 @@ async function renameImages() {
 }
 
 async function main() {
-	console.log('Adapting Tarkov Cheats → The Isle Hacks (theislehack.org)...\n');
+	console.log('Adapting Tarkov Cheats → The Isle Hacks (theislehacks.org)...\n');
 	await renamePageDirs();
 	await renameTarkovTs();
 	await renameScripts();

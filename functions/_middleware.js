@@ -1,11 +1,13 @@
 import CANNIBAL_REDIRECTS from './cannibal-redirects.json';
 
-const CANONICAL_ORIGIN = 'https://theislehack.org';
-const APEX_HOST = 'theislehack.org';
-const WWW_HOST = 'www.theislehack.org';
+const CANONICAL_ORIGIN = 'https://theislehacks.org';
+const APEX_HOST = 'theislehacks.org';
+const WWW_HOST = 'www.theislehacks.org';
 
 /** Legacy domains → canonical apex (301). */
 const LEGACY_HOSTS = new Set([
+	'theislehack.org',
+	'www.theislehack.org',
 	'bestislecheats.com',
 	'www.bestislecheats.com',
 	'fortnitehack.net',

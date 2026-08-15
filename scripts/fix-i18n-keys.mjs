@@ -32,7 +32,7 @@ const UI_REPLACEMENTS = [
 	['Verdansk', 'Verdansk'],
 	['growth run', 'growth run'],
 	['extract', 'extract'],
-	['theislehack.org', 'theislehack.org'],
+	['theislehacks.org', 'theislehacks.org'],
 	['Trucos The Isle', 'Trucos The Isle'],
 	['Triches The Isle', 'Triches The Isle'],
 	['Cheats The Isle', 'Cheats The Isle'],

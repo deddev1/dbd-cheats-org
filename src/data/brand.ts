@@ -9,10 +9,10 @@ export const brand = {
 	/** Short product label if needed */
 	shortName: 'Isle Hacks',
 	/** Canonical origin — no trailing slash */
-	url: 'https://theislehack.org',
+	url: 'https://theislehacks.org',
 	locale: 'en',
 	market: 'Worldwide',
-	supportEmail: 'support@theislehack.org',
+	supportEmail: 'support@theislehacks.org',
 	checkoutUrl: 'https://zadeyo.com/go/QRH?to=%2Fproducts%2Fisle',
 
 	/** Game this template instance targets */

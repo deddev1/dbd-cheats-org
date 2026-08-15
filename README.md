@@ -1,6 +1,6 @@
 # The Isle Hacks — Marketing Site
 
-Static Astro 7 site for [theislehack.org](https://theislehack.org). Primary SEO keyword: **the isle hacks** (secondary: the isle cheats, isle aimbot, isle ESP).
+Static Astro 7 site for [theislehacks.org](https://theislehacks.org). Primary SEO keyword: **the isle hacks** (secondary: the isle cheats, isle aimbot, isle ESP).
 
 ## Stack
 
@@ -45,7 +45,7 @@ npm run build:validate
 2. Connect this repo or upload `dist/` after `npm run build`
 3. Build command: `npm run build`
 4. Output directory: `dist`
-5. Add custom domain **theislehack.org** (apex) and redirect **www** → apex
+5. Add custom domain **theislehacks.org** (apex) and redirect **www** → apex
 6. Enable SSL **Always Use HTTPS**
 
 CLI deploy:
@@ -61,4 +61,4 @@ npm run pages:deploy
 
 ## License
 
-Private — for theislehack.org deployment only.
+Private — for theislehacks.org deployment only.

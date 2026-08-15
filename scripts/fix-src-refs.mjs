@@ -28,7 +28,7 @@ const REPLACEMENTS = [
 	['The Isle', 'The Isle'],
 	['Easy Anti-Cheat', 'Easy Anti-Cheat'],
 	['eac', 'eac'],
-	['theislehack.org', 'theislehack.org'],
+	['theislehacks.org', 'theislehacks.org'],
 	['operatorEsp', 'dinoEsp'],
 	['extractFight', 'ambushFight'],
 	['alMazrah', 'survivalIsland'],

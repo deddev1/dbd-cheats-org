@@ -270,7 +270,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Licensing, delivery, and Easy Anti-Cheat maintenance",
 							paragraphs: [
 								"Monthly ($35) and lifetime ($150) licenses with instant digital delivery. Easy Anti-Cheat maintenance rebuilds publish on the <a href=\"/updates/\">Updates page</a> after anti-cheat or game patches.",
-								"Monitor <a href=\"https://store.steampowered.com/app/376210/The_Isle/\" target=\"_blank\" rel=\"noopener noreferrer\">The Isle on Steam</a> on patch days, then confirm rebuild notes before you spawn in. Setup and billing help lives on <a href=\"/support/\">Support</a> and support@theislehack.org.",
+								"Monitor <a href=\"https://store.steampowered.com/app/376210/The_Isle/\" target=\"_blank\" rel=\"noopener noreferrer\">The Isle on Steam</a> on patch days, then confirm rebuild notes before you spawn in. Setup and billing help lives on <a href=\"/support/\">Support</a> and support@theislehacks.org.",
 								"Next step: compare plans on <a href=\"/pricing/\">Pricing</a> or read <a href=\"/isle-hacks/\">how undetected maintenance works</a>.",
 							],
 						},
@@ -422,7 +422,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Delivery, pricing, and support",
 							paragraphs: [
 								"Licenses deliver digitally after payment confirmation. Monthly is $35; lifetime is $150 USD — see <a href=\"/pricing/\">Pricing</a>.",
-								"Contact support@theislehack.org or the <a href=\"/support/\">Support page</a> with order details for setup or billing help. First launch steps are on <a href=\"/setup/\">Setup</a>.",
+								"Contact support@theislehacks.org or the <a href=\"/support/\">Support page</a> with order details for setup or billing help. First launch steps are on <a href=\"/setup/\">Setup</a>.",
 								"Refund eligibility is covered in the <a href=\"/refund-policy/\">Refund Policy</a>.",
 							],
 						},
@@ -460,7 +460,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Self-service resources",
 							paragraphs: [
 								"Setup guide, Features list, Updates log, Refund Policy, and Terms of Use are linked from the footer. Easy Anti-Cheat bypass notes live on the dedicated <a href=\"/updates/\">Easy Anti-Cheat page</a>.",
-								"Email: support@theislehack.org",
+								"Email: support@theislehacks.org",
 								"Ready to purchase or renew? Open <a href=\"/pricing/\">Pricing</a>. Need feature detail first? See <a href=\"/features/\">Features</a>.",
 							],
 						},
@@ -651,7 +651,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Read the <a href=\"/isle-hacks/\">the isle hacks</a> pillar, Features, Pricing, Setup, and Updates pages. Check undetected status notes after every major patch — responsible use and maintenance awareness matter.",
 								"Also compare the <a href=\"/isle-hacks/\">the isle hacks</a> checklist, <a href=\"/blog/isle-hacks-2026-whats-new/\">2026 blog guide</a>, and <a href=\"/faq/\">FAQ</a>.",
-								"Support is available at support@theislehack.org via the <a href=\"/support/\">Support page</a>.",
+								"Support is available at support@theislehacks.org via the <a href=\"/support/\">Support page</a>.",
 							],
 						},
 					],
@@ -971,9 +971,9 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				privacy: {
 					title: "Privacy Policy | The Isle Hacks",
-					description: "Privacy policy for The Isle Hacks. How we handle support emails, order data, and checkout for the isle hacks licenses on theislehack.org.",
+					description: "Privacy policy for The Isle Hacks. How we handle support emails, order data, and checkout for the isle hacks licenses on theislehacks.org.",
 					h1: "Privacy Policy",
-					intro: "How The Isle Hacks handles information when you browse theislehack.org or contact support about a The Isle license.",
+					intro: "How The Isle Hacks handles information when you browse theislehacks.org or contact support about a The Isle license.",
 					imageAlt: "The Isle Hacks privacy policy page",
 					galleryTitle: "The Isle Hacks legal resources",
 					ctaPrimary: "Email support",
@@ -1002,8 +1002,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Your choices and contact",
 							paragraphs: [
-								"You may request correction or deletion of support email data by contacting support@theislehack.org with your request details.",
-								"Policy updates publish on this page. Continued use of theislehack.org after updates means you accept the revised policy. Also see <a href=\"/terms/\">Terms of Use</a> and <a href=\"/refund-policy/\">Refund Policy</a>.",
+								"You may request correction or deletion of support email data by contacting support@theislehacks.org with your request details.",
+								"Policy updates publish on this page. Continued use of theislehacks.org after updates means you accept the revised policy. Also see <a href=\"/terms/\">Terms of Use</a> and <a href=\"/refund-policy/\">Refund Policy</a>.",
 							],
 						},
 					],
@@ -1037,7 +1037,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "How to request a refund",
 							paragraphs: [
-								"Email support@theislehack.org with subject \"Refund Request\", your order ID, purchase date, and issue summary — or use the <a href=\"/support/\">Support page</a>.",
+								"Email support@theislehacks.org with subject \"Refund Request\", your order ID, purchase date, and issue summary — or use the <a href=\"/support/\">Support page</a>.",
 								"Approved refunds process back to the original payment method when possible. Pricing details live on <a href=\"/pricing/\">Pricing</a>.",
 							],
 						},
@@ -1046,9 +1046,9 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				terms: {
 					title: "Terms of Use 2026 | The Isle Hacks Rules",
-					description: "Terms of use for theislehack.org and The Isle Hacks licenses. Usage rules, anti-cheat risk, and liability for Windows PC cheats.",
+					description: "Terms of use for theislehacks.org and The Isle Hacks licenses. Usage rules, anti-cheat risk, and liability for Windows PC cheats.",
 					h1: "Terms of Use",
-					intro: "Terms governing use of theislehack.org and The Isle Hacks licenses for The Isle on Windows PC.",
+					intro: "Terms governing use of theislehacks.org and The Isle Hacks licenses for The Isle on Windows PC.",
 					imageAlt: "The Isle Hacks terms of use page",
 					galleryTitle: "The Isle Hacks legal pages",
 					ctaPrimary: "Email support",
@@ -1073,7 +1073,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Changes and governing law",
 							paragraphs: [
 								"We may update these terms by posting revisions on this page. Continued use after changes constitutes acceptance.",
-								"Contact support@theislehack.org for questions. Related policies: <a href=\"/privacy-policy/\">Privacy</a> and <a href=\"/refund-policy/\">Refunds</a>.",
+								"Contact support@theislehacks.org for questions. Related policies: <a href=\"/privacy-policy/\">Privacy</a> and <a href=\"/refund-policy/\">Refunds</a>.",
 							],
 						},
 					],
@@ -1212,7 +1212,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "entrega digital instantánea",
 							paragraphs: [
 								"Licencias con entrega digital instantánea vía checkout Zadeyo. Planes $35/mes y $150 de por vida incluyen mantenimiento Easy Anti-Cheat.",
-								"Contacta support@theislehack.org para solicitudes legales o de soporte.",
+								"Contacta support@theislehacks.org para solicitudes legales o de soporte.",
 							],
 						},
 					],
@@ -1247,7 +1247,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "entrega digital instantánea",
 							paragraphs: [
 								"Licencias con entrega digital instantánea vía checkout Zadeyo. Planes $35/mes y $150 de por vida incluyen mantenimiento Easy Anti-Cheat.",
-								"Contacta support@theislehack.org para solicitudes legales o de soporte.",
+								"Contacta support@theislehacks.org para solicitudes legales o de soporte.",
 							],
 						},
 					],
@@ -1282,7 +1282,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "entrega digital instantánea",
 							paragraphs: [
 								"Licencias con entrega digital instantánea vía checkout Zadeyo. Planes $35/mes y $150 de por vida incluyen mantenimiento Easy Anti-Cheat.",
-								"Contacta support@theislehack.org para solicitudes legales o de soporte.",
+								"Contacta support@theislehacks.org para solicitudes legales o de soporte.",
 							],
 						},
 					],
@@ -1317,7 +1317,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "entrega digital instantánea",
 							paragraphs: [
 								"Licencias con entrega digital instantánea vía checkout Zadeyo. Planes $35/mes y $150 de por vida incluyen mantenimiento Easy Anti-Cheat.",
-								"Contacta support@theislehack.org para solicitudes legales o de soporte.",
+								"Contacta support@theislehacks.org para solicitudes legales o de soporte.",
 							],
 						},
 					],
@@ -1352,7 +1352,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "entrega digital instantánea",
 							paragraphs: [
 								"Licencias con entrega digital instantánea vía checkout Zadeyo. Planes $35/mes y $150 de por vida incluyen mantenimiento Easy Anti-Cheat.",
-								"Contacta support@theislehack.org para solicitudes legales o de soporte.",
+								"Contacta support@theislehacks.org para solicitudes legales o de soporte.",
 							],
 						},
 					],
@@ -1387,7 +1387,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "entrega digital instantánea",
 							paragraphs: [
 								"Licencias con entrega digital instantánea vía checkout Zadeyo. Planes $35/mes y $150 de por vida incluyen mantenimiento Easy Anti-Cheat.",
-								"Contacta support@theislehack.org para solicitudes legales o de soporte.",
+								"Contacta support@theislehacks.org para solicitudes legales o de soporte.",
 							],
 						},
 					],
@@ -1422,7 +1422,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "entrega digital instantánea",
 							paragraphs: [
 								"Licencias con entrega digital instantánea vía checkout Zadeyo. Planes $35/mes y $150 de por vida incluyen mantenimiento Easy Anti-Cheat.",
-								"Contacta support@theislehack.org para solicitudes legales o de soporte.",
+								"Contacta support@theislehacks.org para solicitudes legales o de soporte.",
 							],
 						},
 					],
@@ -1457,7 +1457,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "entrega digital instantánea",
 							paragraphs: [
 								"Licencias con entrega digital instantánea vía checkout Zadeyo. Planes $35/mes y $150 de por vida incluyen mantenimiento Easy Anti-Cheat.",
-								"Contacta support@theislehack.org para solicitudes legales o de soporte.",
+								"Contacta support@theislehacks.org para solicitudes legales o de soporte.",
 							],
 						},
 					],
@@ -1492,7 +1492,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "entrega digital instantánea",
 							paragraphs: [
 								"Licencias con entrega digital instantánea vía checkout Zadeyo. Planes $35/mes y $150 de por vida incluyen mantenimiento Easy Anti-Cheat.",
-								"Contacta support@theislehack.org para solicitudes legales o de soporte.",
+								"Contacta support@theislehacks.org para solicitudes legales o de soporte.",
 							],
 						},
 					],
@@ -1527,7 +1527,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "entrega digital instantánea",
 							paragraphs: [
 								"Licencias con entrega digital instantánea vía checkout Zadeyo. Planes $35/mes y $150 de por vida incluyen mantenimiento Easy Anti-Cheat.",
-								"Contacta support@theislehack.org para solicitudes legales o de soporte.",
+								"Contacta support@theislehacks.org para solicitudes legales o de soporte.",
 							],
 						},
 					],
@@ -1562,7 +1562,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "entrega digital instantánea",
 							paragraphs: [
 								"Licencias con entrega digital instantánea vía checkout Zadeyo. Planes $35/mes y $150 de por vida incluyen mantenimiento Easy Anti-Cheat.",
-								"Contacta support@theislehack.org para solicitudes legales o de soporte.",
+								"Contacta support@theislehacks.org para solicitudes legales o de soporte.",
 							],
 						},
 					],
@@ -1597,7 +1597,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "entrega digital instantánea",
 							paragraphs: [
 								"Licencias con entrega digital instantánea vía checkout Zadeyo. Planes $35/mes y $150 de por vida incluyen mantenimiento Easy Anti-Cheat.",
-								"Contacta support@theislehack.org para solicitudes legales o de soporte.",
+								"Contacta support@theislehacks.org para solicitudes legales o de soporte.",
 							],
 						},
 					],
@@ -1632,7 +1632,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "entrega digital instantánea",
 							paragraphs: [
 								"Licencias con entrega digital instantánea vía checkout Zadeyo. Planes $35/mes y $150 de por vida incluyen mantenimiento Easy Anti-Cheat.",
-								"Contacta support@theislehack.org para solicitudes legales o de soporte.",
+								"Contacta support@theislehacks.org para solicitudes legales o de soporte.",
 							],
 						},
 					],
@@ -1667,7 +1667,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "entrega digital instantánea",
 							paragraphs: [
 								"Licencias con entrega digital instantánea vía checkout Zadeyo. Planes $35/mes y $150 de por vida incluyen mantenimiento Easy Anti-Cheat.",
-								"Contacta support@theislehack.org para solicitudes legales o de soporte.",
+								"Contacta support@theislehacks.org para solicitudes legales o de soporte.",
 							],
 						},
 					],
@@ -1702,7 +1702,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "entrega digital instantánea",
 							paragraphs: [
 								"Licencias con entrega digital instantánea vía checkout Zadeyo. Planes $35/mes y $150 de por vida incluyen mantenimiento Easy Anti-Cheat.",
-								"Contacta support@theislehack.org para solicitudes legales o de soporte.",
+								"Contacta support@theislehacks.org para solicitudes legales o de soporte.",
 							],
 						},
 					],
@@ -1737,7 +1737,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "entrega digital instantánea",
 							paragraphs: [
 								"Licencias con entrega digital instantánea vía checkout Zadeyo. Planes $35/mes y $150 de por vida incluyen mantenimiento Easy Anti-Cheat.",
-								"Contacta support@theislehack.org para solicitudes legales o de soporte.",
+								"Contacta support@theislehacks.org para solicitudes legales o de soporte.",
 							],
 						},
 					],
@@ -1772,7 +1772,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "entrega digital instantánea",
 							paragraphs: [
 								"Licencias con entrega digital instantánea vía checkout Zadeyo. Planes $35/mes y $150 de por vida incluyen mantenimiento Easy Anti-Cheat.",
-								"Contacta support@theislehack.org para solicitudes legales o de soporte.",
+								"Contacta support@theislehacks.org para solicitudes legales o de soporte.",
 							],
 						},
 					],
@@ -1807,7 +1807,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "entrega digital instantánea",
 							paragraphs: [
 								"Licencias con entrega digital instantánea vía checkout Zadeyo. Planes $35/mes y $150 de por vida incluyen mantenimiento Easy Anti-Cheat.",
-								"Contacta support@theislehack.org para solicitudes legales o de soporte.",
+								"Contacta support@theislehacks.org para solicitudes legales o de soporte.",
 							],
 						},
 					],
@@ -1842,7 +1842,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "entrega digital instantánea",
 							paragraphs: [
 								"Licencias con entrega digital instantánea vía checkout Zadeyo. Planes $35/mes y $150 de por vida incluyen mantenimiento Easy Anti-Cheat.",
-								"Contacta support@theislehack.org para solicitudes legales o de soporte.",
+								"Contacta support@theislehacks.org para solicitudes legales o de soporte.",
 							],
 						},
 					],
@@ -1877,7 +1877,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "entrega digital instantánea",
 							paragraphs: [
 								"Licencias con entrega digital instantánea vía checkout Zadeyo. Planes $35/mes y $150 de por vida incluyen mantenimiento Easy Anti-Cheat.",
-								"Contacta support@theislehack.org para solicitudes legales o de soporte.",
+								"Contacta support@theislehacks.org para solicitudes legales o de soporte.",
 							],
 						},
 					],
@@ -1912,7 +1912,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "entrega digital instantánea",
 							paragraphs: [
 								"Licencias con entrega digital instantánea vía checkout Zadeyo. Planes $35/mes y $150 de por vida incluyen mantenimiento Easy Anti-Cheat.",
-								"Contacta support@theislehack.org para solicitudes legales o de soporte.",
+								"Contacta support@theislehacks.org para solicitudes legales o de soporte.",
 							],
 						},
 					],
@@ -1921,7 +1921,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Política de privacidad | The Isle Hacks",
 					description: "Política de privacidad para The Isle Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Política de privacidad",
-					intro: "The Isle Hacks ofrece ESP wallhack, radar hack y Isle Aimbot indetectables para The Isle en Windows PC. Política de privacidad para theislehack.org y licencias de The Isle.",
+					intro: "The Isle Hacks ofrece ESP wallhack, radar hack y Isle Aimbot indetectables para The Isle en Windows PC. Política de privacidad para theislehacks.org y licencias de The Isle.",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-aimbot.webp",
@@ -1933,7 +1933,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Información que recopilamos",
 							paragraphs: [
 								"The Isle Hacks ofrece ESP wallhack, radar hack y Isle Aimbot indetectables para The Isle en Windows PC. Correo de contacto, referencias de pedido Zadeyo y datos básicos de seguridad del sitio.",
-								"Los datos de pago se procesan en el checkout de Zadeyo — no se almacenan en theislehack.org.",
+								"Los datos de pago se procesan en el checkout de Zadeyo — no se almacenan en theislehacks.org.",
 							],
 						},
 						{
@@ -1946,8 +1946,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Tus derechos",
 							paragraphs: [
-								"Contacta support@theislehack.org para solicitudes legales o de soporte.",
-								"Correo: support@theislehack.org",
+								"Contacta support@theislehacks.org para solicitudes legales o de soporte.",
+								"Correo: support@theislehacks.org",
 							],
 						},
 					],
@@ -1956,7 +1956,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Política de reembolso | The Isle Hacks",
 					description: "Política de reembolso para The Isle Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Política de reembolso",
-					intro: "The Isle Hacks ofrece ESP wallhack, radar hack y Isle Aimbot indetectables para The Isle en Windows PC. Política de reembolso para theislehack.org y licencias de The Isle.",
+					intro: "The Isle Hacks ofrece ESP wallhack, radar hack y Isle Aimbot indetectables para The Isle en Windows PC. Política de reembolso para theislehacks.org y licencias de The Isle.",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-session.webp",
@@ -1981,8 +1981,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Cómo solicitar",
 							paragraphs: [
-								"Contacta support@theislehack.org para solicitudes legales o de soporte.",
-								"Correo: support@theislehack.org",
+								"Contacta support@theislehacks.org para solicitudes legales o de soporte.",
+								"Correo: support@theislehacks.org",
 							],
 						},
 					],
@@ -1991,7 +1991,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Términos de uso | The Isle Hacks",
 					description: "Términos de uso para The Isle Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Términos de uso",
-					intro: "The Isle Hacks ofrece ESP wallhack, radar hack y Isle Aimbot indetectables para The Isle en Windows PC. Términos de uso para theislehack.org y licencias de The Isle.",
+					intro: "The Isle Hacks ofrece ESP wallhack, radar hack y Isle Aimbot indetectables para The Isle en Windows PC. Términos de uso para theislehacks.org y licencias de The Isle.",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-aimbot-view.webp",
@@ -2016,8 +2016,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Cambios de política",
 							paragraphs: [
-								"Contacta support@theislehack.org para solicitudes legales o de soporte.",
-								"Correo: support@theislehack.org",
+								"Contacta support@theislehacks.org para solicitudes legales o de soporte.",
+								"Correo: support@theislehacks.org",
 							],
 						},
 					],
@@ -2155,7 +2155,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "livraison numérique instantanée",
 							paragraphs: [
 								"Licences avec livraison numérique instantanée via checkout Zadeyo. Forfaits 35 $/mois et 150 $ à vie incluent la maintenance Easy Anti-Cheat.",
-								"Contactez support@theislehack.org pour le support ou les demandes légales.",
+								"Contactez support@theislehacks.org pour le support ou les demandes légales.",
 							],
 						},
 					],
@@ -2190,7 +2190,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "livraison numérique instantanée",
 							paragraphs: [
 								"Licences avec livraison numérique instantanée via checkout Zadeyo. Forfaits 35 $/mois et 150 $ à vie incluent la maintenance Easy Anti-Cheat.",
-								"Contactez support@theislehack.org pour le support ou les demandes légales.",
+								"Contactez support@theislehacks.org pour le support ou les demandes légales.",
 							],
 						},
 					],
@@ -2225,7 +2225,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "livraison numérique instantanée",
 							paragraphs: [
 								"Licences avec livraison numérique instantanée via checkout Zadeyo. Forfaits 35 $/mois et 150 $ à vie incluent la maintenance Easy Anti-Cheat.",
-								"Contactez support@theislehack.org pour le support ou les demandes légales.",
+								"Contactez support@theislehacks.org pour le support ou les demandes légales.",
 							],
 						},
 					],
@@ -2260,7 +2260,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "livraison numérique instantanée",
 							paragraphs: [
 								"Licences avec livraison numérique instantanée via checkout Zadeyo. Forfaits 35 $/mois et 150 $ à vie incluent la maintenance Easy Anti-Cheat.",
-								"Contactez support@theislehack.org pour le support ou les demandes légales.",
+								"Contactez support@theislehacks.org pour le support ou les demandes légales.",
 							],
 						},
 					],
@@ -2295,7 +2295,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "livraison numérique instantanée",
 							paragraphs: [
 								"Licences avec livraison numérique instantanée via checkout Zadeyo. Forfaits 35 $/mois et 150 $ à vie incluent la maintenance Easy Anti-Cheat.",
-								"Contactez support@theislehack.org pour le support ou les demandes légales.",
+								"Contactez support@theislehacks.org pour le support ou les demandes légales.",
 							],
 						},
 					],
@@ -2330,7 +2330,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "livraison numérique instantanée",
 							paragraphs: [
 								"Licences avec livraison numérique instantanée via checkout Zadeyo. Forfaits 35 $/mois et 150 $ à vie incluent la maintenance Easy Anti-Cheat.",
-								"Contactez support@theislehack.org pour le support ou les demandes légales.",
+								"Contactez support@theislehacks.org pour le support ou les demandes légales.",
 							],
 						},
 					],
@@ -2365,7 +2365,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "livraison numérique instantanée",
 							paragraphs: [
 								"Licences avec livraison numérique instantanée via checkout Zadeyo. Forfaits 35 $/mois et 150 $ à vie incluent la maintenance Easy Anti-Cheat.",
-								"Contactez support@theislehack.org pour le support ou les demandes légales.",
+								"Contactez support@theislehacks.org pour le support ou les demandes légales.",
 							],
 						},
 					],
@@ -2400,7 +2400,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "livraison numérique instantanée",
 							paragraphs: [
 								"Licences avec livraison numérique instantanée via checkout Zadeyo. Forfaits 35 $/mois et 150 $ à vie incluent la maintenance Easy Anti-Cheat.",
-								"Contactez support@theislehack.org pour le support ou les demandes légales.",
+								"Contactez support@theislehacks.org pour le support ou les demandes légales.",
 							],
 						},
 					],
@@ -2435,7 +2435,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "livraison numérique instantanée",
 							paragraphs: [
 								"Licences avec livraison numérique instantanée via checkout Zadeyo. Forfaits 35 $/mois et 150 $ à vie incluent la maintenance Easy Anti-Cheat.",
-								"Contactez support@theislehack.org pour le support ou les demandes légales.",
+								"Contactez support@theislehacks.org pour le support ou les demandes légales.",
 							],
 						},
 					],
@@ -2470,7 +2470,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "livraison numérique instantanée",
 							paragraphs: [
 								"Licences avec livraison numérique instantanée via checkout Zadeyo. Forfaits 35 $/mois et 150 $ à vie incluent la maintenance Easy Anti-Cheat.",
-								"Contactez support@theislehack.org pour le support ou les demandes légales.",
+								"Contactez support@theislehacks.org pour le support ou les demandes légales.",
 							],
 						},
 					],
@@ -2505,7 +2505,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "livraison numérique instantanée",
 							paragraphs: [
 								"Licences avec livraison numérique instantanée via checkout Zadeyo. Forfaits 35 $/mois et 150 $ à vie incluent la maintenance Easy Anti-Cheat.",
-								"Contactez support@theislehack.org pour le support ou les demandes légales.",
+								"Contactez support@theislehacks.org pour le support ou les demandes légales.",
 							],
 						},
 					],
@@ -2540,7 +2540,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "livraison numérique instantanée",
 							paragraphs: [
 								"Licences avec livraison numérique instantanée via checkout Zadeyo. Forfaits 35 $/mois et 150 $ à vie incluent la maintenance Easy Anti-Cheat.",
-								"Contactez support@theislehack.org pour le support ou les demandes légales.",
+								"Contactez support@theislehacks.org pour le support ou les demandes légales.",
 							],
 						},
 					],
@@ -2575,7 +2575,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "livraison numérique instantanée",
 							paragraphs: [
 								"Licences avec livraison numérique instantanée via checkout Zadeyo. Forfaits 35 $/mois et 150 $ à vie incluent la maintenance Easy Anti-Cheat.",
-								"Contactez support@theislehack.org pour le support ou les demandes légales.",
+								"Contactez support@theislehacks.org pour le support ou les demandes légales.",
 							],
 						},
 					],
@@ -2610,7 +2610,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "livraison numérique instantanée",
 							paragraphs: [
 								"Licences avec livraison numérique instantanée via checkout Zadeyo. Forfaits 35 $/mois et 150 $ à vie incluent la maintenance Easy Anti-Cheat.",
-								"Contactez support@theislehack.org pour le support ou les demandes légales.",
+								"Contactez support@theislehacks.org pour le support ou les demandes légales.",
 							],
 						},
 					],
@@ -2645,7 +2645,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "livraison numérique instantanée",
 							paragraphs: [
 								"Licences avec livraison numérique instantanée via checkout Zadeyo. Forfaits 35 $/mois et 150 $ à vie incluent la maintenance Easy Anti-Cheat.",
-								"Contactez support@theislehack.org pour le support ou les demandes légales.",
+								"Contactez support@theislehacks.org pour le support ou les demandes légales.",
 							],
 						},
 					],
@@ -2680,7 +2680,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "livraison numérique instantanée",
 							paragraphs: [
 								"Licences avec livraison numérique instantanée via checkout Zadeyo. Forfaits 35 $/mois et 150 $ à vie incluent la maintenance Easy Anti-Cheat.",
-								"Contactez support@theislehack.org pour le support ou les demandes légales.",
+								"Contactez support@theislehacks.org pour le support ou les demandes légales.",
 							],
 						},
 					],
@@ -2715,7 +2715,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "livraison numérique instantanée",
 							paragraphs: [
 								"Licences avec livraison numérique instantanée via checkout Zadeyo. Forfaits 35 $/mois et 150 $ à vie incluent la maintenance Easy Anti-Cheat.",
-								"Contactez support@theislehack.org pour le support ou les demandes légales.",
+								"Contactez support@theislehacks.org pour le support ou les demandes légales.",
 							],
 						},
 					],
@@ -2750,7 +2750,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "livraison numérique instantanée",
 							paragraphs: [
 								"Licences avec livraison numérique instantanée via checkout Zadeyo. Forfaits 35 $/mois et 150 $ à vie incluent la maintenance Easy Anti-Cheat.",
-								"Contactez support@theislehack.org pour le support ou les demandes légales.",
+								"Contactez support@theislehacks.org pour le support ou les demandes légales.",
 							],
 						},
 					],
@@ -2785,7 +2785,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "livraison numérique instantanée",
 							paragraphs: [
 								"Licences avec livraison numérique instantanée via checkout Zadeyo. Forfaits 35 $/mois et 150 $ à vie incluent la maintenance Easy Anti-Cheat.",
-								"Contactez support@theislehack.org pour le support ou les demandes légales.",
+								"Contactez support@theislehacks.org pour le support ou les demandes légales.",
 							],
 						},
 					],
@@ -2820,7 +2820,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "livraison numérique instantanée",
 							paragraphs: [
 								"Licences avec livraison numérique instantanée via checkout Zadeyo. Forfaits 35 $/mois et 150 $ à vie incluent la maintenance Easy Anti-Cheat.",
-								"Contactez support@theislehack.org pour le support ou les demandes légales.",
+								"Contactez support@theislehacks.org pour le support ou les demandes légales.",
 							],
 						},
 					],
@@ -2855,7 +2855,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "livraison numérique instantanée",
 							paragraphs: [
 								"Licences avec livraison numérique instantanée via checkout Zadeyo. Forfaits 35 $/mois et 150 $ à vie incluent la maintenance Easy Anti-Cheat.",
-								"Contactez support@theislehack.org pour le support ou les demandes légales.",
+								"Contactez support@theislehacks.org pour le support ou les demandes légales.",
 							],
 						},
 					],
@@ -2864,7 +2864,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Politique de confidentialité | The Isle Hacks",
 					description: "Politique de confidentialité pour The Isle Hacks — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Politique de confidentialité",
-					intro: "The Isle Hacks combine ESP wallhack, radar hack et Isle Aimbot indétectables pour The Isle sur PC Windows. Politique de confidentialité pour theislehack.org et les licences The Isle.",
+					intro: "The Isle Hacks combine ESP wallhack, radar hack et Isle Aimbot indétectables pour The Isle sur PC Windows. Politique de confidentialité pour theislehacks.org et les licences The Isle.",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-aimbot.webp",
@@ -2876,7 +2876,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Informations collectées",
 							paragraphs: [
 								"The Isle Hacks combine ESP wallhack, radar hack et Isle Aimbot indétectables pour The Isle sur PC Windows. E-mail de contact, références de commande Zadeyo et données de sécurité de base du site.",
-								"Les détails de paiement sont traités par le checkout Zadeyo — non stockés sur theislehack.org.",
+								"Les détails de paiement sont traités par le checkout Zadeyo — non stockés sur theislehacks.org.",
 							],
 						},
 						{
@@ -2889,8 +2889,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Vos droits",
 							paragraphs: [
-								"Contactez support@theislehack.org pour le support ou les demandes légales.",
-								"E-mail : support@theislehack.org",
+								"Contactez support@theislehacks.org pour le support ou les demandes légales.",
+								"E-mail : support@theislehacks.org",
 							],
 						},
 					],
@@ -2899,7 +2899,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Politique de remboursement | The Isle Hacks",
 					description: "Politique de remboursement pour The Isle Hacks — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Politique de remboursement",
-					intro: "The Isle Hacks combine ESP wallhack, radar hack et Isle Aimbot indétectables pour The Isle sur PC Windows. Politique de remboursement pour theislehack.org et les licences The Isle.",
+					intro: "The Isle Hacks combine ESP wallhack, radar hack et Isle Aimbot indétectables pour The Isle sur PC Windows. Politique de remboursement pour theislehacks.org et les licences The Isle.",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-session.webp",
@@ -2924,8 +2924,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Comment demander",
 							paragraphs: [
-								"Contactez support@theislehack.org pour le support ou les demandes légales.",
-								"E-mail : support@theislehack.org",
+								"Contactez support@theislehacks.org pour le support ou les demandes légales.",
+								"E-mail : support@theislehacks.org",
 							],
 						},
 					],
@@ -2934,7 +2934,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Conditions d'utilisation | The Isle Hacks",
 					description: "Conditions d'utilisation pour The Isle Hacks — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Conditions d'utilisation",
-					intro: "The Isle Hacks combine ESP wallhack, radar hack et Isle Aimbot indétectables pour The Isle sur PC Windows. Conditions d'utilisation pour theislehack.org et les licences The Isle.",
+					intro: "The Isle Hacks combine ESP wallhack, radar hack et Isle Aimbot indétectables pour The Isle sur PC Windows. Conditions d'utilisation pour theislehacks.org et les licences The Isle.",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-aimbot-view.webp",
@@ -2959,8 +2959,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Modifications",
 							paragraphs: [
-								"Contactez support@theislehack.org pour le support ou les demandes légales.",
-								"E-mail : support@theislehack.org",
+								"Contactez support@theislehacks.org pour le support ou les demandes légales.",
+								"E-mail : support@theislehacks.org",
 							],
 						},
 					],
@@ -3098,7 +3098,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "sofortige digitale Lieferung",
 							paragraphs: [
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Easy Anti-Cheat-Wartung.",
-								"support@theislehack.org für Support und rechtliche Anfragen.",
+								"support@theislehacks.org für Support und rechtliche Anfragen.",
 							],
 						},
 					],
@@ -3133,7 +3133,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "sofortige digitale Lieferung",
 							paragraphs: [
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Easy Anti-Cheat-Wartung.",
-								"support@theislehack.org für Support und rechtliche Anfragen.",
+								"support@theislehacks.org für Support und rechtliche Anfragen.",
 							],
 						},
 					],
@@ -3168,7 +3168,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "sofortige digitale Lieferung",
 							paragraphs: [
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Easy Anti-Cheat-Wartung.",
-								"support@theislehack.org für Support und rechtliche Anfragen.",
+								"support@theislehacks.org für Support und rechtliche Anfragen.",
 							],
 						},
 					],
@@ -3203,7 +3203,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "sofortige digitale Lieferung",
 							paragraphs: [
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Easy Anti-Cheat-Wartung.",
-								"support@theislehack.org für Support und rechtliche Anfragen.",
+								"support@theislehacks.org für Support und rechtliche Anfragen.",
 							],
 						},
 					],
@@ -3238,7 +3238,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "sofortige digitale Lieferung",
 							paragraphs: [
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Easy Anti-Cheat-Wartung.",
-								"support@theislehack.org für Support und rechtliche Anfragen.",
+								"support@theislehacks.org für Support und rechtliche Anfragen.",
 							],
 						},
 					],
@@ -3273,7 +3273,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "sofortige digitale Lieferung",
 							paragraphs: [
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Easy Anti-Cheat-Wartung.",
-								"support@theislehack.org für Support und rechtliche Anfragen.",
+								"support@theislehacks.org für Support und rechtliche Anfragen.",
 							],
 						},
 					],
@@ -3308,7 +3308,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "sofortige digitale Lieferung",
 							paragraphs: [
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Easy Anti-Cheat-Wartung.",
-								"support@theislehack.org für Support und rechtliche Anfragen.",
+								"support@theislehacks.org für Support und rechtliche Anfragen.",
 							],
 						},
 					],
@@ -3343,7 +3343,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "sofortige digitale Lieferung",
 							paragraphs: [
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Easy Anti-Cheat-Wartung.",
-								"support@theislehack.org für Support und rechtliche Anfragen.",
+								"support@theislehacks.org für Support und rechtliche Anfragen.",
 							],
 						},
 					],
@@ -3378,7 +3378,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "sofortige digitale Lieferung",
 							paragraphs: [
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Easy Anti-Cheat-Wartung.",
-								"support@theislehack.org für Support und rechtliche Anfragen.",
+								"support@theislehacks.org für Support und rechtliche Anfragen.",
 							],
 						},
 					],
@@ -3413,7 +3413,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "sofortige digitale Lieferung",
 							paragraphs: [
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Easy Anti-Cheat-Wartung.",
-								"support@theislehack.org für Support und rechtliche Anfragen.",
+								"support@theislehacks.org für Support und rechtliche Anfragen.",
 							],
 						},
 					],
@@ -3448,7 +3448,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "sofortige digitale Lieferung",
 							paragraphs: [
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Easy Anti-Cheat-Wartung.",
-								"support@theislehack.org für Support und rechtliche Anfragen.",
+								"support@theislehacks.org für Support und rechtliche Anfragen.",
 							],
 						},
 					],
@@ -3483,7 +3483,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "sofortige digitale Lieferung",
 							paragraphs: [
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Easy Anti-Cheat-Wartung.",
-								"support@theislehack.org für Support und rechtliche Anfragen.",
+								"support@theislehacks.org für Support und rechtliche Anfragen.",
 							],
 						},
 					],
@@ -3518,7 +3518,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "sofortige digitale Lieferung",
 							paragraphs: [
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Easy Anti-Cheat-Wartung.",
-								"support@theislehack.org für Support und rechtliche Anfragen.",
+								"support@theislehacks.org für Support und rechtliche Anfragen.",
 							],
 						},
 					],
@@ -3553,7 +3553,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "sofortige digitale Lieferung",
 							paragraphs: [
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Easy Anti-Cheat-Wartung.",
-								"support@theislehack.org für Support und rechtliche Anfragen.",
+								"support@theislehacks.org für Support und rechtliche Anfragen.",
 							],
 						},
 					],
@@ -3588,7 +3588,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "sofortige digitale Lieferung",
 							paragraphs: [
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Easy Anti-Cheat-Wartung.",
-								"support@theislehack.org für Support und rechtliche Anfragen.",
+								"support@theislehacks.org für Support und rechtliche Anfragen.",
 							],
 						},
 					],
@@ -3623,7 +3623,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "sofortige digitale Lieferung",
 							paragraphs: [
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Easy Anti-Cheat-Wartung.",
-								"support@theislehack.org für Support und rechtliche Anfragen.",
+								"support@theislehacks.org für Support und rechtliche Anfragen.",
 							],
 						},
 					],
@@ -3658,7 +3658,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "sofortige digitale Lieferung",
 							paragraphs: [
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Easy Anti-Cheat-Wartung.",
-								"support@theislehack.org für Support und rechtliche Anfragen.",
+								"support@theislehacks.org für Support und rechtliche Anfragen.",
 							],
 						},
 					],
@@ -3693,7 +3693,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "sofortige digitale Lieferung",
 							paragraphs: [
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Easy Anti-Cheat-Wartung.",
-								"support@theislehack.org für Support und rechtliche Anfragen.",
+								"support@theislehacks.org für Support und rechtliche Anfragen.",
 							],
 						},
 					],
@@ -3728,7 +3728,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "sofortige digitale Lieferung",
 							paragraphs: [
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Easy Anti-Cheat-Wartung.",
-								"support@theislehack.org für Support und rechtliche Anfragen.",
+								"support@theislehacks.org für Support und rechtliche Anfragen.",
 							],
 						},
 					],
@@ -3763,7 +3763,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "sofortige digitale Lieferung",
 							paragraphs: [
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Easy Anti-Cheat-Wartung.",
-								"support@theislehack.org für Support und rechtliche Anfragen.",
+								"support@theislehacks.org für Support und rechtliche Anfragen.",
 							],
 						},
 					],
@@ -3798,7 +3798,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "sofortige digitale Lieferung",
 							paragraphs: [
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Easy Anti-Cheat-Wartung.",
-								"support@theislehack.org für Support und rechtliche Anfragen.",
+								"support@theislehacks.org für Support und rechtliche Anfragen.",
 							],
 						},
 					],
@@ -3807,7 +3807,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Datenschutz | The Isle Hacks",
 					description: "Datenschutz für The Isle Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Datenschutz",
-					intro: "The Isle Hacks bündelt ESP wallhack, radar hack und Isle Aimbot als undetected Paket für The Isle auf Windows PC. Datenschutz für theislehack.org und The Isle-Lizenzen.",
+					intro: "The Isle Hacks bündelt ESP wallhack, radar hack und Isle Aimbot als undetected Paket für The Isle auf Windows PC. Datenschutz für theislehacks.org und The Isle-Lizenzen.",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-aimbot.webp",
@@ -3819,7 +3819,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Erhobene Daten",
 							paragraphs: [
 								"The Isle Hacks bündelt ESP wallhack, radar hack und Isle Aimbot als undetected Paket für The Isle auf Windows PC. Kontakt-E-Mail, Zadeyo-Bestellreferenzen und grundlegende Sicherheitsdaten der Website.",
-								"Zahlungsdaten werden über Zadeyo-Checkout verarbeitet — nicht auf theislehack.org gespeichert.",
+								"Zahlungsdaten werden über Zadeyo-Checkout verarbeitet — nicht auf theislehacks.org gespeichert.",
 							],
 						},
 						{
@@ -3832,8 +3832,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Ihre Rechte",
 							paragraphs: [
-								"support@theislehack.org für Support und rechtliche Anfragen.",
-								"E-Mail: support@theislehack.org",
+								"support@theislehacks.org für Support und rechtliche Anfragen.",
+								"E-Mail: support@theislehacks.org",
 							],
 						},
 					],
@@ -3842,7 +3842,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Rückerstattung | The Isle Hacks",
 					description: "Rückerstattung für The Isle Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Rückerstattung",
-					intro: "The Isle Hacks bündelt ESP wallhack, radar hack und Isle Aimbot als undetected Paket für The Isle auf Windows PC. Rückerstattung für theislehack.org und The Isle-Lizenzen.",
+					intro: "The Isle Hacks bündelt ESP wallhack, radar hack und Isle Aimbot als undetected Paket für The Isle auf Windows PC. Rückerstattung für theislehacks.org und The Isle-Lizenzen.",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-session.webp",
@@ -3867,8 +3867,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "So beantragen",
 							paragraphs: [
-								"support@theislehack.org für Support und rechtliche Anfragen.",
-								"E-Mail: support@theislehack.org",
+								"support@theislehacks.org für Support und rechtliche Anfragen.",
+								"E-Mail: support@theislehacks.org",
 							],
 						},
 					],
@@ -3877,7 +3877,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Nutzungsbedingungen | The Isle Hacks",
 					description: "Nutzungsbedingungen für The Isle Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Nutzungsbedingungen",
-					intro: "The Isle Hacks bündelt ESP wallhack, radar hack und Isle Aimbot als undetected Paket für The Isle auf Windows PC. Nutzungsbedingungen für theislehack.org und The Isle-Lizenzen.",
+					intro: "The Isle Hacks bündelt ESP wallhack, radar hack und Isle Aimbot als undetected Paket für The Isle auf Windows PC. Nutzungsbedingungen für theislehacks.org und The Isle-Lizenzen.",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-aimbot-view.webp",
@@ -3902,8 +3902,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Richtlinienänderungen",
 							paragraphs: [
-								"support@theislehack.org für Support und rechtliche Anfragen.",
-								"E-Mail: support@theislehack.org",
+								"support@theislehacks.org für Support und rechtliche Anfragen.",
+								"E-Mail: support@theislehacks.org",
 							],
 						},
 					],
@@ -4041,7 +4041,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "entrega digital instantânea",
 							paragraphs: [
 								"Licenças com entrega digital instantânea via checkout Zadeyo. Planos $35/mês e $150 vitalício incluem manutenção Easy Anti-Cheat.",
-								"Contacte support@theislehack.org para suporte ou questões legais.",
+								"Contacte support@theislehacks.org para suporte ou questões legais.",
 							],
 						},
 					],
@@ -4076,7 +4076,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "entrega digital instantânea",
 							paragraphs: [
 								"Licenças com entrega digital instantânea via checkout Zadeyo. Planos $35/mês e $150 vitalício incluem manutenção Easy Anti-Cheat.",
-								"Contacte support@theislehack.org para suporte ou questões legais.",
+								"Contacte support@theislehacks.org para suporte ou questões legais.",
 							],
 						},
 					],
@@ -4111,7 +4111,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "entrega digital instantânea",
 							paragraphs: [
 								"Licenças com entrega digital instantânea via checkout Zadeyo. Planos $35/mês e $150 vitalício incluem manutenção Easy Anti-Cheat.",
-								"Contacte support@theislehack.org para suporte ou questões legais.",
+								"Contacte support@theislehacks.org para suporte ou questões legais.",
 							],
 						},
 					],
@@ -4146,7 +4146,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "entrega digital instantânea",
 							paragraphs: [
 								"Licenças com entrega digital instantânea via checkout Zadeyo. Planos $35/mês e $150 vitalício incluem manutenção Easy Anti-Cheat.",
-								"Contacte support@theislehack.org para suporte ou questões legais.",
+								"Contacte support@theislehacks.org para suporte ou questões legais.",
 							],
 						},
 					],
@@ -4181,7 +4181,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "entrega digital instantânea",
 							paragraphs: [
 								"Licenças com entrega digital instantânea via checkout Zadeyo. Planos $35/mês e $150 vitalício incluem manutenção Easy Anti-Cheat.",
-								"Contacte support@theislehack.org para suporte ou questões legais.",
+								"Contacte support@theislehacks.org para suporte ou questões legais.",
 							],
 						},
 					],
@@ -4216,7 +4216,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "entrega digital instantânea",
 							paragraphs: [
 								"Licenças com entrega digital instantânea via checkout Zadeyo. Planos $35/mês e $150 vitalício incluem manutenção Easy Anti-Cheat.",
-								"Contacte support@theislehack.org para suporte ou questões legais.",
+								"Contacte support@theislehacks.org para suporte ou questões legais.",
 							],
 						},
 					],
@@ -4251,7 +4251,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "entrega digital instantânea",
 							paragraphs: [
 								"Licenças com entrega digital instantânea via checkout Zadeyo. Planos $35/mês e $150 vitalício incluem manutenção Easy Anti-Cheat.",
-								"Contacte support@theislehack.org para suporte ou questões legais.",
+								"Contacte support@theislehacks.org para suporte ou questões legais.",
 							],
 						},
 					],
@@ -4286,7 +4286,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "entrega digital instantânea",
 							paragraphs: [
 								"Licenças com entrega digital instantânea via checkout Zadeyo. Planos $35/mês e $150 vitalício incluem manutenção Easy Anti-Cheat.",
-								"Contacte support@theislehack.org para suporte ou questões legais.",
+								"Contacte support@theislehacks.org para suporte ou questões legais.",
 							],
 						},
 					],
@@ -4321,7 +4321,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "entrega digital instantânea",
 							paragraphs: [
 								"Licenças com entrega digital instantânea via checkout Zadeyo. Planos $35/mês e $150 vitalício incluem manutenção Easy Anti-Cheat.",
-								"Contacte support@theislehack.org para suporte ou questões legais.",
+								"Contacte support@theislehacks.org para suporte ou questões legais.",
 							],
 						},
 					],
@@ -4356,7 +4356,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "entrega digital instantânea",
 							paragraphs: [
 								"Licenças com entrega digital instantânea via checkout Zadeyo. Planos $35/mês e $150 vitalício incluem manutenção Easy Anti-Cheat.",
-								"Contacte support@theislehack.org para suporte ou questões legais.",
+								"Contacte support@theislehacks.org para suporte ou questões legais.",
 							],
 						},
 					],
@@ -4391,7 +4391,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "entrega digital instantânea",
 							paragraphs: [
 								"Licenças com entrega digital instantânea via checkout Zadeyo. Planos $35/mês e $150 vitalício incluem manutenção Easy Anti-Cheat.",
-								"Contacte support@theislehack.org para suporte ou questões legais.",
+								"Contacte support@theislehacks.org para suporte ou questões legais.",
 							],
 						},
 					],
@@ -4426,7 +4426,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "entrega digital instantânea",
 							paragraphs: [
 								"Licenças com entrega digital instantânea via checkout Zadeyo. Planos $35/mês e $150 vitalício incluem manutenção Easy Anti-Cheat.",
-								"Contacte support@theislehack.org para suporte ou questões legais.",
+								"Contacte support@theislehacks.org para suporte ou questões legais.",
 							],
 						},
 					],
@@ -4461,7 +4461,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "entrega digital instantânea",
 							paragraphs: [
 								"Licenças com entrega digital instantânea via checkout Zadeyo. Planos $35/mês e $150 vitalício incluem manutenção Easy Anti-Cheat.",
-								"Contacte support@theislehack.org para suporte ou questões legais.",
+								"Contacte support@theislehacks.org para suporte ou questões legais.",
 							],
 						},
 					],
@@ -4496,7 +4496,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "entrega digital instantânea",
 							paragraphs: [
 								"Licenças com entrega digital instantânea via checkout Zadeyo. Planos $35/mês e $150 vitalício incluem manutenção Easy Anti-Cheat.",
-								"Contacte support@theislehack.org para suporte ou questões legais.",
+								"Contacte support@theislehacks.org para suporte ou questões legais.",
 							],
 						},
 					],
@@ -4531,7 +4531,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "entrega digital instantânea",
 							paragraphs: [
 								"Licenças com entrega digital instantânea via checkout Zadeyo. Planos $35/mês e $150 vitalício incluem manutenção Easy Anti-Cheat.",
-								"Contacte support@theislehack.org para suporte ou questões legais.",
+								"Contacte support@theislehacks.org para suporte ou questões legais.",
 							],
 						},
 					],
@@ -4566,7 +4566,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "entrega digital instantânea",
 							paragraphs: [
 								"Licenças com entrega digital instantânea via checkout Zadeyo. Planos $35/mês e $150 vitalício incluem manutenção Easy Anti-Cheat.",
-								"Contacte support@theislehack.org para suporte ou questões legais.",
+								"Contacte support@theislehacks.org para suporte ou questões legais.",
 							],
 						},
 					],
@@ -4601,7 +4601,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "entrega digital instantânea",
 							paragraphs: [
 								"Licenças com entrega digital instantânea via checkout Zadeyo. Planos $35/mês e $150 vitalício incluem manutenção Easy Anti-Cheat.",
-								"Contacte support@theislehack.org para suporte ou questões legais.",
+								"Contacte support@theislehacks.org para suporte ou questões legais.",
 							],
 						},
 					],
@@ -4636,7 +4636,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "entrega digital instantânea",
 							paragraphs: [
 								"Licenças com entrega digital instantânea via checkout Zadeyo. Planos $35/mês e $150 vitalício incluem manutenção Easy Anti-Cheat.",
-								"Contacte support@theislehack.org para suporte ou questões legais.",
+								"Contacte support@theislehacks.org para suporte ou questões legais.",
 							],
 						},
 					],
@@ -4671,7 +4671,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "entrega digital instantânea",
 							paragraphs: [
 								"Licenças com entrega digital instantânea via checkout Zadeyo. Planos $35/mês e $150 vitalício incluem manutenção Easy Anti-Cheat.",
-								"Contacte support@theislehack.org para suporte ou questões legais.",
+								"Contacte support@theislehacks.org para suporte ou questões legais.",
 							],
 						},
 					],
@@ -4706,7 +4706,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "entrega digital instantânea",
 							paragraphs: [
 								"Licenças com entrega digital instantânea via checkout Zadeyo. Planos $35/mês e $150 vitalício incluem manutenção Easy Anti-Cheat.",
-								"Contacte support@theislehack.org para suporte ou questões legais.",
+								"Contacte support@theislehacks.org para suporte ou questões legais.",
 							],
 						},
 					],
@@ -4741,7 +4741,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "entrega digital instantânea",
 							paragraphs: [
 								"Licenças com entrega digital instantânea via checkout Zadeyo. Planos $35/mês e $150 vitalício incluem manutenção Easy Anti-Cheat.",
-								"Contacte support@theislehack.org para suporte ou questões legais.",
+								"Contacte support@theislehacks.org para suporte ou questões legais.",
 							],
 						},
 					],
@@ -4750,7 +4750,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Política de privacidade | The Isle Hacks",
 					description: "Política de privacidade para The Isle Hacks — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Política de privacidade",
-					intro: "The Isle Hacks reúne ESP wallhack, radar hack e Isle Aimbot indetectáveis para The Isle no PC Windows. Política de privacidade para theislehack.org e licenças The Isle.",
+					intro: "The Isle Hacks reúne ESP wallhack, radar hack e Isle Aimbot indetectáveis para The Isle no PC Windows. Política de privacidade para theislehacks.org e licenças The Isle.",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-aimbot.webp",
@@ -4762,7 +4762,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Informações que coletamos",
 							paragraphs: [
 								"The Isle Hacks reúne ESP wallhack, radar hack e Isle Aimbot indetectáveis para The Isle no PC Windows. E-mail de contato, referências de pedido Zadeyo e dados básicos de segurança do site.",
-								"Detalhes de pagamento são processados pelo checkout Zadeyo — não armazenados em theislehack.org.",
+								"Detalhes de pagamento são processados pelo checkout Zadeyo — não armazenados em theislehacks.org.",
 							],
 						},
 						{
@@ -4775,8 +4775,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Seus direitos",
 							paragraphs: [
-								"Contacte support@theislehack.org para suporte ou questões legais.",
-								"E-mail: support@theislehack.org",
+								"Contacte support@theislehacks.org para suporte ou questões legais.",
+								"E-mail: support@theislehacks.org",
 							],
 						},
 					],
@@ -4785,7 +4785,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Política de reembolso | The Isle Hacks",
 					description: "Política de reembolso para The Isle Hacks — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Política de reembolso",
-					intro: "The Isle Hacks reúne ESP wallhack, radar hack e Isle Aimbot indetectáveis para The Isle no PC Windows. Política de reembolso para theislehack.org e licenças The Isle.",
+					intro: "The Isle Hacks reúne ESP wallhack, radar hack e Isle Aimbot indetectáveis para The Isle no PC Windows. Política de reembolso para theislehacks.org e licenças The Isle.",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-session.webp",
@@ -4810,8 +4810,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Como solicitar",
 							paragraphs: [
-								"Contacte support@theislehack.org para suporte ou questões legais.",
-								"E-mail: support@theislehack.org",
+								"Contacte support@theislehacks.org para suporte ou questões legais.",
+								"E-mail: support@theislehacks.org",
 							],
 						},
 					],
@@ -4820,7 +4820,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Termos de uso | The Isle Hacks",
 					description: "Termos de uso para The Isle Hacks — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Termos de uso",
-					intro: "The Isle Hacks reúne ESP wallhack, radar hack e Isle Aimbot indetectáveis para The Isle no PC Windows. Termos de uso para theislehack.org e licenças The Isle.",
+					intro: "The Isle Hacks reúne ESP wallhack, radar hack e Isle Aimbot indetectáveis para The Isle no PC Windows. Termos de uso para theislehacks.org e licenças The Isle.",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-aimbot-view.webp",
@@ -4845,8 +4845,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Alterações de política",
 							paragraphs: [
-								"Contacte support@theislehack.org para suporte ou questões legais.",
-								"E-mail: support@theislehack.org",
+								"Contacte support@theislehacks.org para suporte ou questões legais.",
+								"E-mail: support@theislehacks.org",
 							],
 						},
 					],
@@ -4984,7 +4984,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "consegna digitale istantanea",
 							paragraphs: [
 								"Licenze con consegna digitale istantanea via checkout Zadeyo. Piani $35/mese e $150 a vita includono manutenzione Easy Anti-Cheat.",
-								"Contatta support@theislehack.org per supporto o richieste legali.",
+								"Contatta support@theislehacks.org per supporto o richieste legali.",
 							],
 						},
 					],
@@ -5019,7 +5019,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "consegna digitale istantanea",
 							paragraphs: [
 								"Licenze con consegna digitale istantanea via checkout Zadeyo. Piani $35/mese e $150 a vita includono manutenzione Easy Anti-Cheat.",
-								"Contatta support@theislehack.org per supporto o richieste legali.",
+								"Contatta support@theislehacks.org per supporto o richieste legali.",
 							],
 						},
 					],
@@ -5054,7 +5054,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "consegna digitale istantanea",
 							paragraphs: [
 								"Licenze con consegna digitale istantanea via checkout Zadeyo. Piani $35/mese e $150 a vita includono manutenzione Easy Anti-Cheat.",
-								"Contatta support@theislehack.org per supporto o richieste legali.",
+								"Contatta support@theislehacks.org per supporto o richieste legali.",
 							],
 						},
 					],
@@ -5089,7 +5089,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "consegna digitale istantanea",
 							paragraphs: [
 								"Licenze con consegna digitale istantanea via checkout Zadeyo. Piani $35/mese e $150 a vita includono manutenzione Easy Anti-Cheat.",
-								"Contatta support@theislehack.org per supporto o richieste legali.",
+								"Contatta support@theislehacks.org per supporto o richieste legali.",
 							],
 						},
 					],
@@ -5124,7 +5124,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "consegna digitale istantanea",
 							paragraphs: [
 								"Licenze con consegna digitale istantanea via checkout Zadeyo. Piani $35/mese e $150 a vita includono manutenzione Easy Anti-Cheat.",
-								"Contatta support@theislehack.org per supporto o richieste legali.",
+								"Contatta support@theislehacks.org per supporto o richieste legali.",
 							],
 						},
 					],
@@ -5159,7 +5159,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "consegna digitale istantanea",
 							paragraphs: [
 								"Licenze con consegna digitale istantanea via checkout Zadeyo. Piani $35/mese e $150 a vita includono manutenzione Easy Anti-Cheat.",
-								"Contatta support@theislehack.org per supporto o richieste legali.",
+								"Contatta support@theislehacks.org per supporto o richieste legali.",
 							],
 						},
 					],
@@ -5194,7 +5194,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "consegna digitale istantanea",
 							paragraphs: [
 								"Licenze con consegna digitale istantanea via checkout Zadeyo. Piani $35/mese e $150 a vita includono manutenzione Easy Anti-Cheat.",
-								"Contatta support@theislehack.org per supporto o richieste legali.",
+								"Contatta support@theislehacks.org per supporto o richieste legali.",
 							],
 						},
 					],
@@ -5229,7 +5229,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "consegna digitale istantanea",
 							paragraphs: [
 								"Licenze con consegna digitale istantanea via checkout Zadeyo. Piani $35/mese e $150 a vita includono manutenzione Easy Anti-Cheat.",
-								"Contatta support@theislehack.org per supporto o richieste legali.",
+								"Contatta support@theislehacks.org per supporto o richieste legali.",
 							],
 						},
 					],
@@ -5264,7 +5264,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "consegna digitale istantanea",
 							paragraphs: [
 								"Licenze con consegna digitale istantanea via checkout Zadeyo. Piani $35/mese e $150 a vita includono manutenzione Easy Anti-Cheat.",
-								"Contatta support@theislehack.org per supporto o richieste legali.",
+								"Contatta support@theislehacks.org per supporto o richieste legali.",
 							],
 						},
 					],
@@ -5299,7 +5299,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "consegna digitale istantanea",
 							paragraphs: [
 								"Licenze con consegna digitale istantanea via checkout Zadeyo. Piani $35/mese e $150 a vita includono manutenzione Easy Anti-Cheat.",
-								"Contatta support@theislehack.org per supporto o richieste legali.",
+								"Contatta support@theislehacks.org per supporto o richieste legali.",
 							],
 						},
 					],
@@ -5334,7 +5334,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "consegna digitale istantanea",
 							paragraphs: [
 								"Licenze con consegna digitale istantanea via checkout Zadeyo. Piani $35/mese e $150 a vita includono manutenzione Easy Anti-Cheat.",
-								"Contatta support@theislehack.org per supporto o richieste legali.",
+								"Contatta support@theislehacks.org per supporto o richieste legali.",
 							],
 						},
 					],
@@ -5369,7 +5369,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "consegna digitale istantanea",
 							paragraphs: [
 								"Licenze con consegna digitale istantanea via checkout Zadeyo. Piani $35/mese e $150 a vita includono manutenzione Easy Anti-Cheat.",
-								"Contatta support@theislehack.org per supporto o richieste legali.",
+								"Contatta support@theislehacks.org per supporto o richieste legali.",
 							],
 						},
 					],
@@ -5404,7 +5404,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "consegna digitale istantanea",
 							paragraphs: [
 								"Licenze con consegna digitale istantanea via checkout Zadeyo. Piani $35/mese e $150 a vita includono manutenzione Easy Anti-Cheat.",
-								"Contatta support@theislehack.org per supporto o richieste legali.",
+								"Contatta support@theislehacks.org per supporto o richieste legali.",
 							],
 						},
 					],
@@ -5439,7 +5439,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "consegna digitale istantanea",
 							paragraphs: [
 								"Licenze con consegna digitale istantanea via checkout Zadeyo. Piani $35/mese e $150 a vita includono manutenzione Easy Anti-Cheat.",
-								"Contatta support@theislehack.org per supporto o richieste legali.",
+								"Contatta support@theislehacks.org per supporto o richieste legali.",
 							],
 						},
 					],
@@ -5474,7 +5474,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "consegna digitale istantanea",
 							paragraphs: [
 								"Licenze con consegna digitale istantanea via checkout Zadeyo. Piani $35/mese e $150 a vita includono manutenzione Easy Anti-Cheat.",
-								"Contatta support@theislehack.org per supporto o richieste legali.",
+								"Contatta support@theislehacks.org per supporto o richieste legali.",
 							],
 						},
 					],
@@ -5509,7 +5509,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "consegna digitale istantanea",
 							paragraphs: [
 								"Licenze con consegna digitale istantanea via checkout Zadeyo. Piani $35/mese e $150 a vita includono manutenzione Easy Anti-Cheat.",
-								"Contatta support@theislehack.org per supporto o richieste legali.",
+								"Contatta support@theislehacks.org per supporto o richieste legali.",
 							],
 						},
 					],
@@ -5544,7 +5544,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "consegna digitale istantanea",
 							paragraphs: [
 								"Licenze con consegna digitale istantanea via checkout Zadeyo. Piani $35/mese e $150 a vita includono manutenzione Easy Anti-Cheat.",
-								"Contatta support@theislehack.org per supporto o richieste legali.",
+								"Contatta support@theislehacks.org per supporto o richieste legali.",
 							],
 						},
 					],
@@ -5579,7 +5579,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "consegna digitale istantanea",
 							paragraphs: [
 								"Licenze con consegna digitale istantanea via checkout Zadeyo. Piani $35/mese e $150 a vita includono manutenzione Easy Anti-Cheat.",
-								"Contatta support@theislehack.org per supporto o richieste legali.",
+								"Contatta support@theislehacks.org per supporto o richieste legali.",
 							],
 						},
 					],
@@ -5614,7 +5614,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "consegna digitale istantanea",
 							paragraphs: [
 								"Licenze con consegna digitale istantanea via checkout Zadeyo. Piani $35/mese e $150 a vita includono manutenzione Easy Anti-Cheat.",
-								"Contatta support@theislehack.org per supporto o richieste legali.",
+								"Contatta support@theislehacks.org per supporto o richieste legali.",
 							],
 						},
 					],
@@ -5649,7 +5649,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "consegna digitale istantanea",
 							paragraphs: [
 								"Licenze con consegna digitale istantanea via checkout Zadeyo. Piani $35/mese e $150 a vita includono manutenzione Easy Anti-Cheat.",
-								"Contatta support@theislehack.org per supporto o richieste legali.",
+								"Contatta support@theislehacks.org per supporto o richieste legali.",
 							],
 						},
 					],
@@ -5684,7 +5684,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "consegna digitale istantanea",
 							paragraphs: [
 								"Licenze con consegna digitale istantanea via checkout Zadeyo. Piani $35/mese e $150 a vita includono manutenzione Easy Anti-Cheat.",
-								"Contatta support@theislehack.org per supporto o richieste legali.",
+								"Contatta support@theislehacks.org per supporto o richieste legali.",
 							],
 						},
 					],
@@ -5693,7 +5693,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Informativa privacy | The Isle Hacks",
 					description: "Informativa privacy per The Isle Hacks — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Informativa privacy",
-					intro: "The Isle Hacks unisce ESP wallhack, radar hack e Isle Aimbot indetectable per The Isle su PC Windows. Informativa privacy per theislehack.org e licenze The Isle.",
+					intro: "The Isle Hacks unisce ESP wallhack, radar hack e Isle Aimbot indetectable per The Isle su PC Windows. Informativa privacy per theislehacks.org e licenze The Isle.",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-aimbot.webp",
@@ -5705,7 +5705,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Informazioni raccolte",
 							paragraphs: [
 								"The Isle Hacks unisce ESP wallhack, radar hack e Isle Aimbot indetectable per The Isle su PC Windows. Email di contatto, riferimenti ordine Zadeyo e dati di sicurezza di base del sito.",
-								"I dati di pagamento sono elaborati dal checkout Zadeyo — non memorizzati su theislehack.org.",
+								"I dati di pagamento sono elaborati dal checkout Zadeyo — non memorizzati su theislehacks.org.",
 							],
 						},
 						{
@@ -5718,8 +5718,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "I tuoi diritti",
 							paragraphs: [
-								"Contatta support@theislehack.org per supporto o richieste legali.",
-								"Email: support@theislehack.org",
+								"Contatta support@theislehacks.org per supporto o richieste legali.",
+								"Email: support@theislehacks.org",
 							],
 						},
 					],
@@ -5728,7 +5728,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Politica di rimborso | The Isle Hacks",
 					description: "Politica di rimborso per The Isle Hacks — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Politica di rimborso",
-					intro: "The Isle Hacks unisce ESP wallhack, radar hack e Isle Aimbot indetectable per The Isle su PC Windows. Politica di rimborso per theislehack.org e licenze The Isle.",
+					intro: "The Isle Hacks unisce ESP wallhack, radar hack e Isle Aimbot indetectable per The Isle su PC Windows. Politica di rimborso per theislehacks.org e licenze The Isle.",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-session.webp",
@@ -5753,8 +5753,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Come richiedere",
 							paragraphs: [
-								"Contatta support@theislehack.org per supporto o richieste legali.",
-								"Email: support@theislehack.org",
+								"Contatta support@theislehacks.org per supporto o richieste legali.",
+								"Email: support@theislehacks.org",
 							],
 						},
 					],
@@ -5763,7 +5763,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Termini di utilizzo | The Isle Hacks",
 					description: "Termini di utilizzo per The Isle Hacks — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Termini di utilizzo",
-					intro: "The Isle Hacks unisce ESP wallhack, radar hack e Isle Aimbot indetectable per The Isle su PC Windows. Termini di utilizzo per theislehack.org e licenze The Isle.",
+					intro: "The Isle Hacks unisce ESP wallhack, radar hack e Isle Aimbot indetectable per The Isle su PC Windows. Termini di utilizzo per theislehacks.org e licenze The Isle.",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-aimbot-view.webp",
@@ -5788,8 +5788,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Modifiche alla policy",
 							paragraphs: [
-								"Contatta support@theislehack.org per supporto o richieste legali.",
-								"Email: support@theislehack.org",
+								"Contatta support@theislehacks.org per supporto o richieste legali.",
+								"Email: support@theislehacks.org",
 							],
 						},
 					],
@@ -5927,7 +5927,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "directe digitale levering",
 							paragraphs: [
 								"Licenties met directe digitale levering via Zadeyo checkout. $35/maand en $150 lifetime incl. Easy Anti-Cheat-onderhoud.",
-								"support@theislehack.org voor support en juridische vragen.",
+								"support@theislehacks.org voor support en juridische vragen.",
 							],
 						},
 					],
@@ -5962,7 +5962,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "directe digitale levering",
 							paragraphs: [
 								"Licenties met directe digitale levering via Zadeyo checkout. $35/maand en $150 lifetime incl. Easy Anti-Cheat-onderhoud.",
-								"support@theislehack.org voor support en juridische vragen.",
+								"support@theislehacks.org voor support en juridische vragen.",
 							],
 						},
 					],
@@ -5997,7 +5997,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "directe digitale levering",
 							paragraphs: [
 								"Licenties met directe digitale levering via Zadeyo checkout. $35/maand en $150 lifetime incl. Easy Anti-Cheat-onderhoud.",
-								"support@theislehack.org voor support en juridische vragen.",
+								"support@theislehacks.org voor support en juridische vragen.",
 							],
 						},
 					],
@@ -6032,7 +6032,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "directe digitale levering",
 							paragraphs: [
 								"Licenties met directe digitale levering via Zadeyo checkout. $35/maand en $150 lifetime incl. Easy Anti-Cheat-onderhoud.",
-								"support@theislehack.org voor support en juridische vragen.",
+								"support@theislehacks.org voor support en juridische vragen.",
 							],
 						},
 					],
@@ -6067,7 +6067,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "directe digitale levering",
 							paragraphs: [
 								"Licenties met directe digitale levering via Zadeyo checkout. $35/maand en $150 lifetime incl. Easy Anti-Cheat-onderhoud.",
-								"support@theislehack.org voor support en juridische vragen.",
+								"support@theislehacks.org voor support en juridische vragen.",
 							],
 						},
 					],
@@ -6102,7 +6102,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "directe digitale levering",
 							paragraphs: [
 								"Licenties met directe digitale levering via Zadeyo checkout. $35/maand en $150 lifetime incl. Easy Anti-Cheat-onderhoud.",
-								"support@theislehack.org voor support en juridische vragen.",
+								"support@theislehacks.org voor support en juridische vragen.",
 							],
 						},
 					],
@@ -6137,7 +6137,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "directe digitale levering",
 							paragraphs: [
 								"Licenties met directe digitale levering via Zadeyo checkout. $35/maand en $150 lifetime incl. Easy Anti-Cheat-onderhoud.",
-								"support@theislehack.org voor support en juridische vragen.",
+								"support@theislehacks.org voor support en juridische vragen.",
 							],
 						},
 					],
@@ -6172,7 +6172,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "directe digitale levering",
 							paragraphs: [
 								"Licenties met directe digitale levering via Zadeyo checkout. $35/maand en $150 lifetime incl. Easy Anti-Cheat-onderhoud.",
-								"support@theislehack.org voor support en juridische vragen.",
+								"support@theislehacks.org voor support en juridische vragen.",
 							],
 						},
 					],
@@ -6207,7 +6207,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "directe digitale levering",
 							paragraphs: [
 								"Licenties met directe digitale levering via Zadeyo checkout. $35/maand en $150 lifetime incl. Easy Anti-Cheat-onderhoud.",
-								"support@theislehack.org voor support en juridische vragen.",
+								"support@theislehacks.org voor support en juridische vragen.",
 							],
 						},
 					],
@@ -6242,7 +6242,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "directe digitale levering",
 							paragraphs: [
 								"Licenties met directe digitale levering via Zadeyo checkout. $35/maand en $150 lifetime incl. Easy Anti-Cheat-onderhoud.",
-								"support@theislehack.org voor support en juridische vragen.",
+								"support@theislehacks.org voor support en juridische vragen.",
 							],
 						},
 					],
@@ -6277,7 +6277,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "directe digitale levering",
 							paragraphs: [
 								"Licenties met directe digitale levering via Zadeyo checkout. $35/maand en $150 lifetime incl. Easy Anti-Cheat-onderhoud.",
-								"support@theislehack.org voor support en juridische vragen.",
+								"support@theislehacks.org voor support en juridische vragen.",
 							],
 						},
 					],
@@ -6312,7 +6312,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "directe digitale levering",
 							paragraphs: [
 								"Licenties met directe digitale levering via Zadeyo checkout. $35/maand en $150 lifetime incl. Easy Anti-Cheat-onderhoud.",
-								"support@theislehack.org voor support en juridische vragen.",
+								"support@theislehacks.org voor support en juridische vragen.",
 							],
 						},
 					],
@@ -6347,7 +6347,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "directe digitale levering",
 							paragraphs: [
 								"Licenties met directe digitale levering via Zadeyo checkout. $35/maand en $150 lifetime incl. Easy Anti-Cheat-onderhoud.",
-								"support@theislehack.org voor support en juridische vragen.",
+								"support@theislehacks.org voor support en juridische vragen.",
 							],
 						},
 					],
@@ -6382,7 +6382,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "directe digitale levering",
 							paragraphs: [
 								"Licenties met directe digitale levering via Zadeyo checkout. $35/maand en $150 lifetime incl. Easy Anti-Cheat-onderhoud.",
-								"support@theislehack.org voor support en juridische vragen.",
+								"support@theislehacks.org voor support en juridische vragen.",
 							],
 						},
 					],
@@ -6417,7 +6417,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "directe digitale levering",
 							paragraphs: [
 								"Licenties met directe digitale levering via Zadeyo checkout. $35/maand en $150 lifetime incl. Easy Anti-Cheat-onderhoud.",
-								"support@theislehack.org voor support en juridische vragen.",
+								"support@theislehacks.org voor support en juridische vragen.",
 							],
 						},
 					],
@@ -6452,7 +6452,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "directe digitale levering",
 							paragraphs: [
 								"Licenties met directe digitale levering via Zadeyo checkout. $35/maand en $150 lifetime incl. Easy Anti-Cheat-onderhoud.",
-								"support@theislehack.org voor support en juridische vragen.",
+								"support@theislehacks.org voor support en juridische vragen.",
 							],
 						},
 					],
@@ -6487,7 +6487,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "directe digitale levering",
 							paragraphs: [
 								"Licenties met directe digitale levering via Zadeyo checkout. $35/maand en $150 lifetime incl. Easy Anti-Cheat-onderhoud.",
-								"support@theislehack.org voor support en juridische vragen.",
+								"support@theislehacks.org voor support en juridische vragen.",
 							],
 						},
 					],
@@ -6522,7 +6522,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "directe digitale levering",
 							paragraphs: [
 								"Licenties met directe digitale levering via Zadeyo checkout. $35/maand en $150 lifetime incl. Easy Anti-Cheat-onderhoud.",
-								"support@theislehack.org voor support en juridische vragen.",
+								"support@theislehacks.org voor support en juridische vragen.",
 							],
 						},
 					],
@@ -6557,7 +6557,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "directe digitale levering",
 							paragraphs: [
 								"Licenties met directe digitale levering via Zadeyo checkout. $35/maand en $150 lifetime incl. Easy Anti-Cheat-onderhoud.",
-								"support@theislehack.org voor support en juridische vragen.",
+								"support@theislehacks.org voor support en juridische vragen.",
 							],
 						},
 					],
@@ -6592,7 +6592,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "directe digitale levering",
 							paragraphs: [
 								"Licenties met directe digitale levering via Zadeyo checkout. $35/maand en $150 lifetime incl. Easy Anti-Cheat-onderhoud.",
-								"support@theislehack.org voor support en juridische vragen.",
+								"support@theislehacks.org voor support en juridische vragen.",
 							],
 						},
 					],
@@ -6627,7 +6627,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "directe digitale levering",
 							paragraphs: [
 								"Licenties met directe digitale levering via Zadeyo checkout. $35/maand en $150 lifetime incl. Easy Anti-Cheat-onderhoud.",
-								"support@theislehack.org voor support en juridische vragen.",
+								"support@theislehacks.org voor support en juridische vragen.",
 							],
 						},
 					],
@@ -6636,7 +6636,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Privacybeleid | The Isle Hacks",
 					description: "Privacybeleid voor The Isle Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Privacybeleid",
-					intro: "The Isle Hacks bundelt ESP wallhack, radar hack en Isle Aimbot als undetected pakket voor The Isle op Windows PC. Privacybeleid voor theislehack.org en The Isle-licenties.",
+					intro: "The Isle Hacks bundelt ESP wallhack, radar hack en Isle Aimbot als undetected pakket voor The Isle op Windows PC. Privacybeleid voor theislehacks.org en The Isle-licenties.",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-aimbot.webp",
@@ -6648,7 +6648,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Informatie die we verzamelen",
 							paragraphs: [
 								"The Isle Hacks bundelt ESP wallhack, radar hack en Isle Aimbot als undetected pakket voor The Isle op Windows PC. Contact-e-mail, Zadeyo-orderreferenties en basisbeveiligingsgegevens van de site.",
-								"Betalingsgegevens worden verwerkt via Zadeyo checkout — niet opgeslagen op theislehack.org.",
+								"Betalingsgegevens worden verwerkt via Zadeyo checkout — niet opgeslagen op theislehacks.org.",
 							],
 						},
 						{
@@ -6661,8 +6661,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Uw rechten",
 							paragraphs: [
-								"support@theislehack.org voor support en juridische vragen.",
-								"E-mail: support@theislehack.org",
+								"support@theislehacks.org voor support en juridische vragen.",
+								"E-mail: support@theislehacks.org",
 							],
 						},
 					],
@@ -6671,7 +6671,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Restitutiebeleid | The Isle Hacks",
 					description: "Restitutiebeleid voor The Isle Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Restitutiebeleid",
-					intro: "The Isle Hacks bundelt ESP wallhack, radar hack en Isle Aimbot als undetected pakket voor The Isle op Windows PC. Restitutiebeleid voor theislehack.org en The Isle-licenties.",
+					intro: "The Isle Hacks bundelt ESP wallhack, radar hack en Isle Aimbot als undetected pakket voor The Isle op Windows PC. Restitutiebeleid voor theislehacks.org en The Isle-licenties.",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-session.webp",
@@ -6696,8 +6696,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Hoe aanvragen",
 							paragraphs: [
-								"support@theislehack.org voor support en juridische vragen.",
-								"E-mail: support@theislehack.org",
+								"support@theislehacks.org voor support en juridische vragen.",
+								"E-mail: support@theislehacks.org",
 							],
 						},
 					],
@@ -6706,7 +6706,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Gebruiksvoorwaarden | The Isle Hacks",
 					description: "Gebruiksvoorwaarden voor The Isle Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Gebruiksvoorwaarden",
-					intro: "The Isle Hacks bundelt ESP wallhack, radar hack en Isle Aimbot als undetected pakket voor The Isle op Windows PC. Gebruiksvoorwaarden voor theislehack.org en The Isle-licenties.",
+					intro: "The Isle Hacks bundelt ESP wallhack, radar hack en Isle Aimbot als undetected pakket voor The Isle op Windows PC. Gebruiksvoorwaarden voor theislehacks.org en The Isle-licenties.",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-aimbot-view.webp",
@@ -6731,8 +6731,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Beleidswijzigingen",
 							paragraphs: [
-								"support@theislehack.org voor support en juridische vragen.",
-								"E-mail: support@theislehack.org",
+								"support@theislehacks.org voor support en juridische vragen.",
+								"E-mail: support@theislehacks.org",
 							],
 						},
 					],
@@ -6870,7 +6870,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "natychmiastowa dostawa cyfrowa",
 							paragraphs: [
 								"Licencje z natychmiastowa dostawa cyfrowa przez checkout Zadeyo. Plany $35/mies. i $150 lifetime z konserwacją Easy Anti-Cheat.",
-								"support@theislehack.org w sprawach wsparcia i prawnych.",
+								"support@theislehacks.org w sprawach wsparcia i prawnych.",
 							],
 						},
 					],
@@ -6905,7 +6905,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "natychmiastowa dostawa cyfrowa",
 							paragraphs: [
 								"Licencje z natychmiastowa dostawa cyfrowa przez checkout Zadeyo. Plany $35/mies. i $150 lifetime z konserwacją Easy Anti-Cheat.",
-								"support@theislehack.org w sprawach wsparcia i prawnych.",
+								"support@theislehacks.org w sprawach wsparcia i prawnych.",
 							],
 						},
 					],
@@ -6940,7 +6940,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "natychmiastowa dostawa cyfrowa",
 							paragraphs: [
 								"Licencje z natychmiastowa dostawa cyfrowa przez checkout Zadeyo. Plany $35/mies. i $150 lifetime z konserwacją Easy Anti-Cheat.",
-								"support@theislehack.org w sprawach wsparcia i prawnych.",
+								"support@theislehacks.org w sprawach wsparcia i prawnych.",
 							],
 						},
 					],
@@ -6975,7 +6975,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "natychmiastowa dostawa cyfrowa",
 							paragraphs: [
 								"Licencje z natychmiastowa dostawa cyfrowa przez checkout Zadeyo. Plany $35/mies. i $150 lifetime z konserwacją Easy Anti-Cheat.",
-								"support@theislehack.org w sprawach wsparcia i prawnych.",
+								"support@theislehacks.org w sprawach wsparcia i prawnych.",
 							],
 						},
 					],
@@ -7010,7 +7010,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "natychmiastowa dostawa cyfrowa",
 							paragraphs: [
 								"Licencje z natychmiastowa dostawa cyfrowa przez checkout Zadeyo. Plany $35/mies. i $150 lifetime z konserwacją Easy Anti-Cheat.",
-								"support@theislehack.org w sprawach wsparcia i prawnych.",
+								"support@theislehacks.org w sprawach wsparcia i prawnych.",
 							],
 						},
 					],
@@ -7045,7 +7045,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "natychmiastowa dostawa cyfrowa",
 							paragraphs: [
 								"Licencje z natychmiastowa dostawa cyfrowa przez checkout Zadeyo. Plany $35/mies. i $150 lifetime z konserwacją Easy Anti-Cheat.",
-								"support@theislehack.org w sprawach wsparcia i prawnych.",
+								"support@theislehacks.org w sprawach wsparcia i prawnych.",
 							],
 						},
 					],
@@ -7080,7 +7080,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "natychmiastowa dostawa cyfrowa",
 							paragraphs: [
 								"Licencje z natychmiastowa dostawa cyfrowa przez checkout Zadeyo. Plany $35/mies. i $150 lifetime z konserwacją Easy Anti-Cheat.",
-								"support@theislehack.org w sprawach wsparcia i prawnych.",
+								"support@theislehacks.org w sprawach wsparcia i prawnych.",
 							],
 						},
 					],
@@ -7115,7 +7115,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "natychmiastowa dostawa cyfrowa",
 							paragraphs: [
 								"Licencje z natychmiastowa dostawa cyfrowa przez checkout Zadeyo. Plany $35/mies. i $150 lifetime z konserwacją Easy Anti-Cheat.",
-								"support@theislehack.org w sprawach wsparcia i prawnych.",
+								"support@theislehacks.org w sprawach wsparcia i prawnych.",
 							],
 						},
 					],
@@ -7150,7 +7150,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "natychmiastowa dostawa cyfrowa",
 							paragraphs: [
 								"Licencje z natychmiastowa dostawa cyfrowa przez checkout Zadeyo. Plany $35/mies. i $150 lifetime z konserwacją Easy Anti-Cheat.",
-								"support@theislehack.org w sprawach wsparcia i prawnych.",
+								"support@theislehacks.org w sprawach wsparcia i prawnych.",
 							],
 						},
 					],
@@ -7185,7 +7185,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "natychmiastowa dostawa cyfrowa",
 							paragraphs: [
 								"Licencje z natychmiastowa dostawa cyfrowa przez checkout Zadeyo. Plany $35/mies. i $150 lifetime z konserwacją Easy Anti-Cheat.",
-								"support@theislehack.org w sprawach wsparcia i prawnych.",
+								"support@theislehacks.org w sprawach wsparcia i prawnych.",
 							],
 						},
 					],
@@ -7220,7 +7220,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "natychmiastowa dostawa cyfrowa",
 							paragraphs: [
 								"Licencje z natychmiastowa dostawa cyfrowa przez checkout Zadeyo. Plany $35/mies. i $150 lifetime z konserwacją Easy Anti-Cheat.",
-								"support@theislehack.org w sprawach wsparcia i prawnych.",
+								"support@theislehacks.org w sprawach wsparcia i prawnych.",
 							],
 						},
 					],
@@ -7255,7 +7255,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "natychmiastowa dostawa cyfrowa",
 							paragraphs: [
 								"Licencje z natychmiastowa dostawa cyfrowa przez checkout Zadeyo. Plany $35/mies. i $150 lifetime z konserwacją Easy Anti-Cheat.",
-								"support@theislehack.org w sprawach wsparcia i prawnych.",
+								"support@theislehacks.org w sprawach wsparcia i prawnych.",
 							],
 						},
 					],
@@ -7290,7 +7290,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "natychmiastowa dostawa cyfrowa",
 							paragraphs: [
 								"Licencje z natychmiastowa dostawa cyfrowa przez checkout Zadeyo. Plany $35/mies. i $150 lifetime z konserwacją Easy Anti-Cheat.",
-								"support@theislehack.org w sprawach wsparcia i prawnych.",
+								"support@theislehacks.org w sprawach wsparcia i prawnych.",
 							],
 						},
 					],
@@ -7325,7 +7325,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "natychmiastowa dostawa cyfrowa",
 							paragraphs: [
 								"Licencje z natychmiastowa dostawa cyfrowa przez checkout Zadeyo. Plany $35/mies. i $150 lifetime z konserwacją Easy Anti-Cheat.",
-								"support@theislehack.org w sprawach wsparcia i prawnych.",
+								"support@theislehacks.org w sprawach wsparcia i prawnych.",
 							],
 						},
 					],
@@ -7360,7 +7360,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "natychmiastowa dostawa cyfrowa",
 							paragraphs: [
 								"Licencje z natychmiastowa dostawa cyfrowa przez checkout Zadeyo. Plany $35/mies. i $150 lifetime z konserwacją Easy Anti-Cheat.",
-								"support@theislehack.org w sprawach wsparcia i prawnych.",
+								"support@theislehacks.org w sprawach wsparcia i prawnych.",
 							],
 						},
 					],
@@ -7395,7 +7395,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "natychmiastowa dostawa cyfrowa",
 							paragraphs: [
 								"Licencje z natychmiastowa dostawa cyfrowa przez checkout Zadeyo. Plany $35/mies. i $150 lifetime z konserwacją Easy Anti-Cheat.",
-								"support@theislehack.org w sprawach wsparcia i prawnych.",
+								"support@theislehacks.org w sprawach wsparcia i prawnych.",
 							],
 						},
 					],
@@ -7430,7 +7430,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "natychmiastowa dostawa cyfrowa",
 							paragraphs: [
 								"Licencje z natychmiastowa dostawa cyfrowa przez checkout Zadeyo. Plany $35/mies. i $150 lifetime z konserwacją Easy Anti-Cheat.",
-								"support@theislehack.org w sprawach wsparcia i prawnych.",
+								"support@theislehacks.org w sprawach wsparcia i prawnych.",
 							],
 						},
 					],
@@ -7465,7 +7465,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "natychmiastowa dostawa cyfrowa",
 							paragraphs: [
 								"Licencje z natychmiastowa dostawa cyfrowa przez checkout Zadeyo. Plany $35/mies. i $150 lifetime z konserwacją Easy Anti-Cheat.",
-								"support@theislehack.org w sprawach wsparcia i prawnych.",
+								"support@theislehacks.org w sprawach wsparcia i prawnych.",
 							],
 						},
 					],
@@ -7500,7 +7500,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "natychmiastowa dostawa cyfrowa",
 							paragraphs: [
 								"Licencje z natychmiastowa dostawa cyfrowa przez checkout Zadeyo. Plany $35/mies. i $150 lifetime z konserwacją Easy Anti-Cheat.",
-								"support@theislehack.org w sprawach wsparcia i prawnych.",
+								"support@theislehacks.org w sprawach wsparcia i prawnych.",
 							],
 						},
 					],
@@ -7535,7 +7535,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "natychmiastowa dostawa cyfrowa",
 							paragraphs: [
 								"Licencje z natychmiastowa dostawa cyfrowa przez checkout Zadeyo. Plany $35/mies. i $150 lifetime z konserwacją Easy Anti-Cheat.",
-								"support@theislehack.org w sprawach wsparcia i prawnych.",
+								"support@theislehacks.org w sprawach wsparcia i prawnych.",
 							],
 						},
 					],
@@ -7570,7 +7570,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "natychmiastowa dostawa cyfrowa",
 							paragraphs: [
 								"Licencje z natychmiastowa dostawa cyfrowa przez checkout Zadeyo. Plany $35/mies. i $150 lifetime z konserwacją Easy Anti-Cheat.",
-								"support@theislehack.org w sprawach wsparcia i prawnych.",
+								"support@theislehacks.org w sprawach wsparcia i prawnych.",
 							],
 						},
 					],
@@ -7579,7 +7579,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Polityka prywatności | The Isle Hacks",
 					description: "Polityka prywatności dla The Isle Hacks — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Polityka prywatności",
-					intro: "The Isle Hacks łączy ESP wallhack, radar hack i Isle Aimbot jako pakiet undetected dla The Isle na PC Windows. Polityka prywatności dla theislehack.org i licencji The Isle.",
+					intro: "The Isle Hacks łączy ESP wallhack, radar hack i Isle Aimbot jako pakiet undetected dla The Isle na PC Windows. Polityka prywatności dla theislehacks.org i licencji The Isle.",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-aimbot.webp",
@@ -7591,7 +7591,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Informacje, które zbieramy",
 							paragraphs: [
 								"The Isle Hacks łączy ESP wallhack, radar hack i Isle Aimbot jako pakiet undetected dla The Isle na PC Windows. E-mail kontaktowy, referencje zamówień Zadeyo i podstawowe dane bezpieczeństwa witryny.",
-								"Dane płatności są przetwarzane przez checkout Zadeyo — nie przechowywane na theislehack.org.",
+								"Dane płatności są przetwarzane przez checkout Zadeyo — nie przechowywane na theislehacks.org.",
 							],
 						},
 						{
@@ -7604,8 +7604,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Twoje prawa",
 							paragraphs: [
-								"support@theislehack.org w sprawach wsparcia i prawnych.",
-								"E-mail: support@theislehack.org",
+								"support@theislehacks.org w sprawach wsparcia i prawnych.",
+								"E-mail: support@theislehacks.org",
 							],
 						},
 					],
@@ -7614,7 +7614,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Polityka zwrotów | The Isle Hacks",
 					description: "Polityka zwrotów dla The Isle Hacks — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Polityka zwrotów",
-					intro: "The Isle Hacks łączy ESP wallhack, radar hack i Isle Aimbot jako pakiet undetected dla The Isle na PC Windows. Polityka zwrotów dla theislehack.org i licencji The Isle.",
+					intro: "The Isle Hacks łączy ESP wallhack, radar hack i Isle Aimbot jako pakiet undetected dla The Isle na PC Windows. Polityka zwrotów dla theislehacks.org i licencji The Isle.",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-session.webp",
@@ -7639,8 +7639,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Jak złożyć wniosek",
 							paragraphs: [
-								"support@theislehack.org w sprawach wsparcia i prawnych.",
-								"E-mail: support@theislehack.org",
+								"support@theislehacks.org w sprawach wsparcia i prawnych.",
+								"E-mail: support@theislehacks.org",
 							],
 						},
 					],
@@ -7649,7 +7649,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Warunki użytkowania | The Isle Hacks",
 					description: "Warunki użytkowania dla The Isle Hacks — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Warunki użytkowania",
-					intro: "The Isle Hacks łączy ESP wallhack, radar hack i Isle Aimbot jako pakiet undetected dla The Isle na PC Windows. Warunki użytkowania dla theislehack.org i licencji The Isle.",
+					intro: "The Isle Hacks łączy ESP wallhack, radar hack i Isle Aimbot jako pakiet undetected dla The Isle na PC Windows. Warunki użytkowania dla theislehacks.org i licencji The Isle.",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-aimbot-view.webp",
@@ -7674,8 +7674,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Zmiany polityki",
 							paragraphs: [
-								"support@theislehack.org w sprawach wsparcia i prawnych.",
-								"E-mail: support@theislehack.org",
+								"support@theislehacks.org w sprawach wsparcia i prawnych.",
+								"E-mail: support@theislehacks.org",
 							],
 						},
 					],
@@ -7813,7 +7813,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "мгновенная цифровая доставка",
 							paragraphs: [
 								"Лицензии с мгновенная цифровая доставка через checkout Zadeyo. Тарифы $35/мес и $150 навсегда включают обслуживание Easy Anti-Cheat.",
-								"support@theislehack.org для поддержки и юридических вопросов.",
+								"support@theislehacks.org для поддержки и юридических вопросов.",
 							],
 						},
 					],
@@ -7848,7 +7848,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "мгновенная цифровая доставка",
 							paragraphs: [
 								"Лицензии с мгновенная цифровая доставка через checkout Zadeyo. Тарифы $35/мес и $150 навсегда включают обслуживание Easy Anti-Cheat.",
-								"support@theislehack.org для поддержки и юридических вопросов.",
+								"support@theislehacks.org для поддержки и юридических вопросов.",
 							],
 						},
 					],
@@ -7883,7 +7883,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "мгновенная цифровая доставка",
 							paragraphs: [
 								"Лицензии с мгновенная цифровая доставка через checkout Zadeyo. Тарифы $35/мес и $150 навсегда включают обслуживание Easy Anti-Cheat.",
-								"support@theislehack.org для поддержки и юридических вопросов.",
+								"support@theislehacks.org для поддержки и юридических вопросов.",
 							],
 						},
 					],
@@ -7918,7 +7918,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "мгновенная цифровая доставка",
 							paragraphs: [
 								"Лицензии с мгновенная цифровая доставка через checkout Zadeyo. Тарифы $35/мес и $150 навсегда включают обслуживание Easy Anti-Cheat.",
-								"support@theislehack.org для поддержки и юридических вопросов.",
+								"support@theislehacks.org для поддержки и юридических вопросов.",
 							],
 						},
 					],
@@ -7953,7 +7953,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "мгновенная цифровая доставка",
 							paragraphs: [
 								"Лицензии с мгновенная цифровая доставка через checkout Zadeyo. Тарифы $35/мес и $150 навсегда включают обслуживание Easy Anti-Cheat.",
-								"support@theislehack.org для поддержки и юридических вопросов.",
+								"support@theislehacks.org для поддержки и юридических вопросов.",
 							],
 						},
 					],
@@ -7988,7 +7988,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "мгновенная цифровая доставка",
 							paragraphs: [
 								"Лицензии с мгновенная цифровая доставка через checkout Zadeyo. Тарифы $35/мес и $150 навсегда включают обслуживание Easy Anti-Cheat.",
-								"support@theislehack.org для поддержки и юридических вопросов.",
+								"support@theislehacks.org для поддержки и юридических вопросов.",
 							],
 						},
 					],
@@ -8023,7 +8023,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "мгновенная цифровая доставка",
 							paragraphs: [
 								"Лицензии с мгновенная цифровая доставка через checkout Zadeyo. Тарифы $35/мес и $150 навсегда включают обслуживание Easy Anti-Cheat.",
-								"support@theislehack.org для поддержки и юридических вопросов.",
+								"support@theislehacks.org для поддержки и юридических вопросов.",
 							],
 						},
 					],
@@ -8058,7 +8058,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "мгновенная цифровая доставка",
 							paragraphs: [
 								"Лицензии с мгновенная цифровая доставка через checkout Zadeyo. Тарифы $35/мес и $150 навсегда включают обслуживание Easy Anti-Cheat.",
-								"support@theislehack.org для поддержки и юридических вопросов.",
+								"support@theislehacks.org для поддержки и юридических вопросов.",
 							],
 						},
 					],
@@ -8093,7 +8093,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "мгновенная цифровая доставка",
 							paragraphs: [
 								"Лицензии с мгновенная цифровая доставка через checkout Zadeyo. Тарифы $35/мес и $150 навсегда включают обслуживание Easy Anti-Cheat.",
-								"support@theislehack.org для поддержки и юридических вопросов.",
+								"support@theislehacks.org для поддержки и юридических вопросов.",
 							],
 						},
 					],
@@ -8128,7 +8128,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "мгновенная цифровая доставка",
 							paragraphs: [
 								"Лицензии с мгновенная цифровая доставка через checkout Zadeyo. Тарифы $35/мес и $150 навсегда включают обслуживание Easy Anti-Cheat.",
-								"support@theislehack.org для поддержки и юридических вопросов.",
+								"support@theislehacks.org для поддержки и юридических вопросов.",
 							],
 						},
 					],
@@ -8163,7 +8163,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "мгновенная цифровая доставка",
 							paragraphs: [
 								"Лицензии с мгновенная цифровая доставка через checkout Zadeyo. Тарифы $35/мес и $150 навсегда включают обслуживание Easy Anti-Cheat.",
-								"support@theislehack.org для поддержки и юридических вопросов.",
+								"support@theislehacks.org для поддержки и юридических вопросов.",
 							],
 						},
 					],
@@ -8198,7 +8198,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "мгновенная цифровая доставка",
 							paragraphs: [
 								"Лицензии с мгновенная цифровая доставка через checkout Zadeyo. Тарифы $35/мес и $150 навсегда включают обслуживание Easy Anti-Cheat.",
-								"support@theislehack.org для поддержки и юридических вопросов.",
+								"support@theislehacks.org для поддержки и юридических вопросов.",
 							],
 						},
 					],
@@ -8233,7 +8233,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "мгновенная цифровая доставка",
 							paragraphs: [
 								"Лицензии с мгновенная цифровая доставка через checkout Zadeyo. Тарифы $35/мес и $150 навсегда включают обслуживание Easy Anti-Cheat.",
-								"support@theislehack.org для поддержки и юридических вопросов.",
+								"support@theislehacks.org для поддержки и юридических вопросов.",
 							],
 						},
 					],
@@ -8268,7 +8268,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "мгновенная цифровая доставка",
 							paragraphs: [
 								"Лицензии с мгновенная цифровая доставка через checkout Zadeyo. Тарифы $35/мес и $150 навсегда включают обслуживание Easy Anti-Cheat.",
-								"support@theislehack.org для поддержки и юридических вопросов.",
+								"support@theislehacks.org для поддержки и юридических вопросов.",
 							],
 						},
 					],
@@ -8303,7 +8303,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "мгновенная цифровая доставка",
 							paragraphs: [
 								"Лицензии с мгновенная цифровая доставка через checkout Zadeyo. Тарифы $35/мес и $150 навсегда включают обслуживание Easy Anti-Cheat.",
-								"support@theislehack.org для поддержки и юридических вопросов.",
+								"support@theislehacks.org для поддержки и юридических вопросов.",
 							],
 						},
 					],
@@ -8338,7 +8338,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "мгновенная цифровая доставка",
 							paragraphs: [
 								"Лицензии с мгновенная цифровая доставка через checkout Zadeyo. Тарифы $35/мес и $150 навсегда включают обслуживание Easy Anti-Cheat.",
-								"support@theislehack.org для поддержки и юридических вопросов.",
+								"support@theislehacks.org для поддержки и юридических вопросов.",
 							],
 						},
 					],
@@ -8373,7 +8373,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "мгновенная цифровая доставка",
 							paragraphs: [
 								"Лицензии с мгновенная цифровая доставка через checkout Zadeyo. Тарифы $35/мес и $150 навсегда включают обслуживание Easy Anti-Cheat.",
-								"support@theislehack.org для поддержки и юридических вопросов.",
+								"support@theislehacks.org для поддержки и юридических вопросов.",
 							],
 						},
 					],
@@ -8408,7 +8408,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "мгновенная цифровая доставка",
 							paragraphs: [
 								"Лицензии с мгновенная цифровая доставка через checkout Zadeyo. Тарифы $35/мес и $150 навсегда включают обслуживание Easy Anti-Cheat.",
-								"support@theislehack.org для поддержки и юридических вопросов.",
+								"support@theislehacks.org для поддержки и юридических вопросов.",
 							],
 						},
 					],
@@ -8443,7 +8443,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "мгновенная цифровая доставка",
 							paragraphs: [
 								"Лицензии с мгновенная цифровая доставка через checkout Zadeyo. Тарифы $35/мес и $150 навсегда включают обслуживание Easy Anti-Cheat.",
-								"support@theislehack.org для поддержки и юридических вопросов.",
+								"support@theislehacks.org для поддержки и юридических вопросов.",
 							],
 						},
 					],
@@ -8478,7 +8478,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "мгновенная цифровая доставка",
 							paragraphs: [
 								"Лицензии с мгновенная цифровая доставка через checkout Zadeyo. Тарифы $35/мес и $150 навсегда включают обслуживание Easy Anti-Cheat.",
-								"support@theislehack.org для поддержки и юридических вопросов.",
+								"support@theislehacks.org для поддержки и юридических вопросов.",
 							],
 						},
 					],
@@ -8513,7 +8513,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "мгновенная цифровая доставка",
 							paragraphs: [
 								"Лицензии с мгновенная цифровая доставка через checkout Zadeyo. Тарифы $35/мес и $150 навсегда включают обслуживание Easy Anti-Cheat.",
-								"support@theislehack.org для поддержки и юридических вопросов.",
+								"support@theislehacks.org для поддержки и юридических вопросов.",
 							],
 						},
 					],
@@ -8522,7 +8522,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Политика конфиденциальности | The Isle Hacks",
 					description: "Политика конфиденциальности для The Isle Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Политика конфиденциальности",
-					intro: "The Isle Hacks объединяет ESP wallhack, radar hack и Isle Aimbot в undetected пакете для The Isle на Windows PC. Политика конфиденциальности для theislehack.org и лицензий The Isle.",
+					intro: "The Isle Hacks объединяет ESP wallhack, radar hack и Isle Aimbot в undetected пакете для The Isle на Windows PC. Политика конфиденциальности для theislehacks.org и лицензий The Isle.",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-aimbot.webp",
@@ -8534,7 +8534,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Информация, которую мы собираем",
 							paragraphs: [
 								"The Isle Hacks объединяет ESP wallhack, radar hack и Isle Aimbot в undetected пакете для The Isle на Windows PC. Контактный email, ссылки на заказы Zadeyo и базовые данные безопасности сайта.",
-								"Платёжные данные обрабатываются через checkout Zadeyo — не хранятся на theislehack.org.",
+								"Платёжные данные обрабатываются через checkout Zadeyo — не хранятся на theislehacks.org.",
 							],
 						},
 						{
@@ -8547,8 +8547,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Ваши права",
 							paragraphs: [
-								"support@theislehack.org для поддержки и юридических вопросов.",
-								"Email: support@theislehack.org",
+								"support@theislehacks.org для поддержки и юридических вопросов.",
+								"Email: support@theislehacks.org",
 							],
 						},
 					],
@@ -8557,7 +8557,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Политика возврата | The Isle Hacks",
 					description: "Политика возврата для The Isle Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Политика возврата",
-					intro: "The Isle Hacks объединяет ESP wallhack, radar hack и Isle Aimbot в undetected пакете для The Isle на Windows PC. Политика возврата для theislehack.org и лицензий The Isle.",
+					intro: "The Isle Hacks объединяет ESP wallhack, radar hack и Isle Aimbot в undetected пакете для The Isle на Windows PC. Политика возврата для theislehacks.org и лицензий The Isle.",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-session.webp",
@@ -8582,8 +8582,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Как запросить",
 							paragraphs: [
-								"support@theislehack.org для поддержки и юридических вопросов.",
-								"Email: support@theislehack.org",
+								"support@theislehacks.org для поддержки и юридических вопросов.",
+								"Email: support@theislehacks.org",
 							],
 						},
 					],
@@ -8592,7 +8592,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Условия использования | The Isle Hacks",
 					description: "Условия использования для The Isle Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Условия использования",
-					intro: "The Isle Hacks объединяет ESP wallhack, radar hack и Isle Aimbot в undetected пакете для The Isle на Windows PC. Условия использования для theislehack.org и лицензий The Isle.",
+					intro: "The Isle Hacks объединяет ESP wallhack, radar hack и Isle Aimbot в undetected пакете для The Isle на Windows PC. Условия использования для theislehacks.org и лицензий The Isle.",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-aimbot-view.webp",
@@ -8617,8 +8617,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Изменения политики",
 							paragraphs: [
-								"support@theislehack.org для поддержки и юридических вопросов.",
-								"Email: support@theislehack.org",
+								"support@theislehacks.org для поддержки и юридических вопросов.",
+								"Email: support@theislehacks.org",
 							],
 						},
 					],
@@ -8756,7 +8756,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "anında dijital teslimat",
 							paragraphs: [
 								"Zadeyo checkout ile anında dijital teslimat. $35/ay ve $150 ömür boyu planları Easy Anti-Cheat bakımı içerir.",
-								"Destek ve yasal sorular için support@theislehack.org.",
+								"Destek ve yasal sorular için support@theislehacks.org.",
 							],
 						},
 					],
@@ -8791,7 +8791,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "anında dijital teslimat",
 							paragraphs: [
 								"Zadeyo checkout ile anında dijital teslimat. $35/ay ve $150 ömür boyu planları Easy Anti-Cheat bakımı içerir.",
-								"Destek ve yasal sorular için support@theislehack.org.",
+								"Destek ve yasal sorular için support@theislehacks.org.",
 							],
 						},
 					],
@@ -8826,7 +8826,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "anında dijital teslimat",
 							paragraphs: [
 								"Zadeyo checkout ile anında dijital teslimat. $35/ay ve $150 ömür boyu planları Easy Anti-Cheat bakımı içerir.",
-								"Destek ve yasal sorular için support@theislehack.org.",
+								"Destek ve yasal sorular için support@theislehacks.org.",
 							],
 						},
 					],
@@ -8861,7 +8861,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "anında dijital teslimat",
 							paragraphs: [
 								"Zadeyo checkout ile anında dijital teslimat. $35/ay ve $150 ömür boyu planları Easy Anti-Cheat bakımı içerir.",
-								"Destek ve yasal sorular için support@theislehack.org.",
+								"Destek ve yasal sorular için support@theislehacks.org.",
 							],
 						},
 					],
@@ -8896,7 +8896,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "anında dijital teslimat",
 							paragraphs: [
 								"Zadeyo checkout ile anında dijital teslimat. $35/ay ve $150 ömür boyu planları Easy Anti-Cheat bakımı içerir.",
-								"Destek ve yasal sorular için support@theislehack.org.",
+								"Destek ve yasal sorular için support@theislehacks.org.",
 							],
 						},
 					],
@@ -8931,7 +8931,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "anında dijital teslimat",
 							paragraphs: [
 								"Zadeyo checkout ile anında dijital teslimat. $35/ay ve $150 ömür boyu planları Easy Anti-Cheat bakımı içerir.",
-								"Destek ve yasal sorular için support@theislehack.org.",
+								"Destek ve yasal sorular için support@theislehacks.org.",
 							],
 						},
 					],
@@ -8966,7 +8966,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "anında dijital teslimat",
 							paragraphs: [
 								"Zadeyo checkout ile anında dijital teslimat. $35/ay ve $150 ömür boyu planları Easy Anti-Cheat bakımı içerir.",
-								"Destek ve yasal sorular için support@theislehack.org.",
+								"Destek ve yasal sorular için support@theislehacks.org.",
 							],
 						},
 					],
@@ -9001,7 +9001,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "anında dijital teslimat",
 							paragraphs: [
 								"Zadeyo checkout ile anında dijital teslimat. $35/ay ve $150 ömür boyu planları Easy Anti-Cheat bakımı içerir.",
-								"Destek ve yasal sorular için support@theislehack.org.",
+								"Destek ve yasal sorular için support@theislehacks.org.",
 							],
 						},
 					],
@@ -9036,7 +9036,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "anında dijital teslimat",
 							paragraphs: [
 								"Zadeyo checkout ile anında dijital teslimat. $35/ay ve $150 ömür boyu planları Easy Anti-Cheat bakımı içerir.",
-								"Destek ve yasal sorular için support@theislehack.org.",
+								"Destek ve yasal sorular için support@theislehacks.org.",
 							],
 						},
 					],
@@ -9071,7 +9071,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "anında dijital teslimat",
 							paragraphs: [
 								"Zadeyo checkout ile anında dijital teslimat. $35/ay ve $150 ömür boyu planları Easy Anti-Cheat bakımı içerir.",
-								"Destek ve yasal sorular için support@theislehack.org.",
+								"Destek ve yasal sorular için support@theislehacks.org.",
 							],
 						},
 					],
@@ -9106,7 +9106,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "anında dijital teslimat",
 							paragraphs: [
 								"Zadeyo checkout ile anında dijital teslimat. $35/ay ve $150 ömür boyu planları Easy Anti-Cheat bakımı içerir.",
-								"Destek ve yasal sorular için support@theislehack.org.",
+								"Destek ve yasal sorular için support@theislehacks.org.",
 							],
 						},
 					],
@@ -9141,7 +9141,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "anında dijital teslimat",
 							paragraphs: [
 								"Zadeyo checkout ile anında dijital teslimat. $35/ay ve $150 ömür boyu planları Easy Anti-Cheat bakımı içerir.",
-								"Destek ve yasal sorular için support@theislehack.org.",
+								"Destek ve yasal sorular için support@theislehacks.org.",
 							],
 						},
 					],
@@ -9176,7 +9176,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "anında dijital teslimat",
 							paragraphs: [
 								"Zadeyo checkout ile anında dijital teslimat. $35/ay ve $150 ömür boyu planları Easy Anti-Cheat bakımı içerir.",
-								"Destek ve yasal sorular için support@theislehack.org.",
+								"Destek ve yasal sorular için support@theislehacks.org.",
 							],
 						},
 					],
@@ -9211,7 +9211,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "anında dijital teslimat",
 							paragraphs: [
 								"Zadeyo checkout ile anında dijital teslimat. $35/ay ve $150 ömür boyu planları Easy Anti-Cheat bakımı içerir.",
-								"Destek ve yasal sorular için support@theislehack.org.",
+								"Destek ve yasal sorular için support@theislehacks.org.",
 							],
 						},
 					],
@@ -9246,7 +9246,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "anında dijital teslimat",
 							paragraphs: [
 								"Zadeyo checkout ile anında dijital teslimat. $35/ay ve $150 ömür boyu planları Easy Anti-Cheat bakımı içerir.",
-								"Destek ve yasal sorular için support@theislehack.org.",
+								"Destek ve yasal sorular için support@theislehacks.org.",
 							],
 						},
 					],
@@ -9281,7 +9281,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "anında dijital teslimat",
 							paragraphs: [
 								"Zadeyo checkout ile anında dijital teslimat. $35/ay ve $150 ömür boyu planları Easy Anti-Cheat bakımı içerir.",
-								"Destek ve yasal sorular için support@theislehack.org.",
+								"Destek ve yasal sorular için support@theislehacks.org.",
 							],
 						},
 					],
@@ -9316,7 +9316,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "anında dijital teslimat",
 							paragraphs: [
 								"Zadeyo checkout ile anında dijital teslimat. $35/ay ve $150 ömür boyu planları Easy Anti-Cheat bakımı içerir.",
-								"Destek ve yasal sorular için support@theislehack.org.",
+								"Destek ve yasal sorular için support@theislehacks.org.",
 							],
 						},
 					],
@@ -9351,7 +9351,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "anında dijital teslimat",
 							paragraphs: [
 								"Zadeyo checkout ile anında dijital teslimat. $35/ay ve $150 ömür boyu planları Easy Anti-Cheat bakımı içerir.",
-								"Destek ve yasal sorular için support@theislehack.org.",
+								"Destek ve yasal sorular için support@theislehacks.org.",
 							],
 						},
 					],
@@ -9386,7 +9386,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "anında dijital teslimat",
 							paragraphs: [
 								"Zadeyo checkout ile anında dijital teslimat. $35/ay ve $150 ömür boyu planları Easy Anti-Cheat bakımı içerir.",
-								"Destek ve yasal sorular için support@theislehack.org.",
+								"Destek ve yasal sorular için support@theislehacks.org.",
 							],
 						},
 					],
@@ -9421,7 +9421,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "anında dijital teslimat",
 							paragraphs: [
 								"Zadeyo checkout ile anında dijital teslimat. $35/ay ve $150 ömür boyu planları Easy Anti-Cheat bakımı içerir.",
-								"Destek ve yasal sorular için support@theislehack.org.",
+								"Destek ve yasal sorular için support@theislehacks.org.",
 							],
 						},
 					],
@@ -9456,7 +9456,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "anında dijital teslimat",
 							paragraphs: [
 								"Zadeyo checkout ile anında dijital teslimat. $35/ay ve $150 ömür boyu planları Easy Anti-Cheat bakımı içerir.",
-								"Destek ve yasal sorular için support@theislehack.org.",
+								"Destek ve yasal sorular için support@theislehacks.org.",
 							],
 						},
 					],
@@ -9465,7 +9465,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Gizlilik politikası | The Isle Hacks",
 					description: "Gizlilik politikası The Isle Hacks — ESP wallhack, Aimbot için, Windows PC.",
 					h1: "Gizlilik politikası",
-					intro: "The Isle Hacks, The Isle için Windows PC üzerinde ESP wallhack, radar hack ve Isle Aimbot undetected paket sunar. Gizlilik politikası theislehack.org ve The Isle lisansları için.",
+					intro: "The Isle Hacks, The Isle için Windows PC üzerinde ESP wallhack, radar hack ve Isle Aimbot undetected paket sunar. Gizlilik politikası theislehacks.org ve The Isle lisansları için.",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-aimbot.webp",
@@ -9477,7 +9477,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Topladığımız bilgiler",
 							paragraphs: [
 								"The Isle Hacks, The Isle için Windows PC üzerinde ESP wallhack, radar hack ve Isle Aimbot undetected paket sunar. İletişim e-postası, Zadeyo sipariş referansları ve temel site güvenlik verileri.",
-								"Ödeme bilgileri Zadeyo checkout ile işlenir — theislehack.org'da saklanmaz.",
+								"Ödeme bilgileri Zadeyo checkout ile işlenir — theislehacks.org'da saklanmaz.",
 							],
 						},
 						{
@@ -9490,8 +9490,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Haklarınız",
 							paragraphs: [
-								"Destek ve yasal sorular için support@theislehack.org.",
-								"E-posta: support@theislehack.org",
+								"Destek ve yasal sorular için support@theislehacks.org.",
+								"E-posta: support@theislehacks.org",
 							],
 						},
 					],
@@ -9500,7 +9500,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "İade politikası | The Isle Hacks",
 					description: "İade politikası The Isle Hacks — ESP wallhack, Aimbot için, Windows PC.",
 					h1: "İade politikası",
-					intro: "The Isle Hacks, The Isle için Windows PC üzerinde ESP wallhack, radar hack ve Isle Aimbot undetected paket sunar. İade politikası theislehack.org ve The Isle lisansları için.",
+					intro: "The Isle Hacks, The Isle için Windows PC üzerinde ESP wallhack, radar hack ve Isle Aimbot undetected paket sunar. İade politikası theislehacks.org ve The Isle lisansları için.",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-session.webp",
@@ -9525,8 +9525,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Nasıl talep edilir",
 							paragraphs: [
-								"Destek ve yasal sorular için support@theislehack.org.",
-								"E-posta: support@theislehack.org",
+								"Destek ve yasal sorular için support@theislehacks.org.",
+								"E-posta: support@theislehacks.org",
 							],
 						},
 					],
@@ -9535,7 +9535,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Kullanım şartları | The Isle Hacks",
 					description: "Kullanım şartları The Isle Hacks — ESP wallhack, Aimbot için, Windows PC.",
 					h1: "Kullanım şartları",
-					intro: "The Isle Hacks, The Isle için Windows PC üzerinde ESP wallhack, radar hack ve Isle Aimbot undetected paket sunar. Kullanım şartları theislehack.org ve The Isle lisansları için.",
+					intro: "The Isle Hacks, The Isle için Windows PC üzerinde ESP wallhack, radar hack ve Isle Aimbot undetected paket sunar. Kullanım şartları theislehacks.org ve The Isle lisansları için.",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-aimbot-view.webp",
@@ -9560,8 +9560,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Politika değişiklikleri",
 							paragraphs: [
-								"Destek ve yasal sorular için support@theislehack.org.",
-								"E-posta: support@theislehack.org",
+								"Destek ve yasal sorular için support@theislehacks.org.",
+								"E-posta: support@theislehacks.org",
 							],
 						},
 					],
@@ -9699,7 +9699,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "تسليم رقمي فوري",
 							paragraphs: [
 								"تراخيص مع تسليم رقمي فوري عبر checkout Zadeyo. خطط 35$/شهر و150$ مدى الحياة تشمل صيانة Easy Anti-Cheat.",
-								"support@theislehack.org للدعم والطلبات القانونية.",
+								"support@theislehacks.org للدعم والطلبات القانونية.",
 							],
 						},
 					],
@@ -9734,7 +9734,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "تسليم رقمي فوري",
 							paragraphs: [
 								"تراخيص مع تسليم رقمي فوري عبر checkout Zadeyo. خطط 35$/شهر و150$ مدى الحياة تشمل صيانة Easy Anti-Cheat.",
-								"support@theislehack.org للدعم والطلبات القانونية.",
+								"support@theislehacks.org للدعم والطلبات القانونية.",
 							],
 						},
 					],
@@ -9769,7 +9769,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "تسليم رقمي فوري",
 							paragraphs: [
 								"تراخيص مع تسليم رقمي فوري عبر checkout Zadeyo. خطط 35$/شهر و150$ مدى الحياة تشمل صيانة Easy Anti-Cheat.",
-								"support@theislehack.org للدعم والطلبات القانونية.",
+								"support@theislehacks.org للدعم والطلبات القانونية.",
 							],
 						},
 					],
@@ -9804,7 +9804,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "تسليم رقمي فوري",
 							paragraphs: [
 								"تراخيص مع تسليم رقمي فوري عبر checkout Zadeyo. خطط 35$/شهر و150$ مدى الحياة تشمل صيانة Easy Anti-Cheat.",
-								"support@theislehack.org للدعم والطلبات القانونية.",
+								"support@theislehacks.org للدعم والطلبات القانونية.",
 							],
 						},
 					],
@@ -9839,7 +9839,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "تسليم رقمي فوري",
 							paragraphs: [
 								"تراخيص مع تسليم رقمي فوري عبر checkout Zadeyo. خطط 35$/شهر و150$ مدى الحياة تشمل صيانة Easy Anti-Cheat.",
-								"support@theislehack.org للدعم والطلبات القانونية.",
+								"support@theislehacks.org للدعم والطلبات القانونية.",
 							],
 						},
 					],
@@ -9874,7 +9874,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "تسليم رقمي فوري",
 							paragraphs: [
 								"تراخيص مع تسليم رقمي فوري عبر checkout Zadeyo. خطط 35$/شهر و150$ مدى الحياة تشمل صيانة Easy Anti-Cheat.",
-								"support@theislehack.org للدعم والطلبات القانونية.",
+								"support@theislehacks.org للدعم والطلبات القانونية.",
 							],
 						},
 					],
@@ -9909,7 +9909,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "تسليم رقمي فوري",
 							paragraphs: [
 								"تراخيص مع تسليم رقمي فوري عبر checkout Zadeyo. خطط 35$/شهر و150$ مدى الحياة تشمل صيانة Easy Anti-Cheat.",
-								"support@theislehack.org للدعم والطلبات القانونية.",
+								"support@theislehacks.org للدعم والطلبات القانونية.",
 							],
 						},
 					],
@@ -9944,7 +9944,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "تسليم رقمي فوري",
 							paragraphs: [
 								"تراخيص مع تسليم رقمي فوري عبر checkout Zadeyo. خطط 35$/شهر و150$ مدى الحياة تشمل صيانة Easy Anti-Cheat.",
-								"support@theislehack.org للدعم والطلبات القانونية.",
+								"support@theislehacks.org للدعم والطلبات القانونية.",
 							],
 						},
 					],
@@ -9979,7 +9979,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "تسليم رقمي فوري",
 							paragraphs: [
 								"تراخيص مع تسليم رقمي فوري عبر checkout Zadeyo. خطط 35$/شهر و150$ مدى الحياة تشمل صيانة Easy Anti-Cheat.",
-								"support@theislehack.org للدعم والطلبات القانونية.",
+								"support@theislehacks.org للدعم والطلبات القانونية.",
 							],
 						},
 					],
@@ -10014,7 +10014,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "تسليم رقمي فوري",
 							paragraphs: [
 								"تراخيص مع تسليم رقمي فوري عبر checkout Zadeyo. خطط 35$/شهر و150$ مدى الحياة تشمل صيانة Easy Anti-Cheat.",
-								"support@theislehack.org للدعم والطلبات القانونية.",
+								"support@theislehacks.org للدعم والطلبات القانونية.",
 							],
 						},
 					],
@@ -10049,7 +10049,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "تسليم رقمي فوري",
 							paragraphs: [
 								"تراخيص مع تسليم رقمي فوري عبر checkout Zadeyo. خطط 35$/شهر و150$ مدى الحياة تشمل صيانة Easy Anti-Cheat.",
-								"support@theislehack.org للدعم والطلبات القانونية.",
+								"support@theislehacks.org للدعم والطلبات القانونية.",
 							],
 						},
 					],
@@ -10084,7 +10084,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "تسليم رقمي فوري",
 							paragraphs: [
 								"تراخيص مع تسليم رقمي فوري عبر checkout Zadeyo. خطط 35$/شهر و150$ مدى الحياة تشمل صيانة Easy Anti-Cheat.",
-								"support@theislehack.org للدعم والطلبات القانونية.",
+								"support@theislehacks.org للدعم والطلبات القانونية.",
 							],
 						},
 					],
@@ -10119,7 +10119,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "تسليم رقمي فوري",
 							paragraphs: [
 								"تراخيص مع تسليم رقمي فوري عبر checkout Zadeyo. خطط 35$/شهر و150$ مدى الحياة تشمل صيانة Easy Anti-Cheat.",
-								"support@theislehack.org للدعم والطلبات القانونية.",
+								"support@theislehacks.org للدعم والطلبات القانونية.",
 							],
 						},
 					],
@@ -10154,7 +10154,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "تسليم رقمي فوري",
 							paragraphs: [
 								"تراخيص مع تسليم رقمي فوري عبر checkout Zadeyo. خطط 35$/شهر و150$ مدى الحياة تشمل صيانة Easy Anti-Cheat.",
-								"support@theislehack.org للدعم والطلبات القانونية.",
+								"support@theislehacks.org للدعم والطلبات القانونية.",
 							],
 						},
 					],
@@ -10189,7 +10189,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "تسليم رقمي فوري",
 							paragraphs: [
 								"تراخيص مع تسليم رقمي فوري عبر checkout Zadeyo. خطط 35$/شهر و150$ مدى الحياة تشمل صيانة Easy Anti-Cheat.",
-								"support@theislehack.org للدعم والطلبات القانونية.",
+								"support@theislehacks.org للدعم والطلبات القانونية.",
 							],
 						},
 					],
@@ -10224,7 +10224,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "تسليم رقمي فوري",
 							paragraphs: [
 								"تراخيص مع تسليم رقمي فوري عبر checkout Zadeyo. خطط 35$/شهر و150$ مدى الحياة تشمل صيانة Easy Anti-Cheat.",
-								"support@theislehack.org للدعم والطلبات القانونية.",
+								"support@theislehacks.org للدعم والطلبات القانونية.",
 							],
 						},
 					],
@@ -10259,7 +10259,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "تسليم رقمي فوري",
 							paragraphs: [
 								"تراخيص مع تسليم رقمي فوري عبر checkout Zadeyo. خطط 35$/شهر و150$ مدى الحياة تشمل صيانة Easy Anti-Cheat.",
-								"support@theislehack.org للدعم والطلبات القانونية.",
+								"support@theislehacks.org للدعم والطلبات القانونية.",
 							],
 						},
 					],
@@ -10294,7 +10294,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "تسليم رقمي فوري",
 							paragraphs: [
 								"تراخيص مع تسليم رقمي فوري عبر checkout Zadeyo. خطط 35$/شهر و150$ مدى الحياة تشمل صيانة Easy Anti-Cheat.",
-								"support@theislehack.org للدعم والطلبات القانونية.",
+								"support@theislehacks.org للدعم والطلبات القانونية.",
 							],
 						},
 					],
@@ -10329,7 +10329,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "تسليم رقمي فوري",
 							paragraphs: [
 								"تراخيص مع تسليم رقمي فوري عبر checkout Zadeyo. خطط 35$/شهر و150$ مدى الحياة تشمل صيانة Easy Anti-Cheat.",
-								"support@theislehack.org للدعم والطلبات القانونية.",
+								"support@theislehacks.org للدعم والطلبات القانونية.",
 							],
 						},
 					],
@@ -10364,7 +10364,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "تسليم رقمي فوري",
 							paragraphs: [
 								"تراخيص مع تسليم رقمي فوري عبر checkout Zadeyo. خطط 35$/شهر و150$ مدى الحياة تشمل صيانة Easy Anti-Cheat.",
-								"support@theislehack.org للدعم والطلبات القانونية.",
+								"support@theislehacks.org للدعم والطلبات القانونية.",
 							],
 						},
 					],
@@ -10399,7 +10399,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "تسليم رقمي فوري",
 							paragraphs: [
 								"تراخيص مع تسليم رقمي فوري عبر checkout Zadeyo. خطط 35$/شهر و150$ مدى الحياة تشمل صيانة Easy Anti-Cheat.",
-								"support@theislehack.org للدعم والطلبات القانونية.",
+								"support@theislehacks.org للدعم والطلبات القانونية.",
 							],
 						},
 					],
@@ -10408,7 +10408,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "سياسة الخصوصية | The Isle Hacks",
 					description: "سياسة الخصوصية لـ The Isle Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "سياسة الخصوصية",
-					intro: "The Isle Hacks يجمع ESP wallhack وradar hack وIsle Aimbot غير مكتشف لـ The Isle على Windows PC. سياسة الخصوصية لـ theislehack.org وتراخيص The Isle.",
+					intro: "The Isle Hacks يجمع ESP wallhack وradar hack وIsle Aimbot غير مكتشف لـ The Isle على Windows PC. سياسة الخصوصية لـ theislehacks.org وتراخيص The Isle.",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-aimbot.webp",
@@ -10420,7 +10420,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "المعلومات التي نجمعها",
 							paragraphs: [
 								"The Isle Hacks يجمع ESP wallhack وradar hack وIsle Aimbot غير مكتشف لـ The Isle على Windows PC. بريد الاتصال ومراجع طلبات Zadeyo وبيانات أمان الموقع الأساسية.",
-								"تُعالَج تفاصيل الدفع عبر checkout Zadeyo — ولا تُخزَّن على theislehack.org.",
+								"تُعالَج تفاصيل الدفع عبر checkout Zadeyo — ولا تُخزَّن على theislehacks.org.",
 							],
 						},
 						{
@@ -10433,8 +10433,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "حقوقك",
 							paragraphs: [
-								"support@theislehack.org للدعم والطلبات القانونية.",
-								"البريد: support@theislehack.org",
+								"support@theislehacks.org للدعم والطلبات القانونية.",
+								"البريد: support@theislehacks.org",
 							],
 						},
 					],
@@ -10443,7 +10443,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "سياسة الاسترداد | The Isle Hacks",
 					description: "سياسة الاسترداد لـ The Isle Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "سياسة الاسترداد",
-					intro: "The Isle Hacks يجمع ESP wallhack وradar hack وIsle Aimbot غير مكتشف لـ The Isle على Windows PC. سياسة الاسترداد لـ theislehack.org وتراخيص The Isle.",
+					intro: "The Isle Hacks يجمع ESP wallhack وradar hack وIsle Aimbot غير مكتشف لـ The Isle على Windows PC. سياسة الاسترداد لـ theislehacks.org وتراخيص The Isle.",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-session.webp",
@@ -10468,8 +10468,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "كيفية الطلب",
 							paragraphs: [
-								"support@theislehack.org للدعم والطلبات القانونية.",
-								"البريد: support@theislehack.org",
+								"support@theislehacks.org للدعم والطلبات القانونية.",
+								"البريد: support@theislehacks.org",
 							],
 						},
 					],
@@ -10478,7 +10478,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "شروط الاستخدام | The Isle Hacks",
 					description: "شروط الاستخدام لـ The Isle Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "شروط الاستخدام",
-					intro: "The Isle Hacks يجمع ESP wallhack وradar hack وIsle Aimbot غير مكتشف لـ The Isle على Windows PC. شروط الاستخدام لـ theislehack.org وتراخيص The Isle.",
+					intro: "The Isle Hacks يجمع ESP wallhack وradar hack وIsle Aimbot غير مكتشف لـ The Isle على Windows PC. شروط الاستخدام لـ theislehacks.org وتراخيص The Isle.",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-aimbot-view.webp",
@@ -10503,8 +10503,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "تغييرات السياسة",
 							paragraphs: [
-								"support@theislehack.org للدعم والطلبات القانونية.",
-								"البريد: support@theislehack.org",
+								"support@theislehacks.org للدعم والطلبات القانونية.",
+								"البريد: support@theislehacks.org",
 							],
 						},
 					],
@@ -10642,7 +10642,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "即時デジタル配信",
 							paragraphs: [
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにEasy Anti-Cheatメンテナンス含む。",
-								"サポート・法務: support@theislehack.org",
+								"サポート・法務: support@theislehacks.org",
 							],
 						},
 					],
@@ -10677,7 +10677,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "即時デジタル配信",
 							paragraphs: [
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにEasy Anti-Cheatメンテナンス含む。",
-								"サポート・法務: support@theislehack.org",
+								"サポート・法務: support@theislehacks.org",
 							],
 						},
 					],
@@ -10712,7 +10712,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "即時デジタル配信",
 							paragraphs: [
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにEasy Anti-Cheatメンテナンス含む。",
-								"サポート・法務: support@theislehack.org",
+								"サポート・法務: support@theislehacks.org",
 							],
 						},
 					],
@@ -10747,7 +10747,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "即時デジタル配信",
 							paragraphs: [
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにEasy Anti-Cheatメンテナンス含む。",
-								"サポート・法務: support@theislehack.org",
+								"サポート・法務: support@theislehacks.org",
 							],
 						},
 					],
@@ -10782,7 +10782,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "即時デジタル配信",
 							paragraphs: [
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにEasy Anti-Cheatメンテナンス含む。",
-								"サポート・法務: support@theislehack.org",
+								"サポート・法務: support@theislehacks.org",
 							],
 						},
 					],
@@ -10817,7 +10817,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "即時デジタル配信",
 							paragraphs: [
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにEasy Anti-Cheatメンテナンス含む。",
-								"サポート・法務: support@theislehack.org",
+								"サポート・法務: support@theislehacks.org",
 							],
 						},
 					],
@@ -10852,7 +10852,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "即時デジタル配信",
 							paragraphs: [
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにEasy Anti-Cheatメンテナンス含む。",
-								"サポート・法務: support@theislehack.org",
+								"サポート・法務: support@theislehacks.org",
 							],
 						},
 					],
@@ -10887,7 +10887,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "即時デジタル配信",
 							paragraphs: [
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにEasy Anti-Cheatメンテナンス含む。",
-								"サポート・法務: support@theislehack.org",
+								"サポート・法務: support@theislehacks.org",
 							],
 						},
 					],
@@ -10922,7 +10922,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "即時デジタル配信",
 							paragraphs: [
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにEasy Anti-Cheatメンテナンス含む。",
-								"サポート・法務: support@theislehack.org",
+								"サポート・法務: support@theislehacks.org",
 							],
 						},
 					],
@@ -10957,7 +10957,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "即時デジタル配信",
 							paragraphs: [
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにEasy Anti-Cheatメンテナンス含む。",
-								"サポート・法務: support@theislehack.org",
+								"サポート・法務: support@theislehacks.org",
 							],
 						},
 					],
@@ -10992,7 +10992,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "即時デジタル配信",
 							paragraphs: [
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにEasy Anti-Cheatメンテナンス含む。",
-								"サポート・法務: support@theislehack.org",
+								"サポート・法務: support@theislehacks.org",
 							],
 						},
 					],
@@ -11027,7 +11027,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "即時デジタル配信",
 							paragraphs: [
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにEasy Anti-Cheatメンテナンス含む。",
-								"サポート・法務: support@theislehack.org",
+								"サポート・法務: support@theislehacks.org",
 							],
 						},
 					],
@@ -11062,7 +11062,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "即時デジタル配信",
 							paragraphs: [
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにEasy Anti-Cheatメンテナンス含む。",
-								"サポート・法務: support@theislehack.org",
+								"サポート・法務: support@theislehacks.org",
 							],
 						},
 					],
@@ -11097,7 +11097,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "即時デジタル配信",
 							paragraphs: [
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにEasy Anti-Cheatメンテナンス含む。",
-								"サポート・法務: support@theislehack.org",
+								"サポート・法務: support@theislehacks.org",
 							],
 						},
 					],
@@ -11132,7 +11132,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "即時デジタル配信",
 							paragraphs: [
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにEasy Anti-Cheatメンテナンス含む。",
-								"サポート・法務: support@theislehack.org",
+								"サポート・法務: support@theislehacks.org",
 							],
 						},
 					],
@@ -11167,7 +11167,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "即時デジタル配信",
 							paragraphs: [
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにEasy Anti-Cheatメンテナンス含む。",
-								"サポート・法務: support@theislehack.org",
+								"サポート・法務: support@theislehacks.org",
 							],
 						},
 					],
@@ -11202,7 +11202,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "即時デジタル配信",
 							paragraphs: [
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにEasy Anti-Cheatメンテナンス含む。",
-								"サポート・法務: support@theislehack.org",
+								"サポート・法務: support@theislehacks.org",
 							],
 						},
 					],
@@ -11237,7 +11237,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "即時デジタル配信",
 							paragraphs: [
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにEasy Anti-Cheatメンテナンス含む。",
-								"サポート・法務: support@theislehack.org",
+								"サポート・法務: support@theislehacks.org",
 							],
 						},
 					],
@@ -11272,7 +11272,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "即時デジタル配信",
 							paragraphs: [
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにEasy Anti-Cheatメンテナンス含む。",
-								"サポート・法務: support@theislehack.org",
+								"サポート・法務: support@theislehacks.org",
 							],
 						},
 					],
@@ -11307,7 +11307,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "即時デジタル配信",
 							paragraphs: [
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにEasy Anti-Cheatメンテナンス含む。",
-								"サポート・法務: support@theislehack.org",
+								"サポート・法務: support@theislehacks.org",
 							],
 						},
 					],
@@ -11342,7 +11342,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "即時デジタル配信",
 							paragraphs: [
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにEasy Anti-Cheatメンテナンス含む。",
-								"サポート・法務: support@theislehack.org",
+								"サポート・法務: support@theislehacks.org",
 							],
 						},
 					],
@@ -11351,7 +11351,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "プライバシーポリシー | The Isle Hacks",
 					description: "プライバシーポリシー The Isle Hacks — ESP wallhack、Aimbot向け, Windows PC.",
 					h1: "プライバシーポリシー",
-					intro: "The Isle HacksはThe Isle向けWindows PC用ESP wallhack、radar hack、Isle Aimbotのundetectedパッケージです。プライバシーポリシー theislehack.orgおよびThe Isleライセンス向け。",
+					intro: "The Isle HacksはThe Isle向けWindows PC用ESP wallhack、radar hack、Isle Aimbotのundetectedパッケージです。プライバシーポリシー theislehacks.orgおよびThe Isleライセンス向け。",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-aimbot.webp",
@@ -11363,7 +11363,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "収集する情報",
 							paragraphs: [
 								"The Isle HacksはThe Isle向けWindows PC用ESP wallhack、radar hack、Isle Aimbotのundetectedパッケージです。連絡メール、Zadeyo注文参照、基本的なサイトセキュリティデータ。",
-								"支払い情報はZadeyo checkoutで処理され、theislehack.orgには保存されません。",
+								"支払い情報はZadeyo checkoutで処理され、theislehacks.orgには保存されません。",
 							],
 						},
 						{
@@ -11376,8 +11376,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "あなたの権利",
 							paragraphs: [
-								"サポート・法務: support@theislehack.org",
-								"メール: support@theislehack.org",
+								"サポート・法務: support@theislehacks.org",
+								"メール: support@theislehacks.org",
 							],
 						},
 					],
@@ -11386,7 +11386,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "返金ポリシー | The Isle Hacks",
 					description: "返金ポリシー The Isle Hacks — ESP wallhack、Aimbot向け, Windows PC.",
 					h1: "返金ポリシー",
-					intro: "The Isle HacksはThe Isle向けWindows PC用ESP wallhack、radar hack、Isle Aimbotのundetectedパッケージです。返金ポリシー theislehack.orgおよびThe Isleライセンス向け。",
+					intro: "The Isle HacksはThe Isle向けWindows PC用ESP wallhack、radar hack、Isle Aimbotのundetectedパッケージです。返金ポリシー theislehacks.orgおよびThe Isleライセンス向け。",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-session.webp",
@@ -11411,8 +11411,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "申請方法",
 							paragraphs: [
-								"サポート・法務: support@theislehack.org",
-								"メール: support@theislehack.org",
+								"サポート・法務: support@theislehacks.org",
+								"メール: support@theislehacks.org",
 							],
 						},
 					],
@@ -11421,7 +11421,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "利用規約 | The Isle Hacks",
 					description: "利用規約 The Isle Hacks — ESP wallhack、Aimbot向け, Windows PC.",
 					h1: "利用規約",
-					intro: "The Isle HacksはThe Isle向けWindows PC用ESP wallhack、radar hack、Isle Aimbotのundetectedパッケージです。利用規約 theislehack.orgおよびThe Isleライセンス向け。",
+					intro: "The Isle HacksはThe Isle向けWindows PC用ESP wallhack、radar hack、Isle Aimbotのundetectedパッケージです。利用規約 theislehacks.orgおよびThe Isleライセンス向け。",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-aimbot-view.webp",
@@ -11446,8 +11446,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "ポリシー変更",
 							paragraphs: [
-								"サポート・法務: support@theislehack.org",
-								"メール: support@theislehack.org",
+								"サポート・法務: support@theislehacks.org",
+								"メール: support@theislehacks.org",
 							],
 						},
 					],
@@ -11585,7 +11585,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "즉시 디지털 배송",
 							paragraphs: [
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 Easy Anti-Cheat 유지보수 포함.",
-								"지원 및 법무: support@theislehack.org",
+								"지원 및 법무: support@theislehacks.org",
 							],
 						},
 					],
@@ -11620,7 +11620,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "즉시 디지털 배송",
 							paragraphs: [
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 Easy Anti-Cheat 유지보수 포함.",
-								"지원 및 법무: support@theislehack.org",
+								"지원 및 법무: support@theislehacks.org",
 							],
 						},
 					],
@@ -11655,7 +11655,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "즉시 디지털 배송",
 							paragraphs: [
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 Easy Anti-Cheat 유지보수 포함.",
-								"지원 및 법무: support@theislehack.org",
+								"지원 및 법무: support@theislehacks.org",
 							],
 						},
 					],
@@ -11690,7 +11690,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "즉시 디지털 배송",
 							paragraphs: [
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 Easy Anti-Cheat 유지보수 포함.",
-								"지원 및 법무: support@theislehack.org",
+								"지원 및 법무: support@theislehacks.org",
 							],
 						},
 					],
@@ -11725,7 +11725,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "즉시 디지털 배송",
 							paragraphs: [
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 Easy Anti-Cheat 유지보수 포함.",
-								"지원 및 법무: support@theislehack.org",
+								"지원 및 법무: support@theislehacks.org",
 							],
 						},
 					],
@@ -11760,7 +11760,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "즉시 디지털 배송",
 							paragraphs: [
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 Easy Anti-Cheat 유지보수 포함.",
-								"지원 및 법무: support@theislehack.org",
+								"지원 및 법무: support@theislehacks.org",
 							],
 						},
 					],
@@ -11795,7 +11795,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "즉시 디지털 배송",
 							paragraphs: [
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 Easy Anti-Cheat 유지보수 포함.",
-								"지원 및 법무: support@theislehack.org",
+								"지원 및 법무: support@theislehacks.org",
 							],
 						},
 					],
@@ -11830,7 +11830,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "즉시 디지털 배송",
 							paragraphs: [
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 Easy Anti-Cheat 유지보수 포함.",
-								"지원 및 법무: support@theislehack.org",
+								"지원 및 법무: support@theislehacks.org",
 							],
 						},
 					],
@@ -11865,7 +11865,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "즉시 디지털 배송",
 							paragraphs: [
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 Easy Anti-Cheat 유지보수 포함.",
-								"지원 및 법무: support@theislehack.org",
+								"지원 및 법무: support@theislehacks.org",
 							],
 						},
 					],
@@ -11900,7 +11900,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "즉시 디지털 배송",
 							paragraphs: [
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 Easy Anti-Cheat 유지보수 포함.",
-								"지원 및 법무: support@theislehack.org",
+								"지원 및 법무: support@theislehacks.org",
 							],
 						},
 					],
@@ -11935,7 +11935,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "즉시 디지털 배송",
 							paragraphs: [
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 Easy Anti-Cheat 유지보수 포함.",
-								"지원 및 법무: support@theislehack.org",
+								"지원 및 법무: support@theislehacks.org",
 							],
 						},
 					],
@@ -11970,7 +11970,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "즉시 디지털 배송",
 							paragraphs: [
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 Easy Anti-Cheat 유지보수 포함.",
-								"지원 및 법무: support@theislehack.org",
+								"지원 및 법무: support@theislehacks.org",
 							],
 						},
 					],
@@ -12005,7 +12005,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "즉시 디지털 배송",
 							paragraphs: [
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 Easy Anti-Cheat 유지보수 포함.",
-								"지원 및 법무: support@theislehack.org",
+								"지원 및 법무: support@theislehacks.org",
 							],
 						},
 					],
@@ -12040,7 +12040,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "즉시 디지털 배송",
 							paragraphs: [
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 Easy Anti-Cheat 유지보수 포함.",
-								"지원 및 법무: support@theislehack.org",
+								"지원 및 법무: support@theislehacks.org",
 							],
 						},
 					],
@@ -12075,7 +12075,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "즉시 디지털 배송",
 							paragraphs: [
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 Easy Anti-Cheat 유지보수 포함.",
-								"지원 및 법무: support@theislehack.org",
+								"지원 및 법무: support@theislehacks.org",
 							],
 						},
 					],
@@ -12110,7 +12110,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "즉시 디지털 배송",
 							paragraphs: [
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 Easy Anti-Cheat 유지보수 포함.",
-								"지원 및 법무: support@theislehack.org",
+								"지원 및 법무: support@theislehacks.org",
 							],
 						},
 					],
@@ -12145,7 +12145,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "즉시 디지털 배송",
 							paragraphs: [
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 Easy Anti-Cheat 유지보수 포함.",
-								"지원 및 법무: support@theislehack.org",
+								"지원 및 법무: support@theislehacks.org",
 							],
 						},
 					],
@@ -12180,7 +12180,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "즉시 디지털 배송",
 							paragraphs: [
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 Easy Anti-Cheat 유지보수 포함.",
-								"지원 및 법무: support@theislehack.org",
+								"지원 및 법무: support@theislehacks.org",
 							],
 						},
 					],
@@ -12215,7 +12215,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "즉시 디지털 배송",
 							paragraphs: [
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 Easy Anti-Cheat 유지보수 포함.",
-								"지원 및 법무: support@theislehack.org",
+								"지원 및 법무: support@theislehacks.org",
 							],
 						},
 					],
@@ -12250,7 +12250,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "즉시 디지털 배송",
 							paragraphs: [
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 Easy Anti-Cheat 유지보수 포함.",
-								"지원 및 법무: support@theislehack.org",
+								"지원 및 법무: support@theislehacks.org",
 							],
 						},
 					],
@@ -12285,7 +12285,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "즉시 디지털 배송",
 							paragraphs: [
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 Easy Anti-Cheat 유지보수 포함.",
-								"지원 및 법무: support@theislehack.org",
+								"지원 및 법무: support@theislehacks.org",
 							],
 						},
 					],
@@ -12294,7 +12294,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "개인정보 처리방침 | The Isle Hacks",
 					description: "개인정보 처리방침 The Isle Hacks — ESP wallhack, Aimbot용, Windows PC.",
 					h1: "개인정보 처리방침",
-					intro: "The Isle Hacks는 The Isle Windows PC용 ESP wallhack, radar hack, Isle Aimbot undetected 패키지입니다. 개인정보 처리방침 theislehack.org 및 The Isle 라이선스용.",
+					intro: "The Isle Hacks는 The Isle Windows PC용 ESP wallhack, radar hack, Isle Aimbot undetected 패키지입니다. 개인정보 처리방침 theislehacks.org 및 The Isle 라이선스용.",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-aimbot.webp",
@@ -12306,7 +12306,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "수집하는 정보",
 							paragraphs: [
 								"The Isle Hacks는 The Isle Windows PC용 ESP wallhack, radar hack, Isle Aimbot undetected 패키지입니다. 연락 이메일, Zadeyo 주문 참조 및 기본 사이트 보안 데이터.",
-								"결제 정보는 Zadeyo checkout에서 처리되며 theislehack.org에 저장되지 않습니다.",
+								"결제 정보는 Zadeyo checkout에서 처리되며 theislehacks.org에 저장되지 않습니다.",
 							],
 						},
 						{
@@ -12319,8 +12319,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "귀하의 권리",
 							paragraphs: [
-								"지원 및 법무: support@theislehack.org",
-								"이메일: support@theislehack.org",
+								"지원 및 법무: support@theislehacks.org",
+								"이메일: support@theislehacks.org",
 							],
 						},
 					],
@@ -12329,7 +12329,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "환불 정책 | The Isle Hacks",
 					description: "환불 정책 The Isle Hacks — ESP wallhack, Aimbot용, Windows PC.",
 					h1: "환불 정책",
-					intro: "The Isle Hacks는 The Isle Windows PC용 ESP wallhack, radar hack, Isle Aimbot undetected 패키지입니다. 환불 정책 theislehack.org 및 The Isle 라이선스용.",
+					intro: "The Isle Hacks는 The Isle Windows PC용 ESP wallhack, radar hack, Isle Aimbot undetected 패키지입니다. 환불 정책 theislehacks.org 및 The Isle 라이선스용.",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-session.webp",
@@ -12354,8 +12354,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "신청 방법",
 							paragraphs: [
-								"지원 및 법무: support@theislehack.org",
-								"이메일: support@theislehack.org",
+								"지원 및 법무: support@theislehacks.org",
+								"이메일: support@theislehacks.org",
 							],
 						},
 					],
@@ -12364,7 +12364,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "이용 약관 | The Isle Hacks",
 					description: "이용 약관 The Isle Hacks — ESP wallhack, Aimbot용, Windows PC.",
 					h1: "이용 약관",
-					intro: "The Isle Hacks는 The Isle Windows PC용 ESP wallhack, radar hack, Isle Aimbot undetected 패키지입니다. 이용 약관 theislehack.org 및 The Isle 라이선스용.",
+					intro: "The Isle Hacks는 The Isle Windows PC용 ESP wallhack, radar hack, Isle Aimbot undetected 패키지입니다. 이용 약관 theislehacks.org 및 The Isle 라이선스용.",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-aimbot-view.webp",
@@ -12389,8 +12389,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "정책 변경",
 							paragraphs: [
-								"지원 및 법무: support@theislehack.org",
-								"이메일: support@theislehack.org",
+								"지원 및 법무: support@theislehacks.org",
+								"이메일: support@theislehacks.org",
 							],
 						},
 					],
@@ -12528,7 +12528,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "即时数字交付",
 							paragraphs: [
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含Easy Anti-Cheat维护。",
-								"支持与法务：support@theislehack.org",
+								"支持与法务：support@theislehacks.org",
 							],
 						},
 					],
@@ -12563,7 +12563,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "即时数字交付",
 							paragraphs: [
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含Easy Anti-Cheat维护。",
-								"支持与法务：support@theislehack.org",
+								"支持与法务：support@theislehacks.org",
 							],
 						},
 					],
@@ -12598,7 +12598,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "即时数字交付",
 							paragraphs: [
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含Easy Anti-Cheat维护。",
-								"支持与法务：support@theislehack.org",
+								"支持与法务：support@theislehacks.org",
 							],
 						},
 					],
@@ -12633,7 +12633,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "即时数字交付",
 							paragraphs: [
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含Easy Anti-Cheat维护。",
-								"支持与法务：support@theislehack.org",
+								"支持与法务：support@theislehacks.org",
 							],
 						},
 					],
@@ -12668,7 +12668,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "即时数字交付",
 							paragraphs: [
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含Easy Anti-Cheat维护。",
-								"支持与法务：support@theislehack.org",
+								"支持与法务：support@theislehacks.org",
 							],
 						},
 					],
@@ -12703,7 +12703,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "即时数字交付",
 							paragraphs: [
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含Easy Anti-Cheat维护。",
-								"支持与法务：support@theislehack.org",
+								"支持与法务：support@theislehacks.org",
 							],
 						},
 					],
@@ -12738,7 +12738,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "即时数字交付",
 							paragraphs: [
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含Easy Anti-Cheat维护。",
-								"支持与法务：support@theislehack.org",
+								"支持与法务：support@theislehacks.org",
 							],
 						},
 					],
@@ -12773,7 +12773,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "即时数字交付",
 							paragraphs: [
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含Easy Anti-Cheat维护。",
-								"支持与法务：support@theislehack.org",
+								"支持与法务：support@theislehacks.org",
 							],
 						},
 					],
@@ -12808,7 +12808,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "即时数字交付",
 							paragraphs: [
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含Easy Anti-Cheat维护。",
-								"支持与法务：support@theislehack.org",
+								"支持与法务：support@theislehacks.org",
 							],
 						},
 					],
@@ -12843,7 +12843,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "即时数字交付",
 							paragraphs: [
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含Easy Anti-Cheat维护。",
-								"支持与法务：support@theislehack.org",
+								"支持与法务：support@theislehacks.org",
 							],
 						},
 					],
@@ -12878,7 +12878,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "即时数字交付",
 							paragraphs: [
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含Easy Anti-Cheat维护。",
-								"支持与法务：support@theislehack.org",
+								"支持与法务：support@theislehacks.org",
 							],
 						},
 					],
@@ -12913,7 +12913,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "即时数字交付",
 							paragraphs: [
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含Easy Anti-Cheat维护。",
-								"支持与法务：support@theislehack.org",
+								"支持与法务：support@theislehacks.org",
 							],
 						},
 					],
@@ -12948,7 +12948,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "即时数字交付",
 							paragraphs: [
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含Easy Anti-Cheat维护。",
-								"支持与法务：support@theislehack.org",
+								"支持与法务：support@theislehacks.org",
 							],
 						},
 					],
@@ -12983,7 +12983,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "即时数字交付",
 							paragraphs: [
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含Easy Anti-Cheat维护。",
-								"支持与法务：support@theislehack.org",
+								"支持与法务：support@theislehacks.org",
 							],
 						},
 					],
@@ -13018,7 +13018,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "即时数字交付",
 							paragraphs: [
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含Easy Anti-Cheat维护。",
-								"支持与法务：support@theislehack.org",
+								"支持与法务：support@theislehacks.org",
 							],
 						},
 					],
@@ -13053,7 +13053,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "即时数字交付",
 							paragraphs: [
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含Easy Anti-Cheat维护。",
-								"支持与法务：support@theislehack.org",
+								"支持与法务：support@theislehacks.org",
 							],
 						},
 					],
@@ -13088,7 +13088,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "即时数字交付",
 							paragraphs: [
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含Easy Anti-Cheat维护。",
-								"支持与法务：support@theislehack.org",
+								"支持与法务：support@theislehacks.org",
 							],
 						},
 					],
@@ -13123,7 +13123,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "即时数字交付",
 							paragraphs: [
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含Easy Anti-Cheat维护。",
-								"支持与法务：support@theislehack.org",
+								"支持与法务：support@theislehacks.org",
 							],
 						},
 					],
@@ -13158,7 +13158,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "即时数字交付",
 							paragraphs: [
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含Easy Anti-Cheat维护。",
-								"支持与法务：support@theislehack.org",
+								"支持与法务：support@theislehacks.org",
 							],
 						},
 					],
@@ -13193,7 +13193,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "即时数字交付",
 							paragraphs: [
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含Easy Anti-Cheat维护。",
-								"支持与法务：support@theislehack.org",
+								"支持与法务：support@theislehacks.org",
 							],
 						},
 					],
@@ -13228,7 +13228,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "即时数字交付",
 							paragraphs: [
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含Easy Anti-Cheat维护。",
-								"支持与法务：support@theislehack.org",
+								"支持与法务：support@theislehacks.org",
 							],
 						},
 					],
@@ -13237,7 +13237,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "隐私政策 | The Isle Hacks",
 					description: "隐私政策 The Isle Hacks — ESP wallhack、Aimbot, Windows PC.",
 					h1: "隐私政策",
-					intro: "The Isle Hacks为The IsleWindows PC提供ESP wallhack、radar hack和Isle Aimbotundetected套餐。隐私政策 适用于 theislehack.org 和 The Isle 许可证。",
+					intro: "The Isle Hacks为The IsleWindows PC提供ESP wallhack、radar hack和Isle Aimbotundetected套餐。隐私政策 适用于 theislehacks.org 和 The Isle 许可证。",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-aimbot.webp",
@@ -13249,7 +13249,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "我们收集的信息",
 							paragraphs: [
 								"The Isle Hacks为The IsleWindows PC提供ESP wallhack、radar hack和Isle Aimbotundetected套餐。联系邮箱、Zadeyo 订单参考及基本网站安全数据。",
-								"支付详情由 Zadeyo checkout 处理 — 不存储在 theislehack.org。",
+								"支付详情由 Zadeyo checkout 处理 — 不存储在 theislehacks.org。",
 							],
 						},
 						{
@@ -13262,8 +13262,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "您的权利",
 							paragraphs: [
-								"支持与法务：support@theislehack.org",
-								"邮箱: support@theislehack.org",
+								"支持与法务：support@theislehacks.org",
+								"邮箱: support@theislehacks.org",
 							],
 						},
 					],
@@ -13272,7 +13272,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "退款政策 | The Isle Hacks",
 					description: "退款政策 The Isle Hacks — ESP wallhack、Aimbot, Windows PC.",
 					h1: "退款政策",
-					intro: "The Isle Hacks为The IsleWindows PC提供ESP wallhack、radar hack和Isle Aimbotundetected套餐。退款政策 适用于 theislehack.org 和 The Isle 许可证。",
+					intro: "The Isle Hacks为The IsleWindows PC提供ESP wallhack、radar hack和Isle Aimbotundetected套餐。退款政策 适用于 theislehacks.org 和 The Isle 许可证。",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-session.webp",
@@ -13297,8 +13297,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "如何申请",
 							paragraphs: [
-								"支持与法务：support@theislehack.org",
-								"邮箱: support@theislehack.org",
+								"支持与法务：support@theislehacks.org",
+								"邮箱: support@theislehacks.org",
 							],
 						},
 					],
@@ -13307,7 +13307,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "使用条款 | The Isle Hacks",
 					description: "使用条款 The Isle Hacks — ESP wallhack、Aimbot, Windows PC.",
 					h1: "使用条款",
-					intro: "The Isle Hacks为The IsleWindows PC提供ESP wallhack、radar hack和Isle Aimbotundetected套餐。使用条款 适用于 theislehack.org 和 The Isle 许可证。",
+					intro: "The Isle Hacks为The IsleWindows PC提供ESP wallhack、radar hack和Isle Aimbotundetected套餐。使用条款 适用于 theislehacks.org 和 The Isle 许可证。",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-aimbot-view.webp",
@@ -13332,8 +13332,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "政策变更",
 							paragraphs: [
-								"支持与法务：support@theislehack.org",
-								"邮箱: support@theislehack.org",
+								"支持与法务：support@theislehacks.org",
+								"邮箱: support@theislehacks.org",
 							],
 						},
 					],
@@ -13471,7 +13471,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "तुरंत डिजिटल डिलीवरी",
 							paragraphs: [
 								"Zadeyo checkout से तुरंत डिजिटल डिलीवरी। $35/माह और $150 लाइफ़टाइम में Easy Anti-Cheat maintenance शामिल।",
-								"सहायता: support@theislehack.org",
+								"सहायता: support@theislehacks.org",
 							],
 						},
 					],
@@ -13506,7 +13506,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "तुरंत डिजिटल डिलीवरी",
 							paragraphs: [
 								"Zadeyo checkout से तुरंत डिजिटल डिलीवरी। $35/माह और $150 लाइफ़टाइम में Easy Anti-Cheat maintenance शामिल।",
-								"सहायता: support@theislehack.org",
+								"सहायता: support@theislehacks.org",
 							],
 						},
 					],
@@ -13541,7 +13541,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "तुरंत डिजिटल डिलीवरी",
 							paragraphs: [
 								"Zadeyo checkout से तुरंत डिजिटल डिलीवरी। $35/माह और $150 लाइफ़टाइम में Easy Anti-Cheat maintenance शामिल।",
-								"सहायता: support@theislehack.org",
+								"सहायता: support@theislehacks.org",
 							],
 						},
 					],
@@ -13576,7 +13576,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "तुरंत डिजिटल डिलीवरी",
 							paragraphs: [
 								"Zadeyo checkout से तुरंत डिजिटल डिलीवरी। $35/माह और $150 लाइफ़टाइम में Easy Anti-Cheat maintenance शामिल।",
-								"सहायता: support@theislehack.org",
+								"सहायता: support@theislehacks.org",
 							],
 						},
 					],
@@ -13611,7 +13611,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "तुरंत डिजिटल डिलीवरी",
 							paragraphs: [
 								"Zadeyo checkout से तुरंत डिजिटल डिलीवरी। $35/माह और $150 लाइफ़टाइम में Easy Anti-Cheat maintenance शामिल।",
-								"सहायता: support@theislehack.org",
+								"सहायता: support@theislehacks.org",
 							],
 						},
 					],
@@ -13646,7 +13646,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "तुरंत डिजिटल डिलीवरी",
 							paragraphs: [
 								"Zadeyo checkout से तुरंत डिजिटल डिलीवरी। $35/माह और $150 लाइफ़टाइम में Easy Anti-Cheat maintenance शामिल।",
-								"सहायता: support@theislehack.org",
+								"सहायता: support@theislehacks.org",
 							],
 						},
 					],
@@ -13681,7 +13681,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "तुरंत डिजिटल डिलीवरी",
 							paragraphs: [
 								"Zadeyo checkout से तुरंत डिजिटल डिलीवरी। $35/माह और $150 लाइफ़टाइम में Easy Anti-Cheat maintenance शामिल।",
-								"सहायता: support@theislehack.org",
+								"सहायता: support@theislehacks.org",
 							],
 						},
 					],
@@ -13716,7 +13716,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "तुरंत डिजिटल डिलीवरी",
 							paragraphs: [
 								"Zadeyo checkout से तुरंत डिजिटल डिलीवरी। $35/माह और $150 लाइफ़टाइम में Easy Anti-Cheat maintenance शामिल।",
-								"सहायता: support@theislehack.org",
+								"सहायता: support@theislehacks.org",
 							],
 						},
 					],
@@ -13751,7 +13751,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "तुरंत डिजिटल डिलीवरी",
 							paragraphs: [
 								"Zadeyo checkout से तुरंत डिजिटल डिलीवरी। $35/माह और $150 लाइफ़टाइम में Easy Anti-Cheat maintenance शामिल।",
-								"सहायता: support@theislehack.org",
+								"सहायता: support@theislehacks.org",
 							],
 						},
 					],
@@ -13786,7 +13786,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "तुरंत डिजिटल डिलीवरी",
 							paragraphs: [
 								"Zadeyo checkout से तुरंत डिजिटल डिलीवरी। $35/माह और $150 लाइफ़टाइम में Easy Anti-Cheat maintenance शामिल।",
-								"सहायता: support@theislehack.org",
+								"सहायता: support@theislehacks.org",
 							],
 						},
 					],
@@ -13821,7 +13821,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "तुरंत डिजिटल डिलीवरी",
 							paragraphs: [
 								"Zadeyo checkout से तुरंत डिजिटल डिलीवरी। $35/माह और $150 लाइफ़टाइम में Easy Anti-Cheat maintenance शामिल।",
-								"सहायता: support@theislehack.org",
+								"सहायता: support@theislehacks.org",
 							],
 						},
 					],
@@ -13856,7 +13856,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "तुरंत डिजिटल डिलीवरी",
 							paragraphs: [
 								"Zadeyo checkout से तुरंत डिजिटल डिलीवरी। $35/माह और $150 लाइफ़टाइम में Easy Anti-Cheat maintenance शामिल।",
-								"सहायता: support@theislehack.org",
+								"सहायता: support@theislehacks.org",
 							],
 						},
 					],
@@ -13891,7 +13891,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "तुरंत डिजिटल डिलीवरी",
 							paragraphs: [
 								"Zadeyo checkout से तुरंत डिजिटल डिलीवरी। $35/माह और $150 लाइफ़टाइम में Easy Anti-Cheat maintenance शामिल।",
-								"सहायता: support@theislehack.org",
+								"सहायता: support@theislehacks.org",
 							],
 						},
 					],
@@ -13926,7 +13926,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "तुरंत डिजिटल डिलीवरी",
 							paragraphs: [
 								"Zadeyo checkout से तुरंत डिजिटल डिलीवरी। $35/माह और $150 लाइफ़टाइम में Easy Anti-Cheat maintenance शामिल।",
-								"सहायता: support@theislehack.org",
+								"सहायता: support@theislehacks.org",
 							],
 						},
 					],
@@ -13961,7 +13961,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "तुरंत डिजिटल डिलीवरी",
 							paragraphs: [
 								"Zadeyo checkout से तुरंत डिजिटल डिलीवरी। $35/माह और $150 लाइफ़टाइम में Easy Anti-Cheat maintenance शामिल।",
-								"सहायता: support@theislehack.org",
+								"सहायता: support@theislehacks.org",
 							],
 						},
 					],
@@ -13996,7 +13996,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "तुरंत डिजिटल डिलीवरी",
 							paragraphs: [
 								"Zadeyo checkout से तुरंत डिजिटल डिलीवरी। $35/माह और $150 लाइफ़टाइम में Easy Anti-Cheat maintenance शामिल।",
-								"सहायता: support@theislehack.org",
+								"सहायता: support@theislehacks.org",
 							],
 						},
 					],
@@ -14031,7 +14031,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "तुरंत डिजिटल डिलीवरी",
 							paragraphs: [
 								"Zadeyo checkout से तुरंत डिजिटल डिलीवरी। $35/माह और $150 लाइफ़टाइम में Easy Anti-Cheat maintenance शामिल।",
-								"सहायता: support@theislehack.org",
+								"सहायता: support@theislehacks.org",
 							],
 						},
 					],
@@ -14066,7 +14066,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "तुरंत डिजिटल डिलीवरी",
 							paragraphs: [
 								"Zadeyo checkout से तुरंत डिजिटल डिलीवरी। $35/माह और $150 लाइफ़टाइम में Easy Anti-Cheat maintenance शामिल।",
-								"सहायता: support@theislehack.org",
+								"सहायता: support@theislehacks.org",
 							],
 						},
 					],
@@ -14101,7 +14101,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "तुरंत डिजिटल डिलीवरी",
 							paragraphs: [
 								"Zadeyo checkout से तुरंत डिजिटल डिलीवरी। $35/माह और $150 लाइफ़टाइम में Easy Anti-Cheat maintenance शामिल।",
-								"सहायता: support@theislehack.org",
+								"सहायता: support@theislehacks.org",
 							],
 						},
 					],
@@ -14136,7 +14136,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "तुरंत डिजिटल डिलीवरी",
 							paragraphs: [
 								"Zadeyo checkout से तुरंत डिजिटल डिलीवरी। $35/माह और $150 लाइफ़टाइम में Easy Anti-Cheat maintenance शामिल।",
-								"सहायता: support@theislehack.org",
+								"सहायता: support@theislehacks.org",
 							],
 						},
 					],
@@ -14171,7 +14171,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "तुरंत डिजिटल डिलीवरी",
 							paragraphs: [
 								"Zadeyo checkout से तुरंत डिजिटल डिलीवरी। $35/माह और $150 लाइफ़टाइम में Easy Anti-Cheat maintenance शामिल।",
-								"सहायता: support@theislehack.org",
+								"सहायता: support@theislehacks.org",
 							],
 						},
 					],
@@ -14180,7 +14180,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "गोपनीयता नीति | The Isle Hacks",
 					description: "गोपनीयता नीति The Isle Hacks — ESP wallhack, Aimbot के लिए, Windows PC.",
 					h1: "गोपनीयता नीति",
-					intro: "The Isle Hacks The Isle के लिए Windows PC पर ESP wallhack, radar hack और Isle Aimbot undetected पैकेज देता है। गोपनीयता नीति theislehack.org और The Isle लाइसेंस के लिए।",
+					intro: "The Isle Hacks The Isle के लिए Windows PC पर ESP wallhack, radar hack और Isle Aimbot undetected पैकेज देता है। गोपनीयता नीति theislehacks.org और The Isle लाइसेंस के लिए।",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-aimbot.webp",
@@ -14192,7 +14192,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "हम जो जानकारी एकत्र करते हैं",
 							paragraphs: [
 								"The Isle Hacks The Isle के लिए Windows PC पर ESP wallhack, radar hack और Isle Aimbot undetected पैकेज देता है। संपर्क ईमेल, Zadeyo ऑर्डर संदर्भ और बुनियादी साइट सुरक्षा डेटा।",
-								"भुगतान विवरण Zadeyo checkout द्वारा संसाधित — theislehack.org पर संग्रहीत नहीं।",
+								"भुगतान विवरण Zadeyo checkout द्वारा संसाधित — theislehacks.org पर संग्रहीत नहीं।",
 							],
 						},
 						{
@@ -14205,8 +14205,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "आपके अधिकार",
 							paragraphs: [
-								"सहायता: support@theislehack.org",
-								"ईमेल: support@theislehack.org",
+								"सहायता: support@theislehacks.org",
+								"ईमेल: support@theislehacks.org",
 							],
 						},
 					],
@@ -14215,7 +14215,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "रिफंड नीति | The Isle Hacks",
 					description: "रिफंड नीति The Isle Hacks — ESP wallhack, Aimbot के लिए, Windows PC.",
 					h1: "रिफंड नीति",
-					intro: "The Isle Hacks The Isle के लिए Windows PC पर ESP wallhack, radar hack और Isle Aimbot undetected पैकेज देता है। रिफंड नीति theislehack.org और The Isle लाइसेंस के लिए।",
+					intro: "The Isle Hacks The Isle के लिए Windows PC पर ESP wallhack, radar hack और Isle Aimbot undetected पैकेज देता है। रिफंड नीति theislehacks.org और The Isle लाइसेंस के लिए।",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-session.webp",
@@ -14240,8 +14240,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "कैसे अनुरोध करें",
 							paragraphs: [
-								"सहायता: support@theislehack.org",
-								"ईमेल: support@theislehack.org",
+								"सहायता: support@theislehacks.org",
+								"ईमेल: support@theislehacks.org",
 							],
 						},
 					],
@@ -14250,7 +14250,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "उपयोग की शर्तें | The Isle Hacks",
 					description: "उपयोग की शर्तें The Isle Hacks — ESP wallhack, Aimbot के लिए, Windows PC.",
 					h1: "उपयोग की शर्तें",
-					intro: "The Isle Hacks The Isle के लिए Windows PC पर ESP wallhack, radar hack और Isle Aimbot undetected पैकेज देता है। उपयोग की शर्तें theislehack.org और The Isle लाइसेंस के लिए।",
+					intro: "The Isle Hacks The Isle के लिए Windows PC पर ESP wallhack, radar hack और Isle Aimbot undetected पैकेज देता है। उपयोग की शर्तें theislehacks.org और The Isle लाइसेंस के लिए।",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-aimbot-view.webp",
@@ -14275,8 +14275,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "नीति परिवर्तन",
 							paragraphs: [
-								"सहायता: support@theislehack.org",
-								"ईमेल: support@theislehack.org",
+								"सहायता: support@theislehacks.org",
+								"ईमेल: support@theislehacks.org",
 							],
 						},
 					],
@@ -14414,7 +14414,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "pengiriman digital instan",
 							paragraphs: [
 								"pengiriman digital instan via checkout Zadeyo. Paket $35/bulan dan $150 seumur hidup termasuk pemeliharaan Easy Anti-Cheat.",
-								"support@theislehack.org untuk dukungan dan legal.",
+								"support@theislehacks.org untuk dukungan dan legal.",
 							],
 						},
 					],
@@ -14449,7 +14449,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "pengiriman digital instan",
 							paragraphs: [
 								"pengiriman digital instan via checkout Zadeyo. Paket $35/bulan dan $150 seumur hidup termasuk pemeliharaan Easy Anti-Cheat.",
-								"support@theislehack.org untuk dukungan dan legal.",
+								"support@theislehacks.org untuk dukungan dan legal.",
 							],
 						},
 					],
@@ -14484,7 +14484,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "pengiriman digital instan",
 							paragraphs: [
 								"pengiriman digital instan via checkout Zadeyo. Paket $35/bulan dan $150 seumur hidup termasuk pemeliharaan Easy Anti-Cheat.",
-								"support@theislehack.org untuk dukungan dan legal.",
+								"support@theislehacks.org untuk dukungan dan legal.",
 							],
 						},
 					],
@@ -14519,7 +14519,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "pengiriman digital instan",
 							paragraphs: [
 								"pengiriman digital instan via checkout Zadeyo. Paket $35/bulan dan $150 seumur hidup termasuk pemeliharaan Easy Anti-Cheat.",
-								"support@theislehack.org untuk dukungan dan legal.",
+								"support@theislehacks.org untuk dukungan dan legal.",
 							],
 						},
 					],
@@ -14554,7 +14554,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "pengiriman digital instan",
 							paragraphs: [
 								"pengiriman digital instan via checkout Zadeyo. Paket $35/bulan dan $150 seumur hidup termasuk pemeliharaan Easy Anti-Cheat.",
-								"support@theislehack.org untuk dukungan dan legal.",
+								"support@theislehacks.org untuk dukungan dan legal.",
 							],
 						},
 					],
@@ -14589,7 +14589,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "pengiriman digital instan",
 							paragraphs: [
 								"pengiriman digital instan via checkout Zadeyo. Paket $35/bulan dan $150 seumur hidup termasuk pemeliharaan Easy Anti-Cheat.",
-								"support@theislehack.org untuk dukungan dan legal.",
+								"support@theislehacks.org untuk dukungan dan legal.",
 							],
 						},
 					],
@@ -14624,7 +14624,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "pengiriman digital instan",
 							paragraphs: [
 								"pengiriman digital instan via checkout Zadeyo. Paket $35/bulan dan $150 seumur hidup termasuk pemeliharaan Easy Anti-Cheat.",
-								"support@theislehack.org untuk dukungan dan legal.",
+								"support@theislehacks.org untuk dukungan dan legal.",
 							],
 						},
 					],
@@ -14659,7 +14659,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "pengiriman digital instan",
 							paragraphs: [
 								"pengiriman digital instan via checkout Zadeyo. Paket $35/bulan dan $150 seumur hidup termasuk pemeliharaan Easy Anti-Cheat.",
-								"support@theislehack.org untuk dukungan dan legal.",
+								"support@theislehacks.org untuk dukungan dan legal.",
 							],
 						},
 					],
@@ -14694,7 +14694,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "pengiriman digital instan",
 							paragraphs: [
 								"pengiriman digital instan via checkout Zadeyo. Paket $35/bulan dan $150 seumur hidup termasuk pemeliharaan Easy Anti-Cheat.",
-								"support@theislehack.org untuk dukungan dan legal.",
+								"support@theislehacks.org untuk dukungan dan legal.",
 							],
 						},
 					],
@@ -14729,7 +14729,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "pengiriman digital instan",
 							paragraphs: [
 								"pengiriman digital instan via checkout Zadeyo. Paket $35/bulan dan $150 seumur hidup termasuk pemeliharaan Easy Anti-Cheat.",
-								"support@theislehack.org untuk dukungan dan legal.",
+								"support@theislehacks.org untuk dukungan dan legal.",
 							],
 						},
 					],
@@ -14764,7 +14764,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "pengiriman digital instan",
 							paragraphs: [
 								"pengiriman digital instan via checkout Zadeyo. Paket $35/bulan dan $150 seumur hidup termasuk pemeliharaan Easy Anti-Cheat.",
-								"support@theislehack.org untuk dukungan dan legal.",
+								"support@theislehacks.org untuk dukungan dan legal.",
 							],
 						},
 					],
@@ -14799,7 +14799,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "pengiriman digital instan",
 							paragraphs: [
 								"pengiriman digital instan via checkout Zadeyo. Paket $35/bulan dan $150 seumur hidup termasuk pemeliharaan Easy Anti-Cheat.",
-								"support@theislehack.org untuk dukungan dan legal.",
+								"support@theislehacks.org untuk dukungan dan legal.",
 							],
 						},
 					],
@@ -14834,7 +14834,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "pengiriman digital instan",
 							paragraphs: [
 								"pengiriman digital instan via checkout Zadeyo. Paket $35/bulan dan $150 seumur hidup termasuk pemeliharaan Easy Anti-Cheat.",
-								"support@theislehack.org untuk dukungan dan legal.",
+								"support@theislehacks.org untuk dukungan dan legal.",
 							],
 						},
 					],
@@ -14869,7 +14869,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "pengiriman digital instan",
 							paragraphs: [
 								"pengiriman digital instan via checkout Zadeyo. Paket $35/bulan dan $150 seumur hidup termasuk pemeliharaan Easy Anti-Cheat.",
-								"support@theislehack.org untuk dukungan dan legal.",
+								"support@theislehacks.org untuk dukungan dan legal.",
 							],
 						},
 					],
@@ -14904,7 +14904,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "pengiriman digital instan",
 							paragraphs: [
 								"pengiriman digital instan via checkout Zadeyo. Paket $35/bulan dan $150 seumur hidup termasuk pemeliharaan Easy Anti-Cheat.",
-								"support@theislehack.org untuk dukungan dan legal.",
+								"support@theislehacks.org untuk dukungan dan legal.",
 							],
 						},
 					],
@@ -14939,7 +14939,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "pengiriman digital instan",
 							paragraphs: [
 								"pengiriman digital instan via checkout Zadeyo. Paket $35/bulan dan $150 seumur hidup termasuk pemeliharaan Easy Anti-Cheat.",
-								"support@theislehack.org untuk dukungan dan legal.",
+								"support@theislehacks.org untuk dukungan dan legal.",
 							],
 						},
 					],
@@ -14974,7 +14974,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "pengiriman digital instan",
 							paragraphs: [
 								"pengiriman digital instan via checkout Zadeyo. Paket $35/bulan dan $150 seumur hidup termasuk pemeliharaan Easy Anti-Cheat.",
-								"support@theislehack.org untuk dukungan dan legal.",
+								"support@theislehacks.org untuk dukungan dan legal.",
 							],
 						},
 					],
@@ -15009,7 +15009,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "pengiriman digital instan",
 							paragraphs: [
 								"pengiriman digital instan via checkout Zadeyo. Paket $35/bulan dan $150 seumur hidup termasuk pemeliharaan Easy Anti-Cheat.",
-								"support@theislehack.org untuk dukungan dan legal.",
+								"support@theislehacks.org untuk dukungan dan legal.",
 							],
 						},
 					],
@@ -15044,7 +15044,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "pengiriman digital instan",
 							paragraphs: [
 								"pengiriman digital instan via checkout Zadeyo. Paket $35/bulan dan $150 seumur hidup termasuk pemeliharaan Easy Anti-Cheat.",
-								"support@theislehack.org untuk dukungan dan legal.",
+								"support@theislehacks.org untuk dukungan dan legal.",
 							],
 						},
 					],
@@ -15079,7 +15079,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "pengiriman digital instan",
 							paragraphs: [
 								"pengiriman digital instan via checkout Zadeyo. Paket $35/bulan dan $150 seumur hidup termasuk pemeliharaan Easy Anti-Cheat.",
-								"support@theislehack.org untuk dukungan dan legal.",
+								"support@theislehacks.org untuk dukungan dan legal.",
 							],
 						},
 					],
@@ -15114,7 +15114,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "pengiriman digital instan",
 							paragraphs: [
 								"pengiriman digital instan via checkout Zadeyo. Paket $35/bulan dan $150 seumur hidup termasuk pemeliharaan Easy Anti-Cheat.",
-								"support@theislehack.org untuk dukungan dan legal.",
+								"support@theislehacks.org untuk dukungan dan legal.",
 							],
 						},
 					],
@@ -15123,7 +15123,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Kebijakan privasi | The Isle Hacks",
 					description: "Kebijakan privasi untuk The Isle Hacks — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Kebijakan privasi",
-					intro: "The Isle Hacks menyediakan ESP wallhack, radar hack, dan Isle Aimbot undetected untuk The Isle di PC Windows. Kebijakan privasi untuk theislehack.org dan lisensi The Isle.",
+					intro: "The Isle Hacks menyediakan ESP wallhack, radar hack, dan Isle Aimbot undetected untuk The Isle di PC Windows. Kebijakan privasi untuk theislehacks.org dan lisensi The Isle.",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-aimbot.webp",
@@ -15135,7 +15135,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Informasi yang kami kumpulkan",
 							paragraphs: [
 								"The Isle Hacks menyediakan ESP wallhack, radar hack, dan Isle Aimbot undetected untuk The Isle di PC Windows. Email kontak, referensi pesanan Zadeyo, dan data keamanan situs dasar.",
-								"Detail pembayaran diproses oleh checkout Zadeyo — tidak disimpan di theislehack.org.",
+								"Detail pembayaran diproses oleh checkout Zadeyo — tidak disimpan di theislehacks.org.",
 							],
 						},
 						{
@@ -15148,8 +15148,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Hak Anda",
 							paragraphs: [
-								"support@theislehack.org untuk dukungan dan legal.",
-								"Email: support@theislehack.org",
+								"support@theislehacks.org untuk dukungan dan legal.",
+								"Email: support@theislehacks.org",
 							],
 						},
 					],
@@ -15158,7 +15158,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Kebijakan refund | The Isle Hacks",
 					description: "Kebijakan refund untuk The Isle Hacks — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Kebijakan refund",
-					intro: "The Isle Hacks menyediakan ESP wallhack, radar hack, dan Isle Aimbot undetected untuk The Isle di PC Windows. Kebijakan refund untuk theislehack.org dan lisensi The Isle.",
+					intro: "The Isle Hacks menyediakan ESP wallhack, radar hack, dan Isle Aimbot undetected untuk The Isle di PC Windows. Kebijakan refund untuk theislehacks.org dan lisensi The Isle.",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-session.webp",
@@ -15183,8 +15183,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Cara meminta",
 							paragraphs: [
-								"support@theislehack.org untuk dukungan dan legal.",
-								"Email: support@theislehack.org",
+								"support@theislehacks.org untuk dukungan dan legal.",
+								"Email: support@theislehacks.org",
 							],
 						},
 					],
@@ -15193,7 +15193,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Syarat penggunaan | The Isle Hacks",
 					description: "Syarat penggunaan untuk The Isle Hacks — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Syarat penggunaan",
-					intro: "The Isle Hacks menyediakan ESP wallhack, radar hack, dan Isle Aimbot undetected untuk The Isle di PC Windows. Syarat penggunaan untuk theislehack.org dan lisensi The Isle.",
+					intro: "The Isle Hacks menyediakan ESP wallhack, radar hack, dan Isle Aimbot undetected untuk The Isle di PC Windows. Syarat penggunaan untuk theislehacks.org dan lisensi The Isle.",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-aimbot-view.webp",
@@ -15218,8 +15218,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Perubahan kebijakan",
 							paragraphs: [
-								"support@theislehack.org untuk dukungan dan legal.",
-								"Email: support@theislehack.org",
+								"support@theislehacks.org untuk dukungan dan legal.",
+								"Email: support@theislehacks.org",
 							],
 						},
 					],
@@ -15357,7 +15357,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "จัดส่งดิจิทัลทันที",
 							paragraphs: [
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล Easy Anti-Cheat",
-								"support@theislehack.org สำหรับการสนับสนุน",
+								"support@theislehacks.org สำหรับการสนับสนุน",
 							],
 						},
 					],
@@ -15392,7 +15392,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "จัดส่งดิจิทัลทันที",
 							paragraphs: [
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล Easy Anti-Cheat",
-								"support@theislehack.org สำหรับการสนับสนุน",
+								"support@theislehacks.org สำหรับการสนับสนุน",
 							],
 						},
 					],
@@ -15427,7 +15427,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "จัดส่งดิจิทัลทันที",
 							paragraphs: [
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล Easy Anti-Cheat",
-								"support@theislehack.org สำหรับการสนับสนุน",
+								"support@theislehacks.org สำหรับการสนับสนุน",
 							],
 						},
 					],
@@ -15462,7 +15462,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "จัดส่งดิจิทัลทันที",
 							paragraphs: [
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล Easy Anti-Cheat",
-								"support@theislehack.org สำหรับการสนับสนุน",
+								"support@theislehacks.org สำหรับการสนับสนุน",
 							],
 						},
 					],
@@ -15497,7 +15497,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "จัดส่งดิจิทัลทันที",
 							paragraphs: [
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล Easy Anti-Cheat",
-								"support@theislehack.org สำหรับการสนับสนุน",
+								"support@theislehacks.org สำหรับการสนับสนุน",
 							],
 						},
 					],
@@ -15532,7 +15532,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "จัดส่งดิจิทัลทันที",
 							paragraphs: [
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล Easy Anti-Cheat",
-								"support@theislehack.org สำหรับการสนับสนุน",
+								"support@theislehacks.org สำหรับการสนับสนุน",
 							],
 						},
 					],
@@ -15567,7 +15567,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "จัดส่งดิจิทัลทันที",
 							paragraphs: [
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล Easy Anti-Cheat",
-								"support@theislehack.org สำหรับการสนับสนุน",
+								"support@theislehacks.org สำหรับการสนับสนุน",
 							],
 						},
 					],
@@ -15602,7 +15602,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "จัดส่งดิจิทัลทันที",
 							paragraphs: [
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล Easy Anti-Cheat",
-								"support@theislehack.org สำหรับการสนับสนุน",
+								"support@theislehacks.org สำหรับการสนับสนุน",
 							],
 						},
 					],
@@ -15637,7 +15637,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "จัดส่งดิจิทัลทันที",
 							paragraphs: [
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล Easy Anti-Cheat",
-								"support@theislehack.org สำหรับการสนับสนุน",
+								"support@theislehacks.org สำหรับการสนับสนุน",
 							],
 						},
 					],
@@ -15672,7 +15672,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "จัดส่งดิจิทัลทันที",
 							paragraphs: [
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล Easy Anti-Cheat",
-								"support@theislehack.org สำหรับการสนับสนุน",
+								"support@theislehacks.org สำหรับการสนับสนุน",
 							],
 						},
 					],
@@ -15707,7 +15707,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "จัดส่งดิจิทัลทันที",
 							paragraphs: [
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล Easy Anti-Cheat",
-								"support@theislehack.org สำหรับการสนับสนุน",
+								"support@theislehacks.org สำหรับการสนับสนุน",
 							],
 						},
 					],
@@ -15742,7 +15742,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "จัดส่งดิจิทัลทันที",
 							paragraphs: [
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล Easy Anti-Cheat",
-								"support@theislehack.org สำหรับการสนับสนุน",
+								"support@theislehacks.org สำหรับการสนับสนุน",
 							],
 						},
 					],
@@ -15777,7 +15777,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "จัดส่งดิจิทัลทันที",
 							paragraphs: [
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล Easy Anti-Cheat",
-								"support@theislehack.org สำหรับการสนับสนุน",
+								"support@theislehacks.org สำหรับการสนับสนุน",
 							],
 						},
 					],
@@ -15812,7 +15812,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "จัดส่งดิจิทัลทันที",
 							paragraphs: [
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล Easy Anti-Cheat",
-								"support@theislehack.org สำหรับการสนับสนุน",
+								"support@theislehacks.org สำหรับการสนับสนุน",
 							],
 						},
 					],
@@ -15847,7 +15847,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "จัดส่งดิจิทัลทันที",
 							paragraphs: [
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล Easy Anti-Cheat",
-								"support@theislehack.org สำหรับการสนับสนุน",
+								"support@theislehacks.org สำหรับการสนับสนุน",
 							],
 						},
 					],
@@ -15882,7 +15882,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "จัดส่งดิจิทัลทันที",
 							paragraphs: [
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล Easy Anti-Cheat",
-								"support@theislehack.org สำหรับการสนับสนุน",
+								"support@theislehacks.org สำหรับการสนับสนุน",
 							],
 						},
 					],
@@ -15917,7 +15917,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "จัดส่งดิจิทัลทันที",
 							paragraphs: [
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล Easy Anti-Cheat",
-								"support@theislehack.org สำหรับการสนับสนุน",
+								"support@theislehacks.org สำหรับการสนับสนุน",
 							],
 						},
 					],
@@ -15952,7 +15952,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "จัดส่งดิจิทัลทันที",
 							paragraphs: [
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล Easy Anti-Cheat",
-								"support@theislehack.org สำหรับการสนับสนุน",
+								"support@theislehacks.org สำหรับการสนับสนุน",
 							],
 						},
 					],
@@ -15987,7 +15987,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "จัดส่งดิจิทัลทันที",
 							paragraphs: [
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล Easy Anti-Cheat",
-								"support@theislehack.org สำหรับการสนับสนุน",
+								"support@theislehacks.org สำหรับการสนับสนุน",
 							],
 						},
 					],
@@ -16022,7 +16022,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "จัดส่งดิจิทัลทันที",
 							paragraphs: [
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล Easy Anti-Cheat",
-								"support@theislehack.org สำหรับการสนับสนุน",
+								"support@theislehacks.org สำหรับการสนับสนุน",
 							],
 						},
 					],
@@ -16057,7 +16057,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "จัดส่งดิจิทัลทันที",
 							paragraphs: [
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล Easy Anti-Cheat",
-								"support@theislehack.org สำหรับการสนับสนุน",
+								"support@theislehacks.org สำหรับการสนับสนุน",
 							],
 						},
 					],
@@ -16066,7 +16066,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "นโยบายความเป็นส่วนตัว | The Isle Hacks",
 					description: "นโยบายความเป็นส่วนตัว สำหรับ The Isle Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "นโยบายความเป็นส่วนตัว",
-					intro: "The Isle Hacks รวม ESP wallhack, radar hack และ Isle Aimbot แบบ undetected สำหรับ The Isle บน Windows PC นโยบายความเป็นส่วนตัว สำหรับ theislehack.org และใบอนุญาต The Isle",
+					intro: "The Isle Hacks รวม ESP wallhack, radar hack และ Isle Aimbot แบบ undetected สำหรับ The Isle บน Windows PC นโยบายความเป็นส่วนตัว สำหรับ theislehacks.org และใบอนุญาต The Isle",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-aimbot.webp",
@@ -16078,7 +16078,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "ข้อมูลที่เราเก็บ",
 							paragraphs: [
 								"The Isle Hacks รวม ESP wallhack, radar hack และ Isle Aimbot แบบ undetected สำหรับ The Isle บน Windows PC อีเมลติดต่อ อ้างอิงคำสั่งซื้อ Zadeyo และข้อมูลความปลอดภัยพื้นฐานของเว็บไซต์",
-								"รายละเอียดการชำระเงินประมวลผลผ่าน checkout Zadeyo — ไม่เก็บบน theislehack.org",
+								"รายละเอียดการชำระเงินประมวลผลผ่าน checkout Zadeyo — ไม่เก็บบน theislehacks.org",
 							],
 						},
 						{
@@ -16091,8 +16091,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "สิทธิของคุณ",
 							paragraphs: [
-								"support@theislehack.org สำหรับการสนับสนุน",
-								"อีเมล: support@theislehack.org",
+								"support@theislehacks.org สำหรับการสนับสนุน",
+								"อีเมล: support@theislehacks.org",
 							],
 						},
 					],
@@ -16101,7 +16101,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "นโยบายการคืนเงิน | The Isle Hacks",
 					description: "นโยบายการคืนเงิน สำหรับ The Isle Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "นโยบายการคืนเงิน",
-					intro: "The Isle Hacks รวม ESP wallhack, radar hack และ Isle Aimbot แบบ undetected สำหรับ The Isle บน Windows PC นโยบายการคืนเงิน สำหรับ theislehack.org และใบอนุญาต The Isle",
+					intro: "The Isle Hacks รวม ESP wallhack, radar hack และ Isle Aimbot แบบ undetected สำหรับ The Isle บน Windows PC นโยบายการคืนเงิน สำหรับ theislehacks.org และใบอนุญาต The Isle",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-session.webp",
@@ -16126,8 +16126,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "วิธีขอคืนเงิน",
 							paragraphs: [
-								"support@theislehack.org สำหรับการสนับสนุน",
-								"อีเมล: support@theislehack.org",
+								"support@theislehacks.org สำหรับการสนับสนุน",
+								"อีเมล: support@theislehacks.org",
 							],
 						},
 					],
@@ -16136,7 +16136,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "ข้อกำหนดการใช้งาน | The Isle Hacks",
 					description: "ข้อกำหนดการใช้งาน สำหรับ The Isle Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "ข้อกำหนดการใช้งาน",
-					intro: "The Isle Hacks รวม ESP wallhack, radar hack และ Isle Aimbot แบบ undetected สำหรับ The Isle บน Windows PC ข้อกำหนดการใช้งาน สำหรับ theislehack.org และใบอนุญาต The Isle",
+					intro: "The Isle Hacks รวม ESP wallhack, radar hack และ Isle Aimbot แบบ undetected สำหรับ The Isle บน Windows PC ข้อกำหนดการใช้งาน สำหรับ theislehacks.org และใบอนุญาต The Isle",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-aimbot-view.webp",
@@ -16161,8 +16161,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "การเปลี่ยนแปลงนโยบาย",
 							paragraphs: [
-								"support@theislehack.org สำหรับการสนับสนุน",
-								"อีเมล: support@theislehack.org",
+								"support@theislehacks.org สำหรับการสนับสนุน",
+								"อีเมล: support@theislehacks.org",
 							],
 						},
 					],
@@ -16300,7 +16300,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "giao hàng kỹ thuật số tức thì",
 							paragraphs: [
 								"giao hàng kỹ thuật số tức thì qua checkout Zadeyo. Gói $35/tháng và $150 trọn đời gồm bảo trì Easy Anti-Cheat.",
-								"support@theislehack.org cho hỗ trợ và pháp lý.",
+								"support@theislehacks.org cho hỗ trợ và pháp lý.",
 							],
 						},
 					],
@@ -16335,7 +16335,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "giao hàng kỹ thuật số tức thì",
 							paragraphs: [
 								"giao hàng kỹ thuật số tức thì qua checkout Zadeyo. Gói $35/tháng và $150 trọn đời gồm bảo trì Easy Anti-Cheat.",
-								"support@theislehack.org cho hỗ trợ và pháp lý.",
+								"support@theislehacks.org cho hỗ trợ và pháp lý.",
 							],
 						},
 					],
@@ -16370,7 +16370,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "giao hàng kỹ thuật số tức thì",
 							paragraphs: [
 								"giao hàng kỹ thuật số tức thì qua checkout Zadeyo. Gói $35/tháng và $150 trọn đời gồm bảo trì Easy Anti-Cheat.",
-								"support@theislehack.org cho hỗ trợ và pháp lý.",
+								"support@theislehacks.org cho hỗ trợ và pháp lý.",
 							],
 						},
 					],
@@ -16405,7 +16405,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "giao hàng kỹ thuật số tức thì",
 							paragraphs: [
 								"giao hàng kỹ thuật số tức thì qua checkout Zadeyo. Gói $35/tháng và $150 trọn đời gồm bảo trì Easy Anti-Cheat.",
-								"support@theislehack.org cho hỗ trợ và pháp lý.",
+								"support@theislehacks.org cho hỗ trợ và pháp lý.",
 							],
 						},
 					],
@@ -16440,7 +16440,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "giao hàng kỹ thuật số tức thì",
 							paragraphs: [
 								"giao hàng kỹ thuật số tức thì qua checkout Zadeyo. Gói $35/tháng và $150 trọn đời gồm bảo trì Easy Anti-Cheat.",
-								"support@theislehack.org cho hỗ trợ và pháp lý.",
+								"support@theislehacks.org cho hỗ trợ và pháp lý.",
 							],
 						},
 					],
@@ -16475,7 +16475,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "giao hàng kỹ thuật số tức thì",
 							paragraphs: [
 								"giao hàng kỹ thuật số tức thì qua checkout Zadeyo. Gói $35/tháng và $150 trọn đời gồm bảo trì Easy Anti-Cheat.",
-								"support@theislehack.org cho hỗ trợ và pháp lý.",
+								"support@theislehacks.org cho hỗ trợ và pháp lý.",
 							],
 						},
 					],
@@ -16510,7 +16510,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "giao hàng kỹ thuật số tức thì",
 							paragraphs: [
 								"giao hàng kỹ thuật số tức thì qua checkout Zadeyo. Gói $35/tháng và $150 trọn đời gồm bảo trì Easy Anti-Cheat.",
-								"support@theislehack.org cho hỗ trợ và pháp lý.",
+								"support@theislehacks.org cho hỗ trợ và pháp lý.",
 							],
 						},
 					],
@@ -16545,7 +16545,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "giao hàng kỹ thuật số tức thì",
 							paragraphs: [
 								"giao hàng kỹ thuật số tức thì qua checkout Zadeyo. Gói $35/tháng và $150 trọn đời gồm bảo trì Easy Anti-Cheat.",
-								"support@theislehack.org cho hỗ trợ và pháp lý.",
+								"support@theislehacks.org cho hỗ trợ và pháp lý.",
 							],
 						},
 					],
@@ -16580,7 +16580,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "giao hàng kỹ thuật số tức thì",
 							paragraphs: [
 								"giao hàng kỹ thuật số tức thì qua checkout Zadeyo. Gói $35/tháng và $150 trọn đời gồm bảo trì Easy Anti-Cheat.",
-								"support@theislehack.org cho hỗ trợ và pháp lý.",
+								"support@theislehacks.org cho hỗ trợ và pháp lý.",
 							],
 						},
 					],
@@ -16615,7 +16615,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "giao hàng kỹ thuật số tức thì",
 							paragraphs: [
 								"giao hàng kỹ thuật số tức thì qua checkout Zadeyo. Gói $35/tháng và $150 trọn đời gồm bảo trì Easy Anti-Cheat.",
-								"support@theislehack.org cho hỗ trợ và pháp lý.",
+								"support@theislehacks.org cho hỗ trợ và pháp lý.",
 							],
 						},
 					],
@@ -16650,7 +16650,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "giao hàng kỹ thuật số tức thì",
 							paragraphs: [
 								"giao hàng kỹ thuật số tức thì qua checkout Zadeyo. Gói $35/tháng và $150 trọn đời gồm bảo trì Easy Anti-Cheat.",
-								"support@theislehack.org cho hỗ trợ và pháp lý.",
+								"support@theislehacks.org cho hỗ trợ và pháp lý.",
 							],
 						},
 					],
@@ -16685,7 +16685,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "giao hàng kỹ thuật số tức thì",
 							paragraphs: [
 								"giao hàng kỹ thuật số tức thì qua checkout Zadeyo. Gói $35/tháng và $150 trọn đời gồm bảo trì Easy Anti-Cheat.",
-								"support@theislehack.org cho hỗ trợ và pháp lý.",
+								"support@theislehacks.org cho hỗ trợ và pháp lý.",
 							],
 						},
 					],
@@ -16720,7 +16720,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "giao hàng kỹ thuật số tức thì",
 							paragraphs: [
 								"giao hàng kỹ thuật số tức thì qua checkout Zadeyo. Gói $35/tháng và $150 trọn đời gồm bảo trì Easy Anti-Cheat.",
-								"support@theislehack.org cho hỗ trợ và pháp lý.",
+								"support@theislehacks.org cho hỗ trợ và pháp lý.",
 							],
 						},
 					],
@@ -16755,7 +16755,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "giao hàng kỹ thuật số tức thì",
 							paragraphs: [
 								"giao hàng kỹ thuật số tức thì qua checkout Zadeyo. Gói $35/tháng và $150 trọn đời gồm bảo trì Easy Anti-Cheat.",
-								"support@theislehack.org cho hỗ trợ và pháp lý.",
+								"support@theislehacks.org cho hỗ trợ và pháp lý.",
 							],
 						},
 					],
@@ -16790,7 +16790,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "giao hàng kỹ thuật số tức thì",
 							paragraphs: [
 								"giao hàng kỹ thuật số tức thì qua checkout Zadeyo. Gói $35/tháng và $150 trọn đời gồm bảo trì Easy Anti-Cheat.",
-								"support@theislehack.org cho hỗ trợ và pháp lý.",
+								"support@theislehacks.org cho hỗ trợ và pháp lý.",
 							],
 						},
 					],
@@ -16825,7 +16825,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "giao hàng kỹ thuật số tức thì",
 							paragraphs: [
 								"giao hàng kỹ thuật số tức thì qua checkout Zadeyo. Gói $35/tháng và $150 trọn đời gồm bảo trì Easy Anti-Cheat.",
-								"support@theislehack.org cho hỗ trợ và pháp lý.",
+								"support@theislehacks.org cho hỗ trợ và pháp lý.",
 							],
 						},
 					],
@@ -16860,7 +16860,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "giao hàng kỹ thuật số tức thì",
 							paragraphs: [
 								"giao hàng kỹ thuật số tức thì qua checkout Zadeyo. Gói $35/tháng và $150 trọn đời gồm bảo trì Easy Anti-Cheat.",
-								"support@theislehack.org cho hỗ trợ và pháp lý.",
+								"support@theislehacks.org cho hỗ trợ và pháp lý.",
 							],
 						},
 					],
@@ -16895,7 +16895,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "giao hàng kỹ thuật số tức thì",
 							paragraphs: [
 								"giao hàng kỹ thuật số tức thì qua checkout Zadeyo. Gói $35/tháng và $150 trọn đời gồm bảo trì Easy Anti-Cheat.",
-								"support@theislehack.org cho hỗ trợ và pháp lý.",
+								"support@theislehacks.org cho hỗ trợ và pháp lý.",
 							],
 						},
 					],
@@ -16930,7 +16930,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "giao hàng kỹ thuật số tức thì",
 							paragraphs: [
 								"giao hàng kỹ thuật số tức thì qua checkout Zadeyo. Gói $35/tháng và $150 trọn đời gồm bảo trì Easy Anti-Cheat.",
-								"support@theislehack.org cho hỗ trợ và pháp lý.",
+								"support@theislehacks.org cho hỗ trợ và pháp lý.",
 							],
 						},
 					],
@@ -16965,7 +16965,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "giao hàng kỹ thuật số tức thì",
 							paragraphs: [
 								"giao hàng kỹ thuật số tức thì qua checkout Zadeyo. Gói $35/tháng và $150 trọn đời gồm bảo trì Easy Anti-Cheat.",
-								"support@theislehack.org cho hỗ trợ và pháp lý.",
+								"support@theislehacks.org cho hỗ trợ và pháp lý.",
 							],
 						},
 					],
@@ -17000,7 +17000,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "giao hàng kỹ thuật số tức thì",
 							paragraphs: [
 								"giao hàng kỹ thuật số tức thì qua checkout Zadeyo. Gói $35/tháng và $150 trọn đời gồm bảo trì Easy Anti-Cheat.",
-								"support@theislehack.org cho hỗ trợ và pháp lý.",
+								"support@theislehacks.org cho hỗ trợ và pháp lý.",
 							],
 						},
 					],
@@ -17009,7 +17009,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Chính sách bảo mật | The Isle Hacks",
 					description: "Chính sách bảo mật cho The Isle Hacks — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Chính sách bảo mật",
-					intro: "The Isle Hacks cung cấp ESP wallhack, radar hack và Isle Aimbot undetected cho The Isle trên PC Windows. Chính sách bảo mật cho theislehack.org và giấy phép The Isle.",
+					intro: "The Isle Hacks cung cấp ESP wallhack, radar hack và Isle Aimbot undetected cho The Isle trên PC Windows. Chính sách bảo mật cho theislehacks.org và giấy phép The Isle.",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-aimbot.webp",
@@ -17021,7 +17021,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Thông tin chúng tôi thu thập",
 							paragraphs: [
 								"The Isle Hacks cung cấp ESP wallhack, radar hack và Isle Aimbot undetected cho The Isle trên PC Windows. Email liên hệ, tham chiếu đơn hàng Zadeyo và dữ liệu bảo mật cơ bản của trang.",
-								"Chi tiết thanh toán được xử lý qua checkout Zadeyo — không lưu trên theislehack.org.",
+								"Chi tiết thanh toán được xử lý qua checkout Zadeyo — không lưu trên theislehacks.org.",
 							],
 						},
 						{
@@ -17034,8 +17034,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Quyền của bạn",
 							paragraphs: [
-								"support@theislehack.org cho hỗ trợ và pháp lý.",
-								"Email: support@theislehack.org",
+								"support@theislehacks.org cho hỗ trợ và pháp lý.",
+								"Email: support@theislehacks.org",
 							],
 						},
 					],
@@ -17044,7 +17044,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Chính sách hoàn tiền | The Isle Hacks",
 					description: "Chính sách hoàn tiền cho The Isle Hacks — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Chính sách hoàn tiền",
-					intro: "The Isle Hacks cung cấp ESP wallhack, radar hack và Isle Aimbot undetected cho The Isle trên PC Windows. Chính sách hoàn tiền cho theislehack.org và giấy phép The Isle.",
+					intro: "The Isle Hacks cung cấp ESP wallhack, radar hack và Isle Aimbot undetected cho The Isle trên PC Windows. Chính sách hoàn tiền cho theislehacks.org và giấy phép The Isle.",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-session.webp",
@@ -17069,8 +17069,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Cách yêu cầu",
 							paragraphs: [
-								"support@theislehack.org cho hỗ trợ và pháp lý.",
-								"Email: support@theislehack.org",
+								"support@theislehacks.org cho hỗ trợ và pháp lý.",
+								"Email: support@theislehacks.org",
 							],
 						},
 					],
@@ -17079,7 +17079,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Điều khoản sử dụng | The Isle Hacks",
 					description: "Điều khoản sử dụng cho The Isle Hacks — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Điều khoản sử dụng",
-					intro: "The Isle Hacks cung cấp ESP wallhack, radar hack và Isle Aimbot undetected cho The Isle trên PC Windows. Điều khoản sử dụng cho theislehack.org và giấy phép The Isle.",
+					intro: "The Isle Hacks cung cấp ESP wallhack, radar hack và Isle Aimbot undetected cho The Isle trên PC Windows. Điều khoản sử dụng cho theislehacks.org và giấy phép The Isle.",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-aimbot-view.webp",
@@ -17104,8 +17104,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Thay đổi chính sách",
 							paragraphs: [
-								"support@theislehack.org cho hỗ trợ và pháp lý.",
-								"Email: support@theislehack.org",
+								"support@theislehacks.org cho hỗ trợ và pháp lý.",
+								"Email: support@theislehacks.org",
 							],
 						},
 					],
@@ -17243,7 +17243,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "миттєва цифрова доставка",
 							paragraphs: [
 								"Ліцензії з миттєва цифрова доставка через checkout Zadeyo. Тарифи $35/міс і $150 назавжди включають обслуговування Easy Anti-Cheat.",
-								"support@theislehack.org для підтримки та правових питань.",
+								"support@theislehacks.org для підтримки та правових питань.",
 							],
 						},
 					],
@@ -17278,7 +17278,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "миттєва цифрова доставка",
 							paragraphs: [
 								"Ліцензії з миттєва цифрова доставка через checkout Zadeyo. Тарифи $35/міс і $150 назавжди включають обслуговування Easy Anti-Cheat.",
-								"support@theislehack.org для підтримки та правових питань.",
+								"support@theislehacks.org для підтримки та правових питань.",
 							],
 						},
 					],
@@ -17313,7 +17313,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "миттєва цифрова доставка",
 							paragraphs: [
 								"Ліцензії з миттєва цифрова доставка через checkout Zadeyo. Тарифи $35/міс і $150 назавжди включають обслуговування Easy Anti-Cheat.",
-								"support@theislehack.org для підтримки та правових питань.",
+								"support@theislehacks.org для підтримки та правових питань.",
 							],
 						},
 					],
@@ -17348,7 +17348,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "миттєва цифрова доставка",
 							paragraphs: [
 								"Ліцензії з миттєва цифрова доставка через checkout Zadeyo. Тарифи $35/міс і $150 назавжди включають обслуговування Easy Anti-Cheat.",
-								"support@theislehack.org для підтримки та правових питань.",
+								"support@theislehacks.org для підтримки та правових питань.",
 							],
 						},
 					],
@@ -17383,7 +17383,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "миттєва цифрова доставка",
 							paragraphs: [
 								"Ліцензії з миттєва цифрова доставка через checkout Zadeyo. Тарифи $35/міс і $150 назавжди включають обслуговування Easy Anti-Cheat.",
-								"support@theislehack.org для підтримки та правових питань.",
+								"support@theislehacks.org для підтримки та правових питань.",
 							],
 						},
 					],
@@ -17418,7 +17418,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "миттєва цифрова доставка",
 							paragraphs: [
 								"Ліцензії з миттєва цифрова доставка через checkout Zadeyo. Тарифи $35/міс і $150 назавжди включають обслуговування Easy Anti-Cheat.",
-								"support@theislehack.org для підтримки та правових питань.",
+								"support@theislehacks.org для підтримки та правових питань.",
 							],
 						},
 					],
@@ -17453,7 +17453,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "миттєва цифрова доставка",
 							paragraphs: [
 								"Ліцензії з миттєва цифрова доставка через checkout Zadeyo. Тарифи $35/міс і $150 назавжди включають обслуговування Easy Anti-Cheat.",
-								"support@theislehack.org для підтримки та правових питань.",
+								"support@theislehacks.org для підтримки та правових питань.",
 							],
 						},
 					],
@@ -17488,7 +17488,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "миттєва цифрова доставка",
 							paragraphs: [
 								"Ліцензії з миттєва цифрова доставка через checkout Zadeyo. Тарифи $35/міс і $150 назавжди включають обслуговування Easy Anti-Cheat.",
-								"support@theislehack.org для підтримки та правових питань.",
+								"support@theislehacks.org для підтримки та правових питань.",
 							],
 						},
 					],
@@ -17523,7 +17523,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "миттєва цифрова доставка",
 							paragraphs: [
 								"Ліцензії з миттєва цифрова доставка через checkout Zadeyo. Тарифи $35/міс і $150 назавжди включають обслуговування Easy Anti-Cheat.",
-								"support@theislehack.org для підтримки та правових питань.",
+								"support@theislehacks.org для підтримки та правових питань.",
 							],
 						},
 					],
@@ -17558,7 +17558,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "миттєва цифрова доставка",
 							paragraphs: [
 								"Ліцензії з миттєва цифрова доставка через checkout Zadeyo. Тарифи $35/міс і $150 назавжди включають обслуговування Easy Anti-Cheat.",
-								"support@theislehack.org для підтримки та правових питань.",
+								"support@theislehacks.org для підтримки та правових питань.",
 							],
 						},
 					],
@@ -17593,7 +17593,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "миттєва цифрова доставка",
 							paragraphs: [
 								"Ліцензії з миттєва цифрова доставка через checkout Zadeyo. Тарифи $35/міс і $150 назавжди включають обслуговування Easy Anti-Cheat.",
-								"support@theislehack.org для підтримки та правових питань.",
+								"support@theislehacks.org для підтримки та правових питань.",
 							],
 						},
 					],
@@ -17628,7 +17628,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "миттєва цифрова доставка",
 							paragraphs: [
 								"Ліцензії з миттєва цифрова доставка через checkout Zadeyo. Тарифи $35/міс і $150 назавжди включають обслуговування Easy Anti-Cheat.",
-								"support@theislehack.org для підтримки та правових питань.",
+								"support@theislehacks.org для підтримки та правових питань.",
 							],
 						},
 					],
@@ -17663,7 +17663,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "миттєва цифрова доставка",
 							paragraphs: [
 								"Ліцензії з миттєва цифрова доставка через checkout Zadeyo. Тарифи $35/міс і $150 назавжди включають обслуговування Easy Anti-Cheat.",
-								"support@theislehack.org для підтримки та правових питань.",
+								"support@theislehacks.org для підтримки та правових питань.",
 							],
 						},
 					],
@@ -17698,7 +17698,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "миттєва цифрова доставка",
 							paragraphs: [
 								"Ліцензії з миттєва цифрова доставка через checkout Zadeyo. Тарифи $35/міс і $150 назавжди включають обслуговування Easy Anti-Cheat.",
-								"support@theislehack.org для підтримки та правових питань.",
+								"support@theislehacks.org для підтримки та правових питань.",
 							],
 						},
 					],
@@ -17733,7 +17733,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "миттєва цифрова доставка",
 							paragraphs: [
 								"Ліцензії з миттєва цифрова доставка через checkout Zadeyo. Тарифи $35/міс і $150 назавжди включають обслуговування Easy Anti-Cheat.",
-								"support@theislehack.org для підтримки та правових питань.",
+								"support@theislehacks.org для підтримки та правових питань.",
 							],
 						},
 					],
@@ -17768,7 +17768,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "миттєва цифрова доставка",
 							paragraphs: [
 								"Ліцензії з миттєва цифрова доставка через checkout Zadeyo. Тарифи $35/міс і $150 назавжди включають обслуговування Easy Anti-Cheat.",
-								"support@theislehack.org для підтримки та правових питань.",
+								"support@theislehacks.org для підтримки та правових питань.",
 							],
 						},
 					],
@@ -17803,7 +17803,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "миттєва цифрова доставка",
 							paragraphs: [
 								"Ліцензії з миттєва цифрова доставка через checkout Zadeyo. Тарифи $35/міс і $150 назавжди включають обслуговування Easy Anti-Cheat.",
-								"support@theislehack.org для підтримки та правових питань.",
+								"support@theislehacks.org для підтримки та правових питань.",
 							],
 						},
 					],
@@ -17838,7 +17838,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "миттєва цифрова доставка",
 							paragraphs: [
 								"Ліцензії з миттєва цифрова доставка через checkout Zadeyo. Тарифи $35/міс і $150 назавжди включають обслуговування Easy Anti-Cheat.",
-								"support@theislehack.org для підтримки та правових питань.",
+								"support@theislehacks.org для підтримки та правових питань.",
 							],
 						},
 					],
@@ -17873,7 +17873,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "миттєва цифрова доставка",
 							paragraphs: [
 								"Ліцензії з миттєва цифрова доставка через checkout Zadeyo. Тарифи $35/міс і $150 назавжди включають обслуговування Easy Anti-Cheat.",
-								"support@theislehack.org для підтримки та правових питань.",
+								"support@theislehacks.org для підтримки та правових питань.",
 							],
 						},
 					],
@@ -17908,7 +17908,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "миттєва цифрова доставка",
 							paragraphs: [
 								"Ліцензії з миттєва цифрова доставка через checkout Zadeyo. Тарифи $35/міс і $150 назавжди включають обслуговування Easy Anti-Cheat.",
-								"support@theislehack.org для підтримки та правових питань.",
+								"support@theislehacks.org для підтримки та правових питань.",
 							],
 						},
 					],
@@ -17943,7 +17943,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "миттєва цифрова доставка",
 							paragraphs: [
 								"Ліцензії з миттєва цифрова доставка через checkout Zadeyo. Тарифи $35/міс і $150 назавжди включають обслуговування Easy Anti-Cheat.",
-								"support@theislehack.org для підтримки та правових питань.",
+								"support@theislehacks.org для підтримки та правових питань.",
 							],
 						},
 					],
@@ -17952,7 +17952,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Політика конфіденційності | The Isle Hacks",
 					description: "Політика конфіденційності для The Isle Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Політика конфіденційності",
-					intro: "The Isle Hacks об'єднує ESP wallhack, radar hack і Isle Aimbot у undetected пакеті для The Isle на Windows PC. Політика конфіденційності для theislehack.org та ліцензій The Isle.",
+					intro: "The Isle Hacks об'єднує ESP wallhack, radar hack і Isle Aimbot у undetected пакеті для The Isle на Windows PC. Політика конфіденційності для theislehacks.org та ліцензій The Isle.",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-aimbot.webp",
@@ -17964,7 +17964,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Інформація, яку ми збираємо",
 							paragraphs: [
 								"The Isle Hacks об'єднує ESP wallhack, radar hack і Isle Aimbot у undetected пакеті для The Isle на Windows PC. Контактний email, посилання на замовлення Zadeyo та базові дані безпеки сайту.",
-								"Платіжні дані обробляються через checkout Zadeyo — не зберігаються на theislehack.org.",
+								"Платіжні дані обробляються через checkout Zadeyo — не зберігаються на theislehacks.org.",
 							],
 						},
 						{
@@ -17977,8 +17977,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Ваші права",
 							paragraphs: [
-								"support@theislehack.org для підтримки та правових питань.",
-								"Email: support@theislehack.org",
+								"support@theislehacks.org для підтримки та правових питань.",
+								"Email: support@theislehacks.org",
 							],
 						},
 					],
@@ -17987,7 +17987,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Політика повернення | The Isle Hacks",
 					description: "Політика повернення для The Isle Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Політика повернення",
-					intro: "The Isle Hacks об'єднує ESP wallhack, radar hack і Isle Aimbot у undetected пакеті для The Isle на Windows PC. Політика повернення для theislehack.org та ліцензій The Isle.",
+					intro: "The Isle Hacks об'єднує ESP wallhack, radar hack і Isle Aimbot у undetected пакеті для The Isle на Windows PC. Політика повернення для theislehacks.org та ліцензій The Isle.",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-session.webp",
@@ -18012,8 +18012,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Як подати запит",
 							paragraphs: [
-								"support@theislehack.org для підтримки та правових питань.",
-								"Email: support@theislehack.org",
+								"support@theislehacks.org для підтримки та правових питань.",
+								"Email: support@theislehacks.org",
 							],
 						},
 					],
@@ -18022,7 +18022,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Умови використання | The Isle Hacks",
 					description: "Умови використання для The Isle Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Умови використання",
-					intro: "The Isle Hacks об'єднує ESP wallhack, radar hack і Isle Aimbot у undetected пакеті для The Isle на Windows PC. Умови використання для theislehack.org та ліцензій The Isle.",
+					intro: "The Isle Hacks об'єднує ESP wallhack, radar hack і Isle Aimbot у undetected пакеті для The Isle на Windows PC. Умови використання для theislehacks.org та ліцензій The Isle.",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-aimbot-view.webp",
@@ -18047,8 +18047,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Зміни політики",
 							paragraphs: [
-								"support@theislehack.org для підтримки та правових питань.",
-								"Email: support@theislehack.org",
+								"support@theislehacks.org для підтримки та правових питань.",
+								"Email: support@theislehacks.org",
 							],
 						},
 					],
@@ -18186,7 +18186,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "okamžité digitální doručení",
 							paragraphs: [
 								"Licence s okamžité digitální doručení přes checkout Zadeyo. Plány $35/měs. a $150 lifetime včetně údržby Easy Anti-Cheat.",
-								"support@theislehack.org pro podporu a právní dotazy.",
+								"support@theislehacks.org pro podporu a právní dotazy.",
 							],
 						},
 					],
@@ -18221,7 +18221,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "okamžité digitální doručení",
 							paragraphs: [
 								"Licence s okamžité digitální doručení přes checkout Zadeyo. Plány $35/měs. a $150 lifetime včetně údržby Easy Anti-Cheat.",
-								"support@theislehack.org pro podporu a právní dotazy.",
+								"support@theislehacks.org pro podporu a právní dotazy.",
 							],
 						},
 					],
@@ -18256,7 +18256,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "okamžité digitální doručení",
 							paragraphs: [
 								"Licence s okamžité digitální doručení přes checkout Zadeyo. Plány $35/měs. a $150 lifetime včetně údržby Easy Anti-Cheat.",
-								"support@theislehack.org pro podporu a právní dotazy.",
+								"support@theislehacks.org pro podporu a právní dotazy.",
 							],
 						},
 					],
@@ -18291,7 +18291,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "okamžité digitální doručení",
 							paragraphs: [
 								"Licence s okamžité digitální doručení přes checkout Zadeyo. Plány $35/měs. a $150 lifetime včetně údržby Easy Anti-Cheat.",
-								"support@theislehack.org pro podporu a právní dotazy.",
+								"support@theislehacks.org pro podporu a právní dotazy.",
 							],
 						},
 					],
@@ -18326,7 +18326,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "okamžité digitální doručení",
 							paragraphs: [
 								"Licence s okamžité digitální doručení přes checkout Zadeyo. Plány $35/měs. a $150 lifetime včetně údržby Easy Anti-Cheat.",
-								"support@theislehack.org pro podporu a právní dotazy.",
+								"support@theislehacks.org pro podporu a právní dotazy.",
 							],
 						},
 					],
@@ -18361,7 +18361,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "okamžité digitální doručení",
 							paragraphs: [
 								"Licence s okamžité digitální doručení přes checkout Zadeyo. Plány $35/měs. a $150 lifetime včetně údržby Easy Anti-Cheat.",
-								"support@theislehack.org pro podporu a právní dotazy.",
+								"support@theislehacks.org pro podporu a právní dotazy.",
 							],
 						},
 					],
@@ -18396,7 +18396,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "okamžité digitální doručení",
 							paragraphs: [
 								"Licence s okamžité digitální doručení přes checkout Zadeyo. Plány $35/měs. a $150 lifetime včetně údržby Easy Anti-Cheat.",
-								"support@theislehack.org pro podporu a právní dotazy.",
+								"support@theislehacks.org pro podporu a právní dotazy.",
 							],
 						},
 					],
@@ -18431,7 +18431,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "okamžité digitální doručení",
 							paragraphs: [
 								"Licence s okamžité digitální doručení přes checkout Zadeyo. Plány $35/měs. a $150 lifetime včetně údržby Easy Anti-Cheat.",
-								"support@theislehack.org pro podporu a právní dotazy.",
+								"support@theislehacks.org pro podporu a právní dotazy.",
 							],
 						},
 					],
@@ -18466,7 +18466,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "okamžité digitální doručení",
 							paragraphs: [
 								"Licence s okamžité digitální doručení přes checkout Zadeyo. Plány $35/měs. a $150 lifetime včetně údržby Easy Anti-Cheat.",
-								"support@theislehack.org pro podporu a právní dotazy.",
+								"support@theislehacks.org pro podporu a právní dotazy.",
 							],
 						},
 					],
@@ -18501,7 +18501,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "okamžité digitální doručení",
 							paragraphs: [
 								"Licence s okamžité digitální doručení přes checkout Zadeyo. Plány $35/měs. a $150 lifetime včetně údržby Easy Anti-Cheat.",
-								"support@theislehack.org pro podporu a právní dotazy.",
+								"support@theislehacks.org pro podporu a právní dotazy.",
 							],
 						},
 					],
@@ -18536,7 +18536,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "okamžité digitální doručení",
 							paragraphs: [
 								"Licence s okamžité digitální doručení přes checkout Zadeyo. Plány $35/měs. a $150 lifetime včetně údržby Easy Anti-Cheat.",
-								"support@theislehack.org pro podporu a právní dotazy.",
+								"support@theislehacks.org pro podporu a právní dotazy.",
 							],
 						},
 					],
@@ -18571,7 +18571,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "okamžité digitální doručení",
 							paragraphs: [
 								"Licence s okamžité digitální doručení přes checkout Zadeyo. Plány $35/měs. a $150 lifetime včetně údržby Easy Anti-Cheat.",
-								"support@theislehack.org pro podporu a právní dotazy.",
+								"support@theislehacks.org pro podporu a právní dotazy.",
 							],
 						},
 					],
@@ -18606,7 +18606,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "okamžité digitální doručení",
 							paragraphs: [
 								"Licence s okamžité digitální doručení přes checkout Zadeyo. Plány $35/měs. a $150 lifetime včetně údržby Easy Anti-Cheat.",
-								"support@theislehack.org pro podporu a právní dotazy.",
+								"support@theislehacks.org pro podporu a právní dotazy.",
 							],
 						},
 					],
@@ -18641,7 +18641,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "okamžité digitální doručení",
 							paragraphs: [
 								"Licence s okamžité digitální doručení přes checkout Zadeyo. Plány $35/měs. a $150 lifetime včetně údržby Easy Anti-Cheat.",
-								"support@theislehack.org pro podporu a právní dotazy.",
+								"support@theislehacks.org pro podporu a právní dotazy.",
 							],
 						},
 					],
@@ -18676,7 +18676,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "okamžité digitální doručení",
 							paragraphs: [
 								"Licence s okamžité digitální doručení přes checkout Zadeyo. Plány $35/měs. a $150 lifetime včetně údržby Easy Anti-Cheat.",
-								"support@theislehack.org pro podporu a právní dotazy.",
+								"support@theislehacks.org pro podporu a právní dotazy.",
 							],
 						},
 					],
@@ -18711,7 +18711,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "okamžité digitální doručení",
 							paragraphs: [
 								"Licence s okamžité digitální doručení přes checkout Zadeyo. Plány $35/měs. a $150 lifetime včetně údržby Easy Anti-Cheat.",
-								"support@theislehack.org pro podporu a právní dotazy.",
+								"support@theislehacks.org pro podporu a právní dotazy.",
 							],
 						},
 					],
@@ -18746,7 +18746,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "okamžité digitální doručení",
 							paragraphs: [
 								"Licence s okamžité digitální doručení přes checkout Zadeyo. Plány $35/měs. a $150 lifetime včetně údržby Easy Anti-Cheat.",
-								"support@theislehack.org pro podporu a právní dotazy.",
+								"support@theislehacks.org pro podporu a právní dotazy.",
 							],
 						},
 					],
@@ -18781,7 +18781,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "okamžité digitální doručení",
 							paragraphs: [
 								"Licence s okamžité digitální doručení přes checkout Zadeyo. Plány $35/měs. a $150 lifetime včetně údržby Easy Anti-Cheat.",
-								"support@theislehack.org pro podporu a právní dotazy.",
+								"support@theislehacks.org pro podporu a právní dotazy.",
 							],
 						},
 					],
@@ -18816,7 +18816,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "okamžité digitální doručení",
 							paragraphs: [
 								"Licence s okamžité digitální doručení přes checkout Zadeyo. Plány $35/měs. a $150 lifetime včetně údržby Easy Anti-Cheat.",
-								"support@theislehack.org pro podporu a právní dotazy.",
+								"support@theislehacks.org pro podporu a právní dotazy.",
 							],
 						},
 					],
@@ -18851,7 +18851,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "okamžité digitální doručení",
 							paragraphs: [
 								"Licence s okamžité digitální doručení přes checkout Zadeyo. Plány $35/měs. a $150 lifetime včetně údržby Easy Anti-Cheat.",
-								"support@theislehack.org pro podporu a právní dotazy.",
+								"support@theislehacks.org pro podporu a právní dotazy.",
 							],
 						},
 					],
@@ -18886,7 +18886,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "okamžité digitální doručení",
 							paragraphs: [
 								"Licence s okamžité digitální doručení přes checkout Zadeyo. Plány $35/měs. a $150 lifetime včetně údržby Easy Anti-Cheat.",
-								"support@theislehack.org pro podporu a právní dotazy.",
+								"support@theislehacks.org pro podporu a právní dotazy.",
 							],
 						},
 					],
@@ -18895,7 +18895,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Zásady ochrany soukromí | The Isle Hacks",
 					description: "Zásady ochrany soukromí pro The Isle Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Zásady ochrany soukromí",
-					intro: "The Isle Hacks spojuje ESP wallhack, radar hack a Isle Aimbot jako undetected balíček pro The Isle na Windows PC. Zásady ochrany soukromí pro theislehack.org a licence The Isle.",
+					intro: "The Isle Hacks spojuje ESP wallhack, radar hack a Isle Aimbot jako undetected balíček pro The Isle na Windows PC. Zásady ochrany soukromí pro theislehacks.org a licence The Isle.",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-aimbot.webp",
@@ -18907,7 +18907,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Informace, které shromažďujeme",
 							paragraphs: [
 								"The Isle Hacks spojuje ESP wallhack, radar hack a Isle Aimbot jako undetected balíček pro The Isle na Windows PC. Kontaktní e-mail, reference objednávek Zadeyo a základní bezpečnostní data webu.",
-								"Platební údaje zpracovává checkout Zadeyo — neukládají se na theislehack.org.",
+								"Platební údaje zpracovává checkout Zadeyo — neukládají se na theislehacks.org.",
 							],
 						},
 						{
@@ -18920,8 +18920,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Vaše práva",
 							paragraphs: [
-								"support@theislehack.org pro podporu a právní dotazy.",
-								"E-mail: support@theislehack.org",
+								"support@theislehacks.org pro podporu a právní dotazy.",
+								"E-mail: support@theislehacks.org",
 							],
 						},
 					],
@@ -18930,7 +18930,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Zásady vrácení peněz | The Isle Hacks",
 					description: "Zásady vrácení peněz pro The Isle Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Zásady vrácení peněz",
-					intro: "The Isle Hacks spojuje ESP wallhack, radar hack a Isle Aimbot jako undetected balíček pro The Isle na Windows PC. Zásady vrácení peněz pro theislehack.org a licence The Isle.",
+					intro: "The Isle Hacks spojuje ESP wallhack, radar hack a Isle Aimbot jako undetected balíček pro The Isle na Windows PC. Zásady vrácení peněz pro theislehacks.org a licence The Isle.",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-session.webp",
@@ -18955,8 +18955,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Jak požádat",
 							paragraphs: [
-								"support@theislehack.org pro podporu a právní dotazy.",
-								"E-mail: support@theislehack.org",
+								"support@theislehacks.org pro podporu a právní dotazy.",
+								"E-mail: support@theislehacks.org",
 							],
 						},
 					],
@@ -18965,7 +18965,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Podmínky použití | The Isle Hacks",
 					description: "Podmínky použití pro The Isle Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Podmínky použití",
-					intro: "The Isle Hacks spojuje ESP wallhack, radar hack a Isle Aimbot jako undetected balíček pro The Isle na Windows PC. Podmínky použití pro theislehack.org a licence The Isle.",
+					intro: "The Isle Hacks spojuje ESP wallhack, radar hack a Isle Aimbot jako undetected balíček pro The Isle na Windows PC. Podmínky použití pro theislehacks.org a licence The Isle.",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-aimbot-view.webp",
@@ -18990,8 +18990,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Změny zásad",
 							paragraphs: [
-								"support@theislehack.org pro podporu a právní dotazy.",
-								"E-mail: support@theislehack.org",
+								"support@theislehacks.org pro podporu a právní dotazy.",
+								"E-mail: support@theislehacks.org",
 							],
 						},
 					],
@@ -19129,7 +19129,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "livrare digitală instantă",
 							paragraphs: [
 								"Licențe cu livrare digitală instantă via checkout Zadeyo. Planuri $35/lună și $150 pe viață includ mentenanță Easy Anti-Cheat.",
-								"support@theislehack.org pentru suport și legal.",
+								"support@theislehacks.org pentru suport și legal.",
 							],
 						},
 					],
@@ -19164,7 +19164,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "livrare digitală instantă",
 							paragraphs: [
 								"Licențe cu livrare digitală instantă via checkout Zadeyo. Planuri $35/lună și $150 pe viață includ mentenanță Easy Anti-Cheat.",
-								"support@theislehack.org pentru suport și legal.",
+								"support@theislehacks.org pentru suport și legal.",
 							],
 						},
 					],
@@ -19199,7 +19199,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "livrare digitală instantă",
 							paragraphs: [
 								"Licențe cu livrare digitală instantă via checkout Zadeyo. Planuri $35/lună și $150 pe viață includ mentenanță Easy Anti-Cheat.",
-								"support@theislehack.org pentru suport și legal.",
+								"support@theislehacks.org pentru suport și legal.",
 							],
 						},
 					],
@@ -19234,7 +19234,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "livrare digitală instantă",
 							paragraphs: [
 								"Licențe cu livrare digitală instantă via checkout Zadeyo. Planuri $35/lună și $150 pe viață includ mentenanță Easy Anti-Cheat.",
-								"support@theislehack.org pentru suport și legal.",
+								"support@theislehacks.org pentru suport și legal.",
 							],
 						},
 					],
@@ -19269,7 +19269,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "livrare digitală instantă",
 							paragraphs: [
 								"Licențe cu livrare digitală instantă via checkout Zadeyo. Planuri $35/lună și $150 pe viață includ mentenanță Easy Anti-Cheat.",
-								"support@theislehack.org pentru suport și legal.",
+								"support@theislehacks.org pentru suport și legal.",
 							],
 						},
 					],
@@ -19304,7 +19304,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "livrare digitală instantă",
 							paragraphs: [
 								"Licențe cu livrare digitală instantă via checkout Zadeyo. Planuri $35/lună și $150 pe viață includ mentenanță Easy Anti-Cheat.",
-								"support@theislehack.org pentru suport și legal.",
+								"support@theislehacks.org pentru suport și legal.",
 							],
 						},
 					],
@@ -19339,7 +19339,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "livrare digitală instantă",
 							paragraphs: [
 								"Licențe cu livrare digitală instantă via checkout Zadeyo. Planuri $35/lună și $150 pe viață includ mentenanță Easy Anti-Cheat.",
-								"support@theislehack.org pentru suport și legal.",
+								"support@theislehacks.org pentru suport și legal.",
 							],
 						},
 					],
@@ -19374,7 +19374,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "livrare digitală instantă",
 							paragraphs: [
 								"Licențe cu livrare digitală instantă via checkout Zadeyo. Planuri $35/lună și $150 pe viață includ mentenanță Easy Anti-Cheat.",
-								"support@theislehack.org pentru suport și legal.",
+								"support@theislehacks.org pentru suport și legal.",
 							],
 						},
 					],
@@ -19409,7 +19409,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "livrare digitală instantă",
 							paragraphs: [
 								"Licențe cu livrare digitală instantă via checkout Zadeyo. Planuri $35/lună și $150 pe viață includ mentenanță Easy Anti-Cheat.",
-								"support@theislehack.org pentru suport și legal.",
+								"support@theislehacks.org pentru suport și legal.",
 							],
 						},
 					],
@@ -19444,7 +19444,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "livrare digitală instantă",
 							paragraphs: [
 								"Licențe cu livrare digitală instantă via checkout Zadeyo. Planuri $35/lună și $150 pe viață includ mentenanță Easy Anti-Cheat.",
-								"support@theislehack.org pentru suport și legal.",
+								"support@theislehacks.org pentru suport și legal.",
 							],
 						},
 					],
@@ -19479,7 +19479,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "livrare digitală instantă",
 							paragraphs: [
 								"Licențe cu livrare digitală instantă via checkout Zadeyo. Planuri $35/lună și $150 pe viață includ mentenanță Easy Anti-Cheat.",
-								"support@theislehack.org pentru suport și legal.",
+								"support@theislehacks.org pentru suport și legal.",
 							],
 						},
 					],
@@ -19514,7 +19514,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "livrare digitală instantă",
 							paragraphs: [
 								"Licențe cu livrare digitală instantă via checkout Zadeyo. Planuri $35/lună și $150 pe viață includ mentenanță Easy Anti-Cheat.",
-								"support@theislehack.org pentru suport și legal.",
+								"support@theislehacks.org pentru suport și legal.",
 							],
 						},
 					],
@@ -19549,7 +19549,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "livrare digitală instantă",
 							paragraphs: [
 								"Licențe cu livrare digitală instantă via checkout Zadeyo. Planuri $35/lună și $150 pe viață includ mentenanță Easy Anti-Cheat.",
-								"support@theislehack.org pentru suport și legal.",
+								"support@theislehacks.org pentru suport și legal.",
 							],
 						},
 					],
@@ -19584,7 +19584,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "livrare digitală instantă",
 							paragraphs: [
 								"Licențe cu livrare digitală instantă via checkout Zadeyo. Planuri $35/lună și $150 pe viață includ mentenanță Easy Anti-Cheat.",
-								"support@theislehack.org pentru suport și legal.",
+								"support@theislehacks.org pentru suport și legal.",
 							],
 						},
 					],
@@ -19619,7 +19619,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "livrare digitală instantă",
 							paragraphs: [
 								"Licențe cu livrare digitală instantă via checkout Zadeyo. Planuri $35/lună și $150 pe viață includ mentenanță Easy Anti-Cheat.",
-								"support@theislehack.org pentru suport și legal.",
+								"support@theislehacks.org pentru suport și legal.",
 							],
 						},
 					],
@@ -19654,7 +19654,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "livrare digitală instantă",
 							paragraphs: [
 								"Licențe cu livrare digitală instantă via checkout Zadeyo. Planuri $35/lună și $150 pe viață includ mentenanță Easy Anti-Cheat.",
-								"support@theislehack.org pentru suport și legal.",
+								"support@theislehacks.org pentru suport și legal.",
 							],
 						},
 					],
@@ -19689,7 +19689,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "livrare digitală instantă",
 							paragraphs: [
 								"Licențe cu livrare digitală instantă via checkout Zadeyo. Planuri $35/lună și $150 pe viață includ mentenanță Easy Anti-Cheat.",
-								"support@theislehack.org pentru suport și legal.",
+								"support@theislehacks.org pentru suport și legal.",
 							],
 						},
 					],
@@ -19724,7 +19724,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "livrare digitală instantă",
 							paragraphs: [
 								"Licențe cu livrare digitală instantă via checkout Zadeyo. Planuri $35/lună și $150 pe viață includ mentenanță Easy Anti-Cheat.",
-								"support@theislehack.org pentru suport și legal.",
+								"support@theislehacks.org pentru suport și legal.",
 							],
 						},
 					],
@@ -19759,7 +19759,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "livrare digitală instantă",
 							paragraphs: [
 								"Licențe cu livrare digitală instantă via checkout Zadeyo. Planuri $35/lună și $150 pe viață includ mentenanță Easy Anti-Cheat.",
-								"support@theislehack.org pentru suport și legal.",
+								"support@theislehacks.org pentru suport și legal.",
 							],
 						},
 					],
@@ -19794,7 +19794,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "livrare digitală instantă",
 							paragraphs: [
 								"Licențe cu livrare digitală instantă via checkout Zadeyo. Planuri $35/lună și $150 pe viață includ mentenanță Easy Anti-Cheat.",
-								"support@theislehack.org pentru suport și legal.",
+								"support@theislehacks.org pentru suport și legal.",
 							],
 						},
 					],
@@ -19829,7 +19829,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "livrare digitală instantă",
 							paragraphs: [
 								"Licențe cu livrare digitală instantă via checkout Zadeyo. Planuri $35/lună și $150 pe viață includ mentenanță Easy Anti-Cheat.",
-								"support@theislehack.org pentru suport și legal.",
+								"support@theislehacks.org pentru suport și legal.",
 							],
 						},
 					],
@@ -19838,7 +19838,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Politica de confidențialitate | The Isle Hacks",
 					description: "Politica de confidențialitate pentru The Isle Hacks — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Politica de confidențialitate",
-					intro: "The Isle Hacks combină ESP wallhack, radar hack și Isle Aimbot undetected pentru The Isle pe PC Windows. Politica de confidențialitate pentru theislehack.org și licențe The Isle.",
+					intro: "The Isle Hacks combină ESP wallhack, radar hack și Isle Aimbot undetected pentru The Isle pe PC Windows. Politica de confidențialitate pentru theislehacks.org și licențe The Isle.",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-aimbot.webp",
@@ -19850,7 +19850,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Informații pe care le colectăm",
 							paragraphs: [
 								"The Isle Hacks combină ESP wallhack, radar hack și Isle Aimbot undetected pentru The Isle pe PC Windows. Email de contact, referințe comenzi Zadeyo și date de securitate de bază ale site-ului.",
-								"Detaliile de plată sunt procesate prin checkout Zadeyo — nu sunt stocate pe theislehack.org.",
+								"Detaliile de plată sunt procesate prin checkout Zadeyo — nu sunt stocate pe theislehacks.org.",
 							],
 						},
 						{
@@ -19863,8 +19863,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Drepturile tale",
 							paragraphs: [
-								"support@theislehack.org pentru suport și legal.",
-								"Email: support@theislehack.org",
+								"support@theislehacks.org pentru suport și legal.",
+								"Email: support@theislehacks.org",
 							],
 						},
 					],
@@ -19873,7 +19873,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Politica de rambursare | The Isle Hacks",
 					description: "Politica de rambursare pentru The Isle Hacks — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Politica de rambursare",
-					intro: "The Isle Hacks combină ESP wallhack, radar hack și Isle Aimbot undetected pentru The Isle pe PC Windows. Politica de rambursare pentru theislehack.org și licențe The Isle.",
+					intro: "The Isle Hacks combină ESP wallhack, radar hack și Isle Aimbot undetected pentru The Isle pe PC Windows. Politica de rambursare pentru theislehacks.org și licențe The Isle.",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-session.webp",
@@ -19898,8 +19898,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Cum să soliciți",
 							paragraphs: [
-								"support@theislehack.org pentru suport și legal.",
-								"Email: support@theislehack.org",
+								"support@theislehacks.org pentru suport și legal.",
+								"Email: support@theislehacks.org",
 							],
 						},
 					],
@@ -19908,7 +19908,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Termeni de utilizare | The Isle Hacks",
 					description: "Termeni de utilizare pentru The Isle Hacks — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Termeni de utilizare",
-					intro: "The Isle Hacks combină ESP wallhack, radar hack și Isle Aimbot undetected pentru The Isle pe PC Windows. Termeni de utilizare pentru theislehack.org și licențe The Isle.",
+					intro: "The Isle Hacks combină ESP wallhack, radar hack și Isle Aimbot undetected pentru The Isle pe PC Windows. Termeni de utilizare pentru theislehacks.org și licențe The Isle.",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-aimbot-view.webp",
@@ -19933,8 +19933,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Modificări de politică",
 							paragraphs: [
-								"support@theislehack.org pentru suport și legal.",
-								"Email: support@theislehack.org",
+								"support@theislehacks.org pentru suport și legal.",
+								"Email: support@theislehacks.org",
 							],
 						},
 					],
@@ -20072,7 +20072,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "omedelbar digital leverans",
 							paragraphs: [
 								"Licenser med omedelbar digital leverans via Zadeyo checkout. $35/mån och $150 lifetime inkl. Easy Anti-Cheat-underhåll.",
-								"support@theislehack.org för support och juridik.",
+								"support@theislehacks.org för support och juridik.",
 							],
 						},
 					],
@@ -20107,7 +20107,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "omedelbar digital leverans",
 							paragraphs: [
 								"Licenser med omedelbar digital leverans via Zadeyo checkout. $35/mån och $150 lifetime inkl. Easy Anti-Cheat-underhåll.",
-								"support@theislehack.org för support och juridik.",
+								"support@theislehacks.org för support och juridik.",
 							],
 						},
 					],
@@ -20142,7 +20142,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "omedelbar digital leverans",
 							paragraphs: [
 								"Licenser med omedelbar digital leverans via Zadeyo checkout. $35/mån och $150 lifetime inkl. Easy Anti-Cheat-underhåll.",
-								"support@theislehack.org för support och juridik.",
+								"support@theislehacks.org för support och juridik.",
 							],
 						},
 					],
@@ -20177,7 +20177,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "omedelbar digital leverans",
 							paragraphs: [
 								"Licenser med omedelbar digital leverans via Zadeyo checkout. $35/mån och $150 lifetime inkl. Easy Anti-Cheat-underhåll.",
-								"support@theislehack.org för support och juridik.",
+								"support@theislehacks.org för support och juridik.",
 							],
 						},
 					],
@@ -20212,7 +20212,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "omedelbar digital leverans",
 							paragraphs: [
 								"Licenser med omedelbar digital leverans via Zadeyo checkout. $35/mån och $150 lifetime inkl. Easy Anti-Cheat-underhåll.",
-								"support@theislehack.org för support och juridik.",
+								"support@theislehacks.org för support och juridik.",
 							],
 						},
 					],
@@ -20247,7 +20247,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "omedelbar digital leverans",
 							paragraphs: [
 								"Licenser med omedelbar digital leverans via Zadeyo checkout. $35/mån och $150 lifetime inkl. Easy Anti-Cheat-underhåll.",
-								"support@theislehack.org för support och juridik.",
+								"support@theislehacks.org för support och juridik.",
 							],
 						},
 					],
@@ -20282,7 +20282,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "omedelbar digital leverans",
 							paragraphs: [
 								"Licenser med omedelbar digital leverans via Zadeyo checkout. $35/mån och $150 lifetime inkl. Easy Anti-Cheat-underhåll.",
-								"support@theislehack.org för support och juridik.",
+								"support@theislehacks.org för support och juridik.",
 							],
 						},
 					],
@@ -20317,7 +20317,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "omedelbar digital leverans",
 							paragraphs: [
 								"Licenser med omedelbar digital leverans via Zadeyo checkout. $35/mån och $150 lifetime inkl. Easy Anti-Cheat-underhåll.",
-								"support@theislehack.org för support och juridik.",
+								"support@theislehacks.org för support och juridik.",
 							],
 						},
 					],
@@ -20352,7 +20352,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "omedelbar digital leverans",
 							paragraphs: [
 								"Licenser med omedelbar digital leverans via Zadeyo checkout. $35/mån och $150 lifetime inkl. Easy Anti-Cheat-underhåll.",
-								"support@theislehack.org för support och juridik.",
+								"support@theislehacks.org för support och juridik.",
 							],
 						},
 					],
@@ -20387,7 +20387,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "omedelbar digital leverans",
 							paragraphs: [
 								"Licenser med omedelbar digital leverans via Zadeyo checkout. $35/mån och $150 lifetime inkl. Easy Anti-Cheat-underhåll.",
-								"support@theislehack.org för support och juridik.",
+								"support@theislehacks.org för support och juridik.",
 							],
 						},
 					],
@@ -20422,7 +20422,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "omedelbar digital leverans",
 							paragraphs: [
 								"Licenser med omedelbar digital leverans via Zadeyo checkout. $35/mån och $150 lifetime inkl. Easy Anti-Cheat-underhåll.",
-								"support@theislehack.org för support och juridik.",
+								"support@theislehacks.org för support och juridik.",
 							],
 						},
 					],
@@ -20457,7 +20457,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "omedelbar digital leverans",
 							paragraphs: [
 								"Licenser med omedelbar digital leverans via Zadeyo checkout. $35/mån och $150 lifetime inkl. Easy Anti-Cheat-underhåll.",
-								"support@theislehack.org för support och juridik.",
+								"support@theislehacks.org för support och juridik.",
 							],
 						},
 					],
@@ -20492,7 +20492,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "omedelbar digital leverans",
 							paragraphs: [
 								"Licenser med omedelbar digital leverans via Zadeyo checkout. $35/mån och $150 lifetime inkl. Easy Anti-Cheat-underhåll.",
-								"support@theislehack.org för support och juridik.",
+								"support@theislehacks.org för support och juridik.",
 							],
 						},
 					],
@@ -20527,7 +20527,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "omedelbar digital leverans",
 							paragraphs: [
 								"Licenser med omedelbar digital leverans via Zadeyo checkout. $35/mån och $150 lifetime inkl. Easy Anti-Cheat-underhåll.",
-								"support@theislehack.org för support och juridik.",
+								"support@theislehacks.org för support och juridik.",
 							],
 						},
 					],
@@ -20562,7 +20562,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "omedelbar digital leverans",
 							paragraphs: [
 								"Licenser med omedelbar digital leverans via Zadeyo checkout. $35/mån och $150 lifetime inkl. Easy Anti-Cheat-underhåll.",
-								"support@theislehack.org för support och juridik.",
+								"support@theislehacks.org för support och juridik.",
 							],
 						},
 					],
@@ -20597,7 +20597,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "omedelbar digital leverans",
 							paragraphs: [
 								"Licenser med omedelbar digital leverans via Zadeyo checkout. $35/mån och $150 lifetime inkl. Easy Anti-Cheat-underhåll.",
-								"support@theislehack.org för support och juridik.",
+								"support@theislehacks.org för support och juridik.",
 							],
 						},
 					],
@@ -20632,7 +20632,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "omedelbar digital leverans",
 							paragraphs: [
 								"Licenser med omedelbar digital leverans via Zadeyo checkout. $35/mån och $150 lifetime inkl. Easy Anti-Cheat-underhåll.",
-								"support@theislehack.org för support och juridik.",
+								"support@theislehacks.org för support och juridik.",
 							],
 						},
 					],
@@ -20667,7 +20667,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "omedelbar digital leverans",
 							paragraphs: [
 								"Licenser med omedelbar digital leverans via Zadeyo checkout. $35/mån och $150 lifetime inkl. Easy Anti-Cheat-underhåll.",
-								"support@theislehack.org för support och juridik.",
+								"support@theislehacks.org för support och juridik.",
 							],
 						},
 					],
@@ -20702,7 +20702,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "omedelbar digital leverans",
 							paragraphs: [
 								"Licenser med omedelbar digital leverans via Zadeyo checkout. $35/mån och $150 lifetime inkl. Easy Anti-Cheat-underhåll.",
-								"support@theislehack.org för support och juridik.",
+								"support@theislehacks.org för support och juridik.",
 							],
 						},
 					],
@@ -20737,7 +20737,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "omedelbar digital leverans",
 							paragraphs: [
 								"Licenser med omedelbar digital leverans via Zadeyo checkout. $35/mån och $150 lifetime inkl. Easy Anti-Cheat-underhåll.",
-								"support@theislehack.org för support och juridik.",
+								"support@theislehacks.org för support och juridik.",
 							],
 						},
 					],
@@ -20772,7 +20772,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "omedelbar digital leverans",
 							paragraphs: [
 								"Licenser med omedelbar digital leverans via Zadeyo checkout. $35/mån och $150 lifetime inkl. Easy Anti-Cheat-underhåll.",
-								"support@theislehack.org för support och juridik.",
+								"support@theislehacks.org för support och juridik.",
 							],
 						},
 					],
@@ -20781,7 +20781,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Integritetspolicy | The Isle Hacks",
 					description: "Integritetspolicy för The Isle Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Integritetspolicy",
-					intro: "The Isle Hacks kombinerar ESP wallhack, radar hack och Isle Aimbot som undetected paket för The Isle på Windows PC. Integritetspolicy för theislehack.org och The Isle-licenser.",
+					intro: "The Isle Hacks kombinerar ESP wallhack, radar hack och Isle Aimbot som undetected paket för The Isle på Windows PC. Integritetspolicy för theislehacks.org och The Isle-licenser.",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-aimbot.webp",
@@ -20793,7 +20793,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Information vi samlar in",
 							paragraphs: [
 								"The Isle Hacks kombinerar ESP wallhack, radar hack och Isle Aimbot som undetected paket för The Isle på Windows PC. Kontakt-e-post, Zadeyo-orderreferenser och grundläggande säkerhetsdata för webbplatsen.",
-								"Betalningsuppgifter behandlas via Zadeyo checkout — lagras inte på theislehack.org.",
+								"Betalningsuppgifter behandlas via Zadeyo checkout — lagras inte på theislehacks.org.",
 							],
 						},
 						{
@@ -20806,8 +20806,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Dina rättigheter",
 							paragraphs: [
-								"support@theislehack.org för support och juridik.",
-								"E-post: support@theislehack.org",
+								"support@theislehacks.org för support och juridik.",
+								"E-post: support@theislehacks.org",
 							],
 						},
 					],
@@ -20816,7 +20816,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Återbetalningspolicy | The Isle Hacks",
 					description: "Återbetalningspolicy för The Isle Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Återbetalningspolicy",
-					intro: "The Isle Hacks kombinerar ESP wallhack, radar hack och Isle Aimbot som undetected paket för The Isle på Windows PC. Återbetalningspolicy för theislehack.org och The Isle-licenser.",
+					intro: "The Isle Hacks kombinerar ESP wallhack, radar hack och Isle Aimbot som undetected paket för The Isle på Windows PC. Återbetalningspolicy för theislehacks.org och The Isle-licenser.",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-session.webp",
@@ -20841,8 +20841,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Hur du begär",
 							paragraphs: [
-								"support@theislehack.org för support och juridik.",
-								"E-post: support@theislehack.org",
+								"support@theislehacks.org för support och juridik.",
+								"E-post: support@theislehacks.org",
 							],
 						},
 					],
@@ -20851,7 +20851,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Användarvillkor | The Isle Hacks",
 					description: "Användarvillkor för The Isle Hacks — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Användarvillkor",
-					intro: "The Isle Hacks kombinerar ESP wallhack, radar hack och Isle Aimbot som undetected paket för The Isle på Windows PC. Användarvillkor för theislehack.org och The Isle-licenser.",
+					intro: "The Isle Hacks kombinerar ESP wallhack, radar hack och Isle Aimbot som undetected paket för The Isle på Windows PC. Användarvillkor för theislehacks.org och The Isle-licenser.",
 					imageAlt: "The Isle Hacks",
 					galleryTitle: "The Isle Hacks",
 					heroImage: "/images/isle-hacks-aimbot-view.webp",
@@ -20876,8 +20876,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Policyändringar",
 							paragraphs: [
-								"support@theislehack.org för support och juridik.",
-								"E-post: support@theislehack.org",
+								"support@theislehacks.org för support och juridik.",
+								"E-post: support@theislehacks.org",
 							],
 						},
 					],

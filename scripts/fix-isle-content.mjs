@@ -255,8 +255,8 @@ const REPLACEMENTS = [
 	['espWallhack', 'espWallhack'],
 	['heroImage', 'heroImage'],
 	['Undetected EFT cheats for PC.', 'Undetected The Isle Hacks for PC.'],
-	['besttarkovcheats.com', 'theislehack.org'],
-	['www.besttarkovcheats.com', 'www.theislehack.org'],
+	['besttarkovcheats.com', 'theislehacks.org'],
+	['www.besttarkovcheats.com', 'www.theislehacks.org'],
 ];
 
 const TEXT_EXTENSIONS = new Set(['.ts', '.tsx', '.js', '.mjs', '.astro', '.json', '.md', '.mdc', '.txt']);

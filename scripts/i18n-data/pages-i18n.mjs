@@ -308,7 +308,7 @@ function buildLegal(locale, pageKey, kind) {
 		title: clampTitle(stripZadeyoFromMeta(`${h1} | The Isle Hacks`)),
 		description: clampDesc(stripZadeyoFromMeta(`${h1} ${L?.descFor ?? 'for The Isle Hacks — ESP wallhack, Aimbot'}, ${p.win}.`)),
 		h1,
-		intro: p.s1(`${h1} ${L?.introTopic ?? 'for theislehack.org and The Isle licenses.'}`),
+		intro: p.s1(`${h1} ${L?.introTopic ?? 'for theislehacks.org and The Isle licenses.'}`),
 		imageAlt: 'The Isle Hacks',
 		galleryTitle: 'The Isle Hacks',
 		heroImage: HERO_IMAGES[pageKey],
@@ -323,7 +323,7 @@ function buildLegal(locale, pageKey, kind) {
 				h2[0],
 				p.s1(L?.sec1p1 ?? 'Contact email, Zadeyo order references, and basic site security data.'),
 				kind === 'privacy'
-					? L?.privacy?.sec1p2 ?? 'Payment details are processed by Zadeyo checkout — not stored on theislehack.org.'
+					? L?.privacy?.sec1p2 ?? 'Payment details are processed by Zadeyo checkout — not stored on theislehacks.org.'
 					: p.s2(),
 			),
 			section(
@@ -333,7 +333,7 @@ function buildLegal(locale, pageKey, kind) {
 					? L?.terms?.sec2p2 ?? 'Using cheats may violate The Isle team terms — you assume all ban risk.'
 					: p.s3(),
 			),
-			section(h2[2], p.legal(), `${L?.emailLabel ?? 'Email:'} support@theislehack.org`),
+			section(h2[2], p.legal(), `${L?.emailLabel ?? 'Email:'} support@theislehacks.org`),
 		],
 	};
 }

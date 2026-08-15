@@ -1,11 +1,11 @@
-# Deploy theislehack.org
+# Deploy theislehacks.org
 
-Step-by-step guide to deploy the The Isle Hacks static site to **theislehack.org** on Cloudflare Pages, configure DNS, and submit to Google Search Console.
+Step-by-step guide to deploy the The Isle Hacks static site to **theislehacks.org** on Cloudflare Pages, configure DNS, and submit to Google Search Console.
 
 ## Prerequisites
 
 - Node.js **≥ 22.12.0**
-- Cloudflare account with access to **theislehack.org** DNS
+- Cloudflare account with access to **theislehacks.org** DNS
 - Wrangler CLI (included as dev dependency): `npx wrangler login`
 
 ## 1. Build and validate locally
@@ -68,9 +68,9 @@ This runs `wrangler pages deploy dist --project-name=theislehacks` (see `wrangle
 
 ## 3. Custom domain and DNS
 
-Add **theislehack.org** as the primary custom domain on the Pages project.
+Add **theislehacks.org** as the primary custom domain on the Pages project.
 
-### Apex (theislehack.org)
+### Apex (theislehacks.org)
 
 In **Cloudflare DNS** for the zone:
 
@@ -84,11 +84,11 @@ Cloudflare CNAME flattening handles apex records automatically.
 
 1. Add a DNS record for `www` pointing to the same Pages project (proxied CNAME or A record).
 2. In **Rules** → **Redirect Rules** (or Bulk Redirects), create:
-   - **Source:** `www.theislehack.org/*`
-   - **Target:** `https://theislehack.org/${1}`
+   - **Source:** `www.theislehacks.org/*`
+   - **Target:** `https://theislehacks.org/${1}`
    - **Status:** 301
 
-The deployed `functions/_middleware.js` also enforces apex canonical host, legacy domain redirects (`theislehack.org`, `.net`, `.com`), and legacy path redirects.
+The deployed `functions/_middleware.js` also enforces apex canonical host, legacy domain redirects (`theislehacks.org`, `.net`, `.com`), and legacy path redirects.
 
 ### SSL / HTTPS
 
@@ -100,31 +100,31 @@ The deployed `functions/_middleware.js` also enforces apex canonical host, legac
 
 Verify these URLs return **200** with correct content:
 
-- `https://theislehack.org/`
-- `https://theislehack.org/es/`
-- `https://theislehack.org/the-isle-hacks/`
-- `https://theislehack.org/isle-aimbot/`
-- `https://theislehack.org/sitemap.xml`
-- `https://theislehack.org/robots.txt`
+- `https://theislehacks.org/`
+- `https://theislehacks.org/es/`
+- `https://theislehacks.org/the-isle-hacks/`
+- `https://theislehacks.org/isle-aimbot/`
+- `https://theislehacks.org/sitemap.xml`
+- `https://theislehacks.org/robots.txt`
 
 Verify redirects:
 
-- `http://theislehack.org` → `https://theislehack.org` (301)
-- `https://www.theislehack.org` → `https://theislehack.org` (301)
-- Legacy domains (e.g. `theislehack.org`) → `https://theislehack.org` (301)
+- `http://theislehacks.org` → `https://theislehacks.org` (301)
+- `https://www.theislehacks.org` → `https://theislehacks.org` (301)
+- Legacy domains (e.g. `theislehacks.org`) → `https://theislehacks.org` (301)
 - `/sitemap-index.xml` → `/sitemap.xml` (301)
 - Legacy paths (e.g. `/fortnite-hacks/`) → The Isle equivalents (301)
 
 ## 5. Google Search Console
 
 1. Go to [Google Search Console](https://search.google.com/search-console).
-2. **Add property** → choose **Domain** → enter `theislehack.org`.
+2. **Add property** → choose **Domain** → enter `theislehacks.org`.
 3. Verify ownership via the **DNS TXT record** Cloudflare provides (add in Cloudflare DNS, wait for propagation, then confirm in GSC).
 4. After verification, open **Sitemaps** and submit:
    ```
-   https://theislehack.org/sitemap.xml
+   https://theislehacks.org/sitemap.xml
    ```
-   Remove any legacy submissions (`sitemap-index.xml`, old `theislehack.org` URLs).
+   Remove any legacy submissions (`sitemap-index.xml`, old `theislehacks.org` URLs).
 5. Use **URL Inspection** to request indexing for:
    - Homepage (`/`)
    - Pillar page (`/the-isle-hacks/`)
@@ -146,11 +146,11 @@ Verify redirects:
 
 - [ ] `npm run build:validate` passes locally
 - [ ] Cloudflare Pages project attached to this repo
-- [ ] Custom domain `theislehack.org` attached and active
+- [ ] Custom domain `theislehacks.org` attached and active
 - [ ] `www` redirects to apex
-- [ ] Legacy domains 301 to `theislehack.org`
+- [ ] Legacy domains 301 to `theislehacks.org`
 - [ ] Always Use HTTPS enabled
-- [ ] `robots.txt` and sitemaps serve from `https://theislehack.org`
+- [ ] `robots.txt` and sitemaps serve from `https://theislehacks.org`
 - [ ] Google Search Console domain verified
 - [ ] `sitemap.xml` submitted in GSC
 - [ ] Homepage and `/the-isle-hacks/` requested for indexing

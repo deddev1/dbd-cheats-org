@@ -95,7 +95,7 @@ export const blogUi: Record<
 	en: {
 		blogTitle: 'The Isle Hacks Blog | Raid Guides',
 		blogDescription:
-			'The Isle guides — survival tips, ESP, aimbot notes, hunting routes, and Easy Anti-Cheat update coverage. English blog at theislehack.org/blog/.',
+			'The Isle guides — survival tips, ESP, aimbot notes, hunting routes, and Easy Anti-Cheat update coverage. English blog at theislehacks.org/blog/.',
 		blogH1: 'The Isle Hacks Intel',
 		blogIntro:
 			'Short The Isle guides for herbivore and carnivore survival sessions. Pair these tips with The Isle Hacks product pages when you need ESP, soft aim, or radar.',

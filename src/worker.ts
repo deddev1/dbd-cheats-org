@@ -28,6 +28,18 @@ function isSitemapPath(pathname: string): boolean {
 	return SITEMAP_PATH.test(pathname);
 }
 
+function isInsecureRequest(request: Request, url: URL): boolean {
+	const forwarded = request.headers.get('X-Forwarded-Proto');
+	if (forwarded) {
+		return forwarded.split(',')[0]?.trim().toLowerCase() !== 'https';
+	}
+	const cfVisitor = request.headers.get('CF-Visitor');
+	if (cfVisitor?.includes('"scheme":"https"')) {
+		return false;
+	}
+	return url.protocol === 'http:';
+}
+
 function redirectResponse(target: string, status = 301): Response {
 	const headers = new Headers({
 		Location: target,
@@ -43,13 +55,37 @@ function canonicalHostRedirect(request: Request, url: URL): Response | null {
 	const host = (request.headers.get('host') || url.hostname).split(':')[0].toLowerCase();
 	const isLegacy = LEGACY_HOSTS.has(host);
 	const isWww = host === WWW_HOST || url.hostname === WWW_HOST;
-	const isHttp = url.protocol === 'http:';
+	const isHttp = isInsecureRequest(request, url);
 
 	if (!isLegacy && !isWww && !isHttp) return null;
 
 	const mappedPath = resolvePathRedirect(url.pathname) ?? url.pathname;
 	const target = new URL(mappedPath + url.search, CANONICAL_ORIGIN);
 	return redirectResponse(target.toString());
+}
+
+async function fetchSitemapAsset(env: Env, pathname: string): Promise<Response> {
+	// Pathname-only fetch — hostname is ignored by the ASSETS binding.
+	const assetRequest = new Request(new URL(pathname, 'https://assets.local'));
+	const response = await env.ASSETS.fetch(assetRequest);
+	const headers = new Headers(response.headers);
+	const upstreamType = headers.get('Content-Type') || '';
+
+	if (!response.ok || upstreamType.includes('text/html')) {
+		const headers = new Headers();
+		headers.set('Content-Type', 'text/plain; charset=utf-8');
+		applySecurityHeaders(headers, { html: false });
+		return new Response('Sitemap not found', { status: 404, headers });
+	}
+
+	headers.set('Content-Type', 'application/xml; charset=utf-8');
+	headers.set('Cache-Control', 'public, max-age=3600');
+	applySecurityHeaders(headers, { html: false });
+	return new Response(response.body, {
+		status: response.status,
+		statusText: response.statusText,
+		headers,
+	});
 }
 
 export default {
@@ -74,16 +110,7 @@ export default {
 		}
 
 		if (isSitemapPath(url.pathname)) {
-			const response = await env.ASSETS.fetch(request);
-			const headers = new Headers(response.headers);
-			headers.set('Content-Type', 'application/xml; charset=utf-8');
-			headers.set('Cache-Control', 'public, max-age=3600');
-			applySecurityHeaders(headers, { html: false });
-			return new Response(response.body, {
-				status: response.status,
-				statusText: response.statusText,
-				headers,
-			});
+			return fetchSitemapAsset(env, url.pathname);
 		}
 
 		const response = await env.ASSETS.fetch(request);

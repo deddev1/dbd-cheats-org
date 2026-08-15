@@ -10,7 +10,7 @@ import { fileURLToPath } from 'node:url';
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const REDIRECTS = path.join(ROOT, 'public/_redirects');
 const DIST_REDIRECTS = path.join(ROOT, 'dist/_redirects');
-const MAX_RULES = 50;
+const MAX_RULES = 0;
 
 function countRules(text) {
 	let rules = 0;

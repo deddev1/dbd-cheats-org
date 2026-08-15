@@ -3,6 +3,15 @@ name = "theislehacks"
 compatibility_date = "2026-01-01"
 main = "src/worker.ts"
 
+# Attach apex + www to this Worker on deploy (Cloudflare creates proxied DNS when the zone is on the account).
+[[routes]]
+pattern = "theislehacks.org"
+custom_domain = true
+
+[[routes]]
+pattern = "www.theislehacks.org"
+custom_domain = true
+
 # Local/CLI deploy: Wrangler runs this before upload. Workers Builds also uses postinstall.
 [build]
 command = "npm run build"
@@ -11,31 +20,5 @@ command = "npm run build"
 directory = "./dist"
 binding = "ASSETS"
 not_found_handling = "404-page"
-# Redirects via Worker for HTML; sitemap XML is served directly from ./dist (GSC-safe).
-run_worker_first = [
-	"/*",
-	"!/sitemap.xml",
-	"!/sitemap-en.xml",
-	"!/sitemap-es.xml",
-	"!/sitemap-fr.xml",
-	"!/sitemap-de.xml",
-	"!/sitemap-pt.xml",
-	"!/sitemap-it.xml",
-	"!/sitemap-nl.xml",
-	"!/sitemap-pl.xml",
-	"!/sitemap-ru.xml",
-	"!/sitemap-tr.xml",
-	"!/sitemap-ar.xml",
-	"!/sitemap-ja.xml",
-	"!/sitemap-ko.xml",
-	"!/sitemap-zh.xml",
-	"!/sitemap-hi.xml",
-	"!/sitemap-id.xml",
-	"!/sitemap-th.xml",
-	"!/sitemap-vi.xml",
-	"!/sitemap-uk.xml",
-	"!/sitemap-cs.xml",
-	"!/sitemap-ro.xml",
-	"!/sitemap-sv.xml",
-	"!/sitemap-images.xml",
-]
+# Worker serves sitemaps with a single Content-Type (avoids _headers rule stacking on static XML).
+run_worker_first = true

@@ -30,15 +30,20 @@ function readCannibalTargets() {
 }
 
 function extractSlugBlock(src, pageId) {
+	const localized = src.slice(src.indexOf('export const localizedSlugs'));
 	const re = new RegExp(`\\t'${pageId}':\\s*\\{([\\s\\S]*?)\\n\\t\\},|\\t${pageId}:\\s*\\{([\\s\\S]*?)\\n\\t\\},`);
-	const m = src.match(re);
+	const m = localized.match(re);
 	const block = m?.[1] ?? m?.[2];
 	if (!block) throw new Error(`Missing localizedSlugs block for ${pageId}`);
 	const slugs = {};
-	for (const row of block.matchAll(/(\w+):\s*'([^']+)'/g)) {
+	for (const row of block.matchAll(/(\w+):\s*'([^']*)'/g)) {
 		slugs[row[1]] = row[2];
 	}
 	return slugs;
+}
+
+function localePath(locale, slug) {
+	return slug ? `/${locale}/${slug}/` : `/${locale}/`;
 }
 
 const TARGETS = readCannibalTargets();
@@ -51,15 +56,26 @@ for (const [fromId, toId] of Object.entries(TARGETS)) {
 	for (const [locale, fromSlug] of Object.entries(fromSlugs)) {
 		if (locale === 'en') continue;
 		const toSlug = toSlugs[locale];
-		if (!toSlug) continue;
-		const fromPath = `/${locale}/${fromSlug}/`;
-		const toPath = `/${locale}/${toSlug}/`;
+		if (toSlug === undefined) continue;
+		const fromPath = localePath(locale, fromSlug);
+		const toPath = localePath(locale, toSlug);
 		map[fromPath] = toPath;
 		map[`/${locale}/${fromSlug}`] = toPath;
 	}
 }
 
+// Retired EN hacks pillar URLs → locale homepages (merged into homepage cluster).
+const hacksSlugs = extractSlugBlock(routing, 'hacks');
+for (const [locale, slug] of Object.entries(hacksSlugs)) {
+	if (locale === 'en') continue;
+	if (slug === undefined) continue;
+	const fromPath = localePath(locale, slug);
+	const toPath = localePath(locale, '');
+	map[fromPath] = toPath;
+	map[`/${locale}/${slug}`] = toPath;
+}
+
 writeFileSync(JSON_OUT, `${JSON.stringify(map, null, 2)}\n`);
 console.log(
-	`Synced ${Object.keys(map).length / 2} cannibal locale redirect pairs (${Object.keys(TARGETS).length} pageIds) → functions/cannibal-redirects.json`,
+	`Synced ${Object.keys(map).length / 2} locale redirect pairs (${Object.keys(TARGETS).length} cannibal pageIds + hacks pillar) → functions/cannibal-redirects.json`,
 );

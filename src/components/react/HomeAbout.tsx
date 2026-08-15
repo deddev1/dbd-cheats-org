@@ -10,19 +10,23 @@ function HomeAboutInner() {
 
 	return (
 		<section className="shell home__prose home__prose--en" aria-labelledby="home-about-title">
-			<h2 id="home-about-title">{t('home.aboutTitle')}</h2>
-			<p>{t('home.aboutP1')}</p>
-			<p>
-				{t('home.aboutP2Before')}{' '}
-				<a href="/tarkov-cheats/">{t('home.aboutPillar')}</a>
-				{t('home.aboutP2Mid')}
-				<a href="/tarkov-esp/">{t('home.aboutEsp')}</a>
-				{t('home.aboutP2Mid')}
-				<a href="/tarkov-aimbot/">{t('home.aboutAimbot')}</a>
-				{t('home.aboutP2Or')}
-				<a href="/updates/">{t('home.aboutUndetected')}</a>
-				{t('home.aboutP2After')}
-			</p>
+			<div className="home__prose-callout">
+				<h2 id="home-about-title" className="home__prose-kicker">
+					{t('home.aboutTitle')}
+				</h2>
+				<p>{t('home.aboutP1')}</p>
+				<p>
+					{t('home.aboutP2Before')}{' '}
+					<a href="/">{t('home.aboutPillar')}</a>
+					{t('home.aboutP2Mid')}
+					<a href="/isle-esp/">{t('home.aboutEsp')}</a>
+					{t('home.aboutP2Mid')}
+					<a href="/isle-aimbot/">{t('home.aboutAimbot')}</a>
+					{t('home.aboutP2Or')}
+					<a href="/updates/">{t('home.aboutUndetected')}</a>
+					{t('home.aboutP2After')}
+				</p>
+			</div>
 		</section>
 	);
 }

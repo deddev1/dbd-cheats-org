@@ -50,7 +50,7 @@ const seoDefaults = {
 	storeDescription: 'Monthly and lifetime {game} plans. Same features. Instant delivery after payment.',
 	statusTitle: '{game} Status | {brand}',
 	statusDescription:
-		'Live status for {brand} after {game} or {antiCheat} patches. Check before you queue.',
+		'Live status for {brand} after {game} or {antiCheat} patches. Check before you spawn in.',
 	previewTitle: '{game} Preview | {brand}',
 	previewDescription:
 		'Quick preview of {brand} — ESP, aimbot, radar, and updates after {game} patches.',
@@ -96,6 +96,7 @@ export const siteConfig = {
 	logoRasterHeight: brand.logoRasterHeight,
 	logoAlt: brand.logoAlt,
 	checkoutUrl: brand.checkoutUrl,
+	gameUrl: brand.gameUrl,
 	defaultOgImage: brand.defaultOgImage,
 	heroImage: brand.heroImage,
 } as const;
@@ -124,21 +125,21 @@ export const productInfo = {
 	heroLede: fillBrandTokens(brandCopy.heroLede),
 	features: {
 		esp: [
-			'PMC and Scav ESP / wallhack',
-			'Player gear and threat cues',
-			'Loot and extract markers',
+			'Herbivore and carnivore ESP / wallhack',
+			'Player growth stage and threat cues',
+			'Carcass and nest markers',
 			'Distance readouts',
 			'Toggleable ESP categories',
-			'Corpse and container highlights',
+			'Corpse and carcass highlights',
 		],
 		aimbot: [
 			'Soft aim and aimbot controls',
 			'Smoothness and FOV settings',
 			'Bone priority',
-			'Hotkeys mid-raid',
-			'Per-weapon profiles',
+			'Hotkeys mid-session',
+			'Per-species profiles',
 		],
-		radar: ['2D radar overlay', 'Adjustable range', 'Works in PMC raids and Scav runs'],
+		radar: ['2D radar overlay', 'Adjustable range', 'Works in herbivore and carnivore survival sessions'],
 		general: [
 			fillBrandTokens('{antiCheat} maintenance after patches'),
 			'Digital delivery after checkout',

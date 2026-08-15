@@ -56,17 +56,17 @@ const BLOG_PAGES = 18; // /blog/ index + 17 posts
 const REVIEW_PAGES = 11; // /reviews/ index + 10 review detail pages
 const FAQ_PAGES = 11; // FAQ answer pages (index is in the product pages)
 /** Product pages in sitemap — excludes cannibal EN URLs that 301 to stronger pillars */
-const ENGLISH_PRODUCT_PAGES = 14;
+const ENGLISH_PRODUCT_PAGES = 13;
 const ENGLISH_PAGES = ENGLISH_PRODUCT_PAGES + BLOG_PAGES + REVIEW_PAGES + FAQ_PAGES;
 const I18N_LOCALES = 21;
-/** Locale product pages also exclude the same cannibal pageIds */
-const PRODUCT_PAGES_PER_LOCALE = 14;
+/** Locale product pages also exclude the same cannibal pageIds and retired hacks pillar */
+const PRODUCT_PAGES_PER_LOCALE = 13;
 const BLOG_PAGES_PER_LOCALE = 0; // Locale blog URLs 301 to EN; not in sitemaps
 const PAGES_PER_LOCALE = PRODUCT_PAGES_PER_LOCALE + BLOG_PAGES_PER_LOCALE;
 const I18N_URLS = I18N_LOCALES * PAGES_PER_LOCALE;
 const TOTAL_PAGES = ENGLISH_PAGES + I18N_URLS;
 /** Full EN HTML may still emit redirect stubs for cannibal URLs; sitemaps omit them */
-const ENGLISH_HTML_PAGES = 25 + BLOG_PAGES + REVIEW_PAGES + FAQ_PAGES;
+const ENGLISH_HTML_PAGES = 24 + BLOG_PAGES + REVIEW_PAGES + FAQ_PAGES;
 /** Locale HTML = product pages + blog redirect stubs (index + 17 posts) that are omitted from sitemaps */
 const LOCALE_BLOG_REDIRECT_PAGES = 18;
 const TOTAL_HTML_PAGES =
@@ -76,82 +76,83 @@ const SITEMAP_INDEX_ENTRIES = 1 + I18N_LOCALES + 1; // EN + locales + images
 
 /** Built HTML that intentionally 301s — allowed to be absent from sitemaps */
 const REDIRECT_ONLY_PATHS = new Set([
-	'/best-tarkov-cheats/',
-	'/tarkov-aimbot-hack/',
-	'/tarkov-esp-hack/',
-	'/tarkov-cheats-2026/',
-	'/undetected-tarkov-cheats/',
-	'/tarkov-mod-menu/',
-	'/tarkov-unlock-all/',
-	'/tarkov-soft-aim/',
-	'/tarkov-wallhack/',
-	'/tarkov-cheat-download/',
-	'/battleye-bypass/',
+	'/best-isle-hacks/',
+	'/isle-aimbot-hack/',
+	'/isle-esp-hack/',
+	'/isle-hacks-2026/',
+	'/undetected-isle-hacks/',
+	'/isle-mod-menu/',
+	'/isle-unlock-all/',
+	'/isle-soft-aim/',
+	'/isle-wallhack/',
+	'/isle-hack-download/',
+	'/eac-bypass/',
+	'/the-isle-hacks/',
+	'/isle-hacks/',
 ]);
 
 const ENGLISH_PATHS = [
 	'/',
-	'/tarkov-esp/',
-	'/tarkov-aimbot/',
+	'/isle-esp/',
+	'/isle-aimbot/',
 	'/features/',
 	'/pricing/',
 	'/setup/',
 	'/updates/',
 	'/faq/',
 	'/support/',
-	'/undetected-tarkov-cheats/',
-	'/tarkov-wallhack/',
-	'/tarkov-radar-hack/',
-	'/battleye-bypass/',
-	'/tarkov-cheats-2026/',
-	'/tarkov-cheats/',
-	'/tarkov-cheat-download/',
-	'/tarkov-mod-menu/',
-	'/tarkov-soft-aim/',
-	'/tarkov-unlock-all/',
+	'/undetected-isle-hacks/',
+	'/isle-wallhack/',
+	'/isle-radar-hack/',
+	'/eac-bypass/',
+	'/isle-hacks-2026/',
+	'/isle-hack-download/',
+	'/isle-mod-menu/',
+	'/isle-soft-aim/',
+	'/isle-unlock-all/',
 	'/privacy-policy/',
 	'/refund-policy/',
 	'/terms/',
 	'/blog/',
-	'/blog/tarkov-scav-run-aggressive-strategies/',
-	'/blog/tarkov-loot-routes-guide/',
-	'/blog/tarkov-weapon-tier-list/',
-	'/blog/tarkov-skin-leaks-guide/',
-	'/blog/tarkov-tournament-meta-guide/',
-	'/blog/tarkov-pro-settings-guide/',
-	'/blog/tarkov-warmup-maps-ranked/',
-	'/blog/tarkov-patch-notes-guide/',
-	'/blog/tarkov-cheats-complete-guide-2026/',
-	'/blog/escape-from-tarkov-cheats-buyers-guide/',
-	'/blog/tarkov-cheats-2026-whats-new/',
-	'/blog/tarkov-aimbot-settings-guide/',
-	'/blog/tarkov-esp-wallhack-explained/',
-	'/blog/undetected-tarkov-cheats-battleye/',
-	'/blog/tarkov-cheats-vs-cheatvault-comparison/',
-	'/blog/elitefn-vs-tarkov-cheats-two-week-test/',
-	'/blog/tarkov-cheats-vs-ghostware-features-pricing/',
+	'/blog/isle-growth-run-aggressive-strategies/',
+	'/blog/isle-loot-routes-guide/',
+	'/blog/isle-dinosaur-tier-list/',
+	'/blog/isle-skin-leaks-guide/',
+	'/blog/isle-competitive-meta-guide/',
+	'/blog/isle-pro-settings-guide/',
+	'/blog/isle-warmup-maps-ranked/',
+	'/blog/isle-patch-notes-guide/',
+	'/blog/isle-hacks-complete-guide-2026/',
+	'/blog/isle-hacks-buyers-guide/',
+	'/blog/isle-hacks-2026-whats-new/',
+	'/blog/isle-aimbot-settings-guide/',
+	'/blog/isle-esp-wallhack-explained/',
+	'/blog/undetected-isle-hacks-eac/',
+	'/blog/isle-hacks-vs-cheatvault-comparison/',
+	'/blog/elitefn-vs-isle-hacks-two-week-test/',
+	'/blog/isle-hacks-vs-ghostware-features-pricing/',
 	'/reviews/',
-	'/reviews/tarkov-soft-aim-review-xkrypt0/',
-	'/reviews/tarkov-esp-scav-run-review-buildsr4k/',
-	'/reviews/tarkov-cloud-dma-review-dma-wizard/',
-	'/reviews/tarkov-soft-aim-review-ctrl-player99/',
-	'/reviews/tarkov-cheat-setup-review-stormchaser07/',
-	'/reviews/tarkov-loot-esp-review-lootgoblinx/',
-	'/reviews/tarkov-soft-aim-raid-review-rankedgrind42/',
-	'/reviews/tarkov-radar-hack-review-vanlifeeft/',
-	'/reviews/tarkov-battleye-update-review-patchdaymike/',
-	'/reviews/tarkov-sniper-soft-aim-review-snipezonly/',
-	'/faq/what-are-tarkov-cheats/',
-	'/faq/are-tarkov-cheats-undetected-in-2026/',
-	'/faq/pmc-raids-and-scav-runs/',
+	'/reviews/isle-soft-aim-review-xkrypt0/',
+	'/reviews/isle-esp-growth-run-review-buildsr4k/',
+	'/reviews/isle-cloud-dma-review-dma-wizard/',
+	'/reviews/isle-soft-aim-review-ctrl-player99/',
+	'/reviews/isle-hack-setup-review-stormchaser07/',
+	'/reviews/isle-carcass-esp-review-lootgoblinx/',
+	'/reviews/isle-soft-aim-session-review-rankedgrind42/',
+	'/reviews/isle-radar-hack-review-vanlifeisle/',
+	'/reviews/isle-eac-update-review-patchdaymike/',
+	'/reviews/isle-sniper-soft-aim-review-snipezonly/',
+	'/faq/what-are-isle-hacks/',
+	'/faq/are-isle-hacks-undetected-in-2026/',
+	'/faq/herbivore-and-carnivore-sessions/',
 	'/faq/esp-wallhack-radar-or-aimbot/',
 	'/faq/how-are-licenses-delivered/',
 	'/faq/where-to-check-updates/',
 	'/faq/how-to-contact-support/',
-	'/faq/what-is-a-tarkov-wallhack/',
-	'/faq/does-tarkov-cheats-include-radar-hack/',
-	'/faq/battleye-anti-cheat-and-tarkov-cheats/',
-	'/faq/buy-undetected-tarkov-cheats-windows-pc/',
+	'/faq/what-is-an-isle-wallhack/',
+	'/faq/does-isle-hacks-include-radar-hack/',
+	'/faq/eac-anti-cheat-and-isle-hacks/',
+	'/faq/buy-undetected-isle-hacks-windows-pc/',
 ];
 
 const LOCALE_CODES = [

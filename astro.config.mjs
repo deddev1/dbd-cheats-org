@@ -8,10 +8,20 @@ import { brandStudioPlugin } from './scripts/brand-studio/vite-plugin.mjs';
 // Do not add @astrojs/cloudflare; sitemaps and HTML must emit to dist/ root.
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://tarkovcheats.org',
+	site: 'https://theislehack.org',
 	trailingSlash: 'always',
 	compressHTML: true,
 	devToolbar: { enabled: false },
+	server: {
+		host: true,
+		port: 4321,
+		allowedHosts: true,
+	},
+	preview: {
+		host: true,
+		port: 5173,
+		allowedHosts: true,
+	},
 	integrations: [react()],
 	build: {
 		// 'auto' keeps small styles inline but emits the large Tailwind bundle as a

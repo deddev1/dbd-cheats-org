@@ -1,12 +1,15 @@
 {
-	"name": "tarkov-cheats",
+	"name": "the-isle-hacks",
 	"type": "module",
 	"version": "1.0.0",
 	"engines": {
 		"node": ">=22.12.0"
 	},
 	"scripts": {
-		"dev": "astro dev",
+		"localhost": "npm run build && astro preview --host 0.0.0.0 --port 5173",
+		"dev": "astro dev --host 0.0.0.0 --port 4321",
+		"dev:3000": "astro dev --host 0.0.0.0 --port 3000",
+		"serve:3000": "npx --yes serve dist -l 3000 --no-port-switching",
 		"sync:brand": "node scripts/sync-brand.mjs && node scripts/sync-cannibal-redirects.mjs",
 		"prebuild": "node scripts/log-build-info.mjs && node scripts/sync-brand.mjs && node scripts/sync-cannibal-redirects.mjs && node scripts/validate-cloudflare-redirects.mjs",
 		"build": "astro build",
@@ -16,13 +19,17 @@
 		"dev:status": "astro dev status",
 		"dev:logs": "astro dev logs",
 		"optimize:images": "node scripts/optimize-responsive-images.mjs",
-		"fetch:images": "node scripts/fetch-tarkov-images.mjs",
+		"fetch:images": "node scripts/fetch-isle-images.mjs",
+		"fetch:hero": "node scripts/fetch-isle-hero.mjs",
+		"fetch:steam-hero": "node scripts/fetch-steam-hero.mjs",
+		"fetch:screenshots": "node scripts/import-isle-screenshots.mjs",
 		"generate:brand": "node scripts/generate-brand-assets.mjs",
-		"preview": "astro preview",
+		"preview": "astro preview --host 0.0.0.0 --port 3000",
+		"preview:4321": "astro preview --host 0.0.0.0 --port 4321",
 		"validate:sitemaps": "node scripts/validate-sitemaps.mjs && node scripts/audit-sitemap-deep.mjs",
 		"generate:i18n": "node scripts/generate-i18n-content.mjs",
 		"deploy": "npm run build && wrangler deploy",
-		"pages:deploy": "wrangler pages deploy dist --project-name=tarkov-cheats--org",
+		"pages:deploy": "wrangler pages deploy dist --project-name=theislehacks",
 		"astro": "astro"
 	},
 	"dependencies": {

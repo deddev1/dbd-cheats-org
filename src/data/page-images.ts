@@ -1,16 +1,17 @@
 import { siteConfig } from './site';
-import { tarkovImages } from './tarkov';
 import { pageIds, type PageId } from './i18n/routing';
 import { pageSitemapImageLabels } from './brand-sitemap';
 
+const shot = (n: number) => `/images/isle-screenshot-${String(n).padStart(2, '0')}.webp`;
+
 /** Rotating product screenshots for FAQ / review detail URLs. */
 export const crawlPhotoPool = [
-	tarkovImages.espWallhack,
-	tarkovImages.aimbotCombat,
-	tarkovImages.aimbotSkeleton,
-	tarkovImages.playerEsp,
-	tarkovImages.cheatsCombat,
-	'/images/tarkov-cheats-esp.webp',
+	shot(2),
+	shot(3),
+	shot(4),
+	shot(5),
+	shot(6),
+	shot(7),
 ] as const;
 
 /**
@@ -18,31 +19,31 @@ export const crawlPhotoPool = [
  * Prefer compressed WebP screenshots so Google can fetch them quickly.
  */
 export const pageImageSrcById: Record<PageId, string> = {
-	home: '/images/tarkov-cheats-hero-1024w.webp',
-	'tarkov-esp': tarkovImages.playerEsp,
-	'tarkov-aimbot': tarkovImages.aimbotCombat,
-	features: tarkovImages.aimbotSkeleton,
-	pricing: tarkovImages.cheatsCombat,
-	setup: tarkovImages.playerEsp,
-	updates: '/images/tarkov-cheats-hero-1024w.webp',
-	faq: tarkovImages.aimbotSkeleton,
-	support: tarkovImages.cheatsCombat,
-	undetected: tarkovImages.espWallhack,
-	wallhack: tarkovImages.espWallhack,
-	radar: tarkovImages.playerEsp,
-	battleye: tarkovImages.aimbotCombat,
-	'cheats-2026': '/images/tarkov-cheats-hero-1024w.webp',
-	hacks: tarkovImages.cheatsCombat,
-	'cheat-download': tarkovImages.cheatsCombat,
-	'mod-menu': tarkovImages.playerEsp,
-	'soft-aim': tarkovImages.aimbotSkeleton,
-	'best-cheats': '/images/tarkov-cheats-hero-1024w.webp',
-	'aimbot-hack': tarkovImages.aimbotSkeleton,
-	'esp-hack': tarkovImages.espWallhack,
-	'unlock-all': tarkovImages.playerEsp,
-	privacy: tarkovImages.aimbotCombat,
-	refund: tarkovImages.cheatsCombat,
-	terms: tarkovImages.aimbotSkeleton,
+	home: '/images/isle-hacks-hero-1024w.webp',
+	'isle-esp': shot(2),
+	'isle-aimbot': shot(4),
+	features: shot(5),
+	pricing: shot(7),
+	setup: shot(2),
+	updates: shot(1),
+	faq: shot(5),
+	support: shot(7),
+	undetected: shot(3),
+	wallhack: shot(3),
+	radar: shot(6),
+	eac: shot(4),
+	'cheats-2026': shot(1),
+	hacks: shot(7),
+	'cheat-download': shot(7),
+	'mod-menu': shot(6),
+	'soft-aim': shot(5),
+	'best-cheats': shot(1),
+	'aimbot-hack': shot(5),
+	'esp-hack': shot(3),
+	'unlock-all': shot(6),
+	privacy: shot(4),
+	refund: shot(7),
+	terms: shot(5),
 };
 
 for (const pageId of pageIds) {

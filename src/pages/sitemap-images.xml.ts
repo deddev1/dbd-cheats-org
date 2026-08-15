@@ -11,13 +11,20 @@ export const prerender = true;
  */
 const PREFERRED_HOSTS = [
 	englishPaths.home,
+	englishPaths['isle-esp'],
+	englishPaths['isle-aimbot'],
 	englishPaths.features,
 	englishPaths.pricing,
 	englishPaths.updates,
-	englishPaths['tarkov-esp'],
-	englishPaths['tarkov-aimbot'],
-	englishPaths.hacks,
-	englishPaths.undetected,
+	englishPaths.setup,
+	englishPaths.faq,
+	englishPaths.support,
+	englishPaths.radar,
+	englishPaths.privacy,
+	englishPaths.refund,
+	englishPaths.terms,
+	'/blog/',
+	'/reviews/',
 ] as const;
 
 /**

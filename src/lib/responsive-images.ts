@@ -38,18 +38,17 @@ export function contentSrcSet(baseSrc: string): string | undefined {
 }
 
 /**
- * Homepage / banner hero — compressed WebP ladder (not the 375KB+ PNG master).
- * Native art ~1024×409 (~2.5:1).
+ * Homepage / banner hero — wide banner (~3.15:1); LCP src is the 1024w WebP variant.
  */
 export const heroResponsive: ResponsiveWidth[] = [
-	{ src: '/images/tarkov-cheats-hero-640w.webp', width: 640 },
-	{ src: '/images/tarkov-cheats-hero-1024w.webp', width: 1024 },
+	{ src: '/images/isle-hacks-hero-640w.webp', width: 640 },
+	{ src: '/images/isle-hacks-hero-1024w.webp', width: 1024 },
 ];
 
 export const heroDesktopResponsive: ResponsiveWidth[] = heroResponsive;
 
-/** Default LCP src — mid ladder WebP (~56KB). */
-export const heroSrc = '/images/tarkov-cheats-hero-1024w.webp';
+/** Default LCP src — mid ladder WebP. */
+export const heroSrc = '/images/isle-hacks-hero-1024w.webp';
 export const heroSrcSet = buildSrcSet(heroResponsive);
 export const heroSizes = '100vw';
 
@@ -57,12 +56,17 @@ export const heroSizes = '100vw';
 export const heroPreloadSrc = heroSrc;
 export const heroMimeType = 'image/webp';
 
-/** Exact native dimensions (no zoom crop). */
+/** Intrinsic dimensions of the default LCP asset (1024w variant). */
 export const heroWidth = 1024;
-export const heroHeight = 409;
+export const heroHeight = 325;
 
 /** Responsive widths for below-fold content images. */
 export const contentWidths = [480, 960] as const;
+
+/** Canonical screenshot path — responsive variants use -480w / -960w suffixes. */
+export function screenshotSrc(n: number): string {
+	return `/images/isle-screenshot-${String(n).padStart(2, '0')}.webp`;
+}
 
 export const galleryFeaturedSizes = '(max-width: 560px) 100vw, (max-width: 900px) 90vw, 640px';
 export const galleryTileSizes = '(max-width: 560px) 100vw, (max-width: 900px) 45vw, 320px';

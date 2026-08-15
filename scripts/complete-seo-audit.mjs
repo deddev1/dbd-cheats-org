@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Completes escape-from-tarkov-cheats SEO audit: add missing pages, fix leftovers, strip Zadeyo from meta.
+ * Completes the-isle-hacks SEO audit: add missing pages, fix leftovers, strip Zadeyo from meta.
  * Run: node scripts/complete-seo-audit.mjs
  */
 import { readFile, writeFile, mkdir, access } from 'node:fs/promises';
@@ -11,70 +11,70 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const NODE = 'C:\\Program Files\\nodejs\\node.exe';
 
 const EXTRA_PAGES = [
-	{ id: 'hacks', dir: 'tarkov-cheats', pageId: 'hacks' },
-	{ id: 'cheat-download', dir: 'tarkov-cheat-download', pageId: 'cheat-download' },
-	{ id: 'mod-menu', dir: 'tarkov-mod-menu', pageId: 'mod-menu' },
-	{ id: 'soft-aim', dir: 'tarkov-soft-aim', pageId: 'soft-aim' },
-	{ id: 'best-cheats', dir: 'best-tarkov-cheats', pageId: 'best-cheats' },
-	{ id: 'aimbot-hack', dir: 'tarkov-aimbot-hack', pageId: 'aimbot-hack' },
-	{ id: 'esp-hack', dir: 'tarkov-esp-hack', pageId: 'esp-hack' },
-	{ id: 'unlock-all', dir: 'tarkov-unlock-all', pageId: 'unlock-all' },
+	{ id: 'hacks', dir: 'the-isle-hacks', pageId: 'hacks' },
+	{ id: 'cheat-download', dir: 'isle-hack-download', pageId: 'cheat-download' },
+	{ id: 'mod-menu', dir: 'isle-mod-menu', pageId: 'mod-menu' },
+	{ id: 'soft-aim', dir: 'isle-soft-aim', pageId: 'soft-aim' },
+	{ id: 'best-cheats', dir: 'best-isle-hacks', pageId: 'best-cheats' },
+	{ id: 'aimbot-hack', dir: 'isle-aimbot-hack', pageId: 'aimbot-hack' },
+	{ id: 'esp-hack', dir: 'isle-esp-hack', pageId: 'esp-hack' },
+	{ id: 'unlock-all', dir: 'isle-unlock-all', pageId: 'unlock-all' },
 ];
 
 const GLOBAL_REPLACEMENTS = [
-	[/tarkov-tarkov/g, 'tarkov'],
-	[/battleye-bypass-tarkov/g, 'battleye-bypass'],
-	[/Escape from Tarkov/g, 'Escape from Tarkov'],
-	[/Escape from Tarkov/g, 'Escape from Tarkov'],
-	[/Call of Duty/g, 'Escape from Tarkov'],
-	[/Tarkov Wallhack/g, 'Escape from Tarkov Wallhack'],
-	[/Tarkov Radar Hack/g, 'Escape from Tarkov Radar Hack'],
-	[/Tarkov Cheat Features/g, 'Escape from Tarkov Cheat Features'],
-	[/Tarkov Cheat Pricing/g, 'Escape from Tarkov Cheat Pricing'],
-	[/Tarkov Cheat Setup/g, 'Escape from Tarkov Cheat Setup'],
-	[/Tarkov Cheat Status/g, 'Escape from Tarkov Cheat Status'],
-	[/Tarkov Cheat Support/g, 'Escape from Tarkov Cheat Support'],
-	[/Tarkov squad fight/g, 'Escape from Tarkov squad fight'],
-	[/Tarkov squad builder/g, 'Escape from Tarkov loadout builder'],
-	[/Tarkov store header/g, 'Escape from Tarkov header'],
-	[/Tarkov wasteland combat/g, 'Escape from Tarkov battle royale combat'],
-	[/Tarkov loadout builder/g, 'Escape from Tarkov loadout builder'],
-	[/Tarkov pricing/g, 'Escape from Tarkov pricing'],
-	[/Tarkov BattlEye anti-cheat/g, 'Escape from Tarkov BattlEye anti-cheat'],
-	[/on Tarkov/g, 'on Escape from Tarkov'],
-	[/for Tarkov/g, 'for Escape from Tarkov'],
-	[/Tarkov guides/g, 'Escape from Tarkov guides'],
-	[/Tarkov guide/g, 'Escape from Tarkov guide'],
-	[/Tarkov hileleri/g, 'Escape from Tarkov hileleri'],
-	[/Tarkov hile/g, 'Escape from Tarkov hile'],
-	[/Tarkov hileleri/g, 'Escape from Tarkov hileleri'],
-	[/cheatów Tarkov/g, 'cheatów Escape from Tarkov'],
-	[/cheat Tarkov/g, 'cheat Escape from Tarkov'],
-	[/cheats Tarkov/g, 'cheats Escape from Tarkov'],
-	[/trucos Tarkov/g, 'trucos Escape from Tarkov'],
-	[/triche Tarkov/g, 'triche Escape from Tarkov'],
-	[/trucchi Tarkov/g, 'trucchi Escape from Tarkov'],
-	[/Wallhack Tarkov/g, 'Escape from Tarkov Wallhack'],
-	[/cheat Tarkov undetected/g, 'cheat Escape from Tarkov undetected'],
-	[/cheats Tarkov undetected/g, 'cheats Escape from Tarkov undetected'],
+	[/isle-isle/g, 'isle'],
+	[/eac-bypass-isle/g, 'eac-bypass'],
+	[/The Isle/g, 'The Isle'],
+	[/The Isle/g, 'The Isle'],
+	[/Call of Duty/g, 'The Isle'],
+	[/The Isle Wallhack/g, 'The Isle Wallhack'],
+	[/The Isle Radar Hack/g, 'The Isle Radar Hack'],
+	[/The Isle Cheat Features/g, 'The Isle Cheat Features'],
+	[/The Isle Cheat Pricing/g, 'The Isle Cheat Pricing'],
+	[/The Isle Cheat Setup/g, 'The Isle Cheat Setup'],
+	[/The Isle Cheat Status/g, 'The Isle Cheat Status'],
+	[/The Isle Cheat Support/g, 'The Isle Cheat Support'],
+	[/The Isle pack fight/g, 'The Isle pack fight'],
+	[/The Isle pack builder/g, 'The Isle loadout builder'],
+	[/The Isle store header/g, 'The Isle header'],
+	[/The Isle wasteland combat/g, 'The Isle battle royale combat'],
+	[/The Isle loadout builder/g, 'The Isle loadout builder'],
+	[/The Isle pricing/g, 'The Isle pricing'],
+	[/The Isle Easy Anti-Cheat/g, 'The Isle Easy Anti-Cheat'],
+	[/on The Isle/g, 'on The Isle'],
+	[/for The Isle/g, 'for The Isle'],
+	[/The Isle guides/g, 'The Isle guides'],
+	[/The Isle guide/g, 'The Isle guide'],
+	[/The Isle hileleri/g, 'The Isle hileleri'],
+	[/The Isle hile/g, 'The Isle hile'],
+	[/The Isle hileleri/g, 'The Isle hileleri'],
+	[/cheatów The Isle/g, 'cheatów The Isle'],
+	[/cheat The Isle/g, 'cheat The Isle'],
+	[/cheats The Isle/g, 'cheats The Isle'],
+	[/trucos The Isle/g, 'trucos The Isle'],
+	[/triche The Isle/g, 'triche The Isle'],
+	[/trucchi The Isle/g, 'trucchi The Isle'],
+	[/Wallhack The Isle/g, 'The Isle Wallhack'],
+	[/cheat The Isle undetected/g, 'cheat The Isle undetected'],
+	[/cheats The Isle undetected/g, 'cheats The Isle undetected'],
 	[/Verdansk beams/g, 'long-range AR beams'],
-	[/scav-run room clears/g, 'close-quarters room clears'],
-	[/Verdansk and Urzikstan/g, 'Verdansk and scav-run'],
-	[/Verdansk, Urzikstan/g, 'Verdansk, scav-run'],
-	[/raid and scav-run/g, 'raid and scav-run'],
+	[/growth run room clears/g, 'close-quarters room clears'],
+	[/Verdansk and Urzikstan/g, 'Verdansk and growth run'],
+	[/Verdansk, Urzikstan/g, 'Verdansk, growth run'],
+	[/session and growth run/g, 'session and growth run'],
 	[/Activision's anti-cheat/g, "Epic Games' anti-cheat"],
 	[/Activision anti-cheat/g, 'Epic Games anti-cheat'],
 	[/Activision ships/g, 'Epic Games ships'],
 	[/Activision security/g, 'Epic Games security'],
 	[/Activision bans/g, 'Epic Games bans'],
 	[/Activision/g, 'Epic Games'],
-	[/battleye/gi, 'battleye'],
-	[/BattlEye/g, 'BattlEye anti-cheat'],
-	[/escape-from-tarkov-cheats/g, 'escape-from-tarkov-cheats'],
-	[/escape-from-tarkov/g, 'tarkov'],
-	[/Undetected Wallhack for Call of Duty/g, 'Undetected Wallhack for Escape from Tarkov'],
+	[/eac/gi, 'eac'],
+	[/Easy Anti-Cheat/g, 'Easy Anti-Cheat'],
+	[/the-isle-hacks/g, 'the-isle-hacks'],
+	[/the-isle/g, 'isle'],
+	[/Undetected Wallhack for Call of Duty/g, 'Undetected Wallhack for The Isle'],
 	[/How ESP wallhack, radar, and Aimbot rebuild after Call of Duty anti-cheat/g,
-		'How ESP wallhack, radar, and Aimbot rebuild after Escape from Tarkov anti-cheat'],
+		'How ESP wallhack, radar, and Aimbot rebuild after The Isle anti-cheat'],
 ];
 
 /** Remove Zadeyo from meta description/title strings only */
@@ -90,7 +90,7 @@ function stripZadeyoFromMeta(text) {
 		.replace(/\s*Zadeyo delivery\.?/gi, 'instant digital delivery.')
 		.replace(/\s*and Zadeyo delivery\.?/gi, ' and instant digital delivery.')
 		.replace(/\|\s*Instant Zadeyo Delivery/g, '| Instant Digital Delivery')
-		.replace(/Buy on Zadeyo/g, 'Buy Tarkov Cheats')
+		.replace(/Buy on Zadeyo/g, 'Buy The Isle Hacks')
 		.replace(/\s{2,}/g, ' ')
 		.trim();
 }
@@ -169,38 +169,38 @@ import LocalizedPage from '../../components/LocalizedPage.astro';
 async function fixLocalesBlogUi() {
 	const file = path.join(ROOT, 'src', 'data', 'i18n', 'locales.ts');
 	let content = await readFile(file, 'utf8');
-	content = content.replace(/Tarkov guides/g, 'Escape from Tarkov guides');
-	content = content.replace(/Tarkov guide/g, 'Escape from Tarkov guide');
-	content = content.replace(/Tarkov hileleri/g, 'Escape from Tarkov hileleri');
-	content = content.replace(/Tarkov hile/g, 'Escape from Tarkov hile');
-	content = content.replace(/cheat Tarkov/g, 'cheat Escape from Tarkov');
-	content = content.replace(/cheats Tarkov/g, 'cheats Escape from Tarkov');
-	content = content.replace(/trucos Tarkov/g, 'trucos Escape from Tarkov');
-	content = content.replace(/triche Tarkov/g, 'triche Escape from Tarkov');
-	content = content.replace(/trucchi Tarkov/g, 'trucchi Escape from Tarkov');
-	content = content.replace(/cheatów Tarkov/g, 'cheatów Escape from Tarkov');
-	content = content.replace(/читов Tarkov/g, 'читов Escape from Tarkov');
-	content = content.replace(/читів Tarkov/g, 'читів Escape from Tarkov');
-	content = content.replace(/Tarkovチート/g, 'Escape from Tarkovチート');
-	content = content.replace(/Tarkov 치트/g, 'Escape from Tarkov 치트');
-	content = content.replace(/Tarkov作弊/g, 'Escape from Tarkov作弊');
-	content = content.replace(/Tarkov rehberleri/g, 'Escape from Tarkov rehberleri');
-	content = content.replace(/Tarkov gidsen/g, 'Escape from Tarkov gidsen');
-	content = content.replace(/Tarkov průvodce/g, 'Escape from Tarkov průvodce');
-	content = content.replace(/Tarkov guider/g, 'Escape from Tarkov guider');
-	content = content.replace(/Tarkov related/g, 'Escape from Tarkov related');
-	content = content.replace(/Tarkov ガイド/g, 'Escape from Tarkov ガイド');
-	content = content.replace(/Tarkov 가이드/g, 'Escape from Tarkov 가이드');
-	content = content.replace(/Tarkov指南/g, 'Escape from Tarkov指南');
-	content = content.replace(/Tarkov गाइड/g, 'Escape from Tarkov गाइड');
-	content = content.replace(/Tarkov panduan/g, 'Escape from Tarkov panduan');
-	content = content.replace(/Tarkov คู่มือ/g, 'Escape from Tarkov คู่มือ');
-	content = content.replace(/Tarkov hướng dẫn/g, 'Escape from Tarkov hướng dẫn');
+	content = content.replace(/The Isle guides/g, 'The Isle guides');
+	content = content.replace(/The Isle guide/g, 'The Isle guide');
+	content = content.replace(/The Isle hileleri/g, 'The Isle hileleri');
+	content = content.replace(/The Isle hile/g, 'The Isle hile');
+	content = content.replace(/cheat The Isle/g, 'cheat The Isle');
+	content = content.replace(/cheats The Isle/g, 'cheats The Isle');
+	content = content.replace(/trucos The Isle/g, 'trucos The Isle');
+	content = content.replace(/triche The Isle/g, 'triche The Isle');
+	content = content.replace(/trucchi The Isle/g, 'trucchi The Isle');
+	content = content.replace(/cheatów The Isle/g, 'cheatów The Isle');
+	content = content.replace(/читов The Isle/g, 'читов The Isle');
+	content = content.replace(/читів The Isle/g, 'читів The Isle');
+	content = content.replace(/The Isleチート/g, 'The Isleチート');
+	content = content.replace(/The Isle 치트/g, 'The Isle 치트');
+	content = content.replace(/The Isle作弊/g, 'The Isle作弊');
+	content = content.replace(/The Isle rehberleri/g, 'The Isle rehberleri');
+	content = content.replace(/The Isle gidsen/g, 'The Isle gidsen');
+	content = content.replace(/The Isle průvodce/g, 'The Isle průvodce');
+	content = content.replace(/The Isle guider/g, 'The Isle guider');
+	content = content.replace(/The Isle related/g, 'The Isle related');
+	content = content.replace(/The Isle ガイド/g, 'The Isle ガイド');
+	content = content.replace(/The Isle 가이드/g, 'The Isle 가이드');
+	content = content.replace(/The Isle指南/g, 'The Isle指南');
+	content = content.replace(/The Isle गाइड/g, 'The Isle गाइड');
+	content = content.replace(/The Isle panduan/g, 'The Isle panduan');
+	content = content.replace(/The Isle คู่มือ/g, 'The Isle คู่มือ');
+	content = content.replace(/The Isle hướng dẫn/g, 'The Isle hướng dẫn');
 	await writeFile(file, content, 'utf8');
 	console.log('Fixed locales.ts blogUi');
 }
 
-console.log('=== Tarkov Cheats SEO completion ===\n');
+console.log('=== The Isle Hacks SEO completion ===\n');
 await applyGlobalFixes();
 await createExtraPages();
 await fixLocalesBlogUi();

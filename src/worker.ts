@@ -10,11 +10,11 @@ export interface Env {
 	ASSETS: Fetcher;
 }
 
-const CANONICAL_ORIGIN = 'https://tarkovcheats.org';
-const CANONICAL_HOST = 'tarkovcheats.org';
+const CANONICAL_ORIGIN = 'https://theislehack.org';
+const CANONICAL_HOST = 'theislehack.org';
 const WWW_HOST = `www.${CANONICAL_HOST}`;
 
-const LEGACY_HOSTS = new Set(['besttarkovcheats.com', 'www.besttarkovcheats.com']);
+const LEGACY_HOSTS = new Set(['bestislecheats.com', 'www.bestislecheats.com']);
 
 function redirectResponse(target: string, status = 301): Response {
 	const headers = new Headers({

@@ -6,17 +6,17 @@ const imagesBlock = `images: {
 \t\thero: ${JSON.stringify(DESCRIPTIVE_IMAGE_ALTS.hero)},
 \t\tespWallhack: ${JSON.stringify(DESCRIPTIVE_IMAGE_ALTS.espWallhack)},
 \t\taimbotCombat: ${JSON.stringify(DESCRIPTIVE_IMAGE_ALTS.aimbotCombat)},
-\t\tsquadFight: ${JSON.stringify(DESCRIPTIVE_IMAGE_ALTS.squadFight)},
-\t\tplayerEsp: ${JSON.stringify(DESCRIPTIVE_IMAGE_ALTS.playerEsp)},
+\t\tpackFight: ${JSON.stringify(DESCRIPTIVE_IMAGE_ALTS.packFight)},
+\t\tdinoEsp: ${JSON.stringify(DESCRIPTIVE_IMAGE_ALTS.dinoEsp)},
 \t\theaderArt: ${JSON.stringify(DESCRIPTIVE_IMAGE_ALTS.headerArt)},
-\t\tcheatsPackage: ${JSON.stringify(DESCRIPTIVE_IMAGE_ALTS.cheatsPackage)},
-\t\trebootFight: ${JSON.stringify(DESCRIPTIVE_IMAGE_ALTS.rebootFight)},
+\t\thacksPackage: ${JSON.stringify(DESCRIPTIVE_IMAGE_ALTS.hacksPackage)},
+\t\tambushFight: ${JSON.stringify(DESCRIPTIVE_IMAGE_ALTS.ambushFight)},
 \t\tbattleRoyale: ${JSON.stringify(DESCRIPTIVE_IMAGE_ALTS.battleRoyale)},
-\t\tbattleRoyaleIsland: ${JSON.stringify(DESCRIPTIVE_IMAGE_ALTS.battleRoyaleIsland)},
+\t\tsurvivalIsland: ${JSON.stringify(DESCRIPTIVE_IMAGE_ALTS.survivalIsland)},
 \t}`;
 
 const oldImagesRe =
-	/images:\s*\{\s*hero:\s*'[^']*',\s*espWallhack:\s*'[^']*',\s*aimbotCombat:\s*'[^']*',\s*squadFight:\s*'[^']*',\s*playerEsp:\s*'[^']*',\s*headerArt:\s*'[^']*',\s*cheatsPackage:\s*'[^']*',\s*rebootFight:\s*'[^']*',\s*battleRoyale:\s*'[^']*',\s*battleRoyaleIsland:\s*'[^']*'\s*\}/g;
+	/images:\s*\{\s*hero:\s*'[^']*',\s*espWallhack:\s*'[^']*',\s*aimbotCombat:\s*'[^']*',\s*packFight:\s*'[^']*',\s*dinoEsp:\s*'[^']*',\s*headerArt:\s*'[^']*',\s*hacksPackage:\s*'[^']*',\s*ambushFight:\s*'[^']*',\s*battleRoyale:\s*'[^']*',\s*survivalIsland:\s*'[^']*'\s*\}/g;
 
 for (const f of ['scripts/i18n-data/ui-strings-part1.mjs', 'scripts/i18n-data/ui-strings-part2.mjs']) {
 	let s = fs.readFileSync(f, 'utf8');
@@ -40,7 +40,7 @@ for (const f of ['public/locales/en/translation.json', 'public/locales/es/transl
 	const j = JSON.parse(fs.readFileSync(f, 'utf8'));
 	j.images = { ...DESCRIPTIVE_IMAGE_ALTS };
 	if (j.hero) {
-		j.hero.imageAlt = '{{brand}} — Escape from Tarkov ESP and aimbot overlay';
+		j.hero.imageAlt = '{{brand}} — The Isle ESP and aimbot overlay';
 	}
 	fs.writeFileSync(f, `${JSON.stringify(j, null, 2)}\n`);
 	console.log('updated', f);

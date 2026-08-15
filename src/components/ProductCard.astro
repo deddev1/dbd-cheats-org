@@ -1,5 +1,5 @@
 ---
-import { tarkovImages } from '../data/tarkov';
+import { isleImages } from '../data/isle';
 import { getUi } from '../data/i18n';
 import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
 import { productInfo, siteConfig } from '../data/site';
@@ -20,12 +20,12 @@ const productAlts = [
 	ui.images.espWallhack,
 	ui.images.aimbotCombat,
 	ui.images.headerArt,
-	ui.images.playerEsp,
-	ui.images.squadFight,
-	ui.images.cheatsPackage,
+	ui.images.dinoEsp,
+	ui.images.packFight,
+	ui.images.hacksPackage,
 ] as const;
 
-const mainImage = tarkovImages.product[0];
+const mainImage = isleImages.product[0];
 const mainAlt = productAlts[0] ?? mainImage.alt;
 const monthlyPlan = productInfo.plans.find((plan) => plan.id === 'monthly') ?? productInfo.plans[0];
 ---

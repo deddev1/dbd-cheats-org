@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/** Final pass: fix remaining Tarkov references in src/. */
+/** Final pass: fix remaining The Isle references in src/. */
 import { readFile, writeFile, readdir } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -8,30 +8,30 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', 's
 const REMOVE_PAGE_IDS = ['hacks', 'cheat-download', 'mod-menu', 'soft-aim', 'best-cheats', 'aimbot-hack', 'esp-hack', 'unlock-all'];
 
 const REPLACEMENTS = [
-	['tarkovImages', 'tarkovImages'],
-	["from '../data/tarkov'", "from '../data/tarkov'"],
-	["from './tarkov'", "from './tarkov'"],
-	['/undetected-tarkov-cheats/', '/undetected-tarkov-cheats/'],
-	['/tarkov-wallhack/', '/tarkov-wallhack/'],
-	['/tarkov-radar-hack/', '/tarkov-radar-hack/'],
-	['/battleye-bypass/', '/battleye-bypass/'],
-	['/tarkov-cheats-2026/', '/tarkov-cheats-2026/'],
-	['/tarkov-aimbot/', '/tarkov-aimbot/'],
-	['/tarkov-esp/', '/tarkov-esp/'],
-	['/tarkov-cheats/', '/tarkov-esp/'],
-	['Tarkov Cheats', 'Tarkov Cheats'],
-	['Tarkov cheats', 'Tarkov cheats'],
-	['Tarkov wallhack', 'Escape from Tarkov wallhack'],
-	['Tarkov radar', 'Escape from Tarkov radar'],
-	['Tarkov Aimbot', 'Escape from Tarkov Aimbot'],
-	['Tarkov ESP', 'Escape from Tarkov ESP'],
-	['Escape from Tarkov', 'Escape from Tarkov'],
-	['BattlEye', 'BattlEye anti-cheat'],
-	['battleye', 'battleye'],
-	['tarkovcheats.org', 'tarkovcheats.org'],
-	['operatorEsp', 'playerEsp'],
-	['extractFight', 'rebootFight'],
-	['alMazrah', 'battleRoyaleIsland'],
+	['isleImages', 'isleImages'],
+	["from '../data/isle'", "from '../data/isle'"],
+	["from './isle'", "from './isle'"],
+	['/undetected-isle-hacks/', '/undetected-isle-hacks/'],
+	['/isle-wallhack/', '/isle-wallhack/'],
+	['/isle-radar-hack/', '/isle-radar-hack/'],
+	['/eac-bypass/', '/eac-bypass/'],
+	['/isle-hacks-2026/', '/isle-hacks-2026/'],
+	['/isle-aimbot/', '/isle-aimbot/'],
+	['/isle-esp/', '/isle-esp/'],
+	['/the-isle-hacks/', '/isle-esp/'],
+	['The Isle Hacks', 'The Isle Hacks'],
+	['the isle hacks', 'the isle hacks'],
+	['isle wallhack', 'The Isle wallhack'],
+	['isle radar', 'The Isle radar'],
+	['Isle Aimbot', 'The Isle Aimbot'],
+	['Isle ESP', 'The Isle ESP'],
+	['The Isle', 'The Isle'],
+	['Easy Anti-Cheat', 'Easy Anti-Cheat'],
+	['eac', 'eac'],
+	['theislehack.org', 'theislehack.org'],
+	['operatorEsp', 'dinoEsp'],
+	['extractFight', 'ambushFight'],
+	['alMazrah', 'survivalIsland'],
 ];
 
 async function walk(dir, files = []) {

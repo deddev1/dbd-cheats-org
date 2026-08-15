@@ -14,11 +14,11 @@ export {
 	type CannibalPageId,
 };
 
-export const sitemapExcludedPageIds = new Set<PageId>(cannibalPageIds as PageId[]);
+export const sitemapExcludedPageIds = new Set<PageId>([...(cannibalPageIds as PageId[]), 'hacks']);
 
-/** Primary commercial landing for the head term "tarkov cheats". */
-export const MONEY_PAGE_ID = 'hacks' as const satisfies PageId;
-export const MONEY_PATH = '/tarkov-cheats/' as const;
+/** Primary commercial landing for the head term "the isle hacks". */
+export const MONEY_PAGE_ID = 'home' as const satisfies PageId;
+export const MONEY_PATH = '/' as const;
 
 export function getCannibalTarget(pageId: PageId): PageId {
 	return getCannibalTargetId(pageId) as PageId;

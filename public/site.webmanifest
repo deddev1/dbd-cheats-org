@@ -1,11 +1,11 @@
 {
-  "name": "Tarkov Cheats",
-  "short_name": "Tarkov",
-  "description": "Undetected tarkov cheats — ESP, aimbot, and radar for PC",
+  "name": "The Isle Hacks",
+  "short_name": "Isle Hacks",
+  "description": "Undetected the isle hacks — ESP, aimbot, and radar for PC",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0a0811",
-  "theme_color": "#0a0811",
+  "background_color": "#080b08",
+  "theme_color": "#080b08",
   "icons": [
     {
       "src": "/favicon.png",

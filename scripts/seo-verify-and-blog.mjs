@@ -16,9 +16,9 @@ const bad = [
 	'Activision',
 	'soft aim, and .',
 	'ESP, Soft Aim,',
-	'best-tarkov-cheats',
-	'tarkov-esp-hack',
-	'tarkov-aimbot-hack',
+	'best-isle-hacks',
+	'isle-esp-hack',
+	'isle-aimbot-hack',
 ];
 console.log('--- pages-en leftovers ---');
 for (const b of bad) {
@@ -37,10 +37,10 @@ for (const b of [
 	'vehicles before',
 	'Controllers',
 	'Battle Pass',
-	'RBattlEye',
+	'REasy Anti-Cheat',
 	'soft aim, and .',
-	'best-tarkov-cheats',
-	'tarkov-esp-hack',
+	'best-isle-hacks',
+	'isle-esp-hack',
 ]) {
 	const n = en.split(b).length - 1;
 	if (n) console.log(`${b}: ${n}`);
@@ -48,29 +48,29 @@ for (const b of [
 
 const blog = readFileSync('src/data/blog/posts.generated.ts', 'utf8');
 const reps = [
-	['V-Bucks', 'roubles'],
-	['Item Shop', 'Flea Market'],
-	['Battle Pass', 'wipe progression'],
-	['FNCS', 'Tarkov tournament'],
+	['V-Bucks', 'growth points'],
+	['Item Shop', 'in-game store'],
+	['Battle Pass', 'patch cycle progression'],
+	['FNCS', 'The Isle community event'],
 	['Hammer AR', 'M4A1'],
 	['mythics', 'meta guns'],
-	['island codes', 'offline practice maps'],
+	['island codes', 'practice server sessions maps'],
 	['Creative 1v1s', 'aim training'],
 	['creative 1v1s', 'aim training'],
 	['Epic health', 'Battlestate status'],
-	['Epic terms', 'Battlestate Games terms'],
-	["Epic's BattlEye", 'BattlEye'],
-	['Epic patch', 'Tarkov patch'],
+	['Epic terms', 'The Isle team terms'],
+	["Epic's Easy Anti-Cheat", 'Easy Anti-Cheat'],
+	['Epic patch', 'The Isle patch'],
 	['EliteFN', 'a Fortnite cheat shop'],
 	['GhostWare', 'a slim cheat vendor'],
 	['CheatVault', 'another cheat shop'],
-	['/tarkov-aimbot-hack/', '/tarkov-aimbot/'],
-	['/tarkov-esp-hack/', '/tarkov-esp/'],
-	['/best-tarkov-cheats/', '/tarkov-cheats/'],
-	['best Tarkov cheats', 'Tarkov cheats'],
+	['/isle-aimbot-hack/', '/isle-aimbot/'],
+	['/isle-esp-hack/', '/isle-esp/'],
+	['/best-isle-hacks/', '/'],
+	['best the isle hacks', 'the isle hacks'],
 	['hot drops', 'hot spawns'],
-	['ranked grinders', 'raid grinders'],
-	['before Ranked', 'before a raid'],
+	['ranked grinders', 'session grinders'],
+	['before Ranked', 'before a session'],
 ];
 let s = blog;
 let n = 0;

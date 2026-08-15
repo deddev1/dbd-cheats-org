@@ -2,8 +2,8 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "command": "./node_modules/.bin/astro dev",
-      "name": "Development server",
+      "command": "npm run localhost",
+      "name": "Localhost preview (port 8080)",
       "request": "launch",
       "type": "node-terminal"
     }

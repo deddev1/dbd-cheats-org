@@ -1,6 +1,6 @@
-# Tarkov Cheats — Marketing Site
+# The Isle Hacks — Marketing Site
 
-Static Astro 7 site for [tarkovcheats.org](https://tarkovcheats.org). Primary SEO keyword: **tarkov cheats** (secondary: escape from tarkov cheats, aimbot, ESP).
+Static Astro 7 site for [theislehack.org](https://theislehack.org). Primary SEO keyword: **the isle hacks** (secondary: the isle cheats, isle aimbot, isle ESP).
 
 ## Stack
 
@@ -10,11 +10,27 @@ Static Astro 7 site for [tarkovcheats.org](https://tarkovcheats.org). Primary SE
 
 ## Quick start
 
+**On your own PC (real localhost):**
+
+```bash
+npm install
+npm run localhost
+# open http://localhost:8080
+```
+
+Or use the helper script:
+
+```bash
+./scripts/start-localhost.sh
+```
+
+**Dev mode with hot reload:**
+
 ```bash
 npm install
 npm run generate:i18n   # after editing scripts/i18n-data/*
 node scripts/generate-blog-posts.mjs
-npm run dev
+npm run dev           # http://localhost:4321
 ```
 
 Build and validate sitemaps:
@@ -25,11 +41,11 @@ npm run build:validate
 
 ## Deploy (Cloudflare Pages)
 
-1. Create a Cloudflare Pages project named **besttarkovcheats**
+1. Create a Cloudflare Pages project named **theislehacks**
 2. Connect this repo or upload `dist/` after `npm run build`
 3. Build command: `npm run build`
 4. Output directory: `dist`
-5. Add custom domain **tarkovcheats.org** (apex) and redirect **www** → apex
+5. Add custom domain **theislehack.org** (apex) and redirect **www** → apex
 6. Enable SSL **Always Use HTTPS**
 
 CLI deploy:
@@ -41,8 +57,8 @@ npm run pages:deploy
 ## Environment
 
 - Node.js >= 22.12.0
-- Checkout URL: Zadeyo Tarkov product (`siteConfig.checkoutUrl` in `src/data/site.ts`)
+- Checkout URL: Zadeyo The Isle product (`siteConfig.checkoutUrl` in `src/data/site.ts`)
 
 ## License
 
-Private — for tarkovcheats.org deployment only.
+Private — for theislehack.org deployment only.

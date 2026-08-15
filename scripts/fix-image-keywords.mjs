@@ -2,10 +2,10 @@
 import { readFileSync, writeFileSync } from 'node:fs';
 
 const SIMPLE =
-	"images: { hero: 'tarkov cheats', espWallhack: 'tarkov cheats wallhack', aimbotCombat: 'tarkov cheats aimbot', squadFight: 'tarkov cheats', playerEsp: 'tarkov cheats esp', headerArt: 'tarkov cheats aimbot', cheatsPackage: 'tarkov cheats radar', rebootFight: 'tarkov cheats aimbot', battleRoyale: 'tarkov cheats', battleRoyaleIsland: 'tarkov cheats esp' }";
+	"images: { hero: 'the isle hacks', espWallhack: 'the isle hacks wallhack', aimbotCombat: 'the isle hacks aimbot', packFight: 'the isle hacks', dinoEsp: 'the isle hacks esp', headerArt: 'the isle hacks aimbot', hacksPackage: 'the isle hacks radar', ambushFight: 'the isle hacks aimbot', battleRoyale: 'the isle hacks', survivalIsland: 'the isle hacks esp' }";
 
 const re =
-	/images: \{ hero: '[^']+', espWallhack: '[^']+', aimbotCombat: '[^']+', squadFight: '[^']+', playerEsp: '[^']+', headerArt: '[^']+', cheatsPackage: '[^']+', rebootFight: '[^']+', battleRoyale: '[^']+', battleRoyaleIsland: '[^']+' \}/g;
+	/images: \{ hero: '[^']+', espWallhack: '[^']+', aimbotCombat: '[^']+', packFight: '[^']+', dinoEsp: '[^']+', headerArt: '[^']+', hacksPackage: '[^']+', ambushFight: '[^']+', battleRoyale: '[^']+', survivalIsland: '[^']+' \}/g;
 
 for (const f of ['scripts/i18n-data/ui-strings-part1.mjs', 'scripts/i18n-data/ui-strings-part2.mjs']) {
 	const c = readFileSync(f, 'utf8');
@@ -15,30 +15,30 @@ for (const f of ['scripts/i18n-data/ui-strings-part1.mjs', 'scripts/i18n-data/ui
 }
 
 const altMap = [
-	["imageAlt: 'Tarkov ESP player tags hack'", "imageAlt: 'tarkov cheats esp'"],
-	["imageAlt: 'Tarkov ESP radar hack'", "imageAlt: 'tarkov cheats radar'"],
-	["imageAlt: 'Tarkov aimbot sniper kill'", "imageAlt: 'tarkov cheats aimbot'"],
-	["imageAlt: 'Tarkov aimbot skeleton targeting'", "imageAlt: 'tarkov cheats aimbot'"],
-	["imageAlt: 'Tarkov cheats ADS combat'", "imageAlt: 'tarkov cheats'"],
-	["imageAlt: 'Tarkov cheats setup PC activation'", "imageAlt: 'tarkov cheats'"],
-	["imageAlt: 'Tarkov cheats updates BattlEye maintenance'", "imageAlt: 'tarkov cheats'"],
-	["imageAlt: 'Tarkov cheats FAQ ESP aimbot'", "imageAlt: 'tarkov cheats'"],
-	["imageAlt: 'Tarkov cheats support license help'", "imageAlt: 'tarkov cheats'"],
-	["imageAlt: 'Undetected tarkov cheats ESP wallhack'", "imageAlt: 'undetected tarkov cheats'"],
-	["imageAlt: 'Tarkov wallhack skeleton ESP'", "imageAlt: 'tarkov cheats wallhack'"],
-	["imageAlt: 'BattlEye bypass tarkov ESP aimbot'", "imageAlt: 'tarkov cheats battleye'"],
-	["imageAlt: 'Tarkov cheats 2026 ESP aimbot'", "imageAlt: 'tarkov cheats'"],
-	["imageAlt: 'Tarkov cheats combat aimbot'", "imageAlt: 'tarkov cheats'"],
-	["imageAlt: 'Tarkov cheat download ESP aimbot'", "imageAlt: 'tarkov cheats download'"],
-	["imageAlt: 'Tarkov mod menu ESP aimbot'", "imageAlt: 'tarkov cheats mod menu'"],
-	["imageAlt: 'Tarkov soft aim aimbot settings'", "imageAlt: 'tarkov cheats soft aim'"],
-	["imageAlt: 'Best tarkov cheats 2026 ESP'", "imageAlt: 'best tarkov cheats'"],
-	["imageAlt: 'Tarkov aimbot hack combat'", "imageAlt: 'tarkov cheats aimbot'"],
-	["imageAlt: 'Tarkov ESP hack wallhack'", "imageAlt: 'tarkov cheats esp'"],
-	["imageAlt: 'Tarkov unlock all ESP aimbot guide'", "imageAlt: 'tarkov cheats'"],
-	["imageAlt: 'Tarkov cheats privacy policy'", "imageAlt: 'tarkov cheats'"],
-	["imageAlt: 'Tarkov cheats refund policy'", "imageAlt: 'tarkov cheats'"],
-	["imageAlt: 'Tarkov cheats terms of use'", "imageAlt: 'tarkov cheats'"],
+	["imageAlt: 'Isle ESP player tags hack'", "imageAlt: 'the isle hacks esp'"],
+	["imageAlt: 'Isle ESP radar hack'", "imageAlt: 'the isle hacks radar'"],
+	["imageAlt: 'Isle Aimbot sniper kill'", "imageAlt: 'the isle hacks aimbot'"],
+	["imageAlt: 'Isle Aimbot skeleton targeting'", "imageAlt: 'the isle hacks aimbot'"],
+	["imageAlt: 'the isle hacks ADS combat'", "imageAlt: 'the isle hacks'"],
+	["imageAlt: 'the isle hacks setup PC activation'", "imageAlt: 'the isle hacks'"],
+	["imageAlt: 'the isle hacks updates Easy Anti-Cheat maintenance'", "imageAlt: 'the isle hacks'"],
+	["imageAlt: 'the isle hacks FAQ ESP aimbot'", "imageAlt: 'the isle hacks'"],
+	["imageAlt: 'the isle hacks support license help'", "imageAlt: 'the isle hacks'"],
+	["imageAlt: 'Undetected the isle hacks ESP wallhack'", "imageAlt: 'undetected the isle hacks'"],
+	["imageAlt: 'isle wallhack skeleton ESP'", "imageAlt: 'the isle hacks wallhack'"],
+	["imageAlt: 'Easy Anti-Cheat bypass isle ESP aimbot'", "imageAlt: 'the isle hacks eac'"],
+	["imageAlt: 'the isle hacks 2026 ESP aimbot'", "imageAlt: 'the isle hacks'"],
+	["imageAlt: 'the isle hacks combat aimbot'", "imageAlt: 'the isle hacks'"],
+	["imageAlt: 'the isle hack download ESP aimbot'", "imageAlt: 'the isle hacks download'"],
+	["imageAlt: 'The Isle mod menu ESP aimbot'", "imageAlt: 'the isle hacks mod menu'"],
+	["imageAlt: 'The Isle soft aim aimbot settings'", "imageAlt: 'the isle hacks soft aim'"],
+	["imageAlt: 'Best the isle hacks 2026 ESP'", "imageAlt: 'best the isle hacks'"],
+	["imageAlt: 'Isle Aimbot hack combat'", "imageAlt: 'the isle hacks aimbot'"],
+	["imageAlt: 'Isle ESP hack wallhack'", "imageAlt: 'the isle hacks esp'"],
+	["imageAlt: 'The Isle unlock all species ESP aimbot guide'", "imageAlt: 'the isle hacks'"],
+	["imageAlt: 'the isle hacks privacy policy'", "imageAlt: 'the isle hacks'"],
+	["imageAlt: 'the isle hacks refund policy'", "imageAlt: 'the isle hacks'"],
+	["imageAlt: 'the isle hacks terms of use'", "imageAlt: 'the isle hacks'"],
 ];
 
 let pages = readFileSync('scripts/i18n-data/pages-en.mjs', 'utf8');
@@ -49,13 +49,13 @@ console.log('pages-en imageAlts simplified');
 // productPage() imageAlt template in pages-i18n
 let i18n = readFileSync('scripts/i18n-data/pages-i18n.mjs', 'utf8');
 i18n = i18n
-	.split("imageAlt: `Tarkov ${meta.altKeyword}`")
-	.join("imageAlt: 'tarkov cheats'")
-	.split("galleryTitle: `Tarkov Cheats ${topicName}`")
-	.join("galleryTitle: 'tarkov cheats'")
-	.split("imageAlt: `Tarkov cheats ${kind} policy`")
-	.join("imageAlt: 'tarkov cheats'")
-	.split("galleryTitle: `Tarkov Cheats ${kind} resources`")
-	.join("galleryTitle: 'tarkov cheats'");
+	.split("imageAlt: `The Isle ${meta.altKeyword}`")
+	.join("imageAlt: 'the isle hacks'")
+	.split("galleryTitle: `The Isle Hacks ${topicName}`")
+	.join("galleryTitle: 'the isle hacks'")
+	.split("imageAlt: `the isle hacks ${kind} policy`")
+	.join("imageAlt: 'the isle hacks'")
+	.split("galleryTitle: `The Isle Hacks ${kind} resources`")
+	.join("galleryTitle: 'the isle hacks'");
 writeFileSync('scripts/i18n-data/pages-i18n.mjs', i18n);
 console.log('pages-i18n image alts simplified');

@@ -1,5 +1,5 @@
 ---
-import { tarkovImages } from '../data/tarkov';
+import { isleImages } from '../data/isle';
 import { getUi } from '../data/i18n';
 import { getGalleryUi } from '../data/i18n/gallery-ui';
 import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
@@ -14,14 +14,14 @@ const ui = getUi(locale);
 const gallery = getGalleryUi(locale);
 
 const galleryAlts = [
-	ui.images.cheatsPackage,
+	ui.images.hacksPackage,
 	ui.images.espWallhack,
 	ui.images.aimbotCombat,
 	ui.images.headerArt,
-	ui.images.squadFight,
+	ui.images.packFight,
 ] as const;
 
-const galleryImages = tarkovImages.gallery.slice(0, 4).map((image, index) => ({
+const galleryImages = isleImages.gallery.slice(0, 4).map((image, index) => ({
 	src: image.src,
 	alt: galleryAlts[index] ?? image.alt,
 }));

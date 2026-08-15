@@ -68,8 +68,7 @@ async function fetchSitemapAsset(env: Env, pathname: string): Promise<Response> 
 	// Pathname-only fetch — hostname is ignored by the ASSETS binding.
 	const assetRequest = new Request(new URL(pathname, 'https://assets.local'));
 	const response = await env.ASSETS.fetch(assetRequest);
-	const headers = new Headers(response.headers);
-	const upstreamType = headers.get('Content-Type') || '';
+	const upstreamType = response.headers.get('Content-Type') || '';
 
 	if (!response.ok || upstreamType.includes('text/html')) {
 		const headers = new Headers();
@@ -78,6 +77,8 @@ async function fetchSitemapAsset(env: Env, pathname: string): Promise<Response> 
 		return new Response('Sitemap not found', { status: 404, headers });
 	}
 
+	// Fresh headers — do not copy ASSETS/_headers (duplicate Content-Type breaks browsers + GSC).
+	const headers = new Headers();
 	headers.set('Content-Type', 'application/xml; charset=utf-8');
 	headers.set('Cache-Control', 'public, max-age=3600');
 	applySecurityHeaders(headers, { html: false });

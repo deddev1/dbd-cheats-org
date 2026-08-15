@@ -16,6 +16,13 @@ const WWW_HOST = `www.${CANONICAL_HOST}`;
 
 const LEGACY_HOSTS = new Set(['bestislecheats.com', 'www.bestislecheats.com']);
 
+/** /sitemap.xml and /sitemap-*.xml — must stay application/xml for Google Search Console. */
+const SITEMAP_PATH = /^\/sitemap(?:-[a-z0-9-]+)?\.xml$/;
+
+function isSitemapPath(pathname: string): boolean {
+	return SITEMAP_PATH.test(pathname);
+}
+
 function redirectResponse(target: string, status = 301): Response {
 	const headers = new Headers({
 		Location: target,
@@ -59,6 +66,19 @@ export default {
 		if (pathRedirect) {
 			const target = new URL(pathRedirect + url.search, CANONICAL_ORIGIN);
 			return redirectResponse(target.toString());
+		}
+
+		if (isSitemapPath(url.pathname)) {
+			const response = await env.ASSETS.fetch(request);
+			const headers = new Headers(response.headers);
+			headers.set('Content-Type', 'application/xml; charset=utf-8');
+			headers.set('Cache-Control', 'public, max-age=3600');
+			applySecurityHeaders(headers, { html: false });
+			return new Response(response.body, {
+				status: response.status,
+				statusText: response.statusText,
+				headers,
+			});
 		}
 
 		const response = await env.ASSETS.fetch(request);

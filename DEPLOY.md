@@ -33,20 +33,15 @@ In **Workers & Pages** → your Worker → **Settings** → **Build**:
 |---------|--------|
 | **Production branch** | `main` |
 | **Root directory** | `/` (repo root) |
-| **Build command** | *(leave empty — Wrangler runs the build)* |
-| **Deploy command** | `npx wrangler deploy` |
+| **Build command** | `npm run build` |
+| **Deploy command** | `npx wrangler deploy` (or `npm run deploy`) |
 | **Environment variable** | `NODE_VERSION=22` |
 
-`wrangler.toml` includes:
+Workers Builds runs the build command **before** the deploy command. Astro must produce `./dist` before Wrangler uploads assets.
 
-```toml
-[build]
-command = "npm ci && npm run build"
-```
+If the build command is left empty, `package.json` `postinstall` still builds on Workers CI when `dist/` is missing — but setting **`npm run build`** explicitly is recommended.
 
-Wrangler runs that command before uploading `./dist`, so a deploy-only CI step still produces static HTML.
-
-Alternative single-step deploy command: `npm run deploy` (same end result).
+`npm run deploy` runs `npm run build && wrangler deploy` for one-step CLI deploys.
 
 ## 3. Cloudflare Pages project (legacy option)
 

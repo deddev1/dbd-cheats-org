@@ -3,9 +3,9 @@ name = "theislehacks"
 compatibility_date = "2026-01-01"
 main = "src/worker.ts"
 
-# Workers Builds runs `npx wrangler deploy` only — build dist/ here before asset upload.
+# Local/CLI deploy: Wrangler runs this before upload. Workers Builds also uses postinstall.
 [build]
-command = "npm ci && npm run build"
+command = "npm run build"
 
 [assets]
 directory = "./dist"

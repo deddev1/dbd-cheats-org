@@ -23,9 +23,34 @@ npm run build:validate
 
 Expected output: **556** indexable HTML pages (25 English marketing + 15 blog URLs + 21 locales × 25 pages Easy Anti-Cheat).
 
-## 2. Cloudflare Pages project
+## 2. Cloudflare Workers (Git-connected)
 
-### Option A — Git-connected (recommended)
+This repo deploys as a **Worker with static assets** (`wrangler.toml` → `./dist` + `src/worker.ts`).
+
+In **Workers & Pages** → your Worker → **Settings** → **Build**:
+
+| Setting | Value |
+|---------|--------|
+| **Production branch** | `main` |
+| **Root directory** | `/` (repo root) |
+| **Build command** | *(leave empty — Wrangler runs the build)* |
+| **Deploy command** | `npx wrangler deploy` |
+| **Environment variable** | `NODE_VERSION=22` |
+
+`wrangler.toml` includes:
+
+```toml
+[build]
+command = "npm ci && npm run build"
+```
+
+Wrangler runs that command before uploading `./dist`, so a deploy-only CI step still produces static HTML.
+
+Alternative single-step deploy command: `npm run deploy` (same end result).
+
+## 3. Cloudflare Pages project (legacy option)
+
+### Option A — Git-connected Pages
 
 1. Log in to [Cloudflare Dashboard](https://dash.cloudflare.com) → **Workers & Pages** → **Create application** → **Pages** → **Connect to Git**.
 2. Select this repository.

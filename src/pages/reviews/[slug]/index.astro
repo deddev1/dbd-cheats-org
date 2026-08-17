@@ -7,6 +7,7 @@ import { getSelfHreflangAlternates } from '../../../data/i18n/routing';
 import { getReviewPath, getReviewCrawlImage, reviewsBasePath } from '../../../data/reviews';
 import type { CustomerReview } from '../../../data/site';
 import { contentSrcSet, productMainSizes } from '../../../lib/responsive-images';
+import RelatedPages from '../../../components/RelatedPages.astro';
 
 export function getStaticPaths() {
 	return customerReviews.map((review) => ({
@@ -152,6 +153,8 @@ const extraGraph: Record<string, unknown>[] = [
 					<a href={reviewsBasePath}>All {customerReviewStats.totalCount} {siteConfig.name} reviews</a>
 				</p>
 			</section>
+
+			<RelatedPages locale="en" variant="topics" class="review-detail__topics" />
 			</div>
 		</div>
 	</main>
@@ -450,6 +453,10 @@ const extraGraph: Record<string, unknown>[] = [
 
 	.review-detail__all-link a:hover {
 		color: var(--ink);
+	}
+
+	.review-detail__topics {
+		margin-top: 0.5rem;
 	}
 
 	@media (max-width: 720px) {

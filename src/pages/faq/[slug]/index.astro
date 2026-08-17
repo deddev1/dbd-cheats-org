@@ -6,6 +6,7 @@ import { productInfo, seoFaqs, siteConfig, type FaqItem } from '../../../data/si
 import { absoluteFaqUrl, faqBasePath, getFaqCrawlImage, getFaqPath, getRelatedFaqs } from '../../../data/faq';
 import { getSelfHreflangAlternates } from '../../../data/i18n/routing';
 import { contentSrcSet, productMainSizes } from '../../../lib/responsive-images';
+import RelatedPages from '../../../components/RelatedPages.astro';
 
 export function getStaticPaths() {
 	return seoFaqs.map((faq) => ({
@@ -123,6 +124,8 @@ const extraGraph: Record<string, unknown>[] = [
 					<a href={faqBasePath}>View all FAQ answers</a>
 				</p>
 			</section>
+
+			<RelatedPages locale="en" pageId="faq" variant="topics" class="faq-detail__topics" />
 			</div>
 		</div>
 	</main>
@@ -342,6 +345,10 @@ const extraGraph: Record<string, unknown>[] = [
 
 	.faq-detail__all a:hover {
 		color: var(--ink);
+	}
+
+	.faq-detail__topics {
+		margin-top: 0.5rem;
 	}
 
 	@media (max-width: 560px) {

@@ -72,6 +72,20 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 				list: ['Nearby enemy cues', 'Adjustable range', 'Works in herbivore & carnivore'],
 			},
 			{
+				h2: 'Explore related topics',
+				paragraphs: [
+					'Most {game} cheat sites cover ESP, aimbot, radar, setup, and status on separate pages. Use these guides next:',
+				],
+				list: [
+					'<a href="/isle-esp/">ESP & wallhack guide</a>',
+					'<a href="/isle-aimbot/">Aimbot & soft aim</a>',
+					'<a href="/isle-radar-hack/">2D radar overlay</a>',
+					'<a href="/setup/">Setup guide</a>',
+					'<a href="/updates/">Live status</a>',
+					'<a href="/blog/">Isle Intel blog</a>',
+				],
+			},
+			{
 				h2: 'Updates & support',
 				paragraphs: [
 					'We rebuild after big {game} or {antiCheat} patches.',

@@ -183,9 +183,16 @@
     "radar": "Radar",
     "wallhack": "Wallhack",
     "undetected": "Undetected",
+    "features": "Features",
     "pricing": "Pricing",
     "setup": "Setup",
     "blog": "Blog"
+  },
+  "internalLinks": {
+    "relatedLede": "Explore more The Isle Hacks guides — the same topics covered on other cheat sites, mapped to our canonical pages.",
+    "topicsTitle": "Product guides",
+    "topicsLabel": "Product topic guides",
+    "topicsLede": "Jump to the main The Isle Hacks pages for ESP, aimbot, radar, setup, and status."
   },
   "images": {
     "hero": "The Isle Hacks hero — ESP and aimbot overlay in The Isle",

@@ -12,6 +12,7 @@ import {
 import type { ResolvedBlogPost } from '../data/blog/types';
 import { blogLabel, siteConfig } from '../data/site';
 import { getLocalizedPath, localizeInternalHref } from '../data/i18n/routing';
+import RelatedPages from './RelatedPages.astro';
 
 interface Props {
 	locale: LocaleCode;
@@ -146,6 +147,8 @@ function pageTitle(headline: string): string {
 				</section>
 			)
 		}
+
+		<RelatedPages locale={locale} variant="topics" class="post__topics" />
 			</div>
 		</div>
 	</main>
@@ -240,5 +243,9 @@ function pageTitle(headline: string): string {
 	}
 	.post__related a:hover {
 		text-decoration: underline;
+	}
+
+	.post__topics {
+		margin-top: 2rem;
 	}
 </style>

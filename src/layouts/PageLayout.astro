@@ -17,6 +17,8 @@ import {
 import { defaultLocale } from '../data/i18n/locales';
 import { siteConfig } from '../data/site';
 import { getT } from '../i18n/server';
+import RelatedPages from '../components/RelatedPages.astro';
+import CategoryRow from '../components/CategoryRow.astro';
 
 type GalleryInput = string | { src: string; alt: string };
 
@@ -35,6 +37,8 @@ interface Props {
 	ctaSecondary?: { href: string; label: string };
 	introEdit?: string;
 	showGallery?: boolean;
+	showRelatedPages?: boolean;
+	showCategoryRow?: boolean;
 	locale?: import('../data/i18n/locales').LocaleCode;
 	pageId?: import('../data/i18n/content.generated').PageId;
 	extraGraph?: Record<string, unknown>[];
@@ -55,6 +59,8 @@ const {
 	ctaSecondary,
 	introEdit,
 	showGallery = true,
+	showRelatedPages = true,
+	showCategoryRow = true,
 	locale = defaultLocale,
 	pageId: pageIdProp,
 	extraGraph = [],
@@ -189,6 +195,9 @@ const useHomeHero =
 		<div class="shell page__wrap">
 			<article class="article">
 				<slot />
+				{showRelatedPages && pageId && (
+					<RelatedPages locale={locale} pageId={pageId} />
+				)}
 			</article>
 
 			{
@@ -219,6 +228,7 @@ const useHomeHero =
 			}
 		</div>
 	</main>
+	{showCategoryRow && pageId && <CategoryRow locale={locale} />}
 	<SiteFooter locale={locale} />
 </Layout>
 

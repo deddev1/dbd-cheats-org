@@ -40,14 +40,14 @@ export const trustSignals = {
 } as const;
 
 export const seoLandingPages = [
-	{ label: fillBrandTokens('{game} hacks'), href: '/' },
+	{ label: fillBrandTokens('{gameShort} hacks'), href: '/' },
 	{ label: fillBrandTokens('{primaryKeyword}'), href: '/' },
-	{ label: fillBrandTokens('{game} esp'), href: '/dbd-esp/' },
-	{ label: fillBrandTokens('{game} aimbot'), href: '/dbd-aimbot/' },
-	{ label: fillBrandTokens('{game} setup'), href: '/setup/' },
+	{ label: fillBrandTokens('{gameShort} ESP'), href: '/dbd-esp/' },
+	{ label: fillBrandTokens('{gameShort} aimbot'), href: '/dbd-aimbot/' },
+	{ label: fillBrandTokens('{gameShort} setup'), href: '/setup/' },
 	{ label: fillBrandTokens('Undetected {primaryKeyword}'), href: '/' },
-	{ label: fillBrandTokens('{game} wallhack'), href: '/dbd-esp/' },
-	{ label: fillBrandTokens('{game} radar hack'), href: '/dbd-radar-hack/' },
+	{ label: fillBrandTokens('{gameShort} wallhack'), href: '/dbd-esp/' },
+	{ label: fillBrandTokens('{gameShort} radar hack'), href: '/dbd-radar-hack/' },
 ] as const;
 
 export const mainNav = [
@@ -63,7 +63,7 @@ export const mainNav = [
 ] as const;
 
 export const footerNav = [
-	{ label: fillBrandTokens('{game} hack update log'), href: '/updates/' },
+	{ label: fillBrandTokens('{gameShort} hack update log'), href: '/updates/' },
 	{ label: fillBrandTokens('Contact {brand} support'), href: '/support/' },
 	{ label: 'Refund policy details', href: '/refund-policy/' },
 	{ label: 'Privacy policy details', href: '/privacy-policy/' },
@@ -72,17 +72,17 @@ export const footerNav = [
 
 export const footerExplore = [
 	{ label: fillBrandTokens('{brand} home'), href: '/' },
-	{ label: fillBrandTokens('{game} hacks pillar'), href: '/' },
-	{ label: fillBrandTokens('Live {game} status'), href: '/updates/' },
-	{ label: fillBrandTokens('{game} ESP overlays'), href: '/dbd-esp/' },
-	{ label: fillBrandTokens('{game} Aimbot controls'), href: '/dbd-aimbot/' },
-	{ label: fillBrandTokens('{game} radar hack'), href: '/dbd-radar-hack/' },
-	{ label: fillBrandTokens('Full {game} hack feature list'), href: '/features/' },
+	{ label: fillBrandTokens('{gameShort} hacks pillar'), href: '/' },
+	{ label: fillBrandTokens('Live {gameShort} status'), href: '/updates/' },
+	{ label: fillBrandTokens('{gameShort} ESP overlays'), href: '/dbd-esp/' },
+	{ label: fillBrandTokens('{gameShort} aimbot controls'), href: '/dbd-aimbot/' },
+	{ label: fillBrandTokens('{gameShort} radar hack'), href: '/dbd-radar-hack/' },
+	{ label: fillBrandTokens('Full {gameShort} hack feature list'), href: '/features/' },
 	{ label: 'Monthly & lifetime pricing', href: '/pricing/' },
-	{ label: fillBrandTokens('{game} hack setup guide'), href: '/setup/' },
-	{ label: fillBrandTokens('{game} hacks FAQ'), href: '/faq/' },
+	{ label: fillBrandTokens('{gameShort} hack setup guide'), href: '/setup/' },
+	{ label: fillBrandTokens('{gameShort} hacks FAQ'), href: '/faq/' },
 	{ label: fillBrandTokens('{brand} reviews'), href: '/reviews/' },
-	{ label: fillBrandTokens('{game} Intel blog'), href: '/blog/' },
+	{ label: fillBrandTokens('{gameShort} Intel blog'), href: '/blog/' },
 	{ label: fillBrandTokens('Contact {brand} support'), href: '/support/' },
 ] as const;
 
@@ -145,7 +145,7 @@ export const homeFaqs: readonly FaqItem[] = [
 		answer:
 			'Maintenance notes are posted on the Status page when a Dead by Daylight or {antiCheat} update affects the package. That is the fastest place to confirm whether a new {brand} build is live.',
 		slug: 'where-to-check-updates',
-		seoTitle: 'Where to Check {game} / {antiCheat} Updates | FAQ',
+		seoTitle: 'Where to Check {gameShort} / {antiCheat} Updates | FAQ',
 		seoDescription:
 			'Check the Status page after {game} or {antiCheat} patches to confirm the latest {brand} build status.',
 	}),

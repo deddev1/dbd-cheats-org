@@ -3,12 +3,12 @@
 export const uiStrings = {
 	en: {
 		nav: { home: 'Home', hacks: 'Hacks', aimbot: 'Aimbot', esp: 'ESP', features: 'Features', pricing: 'Pricing', setup: 'Setup', updates: 'Updates', faq: 'FAQ', buyNow: 'Buy Now' },
-		hero: { accent: '2026 — Undetected ESP, Aimbot & Wallhack', accentShort: 'Undetected dbd cheats 2026', subtitle: 'dbd cheats with DBD ESP, radar hack and DBD Aimbot for Windows PC — Easy Anti-Cheat maintenance included.', subtitleShort: 'DBD ESP, radar & aimbot for PC', buyNow: 'Buy DBD Cheats', seeFeatures: 'See Features' },
-		trust: { status: 'Online', statusNote: 'DBD Cheats — undetected dbd cheats live for Dead by Daylight on Windows PC.', statusShort: 'Live', delivery: 'Instant digital delivery', platform: 'Windows 10 & 11', antiCheat: 'Easy Anti-Cheat maintenance supported', antiCheatShort: 'Easy Anti-Cheat supported' },
-		product: { title: 'DBD Cheats', addToCart: 'Add to Cart', monthly: 'Monthly', lifetime: 'Lifetime', available: 'Available now', gameBadge: 'Dead by Daylight', platformBadge: 'Windows PC', statusBadge: 'Undetected dbd cheats' },
+		hero: { accent: '2026 — Undetected ESP, Aimbot & Wallhack', accentShort: 'Undetected DBD cheats 2026', subtitle: 'Undetected ESP, soft aim, and radar for Dead by Daylight on Windows PC.', subtitleShort: 'DBD ESP, radar & aimbot for PC', buyNow: 'Get Access', seeFeatures: 'See Features' },
+		trust: { status: 'Online', statusNote: 'DBD Cheats — undetected DBD cheats live for Dead by Daylight on Windows PC.', statusShort: 'Live', delivery: 'Instant digital delivery', platform: 'Windows 10 & 11', antiCheat: 'Easy Anti-Cheat maintenance supported', antiCheatShort: 'Easy Anti-Cheat supported' },
+		product: { title: 'DBD Cheats', addToCart: 'Add to Cart', monthly: 'Monthly', lifetime: 'Lifetime', available: 'Available now', gameBadge: 'Dead by Daylight', platformBadge: 'Windows PC', statusBadge: 'Undetected DBD cheats' },
 		reviews: { title: 'What players say', subtitle: 'Recent feedback from DBD Cheats buyers', outOf: 'out of 5', countLabel: 'reviews' },
 		common: { buyNow: 'Buy DBD Cheats', readGuide: 'Read guide', language: 'Language', officialLanguageNote: 'English is official; other locales are translated.', relatedPages: 'Related pages' },
-		footer: { explore: 'Explore', help: 'Help & legal', tagline: 'Undetected dbd cheats for PC.\nESP, wallhack, radar & aimbot.' },
+		footer: { explore: 'Explore', help: 'Help & legal', tagline: 'Undetected DBD cheats for PC.\nESP, wallhack, radar & aimbot.' },
 		images: {
 		hero: "DBD Cheats hero — ESP and aimbot overlay in Dead by Daylight",
 		espWallhack: "Wallhack outlines showing survivors and killers through walls",

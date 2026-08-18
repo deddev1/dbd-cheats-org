@@ -13,22 +13,22 @@ function L(label: string): string {
 /** Topics rival {game} cheat sites cover — mapped to our canonical pages. */
 const TOPIC_LINKS = {
 	overview: { kind: 'page' as const, pageId: 'home' as const, label: L('{brand} overview') },
-	esp: { kind: 'page' as const, pageId: 'dbd-esp' as const, label: L('{game} ESP & wallhack') },
-	aimbot: { kind: 'page' as const, pageId: 'dbd-aimbot' as const, label: L('{game} aimbot & soft aim') },
-	radar: { kind: 'page' as const, pageId: 'radar' as const, label: L('{game} radar hack') },
-	features: { kind: 'page' as const, pageId: 'features' as const, label: L('Full {game} feature list') },
+	esp: { kind: 'page' as const, pageId: 'dbd-esp' as const, label: L('{gameShort} ESP & wallhack') },
+	aimbot: { kind: 'page' as const, pageId: 'dbd-aimbot' as const, label: L('{gameShort} aimbot & soft aim') },
+	radar: { kind: 'page' as const, pageId: 'radar' as const, label: L('{gameShort} radar hack') },
+	features: { kind: 'page' as const, pageId: 'features' as const, label: L('Full {gameShort} feature list') },
 	pricing: { kind: 'page' as const, pageId: 'pricing' as const, label: 'Store & pricing' },
-	setup: { kind: 'page' as const, pageId: 'setup' as const, label: L('{game} setup guide') },
-	status: { kind: 'page' as const, pageId: 'updates' as const, label: L('Live {game} status') },
-	faq: { kind: 'page' as const, pageId: 'faq' as const, label: L('{game} hacks FAQ') },
+	setup: { kind: 'page' as const, pageId: 'setup' as const, label: L('{gameShort} setup guide') },
+	status: { kind: 'page' as const, pageId: 'updates' as const, label: L('Live {gameShort} status') },
+	faq: { kind: 'page' as const, pageId: 'faq' as const, label: L('{gameShort} hacks FAQ') },
 	support: { kind: 'page' as const, pageId: 'support' as const, label: L('{brand} support') },
-	blog: { kind: 'path' as const, path: '/blog/', label: L('{game} Intel blog') },
+	blog: { kind: 'path' as const, path: '/blog/', label: L('{gameShort} Intel blog') },
 	reviews: { kind: 'path' as const, path: '/reviews/', label: L('{brand} buyer reviews') },
 	hacks: { kind: 'page' as const, pageId: 'hacks' as const, label: L('{primaryKeyword} pillar') },
 	undetected: {
 		kind: 'page' as const,
 		pageId: 'undetected' as const,
-		label: L('Undetected {game} hacks'),
+		label: L('Undetected {gameShort} hacks'),
 	},
 } satisfies Record<string, InternalLinkTarget>;
 

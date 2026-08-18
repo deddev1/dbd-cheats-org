@@ -6,9 +6,9 @@ export const enPages = {
 		title: 'DBD Cheats | Undetected Aimbot, ESP & Wallhack 2026',
 		description:
 			'Dead by Daylight hacks for PC with aimbot, ESP and wallhack features. Explore gameplay features, pricing, setup information and the latest updates.',
-		h1: 'DBD Cheats — Undetected ESP, Wallhack & Aimbot',
+		h1: 'Dead by Daylight Cheats — Undetected ESP, Wallhack & Aimbot',
 		intro:
-			'DBD Cheats is the undetected DBD Cheats package for Windows PC — built for Dead by Daylight on Windows PC. DBD ESP wallhack, 2D radar, and DBD Aimbot with Easy Anti-Cheat maintenance after every major patch.',
+			'DBD Cheats is the undetected cheat package for Windows PC — built for Dead by Daylight. DBD ESP wallhack, 2D radar, and DBD Aimbot with Easy Anti-Cheat maintenance after every major patch.',
 		imageAlt: "DBD Cheats homepage hero — ESP and aimbot for Dead by Daylight",
 		galleryTitle: 'DBD Cheats gallery — ESP, Aimbot and wallhack visuals',
 		ctaPrimary: 'Buy DBD Cheats',
@@ -35,7 +35,7 @@ export const enPages = {
 		title: 'DBD ESP 2026 | Player Boxes & Wallhack',
 		description:
 			'DBD ESP for Windows PC — player boxes, generator markers, and distance readouts. Part of our undetected dbd cheats for Dead by Daylight.',
-		h1: 'DBD ESP — Player Boxes & Wallhack',
+		h1: 'Dead by Daylight ESP — Player Boxes & Wallhack',
 		intro:
 			'DBD ESP visibility tools for trial and chase. Read enemy teams, survivors, killers, generators, and distance before you commit — toggleable DBD ESP wallhack overlays bundled in our DBD Cheats package.',
 		imageAlt: "DBD ESP player boxes and distance readouts in a trial",
@@ -80,7 +80,7 @@ export const enPages = {
 		title: 'DBD Aimbot 2026 | Soft Aim for Windows PC',
 		description:
 			'DBD Aimbot with soft aim tuning for Windows PC. FOV, bone priority, and hotkeys bundled with ESP boxes in our DBD Cheats package.',
-		h1: 'DBD Aimbot — Soft Aim for Windows PC',
+		h1: 'Dead by Daylight Aimbot — Soft Aim for Windows PC',
 		intro:
 			'Configurable Aimbot tools for Dead by Daylight chases. Smoothness, FOV, bone priority, and per-killer profiles — bundled with ESP wallhack and radar in one undetected license.',
 		imageAlt: "DBD Aimbot and soft aim controls on Windows PC",
@@ -125,7 +125,7 @@ export const enPages = {
 		title: 'DBD Cheats Features | ESP, Soft Aim & RadarRadar',
 		description:
 			'Full dbd cheats feature list: ESP boxes, soft aim, radar, and toggles for Windows PC. Review controls before checkout.',
-		h1: 'DBD Cheats Features — Full Control List',
+		h1: 'Dead by Daylight Cheats Features — Full Control List',
 		intro:
 			'Every ESP wallhack, radar hack, and Aimbot control included in DBD Cheats for Dead by Daylight on Windows PC — with Easy Anti-Cheat maintenance after major patches.',
 		imageAlt: "DBD Cheats features — ESP, soft aim, and radar screenshots",
@@ -158,7 +158,7 @@ export const enPages = {
 		title: 'DBD Cheats Pricing | $35/mo or $150 Life',
 		description:
 			'dbd cheats pricing: $35/month or $150 lifetime for ESP, soft aim, and radar on Windows PC. Instant delivery — pick a plan.',
-		h1: 'DBD Cheats Pricing — Monthly & Lifetime',
+		h1: 'Dead by Daylight Cheats Pricing — Monthly & Lifetime',
 		intro:
 			'Choose monthly or lifetime access to undetected DBD Cheats — ESP wallhack, radar hack, and Aimbot for Dead by Daylight on Windows PC. Instant digital delivery after payment.',
 		imageAlt: "DBD Cheats store plans for monthly and lifetime licenses",
@@ -191,7 +191,7 @@ export const enPages = {
 		title: 'DBD Cheats Setup | Windows PC Guide',
 		description:
 			'Set up dbd cheats on Windows PC — activate ESP boxes, soft aim profiles, and . Check Easy Anti-Cheat updates before your first queue.',
-		h1: 'DBD Cheats Setup — Windows PC Guide',
+		h1: 'Dead by Daylight Cheats Setup — Windows PC Guide',
 		intro:
 			'Install and configure DBD Cheats for Dead by Daylight on Windows 10 or 11. Activate your license, load ESP wallhack and Aimbot profiles, and verify Easy Anti-Cheat maintenance status before queueing.',
 		imageAlt: "DBD Cheats setup guide screenshot for Windows PC",
@@ -224,7 +224,7 @@ export const enPages = {
 		title: 'DBD Cheats Updates | Easy Anti-Cheat Maintenance Log',
 		description:
 			'dbd cheats update log: Easy Anti-Cheat rebuilds for ESP boxes, soft aim, and radar on Windows PC. Check status before queueing after patches.',
-		h1: 'DBD Cheats Updates — Maintenance Log',
+		h1: 'Dead by Daylight Cheats Updates — Maintenance Log',
 		intro:
 			'Track Easy Anti-Cheat maintenance and Dead by Daylight patch rebuilds for the undetected ESP wallhack, radar hack, and Aimbot package. Check here before queueing after major updates.',
 		imageAlt: "DBD Cheats live status after Easy Anti-Cheat and game patches",
@@ -257,7 +257,7 @@ export const enPages = {
 		title: 'DBD Cheats FAQ | ESP, Soft Aim & RadarRadar Answers',
 		description:
 			'dbd cheats FAQ: ESP boxes, soft aim, Easy Anti-Cheat maintenance, and pricing for PC. Clear answers before you buy.',
-		h1: 'DBD Cheats FAQ — Common Questions',
+		h1: 'Dead by Daylight Cheats FAQ — Common Questions',
 		intro:
 			'Answers about undetected DBD Cheats — ESP wallhack, radar hack, Aimbot, Easy Anti-Cheat maintenance, checkout, and Dead by Daylight compatibility on Windows PC.',
 		imageAlt: "DBD Cheats FAQ — delivery, setup, and update answers",
@@ -290,7 +290,7 @@ export const enPages = {
 		title: 'DBD Cheats Support | Help & Contact',
 		description:
 			'Contact dbd cheats support for licenses, ESP setup, soft aim profiles, and on Windows PC. Include your order ID for faster help.',
-		h1: 'DBD Cheats Support — Contact Us',
+		h1: 'Dead by Daylight Cheats Support — Contact Us',
 		intro:
 			'Get help with DBD Cheats licenses, checkout, ESP wallhack setup, Aimbot profiles, and Easy Anti-Cheat maintenance for Dead by Daylight on Windows PC.',
 		imageAlt: "DBD Cheats support page for license and setup help",
@@ -323,7 +323,7 @@ export const enPages = {
 		title: 'Undetected DBD Cheats 2026 | Easy Anti-Cheat Maintenance',
 		description:
 			'Undetected dbd cheats with Easy Anti-Cheat maintenance for ESP boxes, soft aim, and radar on Windows PC. Check status before you queue.',
-		h1: 'Undetected DBD Cheats — Easy Anti-Cheat Maintenance',
+		h1: 'Undetected Dead by Daylight Cheats — Easy Anti-Cheat Maintenance',
 		intro:
 			'How DBD Cheats stays maintained for Dead by Daylight after Easy Anti-Cheat patches — ESP wallhack, radar hack, and Aimbot rebuilds for Windows PC.',
 		imageAlt: "DBD Cheats undetected status overview for Windows PC",
@@ -455,7 +455,7 @@ export const enPages = {
 		title: 'DBD Cheats 2026 | ESP Soft Aim & Radar',
 		description:
 			'Best dbd cheats 2026: ESP boxes, soft aim, and radar for Windows PC. Undetected dbd cheats with Easy Anti-Cheat maintenance — compare and buy.',
-		h1: 'DBD Cheats 2026 — ESP, Soft Aim & RadarRadar',
+		h1: 'Dead by Daylight Cheats 2026 — ESP, Soft Aim & Radar',
 		intro:
 			'The 2026 DBD Cheats package for Dead by Daylight — undetected ESP wallhack, radar hack, and Aimbot with Easy Anti-Cheat maintenance, instant delivery, and Windows PC support.',
 		imageAlt: "DBD Cheats product overview for Dead by Daylight",
@@ -488,7 +488,7 @@ export const enPages = {
 		title: 'DBD Cheats 2026 | Undetected ESP Aimbot Guide',
 		description:
 			'dbd cheats for Windows PC: undetected ESP wallhack, radar hack, and Aimbot with Easy Anti-Cheat maintenance. Compare dbd cheats options and buy the full package.',
-		h1: 'DBD Cheats — Undetected ESP, Aimbot & Wallhack',
+		h1: 'Dead by Daylight Cheats — Undetected ESP, Aimbot & Wallhack',
 		intro:
 			'dbd cheats for trial and chase combine ESP wallhack visibility, 2D radar-style threat cues, and Aimbot controls in one undetected Windows PC license — maintained after Easy Anti-Cheat patches. This is the pillar guide for dbd cheats in 2026.',
 		imageAlt: "DBD Cheats product page — ESP, aimbot, and radar",
@@ -626,7 +626,7 @@ export const enPages = {
 		title: 'Best DBD Cheats 2026 | Buyer Guide',
 		description:
 			'Best dbd cheats for 2026: ESP boxes, soft aim, and Easy Anti-Cheat maintenance on Windows PC. Use this checklist before checkout.',
-		h1: 'Best DBD Cheats — 2026 Buyer Guide',
+		h1: 'Best Dead by Daylight Cheats — 2026 Buyer Guide',
 		intro:
 			'Compare dbd cheats for Dead by Daylight in 2026 — undetected ESP wallhack, radar hack, and Aimbot in one maintained package with Easy Anti-Cheat rebuilds and instant delivery.',
 		imageAlt: "DBD Cheats overview for Dead by Daylight on PC",
@@ -659,7 +659,7 @@ export const enPages = {
 		title: 'DBD Aimbot Hack 2026 | Soft Aim Assist',
 		description:
 			'DBD Aimbot hack with soft aim for Windows PC. FOV, bone priority, and hotkeys — bundled with ESP boxes in our DBD Cheats package.',
-		h1: 'DBD Aimbot Hack — Soft Aim Assist',
+		h1: 'Dead by Daylight Aimbot Hack — Soft Aim Assist',
 		intro:
 			'DBD Aimbot hack tools for Dead by Daylight — smoothness, FOV, bone priority, per-killer profiles, and hotkey toggles bundled with ESP wallhack and radar in one undetected license.',
 		imageAlt: "DBD Aimbot hack controls and bone priority",
@@ -692,7 +692,7 @@ export const enPages = {
 		title: 'DBD ESP Hack 2026 | Player Boxes & Loot',
 		description:
 			'DBD ESP hack with player boxes and generator markers for Windows PC. Undetected dbd cheats with — see overlays and buy.',
-		h1: 'DBD ESP Hack — Player Boxes Guide',
+		h1: 'Dead by Daylight ESP Hack — Player Boxes Guide',
 		intro:
 			'DBD ESP hack overlays for Dead by Daylight — player outlines, killer threat cues, generator and hook markers with distance readouts across trial and chase.',
 		imageAlt: "DBD ESP hack boxes and generator markers",

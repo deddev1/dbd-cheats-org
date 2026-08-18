@@ -17,7 +17,7 @@ const copyDefaults = {
 	summary:
 		'{brand} is an undetected {game} cheat package for Windows PC. Includes ESP, soft aim, and radar, with {antiCheat} maintenance after patches.',
 	heroLede: 'Hacks and cheats available — 0% detection.',
-	blogLabel: '{game} Intel',
+	blogLabel: '{gameShort} Intel',
 	ctaBuy: 'Buy now',
 	ctaBuyShort: 'Buy',
 	featuresIntro: 'Everything included in one license for {game} on Windows PC.',
@@ -43,28 +43,28 @@ const seoDefaults = {
 	homeTitle: '{brand} | Undetected {primaryKeyword}',
 	homeDescription:
 		'{primaryKeyword} for Windows PC — ESP, aimbot, and radar with {antiCheat} maintenance. Compare plans and buy.',
-	featuresTitle: '{game} Features | {brand}',
+	featuresTitle: '{gameShort} Features | {brand}',
 	featuresDescription:
-		'Everything in one {game} license for Windows PC — ESP, aimbot, radar, and patch updates.',
-	storeTitle: '{game} Store | {brand}',
-	storeDescription: 'Monthly and lifetime {game} plans. Same features. Instant delivery after payment.',
-	statusTitle: '{game} Status | {brand}',
+		'Everything in one Dead by Daylight license for Windows PC — ESP, aimbot, radar, and patch updates.',
+	storeTitle: '{gameShort} Store | {brand}',
+	storeDescription: 'Monthly and lifetime Dead by Daylight plans. Same features. Instant delivery after payment.',
+	statusTitle: '{gameShort} Status | {brand}',
 	statusDescription:
-		'Live status for {brand} after {game} or {antiCheat} patches. Check before you queue.',
-	previewTitle: '{game} Preview | {brand}',
+		'Live status for {brand} after Dead by Daylight or {antiCheat} patches. Check before you queue.',
+	previewTitle: '{gameShort} Preview | {brand}',
 	previewDescription:
-		'Quick preview of {brand} — ESP, aimbot, radar, and updates after {game} patches.',
-	setupTitle: '{game} Setup | {brand}',
+		'Quick preview of {brand} — ESP, aimbot, radar, and updates after Dead by Daylight patches.',
+	setupTitle: '{gameShort} Setup | {brand}',
 	setupDescription: 'Install and launch {brand} on Windows PC. Short setup steps after you buy.',
-	supportTitle: '{game} Support | {brand}',
+	supportTitle: '{gameShort} Support | {brand}',
 	supportDescription: 'Get help with {brand}. Email {email} with your order ID.',
-	faqTitle: '{game} FAQ | {brand}',
+	faqTitle: '{gameShort} FAQ | {brand}',
 	faqDescription: 'Short answers about {brand} — delivery, setup, updates, and refunds.',
 	reviewsTitle: '{brand} Reviews | Buyer Feedback',
 	reviewsDescription:
 		'Real buyer reviews for {brand} — ESP, soft aim, radar, and patch updates on Windows PC.',
-	blogTitle: '{game} Intel | {brand}',
-	blogDescription: 'Guides and notes for {game} — meta tips, ESP, aimbot, and {antiCheat} updates.',
+	blogTitle: '{gameShort} Intel | {brand}',
+	blogDescription: 'Guides and notes for Dead by Daylight — meta tips, ESP, aimbot, and {antiCheat} updates.',
 } as const;
 
 type SeoShape = typeof seoDefaults;

@@ -26,9 +26,9 @@
     "subtitleShort": "DBD ESP, radar & aimbot for PC",
     "buyNow": "Get Access",
     "seeFeatures": "See Features",
-    "title": "deadbydaylight cheats",
+    "title": "DBD Cheats",
     "priceFrom": "from",
-    "imageAlt": "{{brand}} — The DBD ESP and aimbot overlay",
+    "imageAlt": "{{brand}} — DBD ESP and aimbot overlay in Dead by Daylight",
     "chipEsp": "ESP / wallhack",
     "chipAim": "Soft aim",
     "chipRadar": "2D radar",
@@ -55,7 +55,7 @@
     "available": "Available now",
     "gameBadge": "Dead by Daylight",
     "platformBadge": "Windows PC",
-    "statusBadge": "Undetected dbd cheats",
+    "statusBadge": "Undetected DBD cheats",
     "days30": "30 days",
     "oneTime": "One-time",
     "plans": "Plans",
@@ -114,11 +114,11 @@
   "footer": {
     "explore": "Explore",
     "help": "Help & legal",
-    "tagline": "Undetected dbd cheats for PC.\nESP, wallhack, radar & aimbot."
+    "tagline": "Undetected DBD cheats for PC.\nESP, wallhack, radar & aimbot."
   },
   "home": {
-    "aboutTitle": "Undetected dbd cheats for Dead by Daylight",
-    "aboutP1": "DBD Cheats is an undetected dbd cheats package for Dead by Daylight on Windows PC. One license includes ESP wallhack, soft aim, and 2D radar, with Easy Anti-Cheat rebuilds after game patches. Compare plans on Store, then check Status before you queue.",
+    "aboutTitle": "Undetected DBD cheats for Dead by Daylight",
+    "aboutP1": "DBD Cheats is an undetected cheat package for Dead by Daylight on Windows PC. One license includes ESP wallhack, soft aim, and 2D radar, with Easy Anti-Cheat rebuilds after game patches. Compare plans on Store, then check Status before you queue.",
     "aboutP2Before": "Start with the",
     "aboutPillar": "DBD Cheats pillar",
     "aboutEsp": "ESP guide",
@@ -215,8 +215,8 @@
   "blog": {
     "blogTitle": "DBD Cheats Blog | ESP, Cheats & Meta Tips",
     "blogDescription": "dbd cheats and dbd cheats guides — ESP, aimbot, ranked meta, loop routes, and Easy Anti-Cheat updates. Global English blog at dbdcheats.org/blog/.",
-    "blogH1": "DBD Cheats Intel",
-    "blogIntro": "Actionable Dead by Daylight guides for trial and chase — meta breakdowns, loop routes, killer tiers, and pro warmup routines. Pair these tips with our dbd cheats pages for ESP boxes, soft aim, and cloud DMA when you need in-match tools.",
+    "blogH1": "Dead by Daylight Intel",
+    "blogIntro": "Actionable Dead by Daylight guides for trial and chase — meta breakdowns, loop routes, killer tiers, and pro warmup routines. Pair these tips with our DBD cheats pages for ESP boxes, soft aim, and cloud DMA when you need in-match tools.",
     "readMore": "Read guide",
     "published": "Published",
     "updated": "Updated",

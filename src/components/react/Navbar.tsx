@@ -17,6 +17,7 @@ type Props = {
 	reviewsBasePath: string;
 	locales: LocaleMeta[];
 	hrefForLocale: Record<string, string>;
+	showLocaleSwitcher?: boolean;
 	links: NavLink[];
 };
 
@@ -40,6 +41,7 @@ function NavbarInner({
 	reviewsBasePath,
 	locales,
 	hrefForLocale,
+	showLocaleSwitcher = true,
 	links,
 }: Props) {
 	const { t } = useTranslation();
@@ -110,13 +112,15 @@ function NavbarInner({
 				</nav>
 
 				<div className="site-tools">
-					<div className="site-tools__lang">
-						<LanguageSwitcher
-							currentLocale={locale}
-							locales={locales}
-							hrefForLocale={hrefForLocale}
-						/>
-					</div>
+					{showLocaleSwitcher ? (
+						<div className="site-tools__lang">
+							<LanguageSwitcher
+								currentLocale={locale}
+								locales={locales}
+								hrefForLocale={hrefForLocale}
+							/>
+						</div>
+					) : null}
 					<a
 						href={checkoutUrl}
 						className="site-tools__buy"
@@ -176,13 +180,15 @@ function NavbarInner({
 							))}
 						</nav>
 						<div className="site-panel__foot">
-							<div className="site-panel__lang">
-								<LanguageSwitcher
-									currentLocale={locale}
-									locales={locales}
-									hrefForLocale={hrefForLocale}
-								/>
-							</div>
+							{showLocaleSwitcher ? (
+								<div className="site-panel__lang">
+									<LanguageSwitcher
+										currentLocale={locale}
+										locales={locales}
+										hrefForLocale={hrefForLocale}
+									/>
+								</div>
+							) : null}
 							<a href={checkoutUrl} className="site-panel__buy" rel="noopener noreferrer">
 								<span data-edit="ctaBuy">{t('cta.buy')}</span>
 							</a>

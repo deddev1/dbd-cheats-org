@@ -63,7 +63,8 @@ const twitterCard = ogImageIsLogo ? 'summary' : 'summary_large_image';
 const robots = noindex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large';
 const siteDescription = `${productInfo.tagline}. ${productInfo.summary}`;
 const localeMeta = localeMap[locale];
-const ogLocaleAlternates = locales.filter((l) => l.code !== locale);
+/** Product pages pass pageId + I18nHead hreflang; blog/reviews/FAQ are EN-only. */
+const ogLocaleAlternates = pageId ? locales.filter((l) => l.code !== locale) : [];
 const schemaLanguage = localeMeta.ogLocale.replace('_', '-');
 const schemaLanguages = locales.map((l) => l.ogLocale.replace('_', '-'));
 const worldwidePlace = { '@type': 'Place' as const, name: siteConfig.market };

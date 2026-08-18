@@ -21,6 +21,7 @@ const pathContext = resolvePageContextFromPath(Astro.url.pathname);
 const pageId = pageIdProp ?? pathContext.pageId ?? 'home';
 const current = Astro.url.pathname;
 const onBlog = isBlogPath(current);
+const showLocaleSwitcher = !onBlog;
 
 const pageContext = onBlog
 	? pathContext
@@ -64,6 +65,7 @@ const links = [
 	reviewsBasePath={reviewsBasePath}
 	locales={localeMetas}
 	hrefForLocale={hrefForLocale}
+	showLocaleSwitcher={showLocaleSwitcher}
 	links={links}
 />
 

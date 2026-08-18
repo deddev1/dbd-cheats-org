@@ -63,11 +63,11 @@ const articleSchema = {
 	inLanguage: locale,
 	wordCount,
 	isAccessibleForFree: true,
-	author: { '@type': 'Organization', name: siteConfig.name, url: siteConfig.url },
+	author: { '@type': 'Organization', name: siteConfig.name, url: `${siteConfig.url}/` },
 	publisher: {
 		'@type': 'Organization',
 		name: siteConfig.name,
-		url: siteConfig.url,
+		url: `${siteConfig.url}/`,
 		logo: { '@type': 'ImageObject', url: new URL(siteConfig.logoRaster, siteConfig.url).href },
 	},
 	mainEntityOfPage: {

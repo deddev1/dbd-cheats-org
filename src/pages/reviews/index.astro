@@ -9,6 +9,7 @@ import { getSelfHreflangAlternates } from '../../data/i18n/routing';
 import { getReviewPath, reviewsBasePath } from '../../data/reviews';
 import { defaultCrawlImageSrc } from '../../data/page-images';
 import { contentSrcSet, productMainSizes } from '../../lib/responsive-images';
+import GetAccessButton from '../../components/GetAccessButton.astro';
 
 const title = seoPageTitle(brandSeo.reviewsTitle);
 const description = seoDescription(brandSeo.reviewsDescription);
@@ -96,6 +97,9 @@ const extraGraph: Record<string, unknown>[] = [
 					<p class="reviews-index__avg">{customerReviewStats.averageRating.toFixed(1)}</p>
 					<p class="reviews-index__avg-stars" aria-hidden="true">{stars(Math.round(customerReviewStats.averageRating))}</p>
 					<p class="reviews-index__count">{customerReviewStats.totalCount} reviews · out of 5</p>
+				</div>
+				<div class="reviews-index__head-actions">
+					<GetAccessButton />
 				</div>
 			</header>
 
@@ -200,6 +204,10 @@ const extraGraph: Record<string, unknown>[] = [
 		gap: 1rem 1.5rem;
 		padding-bottom: 1.15rem;
 		border-bottom: 1px solid var(--line-soft);
+	}
+
+	.reviews-index__head-actions {
+		align-self: center;
 	}
 
 	.reviews-index__head h1 {

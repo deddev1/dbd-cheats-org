@@ -16,6 +16,7 @@ import { getTopicLinksForBlogCategory } from '../data/internal-links';
 import RelatedPages from './RelatedPages.astro';
 import ExternalResources from './ExternalResources.astro';
 import ExternalGuidePills from './ExternalGuidePills.astro';
+import GetAccessButton from './GetAccessButton.astro';
 import { getT } from '../i18n/server';
 
 interface Props {
@@ -131,6 +132,9 @@ function pageTitle(headline: string): string {
 				<p class="post__meta">
 					{ui.published} {post.published} · {ui.updated} {post.updated}
 				</p>
+				<div class="post__header-actions">
+					<GetAccessButton locale={locale} />
+				</div>
 			</header>
 
 			<img
@@ -245,6 +249,11 @@ function pageTitle(headline: string): string {
 		color: rgba(255, 255, 255, 0.5);
 		font-size: 0.85rem;
 	}
+
+	.post__header-actions {
+		margin-top: 1rem;
+	}
+
 	.post__hero {
 		width: 100%;
 		aspect-ratio: 16 / 9;

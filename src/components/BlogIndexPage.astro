@@ -19,6 +19,7 @@ import RelatedPages from './RelatedPages.astro';
 import CategoryRow from './CategoryRow.astro';
 import ExternalResources from './ExternalResources.astro';
 import ExternalGuidePills from './ExternalGuidePills.astro';
+import GetAccessButton from './GetAccessButton.astro';
 import { getT } from '../i18n/server';
 
 interface Props {
@@ -78,6 +79,9 @@ const articleListSchema = {
 			<p class="blog__eyebrow" data-edit="blogLabel">{blogLabel}</p>
 			<h1>{ui.blogH1}</h1>
 			<p class="blog__intro">{ui.blogIntro}</p>
+			<div class="blog__hero-actions">
+				<GetAccessButton locale={locale} />
+			</div>
 		</header>
 
 		<CategoryRow locale={locale} />
@@ -175,6 +179,10 @@ const articleListSchema = {
 		max-width: 42rem;
 		color: rgba(255, 255, 255, 0.72);
 		font-size: 1.05rem;
+	}
+
+	.blog__hero-actions {
+		margin-top: 1.25rem;
 	}
 	.blog__featured {
 		display: grid;

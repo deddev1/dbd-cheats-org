@@ -168,6 +168,29 @@ const useHomeHero =
 					<p class="banner__eyebrow">{resolvedEyebrow}</p>
 					<h1 class="banner__title">{heading}</h1>
 					<p class="banner__intro" data-edit={introEdit || undefined}>{intro}</p>
+					{
+						ctaPrimary && (
+							<div class="banner__actions">
+								<a
+									class="btn-buy"
+									href={ctaPrimary.href}
+									rel={ctaPrimary.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+								>
+									<span data-edit={ctaPrimary.edit || 'ctaBuy'}>{t('cta.buy')}</span>
+								</a>
+								{ctaSecondary && (
+									<a
+										class="btn btn--ghost"
+										href={ctaSecondary.href}
+										target={ctaSecondary.href.startsWith('http') ? '_blank' : undefined}
+										rel={ctaSecondary.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+									>
+										{ctaSecondary.label}
+									</a>
+								)}
+							</div>
+						)
+					}
 				</div>
 			</div>
 		</section>
@@ -341,6 +364,13 @@ const useHomeHero =
 		color: var(--ink-muted);
 		font-size: 0.975rem;
 		line-height: 1.55;
+	}
+
+	.banner__actions {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.65rem;
+		margin-top: 1.2rem;
 	}
 
 	.page__cta-block {
@@ -602,6 +632,17 @@ const useHomeHero =
 			-webkit-box-orient: vertical;
 			-webkit-line-clamp: 3;
 			overflow: hidden;
+		}
+
+		.banner__actions {
+			flex-direction: column;
+			align-items: stretch;
+		}
+
+		.banner__actions :global(.btn-buy),
+		.banner__actions .btn {
+			width: 100%;
+			min-height: var(--touch-min);
 		}
 
 		.page__actions {

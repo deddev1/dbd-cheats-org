@@ -34,11 +34,8 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 	.hero {
 		--hero-pad-y: clamp(1rem, 2vw, 1.75rem);
 		--hero-stack: clamp(0.5rem, 1.1vw, 0.75rem);
-		/*
-		 * Wide banner bar (3.15:1). Source key art is taller (~1.8:1).
-		 * object-fit: contain shows the full image with letterboxing — no crop.
-		 */
-		--hero-ratio: 3.15 / 1;
+		/* Match native key art (1672×941) so the full image fills the bar — no crop. */
+		--hero-ratio: 1672 / 941;
 		position: relative;
 		isolation: isolate;
 		display: grid;
@@ -79,6 +76,12 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 		image-rendering: auto;
 		transform: translateZ(0);
 		animation: hero-in 0.9s ease-out both;
+	}
+
+	/* Beat global `img { height: auto }` — required for object-fit sizing. */
+	.hero .hero__media img {
+		height: 100%;
+		width: 100%;
 	}
 
 	.hero__veil {
@@ -291,11 +294,7 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 		}
 	}
 
-	/*
-	 * Phones / small tablets: stop using the ultra-wide 3.15:1 bar.
-	 * That ratio collapses to ~120px tall on a 390px phone and clips the CTA.
-	 * Mobile = taller full-bleed panel; height grows with copy.
-	 */
+	/* Phones / small tablets: stack image above copy. */
 	@media (max-width: 900px) {
 		.hero {
 			aspect-ratio: auto;

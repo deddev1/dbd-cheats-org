@@ -1,10 +1,11 @@
-import { access, writeFile } from 'node:fs/promises';
+import { access, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import sharp from 'sharp';
 
-/** Official DBD website key art — survivors, campfire, Trapper, and fog (no logo). */
-const HERO_URL = 'https://assets.deadbydaylight.com/DBD_Website_Keyart_d3b7a9628d.jpg';
-const SOURCE_FILE = path.resolve('public/images/dbd-hero-source.jpg');
+/** Custom DBD hero art — survivors, campfire, Trapper (Supabase CDN). */
+const HERO_URL =
+	'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/dbd/ChatGPT%20Image%20Aug%2017,%202026,%2007_41_23%20PM.png';
+const SOURCE_FILE = path.resolve('public/images/dbd-hero-source.png');
 const imagesDir = path.resolve('public/images');
 const HERO_WEBP = { quality: 82, effort: 6, smartSubsample: true };
 
@@ -18,7 +19,7 @@ async function loadHeroBuffer() {
 	try {
 		await access(SOURCE_FILE);
 		console.log(`Using local hero source: ${SOURCE_FILE}`);
-		return sharp(SOURCE_FILE).jpeg().toBuffer();
+		return readFile(SOURCE_FILE);
 	} catch {
 		console.log(`Fetching hero source: ${HERO_URL}`);
 		const bytes = await fetch(HERO_URL, {

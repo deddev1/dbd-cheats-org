@@ -1,26 +1,40 @@
-import { writeFile } from 'node:fs/promises';
+import { access, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import sharp from 'sharp';
 
-/** Official DBD website key art — survivors, campfire, and killers (no logo). */
+/** Official DBD website key art — survivors, campfire, Trapper, and fog (no logo). */
 const HERO_URL = 'https://assets.deadbydaylight.com/DBD_Website_Keyart_d3b7a9628d.jpg';
+const SOURCE_FILE = path.resolve('public/images/dbd-hero-source.jpg');
 const imagesDir = path.resolve('public/images');
 const HERO_WEBP = { quality: 82, effort: 6, smartSubsample: true };
 
 /** Match homepage hero bar — same wide banner ratio as before (3.15:1). */
 const BANNER_RATIO = 3.15;
 
-/** Letterbox padding when source art is taller than the banner (matches .hero background). */
-const BANNER_BG = { r: 5, g: 5, b: 6, alpha: 1 };
+/** Letterbox padding when source art is taller than the banner (matches .hero background / canvas). */
+const BANNER_BG = { r: 7, g: 8, b: 11, alpha: 1 };
 
-const heroBuffer = Buffer.from(
-	await fetch(HERO_URL, {
-		headers: { 'User-Agent': 'Mozilla/5.0 (compatible; TheDbdCheatsSite/1.0)' },
-	}).then((r) => {
-		if (!r.ok) throw new Error(`HTTP ${r.status}`);
-		return r.arrayBuffer();
-	}),
-);
+async function loadHeroBuffer() {
+	try {
+		await access(SOURCE_FILE);
+		console.log(`Using local hero source: ${SOURCE_FILE}`);
+		return sharp(SOURCE_FILE).jpeg().toBuffer();
+	} catch {
+		console.log(`Fetching hero source: ${HERO_URL}`);
+		const bytes = await fetch(HERO_URL, {
+			headers: { 'User-Agent': 'Mozilla/5.0 (compatible; TheDbdCheatsSite/1.0)' },
+		}).then((r) => {
+			if (!r.ok) throw new Error(`HTTP ${r.status}`);
+			return r.arrayBuffer();
+		});
+		const heroBuffer = Buffer.from(bytes);
+		await writeFile(SOURCE_FILE, heroBuffer);
+		console.log(`Saved source → ${SOURCE_FILE}`);
+		return heroBuffer;
+	}
+}
+
+const heroBuffer = await loadHeroBuffer();
 
 function bannerHeight(width) {
 	return Math.round(width / BANNER_RATIO);

@@ -43,6 +43,7 @@ export function contentSrcSet(baseSrc: string): string | undefined {
 export const heroResponsive: ResponsiveWidth[] = [
 	{ src: '/images/dbd-cheats-hero-640w.webp', width: 640 },
 	{ src: '/images/dbd-cheats-hero-1024w.webp', width: 1024 },
+	{ src: '/images/dbd-cheats-hero-1536w.webp', width: 1536 },
 ];
 
 export const heroDesktopResponsive: ResponsiveWidth[] = heroResponsive;
@@ -56,9 +57,9 @@ export const heroSizes = '100vw';
 export const heroPreloadSrc = heroSrc;
 export const heroMimeType = 'image/webp';
 
-/** Intrinsic dimensions of the default LCP asset (1024w variant). */
+/** Intrinsic dimensions of the default LCP asset (1024w variant, native ~1.78:1 art). */
 export const heroWidth = 1024;
-export const heroHeight = 325;
+export const heroHeight = 576;
 
 /** Responsive widths for below-fold content images. */
 export const contentWidths = [480, 960] as const;

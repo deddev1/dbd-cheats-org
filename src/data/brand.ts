@@ -42,12 +42,12 @@ export const brand = {
 	 * Edit in Brand Studio → Colors (tones are fully customizable).
 	 */
 	theme: {
-		accent: '#c41e3a',
-		bg: '#0a0808',
-		soft: '#e85d75',
-		deep: '#5c1a28',
-		hover: '#ff4d6d',
-		panel: '#141010',
+		accent: '#8B5CF6',
+		bg: '#07060A',
+		soft: '#291A3D',
+		deep: '#0B0810',
+		hover: '#A78BFA',
+		panel: '#15111C',
 	},
 
 	/**

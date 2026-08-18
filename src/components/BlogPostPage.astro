@@ -133,11 +133,6 @@ function pageTitle(headline: string): string {
 				</p>
 			</header>
 
-			<ExternalGuidePills locale={locale} class="post__guide-pills" />
-			<ExternalResources locale={locale} class="post__external post__external--top" />
-
-			<RelatedPages locale={locale} variant="topics" links={topicLinks} class="post__topics post__topics--top" />
-
 			<img
 				class="post__hero"
 				src={post.imageSrc}
@@ -183,6 +178,12 @@ function pageTitle(headline: string): string {
 				</section>
 			)
 		}
+
+		<section class="post__bottom">
+			<ExternalGuidePills locale={locale} class="post__guide-pills" />
+			<ExternalResources locale={locale} class="post__external" />
+			<RelatedPages locale={locale} variant="topics" links={topicLinks} class="post__topics" />
+		</section>
 
 			</div>
 		</div>
@@ -305,18 +306,18 @@ function pageTitle(headline: string): string {
 	}
 
 	.post__topics {
-		margin: 1.25rem 0 1.75rem;
+		margin: 1.25rem 0 0;
 	}
 
-	.post__topics--top {
-		margin-top: 0.5rem;
-	}
-
-	.post__external--top {
-		margin-top: 0;
+	.post__bottom {
+		display: grid;
+		gap: 1.25rem;
+		margin-top: 2.5rem;
+		padding-top: 1.75rem;
+		border-top: 1px solid rgba(255, 255, 255, 0.1);
 	}
 
 	.post__guide-pills {
-		margin-top: 0.25rem;
+		margin: 0;
 	}
 </style>

@@ -168,32 +168,6 @@ const useHomeHero =
 					<p class="banner__eyebrow">{resolvedEyebrow}</p>
 					<h1 class="banner__title">{heading}</h1>
 					<p class="banner__intro" data-edit={introEdit || undefined}>{intro}</p>
-					{showExternalResources && <ExternalGuidePills locale={locale} class="banner__guides" />}
-					{
-						(ctaPrimary || ctaSecondary) && (
-							<div class="banner__actions">
-								{ctaPrimary && (
-									<a
-										class="btn-buy"
-										href={ctaPrimary.href}
-										rel={ctaPrimary.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-									>
-										<span data-edit={ctaPrimary.edit || undefined}>{ctaPrimary.label}</span>
-									</a>
-								)}
-								{ctaSecondary && (
-									<a
-										class="btn btn--ghost"
-										href={ctaSecondary.href}
-										target={ctaSecondary.href.startsWith('http') ? '_blank' : undefined}
-										rel={ctaSecondary.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-									>
-										{ctaSecondary.label}
-									</a>
-								)}
-							</div>
-						)
-					}
 				</div>
 			</div>
 		</section>
@@ -234,6 +208,39 @@ const useHomeHero =
 				)
 			}
 		</div>
+
+		{
+			(showExternalResources || ctaPrimary || ctaSecondary) && (
+				<aside class="shell page__cta-block">
+					{showExternalResources && <ExternalGuidePills locale={locale} class="page__guides" />}
+					{
+						(ctaPrimary || ctaSecondary) && (
+							<div class="page__actions">
+								{ctaPrimary && (
+									<a
+										class="btn-buy"
+										href={ctaPrimary.href}
+										rel={ctaPrimary.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+									>
+										<span data-edit={ctaPrimary.edit || undefined}>{ctaPrimary.label}</span>
+									</a>
+								)}
+								{ctaSecondary && (
+									<a
+										class="btn btn--ghost"
+										href={ctaSecondary.href}
+										target={ctaSecondary.href.startsWith('http') ? '_blank' : undefined}
+										rel={ctaSecondary.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+									>
+										{ctaSecondary.label}
+									</a>
+								)}
+							</div>
+						)
+					}
+				</aside>
+			)
+		}
 	</main>
 	{showCategoryRow && pageId && <CategoryRow locale={locale} />}
 	<SiteFooter locale={locale} />
@@ -336,15 +343,21 @@ const useHomeHero =
 		line-height: 1.55;
 	}
 
-	.banner__guides {
-		margin-top: 1rem;
+	.page__cta-block {
+		display: grid;
+		gap: 1.25rem;
+		padding-block: clamp(1.75rem, 3vw, 2.5rem) clamp(2rem, 4vw, 3rem);
+		border-top: 1px solid var(--line-soft);
 	}
 
-	.banner__actions {
+	.page__guides {
+		margin: 0;
+	}
+
+	.page__actions {
 		display: flex;
 		flex-wrap: wrap;
 		gap: 0.65rem;
-		margin-top: 1.2rem;
 	}
 
 	.btn {
@@ -591,13 +604,13 @@ const useHomeHero =
 			overflow: hidden;
 		}
 
-		.banner__actions {
+		.page__actions {
 			flex-direction: column;
 			align-items: stretch;
 		}
 
-		.banner__actions :global(.btn-buy),
-		.banner__actions .btn {
+		.page__actions :global(.btn-buy),
+		.page__actions .btn {
 			width: 100%;
 			min-height: var(--touch-min);
 		}

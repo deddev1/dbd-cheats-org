@@ -82,9 +82,6 @@ const articleListSchema = {
 
 		<CategoryRow locale={locale} />
 
-		<ExternalGuidePills locale={locale} class="blog__guide-pills" />
-		<ExternalResources locale={locale} class="blog__external blog__external--top" />
-
 		{
 			featured.length > 0 && (
 				<section class="blog__featured" aria-label={t('common.featured')}>
@@ -139,6 +136,11 @@ const articleListSchema = {
 		</section>
 
 		<RelatedPages locale={locale} variant="topics" links={blogIndexTopicLinks} class="blog__topics" />
+
+		<section class="blog__bottom">
+			<ExternalGuidePills locale={locale} class="blog__guide-pills" />
+			<ExternalResources locale={locale} class="blog__external" />
+		</section>
 		</div>
 	</main>
 	<SiteFooter locale={locale} />
@@ -253,9 +255,16 @@ const articleListSchema = {
 		margin-top: 2.5rem;
 	}
 
-	.blog__guide-pills,
-	.blog__external--top {
-		margin-top: 1.5rem;
+	.blog__bottom {
+		display: grid;
+		gap: 1.25rem;
+		margin-top: 2rem;
+		padding-top: 1.75rem;
+		border-top: 1px solid var(--line-soft);
+	}
+
+	.blog__guide-pills {
+		margin: 0;
 	}
 	.blog__more {
 		color: var(--magenta-soft);

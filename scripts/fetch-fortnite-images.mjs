@@ -4,42 +4,42 @@ import sharp from 'sharp';
 
 const CDN_A = 'https://sm.ign.com/t/ign_za/photo/default';
 const CDN_B = 'https://sm.ign.com/t/ign_latam/photo/default';
-const CDN_GALLERY = 'https://sm.ign.com/t/ign_pk/gallery/f/isle-g';
+const CDN_GALLERY = 'https://sm.ign.com/t/ign_pk/gallery/f/dbd-g';
 const imagesDir = path.resolve('public/images');
 const publicDir = path.resolve('public');
 
 /**
- * The Isle gallery shots — filenames include primary SEO keywords
- * (isle, cheats, esp, aimbot, wallhack, survival-game, etc.)
+ * Dead by Daylight gallery shots — filenames include primary SEO keywords
+ * (dbd, cheats, esp, aimbot, wallhack, survival-game, etc.)
  */
 const KEYWORD_ASSETS = [
-	{ file: 'the-isle-hacks-hero.webp', url: `${CDN_GALLERY}/isle-gameplay-screenshots-2024_s2qs.1400.jpg` },
-	{ file: 'the-isle-hacks-cover.webp', url: `${CDN_B}/isle-survival-game-chapter-5-season-1-screenshot-a-1920x_xkzh.1400.jpg` },
-	{ file: 'isle-loadout-builder.webp', url: `${CDN_B}/isle-survival-game-chapter-5-season-1-screenshot-b-1920x_8z8k.1400.jpg` },
-	{ file: 'the-isle-hacks-aimbot-combat.webp', url: `${CDN_B}/isle-survival-game-chapter-5-season-1-screenshot-c-1920x_vu5r.1400.jpg` },
-	{ file: 'isle-pack-fight.webp', url: `${CDN_B}/isle-survival-game-chapter-5-season-1-screenshot-d-1920x_mzsk.1400.jpg` },
-	{ file: 'the-isle-hacks-esp-wallhack.webp', url: `${CDN_B}/isle-survival-game-chapter-5-season-1-train-1920x1080-a1_1nkx.1400.jpg` },
-	{ file: 'the-isle-hacks-package.webp', url: 'https://sm.ign.com/t/ign_latam/gallery/f/isle-c/isle-chapter-5-underground-images_5h3j.1400.jpg' },
-	{ file: 'isle-header-art.webp', url: 'https://sm.ign.com/t/ign_in/screenshot/default/isle-unreal-engine-5-1-scree-3_bcxh.1400.jpg' },
-	{ file: 'isle-survival-game-combat.webp', url: `${CDN_A}/screenshot-7105-1725916496016_j9dr.1400.jpg` },
-	{ file: 'isle-reboot-van-fight.webp', url: `${CDN_A}/screenshot-6960-1725916496015_vbtg.1400.jpg` },
-	{ file: 'isle-player-esp.webp', url: `${CDN_A}/screenshot-6815-1725916496014_zkpv.1400.jpg` },
-	{ file: 'isle-zero-build-combat.webp', url: `${CDN_A}/screenshot-6670-1725916496013_zv3w.1400.jpg` },
-	{ file: 'isle-zero-build-mode.webp', url: `${CDN_A}/screenshot-6380-1725916496012_gj96.1400.jpg` },
-	{ file: 'isle-al-mazrah-map.webp', url: 'https://sm.ign.com/t/ign_latam/gallery/f/isle-c/isle-chapter-5-underground-images_5h3j.1400.jpg' },
+	{ file: 'the-dbd-cheats-hero.webp', url: `${CDN_GALLERY}/dbd-gameplay-screenshots-2024_s2qs.1400.jpg` },
+	{ file: 'dead-by-daylight-cheats-cover.webp', url: `${CDN_B}/dbd-survival-game-chapter-5-season-1-screenshot-a-1920x_xkzh.1400.jpg` },
+	{ file: 'dbd-loadout-builder.webp', url: `${CDN_B}/dbd-survival-game-chapter-5-season-1-screenshot-b-1920x_8z8k.1400.jpg` },
+	{ file: 'the-dbd-cheats-aimbot-combat.webp', url: `${CDN_B}/dbd-survival-game-chapter-5-season-1-screenshot-c-1920x_vu5r.1400.jpg` },
+	{ file: 'dbd-pack-fight.webp', url: `${CDN_B}/dbd-survival-game-chapter-5-season-1-screenshot-d-1920x_mzsk.1400.jpg` },
+	{ file: 'the-dbd-cheats-esp-wallhack.webp', url: `${CDN_B}/dbd-survival-game-chapter-5-season-1-train-1920x1080-a1_1nkx.1400.jpg` },
+	{ file: 'dead-by-daylight-cheats-package.webp', url: 'https://sm.ign.com/t/ign_latam/gallery/f/dbd-c/dbd-chapter-5-underground-images_5h3j.1400.jpg' },
+	{ file: 'dbd-header-art.webp', url: 'https://sm.ign.com/t/ign_in/screenshot/default/dbd-unreal-engine-5-1-scree-3_bcxh.1400.jpg' },
+	{ file: 'dbd-survival-game-combat.webp', url: `${CDN_A}/screenshot-7105-1725916496016_j9dr.1400.jpg` },
+	{ file: 'dbd-reboot-van-fight.webp', url: `${CDN_A}/screenshot-6960-1725916496015_vbtg.1400.jpg` },
+	{ file: 'dbd-player-esp.webp', url: `${CDN_A}/screenshot-6815-1725916496014_zkpv.1400.jpg` },
+	{ file: 'dbd-zero-build-combat.webp', url: `${CDN_A}/screenshot-6670-1725916496013_zv3w.1400.jpg` },
+	{ file: 'dbd-zero-build-mode.webp', url: `${CDN_A}/screenshot-6380-1725916496012_gj96.1400.jpg` },
+	{ file: 'dbd-al-mazrah-map.webp', url: 'https://sm.ign.com/t/ign_latam/gallery/f/dbd-c/dbd-chapter-5-underground-images_5h3j.1400.jpg' },
 ];
 
 const LEGACY_PATTERNS = [
-	/^isle-extract-fight/,
-	/^isle-operator-esp/,
-	/^isle-verdansk-combat/,
-	/^isle-growth-run-mode/,
-	/^isle-al-mazrah-map/,
+	/^dbd-extract-fight/,
+	/^dbd-operator-esp/,
+	/^dbd-verdansk-combat/,
+	/^dbd-growth-run-mode/,
+	/^dbd-al-mazrah-map/,
 ];
 
 async function fetchWebp(url) {
 	const res = await fetch(url, {
-		headers: { 'User-Agent': 'Mozilla/5.0 (compatible; IsleHacksSite/1.0)' },
+		headers: { 'User-Agent': 'Mozilla/5.0 (compatible; DbdCheatsSite/1.0)' },
 	});
 	if (!res.ok) throw new Error(`Failed to fetch ${url}: ${res.status}`);
 	const input = Buffer.from(await res.arrayBuffer());
@@ -63,7 +63,7 @@ async function generateBrandAssets(heroBuffer) {
 		.webp({ quality: 88 })
 		.toBuffer();
 
-	await writeFile(path.join(imagesDir, 'the-isle-hacks-logo.webp'), logoBuffer);
+	await writeFile(path.join(imagesDir, 'the-dbd-cheats-logo.webp'), logoBuffer);
 
 	const iconSizes = [
 		{ name: 'favicon-16x16.png', size: 16 },
@@ -93,7 +93,7 @@ for (const asset of KEYWORD_ASSETS) {
 		const dest = path.join(imagesDir, asset.file);
 		await writeFile(dest, webp);
 		console.log(`Saved ${asset.file} (${webp.length} bytes)`);
-		if (asset.file === 'the-isle-hacks-hero.webp') heroBuffer = webp;
+		if (asset.file === 'the-dbd-cheats-hero.webp') heroBuffer = webp;
 	} catch (err) {
 		console.warn(`Skip ${asset.file}: ${err.message}`);
 	}
@@ -104,4 +104,4 @@ if (heroBuffer) {
 	console.log('Generated keyword logo + favicons from hero art.');
 }
 
-console.log(`Done — attempted ${KEYWORD_ASSETS.length} keyword-named The Isle images.`);
+console.log(`Done — attempted ${KEYWORD_ASSETS.length} keyword-named Dead by Daylight images.`);

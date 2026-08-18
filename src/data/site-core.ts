@@ -50,7 +50,7 @@ const seoDefaults = {
 	storeDescription: 'Monthly and lifetime {game} plans. Same features. Instant delivery after payment.',
 	statusTitle: '{game} Status | {brand}',
 	statusDescription:
-		'Live status for {brand} after {game} or {antiCheat} patches. Check before you spawn in.',
+		'Live status for {brand} after {game} or {antiCheat} patches. Check before you queue.',
 	previewTitle: '{game} Preview | {brand}',
 	previewDescription:
 		'Quick preview of {brand} — ESP, aimbot, radar, and updates after {game} patches.',
@@ -125,9 +125,9 @@ export const productInfo = {
 	heroLede: fillBrandTokens(brandCopy.heroLede),
 	features: {
 		esp: [
-			'Herbivore and carnivore ESP / wallhack',
+			'Herbivore and killer ESP / wallhack',
 			'Player growth stage and threat cues',
-			'Carcass and nest markers',
+			'Carcass and generator markers',
 			'Distance readouts',
 			'Toggleable ESP categories',
 			'Corpse and carcass highlights',
@@ -136,10 +136,10 @@ export const productInfo = {
 			'Soft aim and aimbot controls',
 			'Smoothness and FOV settings',
 			'Bone priority',
-			'Hotkeys mid-session',
+			'Hotkeys mid-trial',
 			'Per-species profiles',
 		],
-		radar: ['2D radar overlay', 'Adjustable range', 'Works in herbivore and carnivore survival sessions'],
+		radar: ['2D radar overlay', 'Adjustable range', 'Works in survivor and killer trials'],
 		general: [
 			fillBrandTokens('{antiCheat} maintenance after patches'),
 			'Digital delivery after checkout',

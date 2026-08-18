@@ -16,9 +16,9 @@ const bad = [
 	'Activision',
 	'soft aim, and .',
 	'ESP, Soft Aim,',
-	'best-isle-hacks',
-	'isle-esp-hack',
-	'isle-aimbot-hack',
+	'best-dbd-cheats',
+	'dbd-esp-hack',
+	'dbd-aimbot-hack',
 ];
 console.log('--- pages-en leftovers ---');
 for (const b of bad) {
@@ -39,8 +39,8 @@ for (const b of [
 	'Battle Pass',
 	'REasy Anti-Cheat',
 	'soft aim, and .',
-	'best-isle-hacks',
-	'isle-esp-hack',
+	'best-dbd-cheats',
+	'dbd-esp-hack',
 ]) {
 	const n = en.split(b).length - 1;
 	if (n) console.log(`${b}: ${n}`);
@@ -51,26 +51,26 @@ const reps = [
 	['V-Bucks', 'growth points'],
 	['Item Shop', 'in-game store'],
 	['Battle Pass', 'patch cycle progression'],
-	['FNCS', 'The Isle community event'],
+	['FNCS', 'Dead by Daylight community event'],
 	['Hammer AR', 'M4A1'],
 	['mythics', 'meta guns'],
-	['island codes', 'practice server sessions maps'],
+	['island codes', 'practice server trials maps'],
 	['Creative 1v1s', 'aim training'],
 	['creative 1v1s', 'aim training'],
 	['Epic health', 'Battlestate status'],
-	['Epic terms', 'The Isle team terms'],
+	['Epic terms', 'Behaviour Interactive terms'],
 	["Epic's Easy Anti-Cheat", 'Easy Anti-Cheat'],
-	['Epic patch', 'The Isle patch'],
+	['Epic patch', 'Dead by Daylight patch'],
 	['EliteFN', 'a Fortnite cheat shop'],
 	['GhostWare', 'a slim cheat vendor'],
 	['CheatVault', 'another cheat shop'],
-	['/isle-aimbot-hack/', '/isle-aimbot/'],
-	['/isle-esp-hack/', '/isle-esp/'],
-	['/best-isle-hacks/', '/'],
-	['best the isle hacks', 'the isle hacks'],
+	['/dbd-aimbot-hack/', '/dbd-aimbot/'],
+	['/dbd-esp-hack/', '/dbd-esp/'],
+	['/best-dbd-cheats/', '/'],
+	['best dbd cheats', 'dbd cheats'],
 	['hot drops', 'hot spawns'],
-	['ranked grinders', 'session grinders'],
-	['before Ranked', 'before a session'],
+	['ranked grinders', 'trial grinders'],
+	['before Ranked', 'before a trial'],
 ];
 let s = blog;
 let n = 0;

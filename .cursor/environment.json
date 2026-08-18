@@ -1,10 +1,10 @@
 {
-  "name": "The Isle Hacks",
+  "name": "The DBD Cheats",
   "install": "npm ci && npm run build",
   "start": "npm run localhost",
   "ports": [
     {
-      "name": "The Isle Hacks site",
+      "name": "The DBD Cheats site",
       "port": 5173
     }
   ],

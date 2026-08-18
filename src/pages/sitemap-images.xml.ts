@@ -11,8 +11,8 @@ export const prerender = true;
  */
 const PREFERRED_HOSTS = [
 	englishPaths.home,
-	englishPaths['isle-esp'],
-	englishPaths['isle-aimbot'],
+	englishPaths['dbd-esp'],
+	englishPaths['dbd-aimbot'],
 	englishPaths.features,
 	englishPaths.pricing,
 	englishPaths.updates,

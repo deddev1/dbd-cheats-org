@@ -8,16 +8,16 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const SRC = path.resolve(ROOT, '..', 'amansand');
 
 const UI_REPLACEMENTS = [
-	['The Isle Hacks', 'The Isle Hacks'],
-	['the isle hacks', 'the isle hacks'],
-	['The Isle Hacks', 'The Isle Hacks'],
-	['The Isle', 'The Isle'],
-	['The Isle', 'The Isle'],
-	['Call of Duty', 'The Isle'],
-	['The Isle PC', 'The Isle PC'],
-	['for The Isle', 'for The Isle'],
-	['The Isle ', 'The Isle '],
-	['isle ', 'isle '],
+	['The DBD Cheats', 'The DBD Cheats'],
+	['dbd cheats', 'dbd cheats'],
+	['The DBD Cheats', 'The DBD Cheats'],
+	['Dead by Daylight', 'Dead by Daylight'],
+	['Dead by Daylight', 'Dead by Daylight'],
+	['Call of Duty', 'Dead by Daylight'],
+	['Dead by Daylight PC', 'Dead by Daylight PC'],
+	['for Dead by Daylight', 'for Dead by Daylight'],
+	['Dead by Daylight ', 'Dead by Daylight '],
+	['dbd ', 'dbd '],
 	['Easy Anti-Cheat maintenance', 'Easy Anti-Cheat maintenance'],
 	['Easy Anti-Cheat', 'Easy Anti-Cheat'],
 	['Easy Anti-Cheat', 'Easy Anti-Cheat'],
@@ -30,12 +30,12 @@ const UI_REPLACEMENTS = [
 	['Operator', 'Player'],
 	['Al Mazrah', 'Verdansk'],
 	['Verdansk', 'Verdansk'],
-	['growth run', 'growth run'],
+	['chase', 'chase'],
 	['extract', 'extract'],
-	['theislehacks.org', 'theislehacks.org'],
-	['Trucos The Isle', 'Trucos The Isle'],
-	['Triches The Isle', 'Triches The Isle'],
-	['Cheats The Isle', 'Cheats The Isle'],
+	['dbdcheats.org', 'dbdcheats.org'],
+	['Trucos Dead by Daylight', 'Trucos Dead by Daylight'],
+	['Triches Dead by Daylight', 'Triches Dead by Daylight'],
+	['Cheats Dead by Daylight', 'Cheats Dead by Daylight'],
 ];
 
 function apply(content) {
@@ -55,8 +55,8 @@ for (const file of ['ui-strings-part1.mjs', 'ui-strings-part2.mjs']) {
 // Fix pages-en eac key
 let pagesEn = await readFile(path.join(ROOT, 'scripts/i18n-data/pages-en.mjs'), 'utf8');
 pagesEn = pagesEn.replace(/\teac: \{/, "\t'eac': {");
-pagesEn = pagesEn.replace(/The Isle The Isle/g, 'The Isle');
-pagesEn = pagesEn.replace(/for The Isle The Isle/g, 'for The Isle');
+pagesEn = pagesEn.replace(/Dead by Daylight Dead by Daylight/g, 'Dead by Daylight');
+pagesEn = pagesEn.replace(/for Dead by Daylight Dead by Daylight/g, 'for Dead by Daylight');
 await writeFile(path.join(ROOT, 'scripts/i18n-data/pages-en.mjs'), pagesEn);
 
 // Fix pages-i18n

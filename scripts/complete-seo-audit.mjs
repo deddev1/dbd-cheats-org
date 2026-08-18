@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Completes the-isle-hacks SEO audit: add missing pages, fix leftovers, strip Zadeyo from meta.
+ * Completes dead-by-daylight-cheats SEO audit: add missing pages, fix leftovers, strip Zadeyo from meta.
  * Run: node scripts/complete-seo-audit.mjs
  */
 import { readFile, writeFile, mkdir, access } from 'node:fs/promises';
@@ -11,57 +11,57 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const NODE = 'C:\\Program Files\\nodejs\\node.exe';
 
 const EXTRA_PAGES = [
-	{ id: 'hacks', dir: 'the-isle-hacks', pageId: 'hacks' },
-	{ id: 'cheat-download', dir: 'isle-hack-download', pageId: 'cheat-download' },
-	{ id: 'mod-menu', dir: 'isle-mod-menu', pageId: 'mod-menu' },
-	{ id: 'soft-aim', dir: 'isle-soft-aim', pageId: 'soft-aim' },
-	{ id: 'best-cheats', dir: 'best-isle-hacks', pageId: 'best-cheats' },
-	{ id: 'aimbot-hack', dir: 'isle-aimbot-hack', pageId: 'aimbot-hack' },
-	{ id: 'esp-hack', dir: 'isle-esp-hack', pageId: 'esp-hack' },
-	{ id: 'unlock-all', dir: 'isle-unlock-all', pageId: 'unlock-all' },
+	{ id: 'hacks', dir: 'dead-by-daylight-cheats', pageId: 'hacks' },
+	{ id: 'cheat-download', dir: 'dbd-cheat-download', pageId: 'cheat-download' },
+	{ id: 'mod-menu', dir: 'dbd-mod-menu', pageId: 'mod-menu' },
+	{ id: 'soft-aim', dir: 'dbd-soft-aim', pageId: 'soft-aim' },
+	{ id: 'best-cheats', dir: 'best-dbd-cheats', pageId: 'best-cheats' },
+	{ id: 'aimbot-hack', dir: 'dbd-aimbot-hack', pageId: 'aimbot-hack' },
+	{ id: 'esp-hack', dir: 'dbd-esp-hack', pageId: 'esp-hack' },
+	{ id: 'unlock-all', dir: 'dbd-unlock-all', pageId: 'unlock-all' },
 ];
 
 const GLOBAL_REPLACEMENTS = [
-	[/isle-isle/g, 'isle'],
-	[/eac-bypass-isle/g, 'eac-bypass'],
-	[/The Isle/g, 'The Isle'],
-	[/The Isle/g, 'The Isle'],
-	[/Call of Duty/g, 'The Isle'],
-	[/The Isle Wallhack/g, 'The Isle Wallhack'],
-	[/The Isle Radar Hack/g, 'The Isle Radar Hack'],
-	[/The Isle Cheat Features/g, 'The Isle Cheat Features'],
-	[/The Isle Cheat Pricing/g, 'The Isle Cheat Pricing'],
-	[/The Isle Cheat Setup/g, 'The Isle Cheat Setup'],
-	[/The Isle Cheat Status/g, 'The Isle Cheat Status'],
-	[/The Isle Cheat Support/g, 'The Isle Cheat Support'],
-	[/The Isle pack fight/g, 'The Isle pack fight'],
-	[/The Isle pack builder/g, 'The Isle loadout builder'],
-	[/The Isle store header/g, 'The Isle header'],
-	[/The Isle wasteland combat/g, 'The Isle battle royale combat'],
-	[/The Isle loadout builder/g, 'The Isle loadout builder'],
-	[/The Isle pricing/g, 'The Isle pricing'],
-	[/The Isle Easy Anti-Cheat/g, 'The Isle Easy Anti-Cheat'],
-	[/on The Isle/g, 'on The Isle'],
-	[/for The Isle/g, 'for The Isle'],
-	[/The Isle guides/g, 'The Isle guides'],
-	[/The Isle guide/g, 'The Isle guide'],
-	[/The Isle hileleri/g, 'The Isle hileleri'],
-	[/The Isle hile/g, 'The Isle hile'],
-	[/The Isle hileleri/g, 'The Isle hileleri'],
-	[/cheatów The Isle/g, 'cheatów The Isle'],
-	[/cheat The Isle/g, 'cheat The Isle'],
-	[/cheats The Isle/g, 'cheats The Isle'],
-	[/trucos The Isle/g, 'trucos The Isle'],
-	[/triche The Isle/g, 'triche The Isle'],
-	[/trucchi The Isle/g, 'trucchi The Isle'],
-	[/Wallhack The Isle/g, 'The Isle Wallhack'],
-	[/cheat The Isle undetected/g, 'cheat The Isle undetected'],
-	[/cheats The Isle undetected/g, 'cheats The Isle undetected'],
-	[/Verdansk beams/g, 'long-range AR beams'],
-	[/growth run room clears/g, 'close-quarters room clears'],
-	[/Verdansk and Urzikstan/g, 'Verdansk and growth run'],
-	[/Verdansk, Urzikstan/g, 'Verdansk, growth run'],
-	[/session and growth run/g, 'session and growth run'],
+	[/dbd-dbd/g, 'dbd'],
+	[/eac-bypass-dbd/g, 'eac-bypass'],
+	[/Dead by Daylight/g, 'Dead by Daylight'],
+	[/Dead by Daylight/g, 'Dead by Daylight'],
+	[/Call of Duty/g, 'Dead by Daylight'],
+	[/Dead by Daylight Wallhack/g, 'Dead by Daylight Wallhack'],
+	[/Dead by Daylight Radar Hack/g, 'Dead by Daylight Radar Hack'],
+	[/Dead by Daylight Cheat Features/g, 'Dead by Daylight Cheat Features'],
+	[/Dead by Daylight Cheat Pricing/g, 'Dead by Daylight Cheat Pricing'],
+	[/Dead by Daylight Cheat Setup/g, 'Dead by Daylight Cheat Setup'],
+	[/Dead by Daylight Cheat Status/g, 'Dead by Daylight Cheat Status'],
+	[/Dead by Daylight Cheat Support/g, 'Dead by Daylight Cheat Support'],
+	[/Dead by Daylight pack fight/g, 'Dead by Daylight pack fight'],
+	[/Dead by Daylight pack builder/g, 'Dead by Daylight loadout builder'],
+	[/Dead by Daylight store header/g, 'Dead by Daylight header'],
+	[/Dead by Daylight wasteland combat/g, 'Dead by Daylight battle royale combat'],
+	[/Dead by Daylight loadout builder/g, 'Dead by Daylight loadout builder'],
+	[/Dead by Daylight pricing/g, 'Dead by Daylight pricing'],
+	[/Dead by Daylight Easy Anti-Cheat/g, 'Dead by Daylight Easy Anti-Cheat'],
+	[/on Dead by Daylight/g, 'on Dead by Daylight'],
+	[/for Dead by Daylight/g, 'for Dead by Daylight'],
+	[/Dead by Daylight guides/g, 'Dead by Daylight guides'],
+	[/Dead by Daylight guide/g, 'Dead by Daylight guide'],
+	[/Dead by Daylight hileleri/g, 'Dead by Daylight hileleri'],
+	[/Dead by Daylight hile/g, 'Dead by Daylight hile'],
+	[/Dead by Daylight hileleri/g, 'Dead by Daylight hileleri'],
+	[/cheatów Dead by Daylight/g, 'cheatów Dead by Daylight'],
+	[/cheat Dead by Daylight/g, 'cheat Dead by Daylight'],
+	[/cheats Dead by Daylight/g, 'cheats Dead by Daylight'],
+	[/trucos Dead by Daylight/g, 'trucos Dead by Daylight'],
+	[/triche Dead by Daylight/g, 'triche Dead by Daylight'],
+	[/trucchi Dead by Daylight/g, 'trucchi Dead by Daylight'],
+	[/Wallhack Dead by Daylight/g, 'Dead by Daylight Wallhack'],
+	[/cheat Dead by Daylight undetected/g, 'cheat Dead by Daylight undetected'],
+	[/cheats Dead by Daylight undetected/g, 'cheats Dead by Daylight undetected'],
+	[/Verdansk beams/g, 'skill-check AR beams'],
+	[/chase room clears/g, 'close-quarters room clears'],
+	[/Verdansk and Urzikstan/g, 'Verdansk and chase'],
+	[/Verdansk, Urzikstan/g, 'Verdansk, chase'],
+	[/trial and chase/g, 'trial and chase'],
 	[/Activision's anti-cheat/g, "Epic Games' anti-cheat"],
 	[/Activision anti-cheat/g, 'Epic Games anti-cheat'],
 	[/Activision ships/g, 'Epic Games ships'],
@@ -70,11 +70,11 @@ const GLOBAL_REPLACEMENTS = [
 	[/Activision/g, 'Epic Games'],
 	[/eac/gi, 'eac'],
 	[/Easy Anti-Cheat/g, 'Easy Anti-Cheat'],
-	[/the-isle-hacks/g, 'the-isle-hacks'],
-	[/the-isle/g, 'isle'],
-	[/Undetected Wallhack for Call of Duty/g, 'Undetected Wallhack for The Isle'],
+	[/dead-by-daylight-cheats/g, 'dead-by-daylight-cheats'],
+	[/the-dbd/g, 'dbd'],
+	[/Undetected Wallhack for Call of Duty/g, 'Undetected Wallhack for Dead by Daylight'],
 	[/How ESP wallhack, radar, and Aimbot rebuild after Call of Duty anti-cheat/g,
-		'How ESP wallhack, radar, and Aimbot rebuild after The Isle anti-cheat'],
+		'How ESP wallhack, radar, and Aimbot rebuild after Dead by Daylight anti-cheat'],
 ];
 
 /** Remove Zadeyo from meta description/title strings only */
@@ -90,7 +90,7 @@ function stripZadeyoFromMeta(text) {
 		.replace(/\s*Zadeyo delivery\.?/gi, 'instant digital delivery.')
 		.replace(/\s*and Zadeyo delivery\.?/gi, ' and instant digital delivery.')
 		.replace(/\|\s*Instant Zadeyo Delivery/g, '| Instant Digital Delivery')
-		.replace(/Buy on Zadeyo/g, 'Buy The Isle Hacks')
+		.replace(/Buy on Zadeyo/g, 'Buy The DBD Cheats')
 		.replace(/\s{2,}/g, ' ')
 		.trim();
 }
@@ -169,38 +169,38 @@ import LocalizedPage from '../../components/LocalizedPage.astro';
 async function fixLocalesBlogUi() {
 	const file = path.join(ROOT, 'src', 'data', 'i18n', 'locales.ts');
 	let content = await readFile(file, 'utf8');
-	content = content.replace(/The Isle guides/g, 'The Isle guides');
-	content = content.replace(/The Isle guide/g, 'The Isle guide');
-	content = content.replace(/The Isle hileleri/g, 'The Isle hileleri');
-	content = content.replace(/The Isle hile/g, 'The Isle hile');
-	content = content.replace(/cheat The Isle/g, 'cheat The Isle');
-	content = content.replace(/cheats The Isle/g, 'cheats The Isle');
-	content = content.replace(/trucos The Isle/g, 'trucos The Isle');
-	content = content.replace(/triche The Isle/g, 'triche The Isle');
-	content = content.replace(/trucchi The Isle/g, 'trucchi The Isle');
-	content = content.replace(/cheatów The Isle/g, 'cheatów The Isle');
-	content = content.replace(/читов The Isle/g, 'читов The Isle');
-	content = content.replace(/читів The Isle/g, 'читів The Isle');
-	content = content.replace(/The Isleチート/g, 'The Isleチート');
-	content = content.replace(/The Isle 치트/g, 'The Isle 치트');
-	content = content.replace(/The Isle作弊/g, 'The Isle作弊');
-	content = content.replace(/The Isle rehberleri/g, 'The Isle rehberleri');
-	content = content.replace(/The Isle gidsen/g, 'The Isle gidsen');
-	content = content.replace(/The Isle průvodce/g, 'The Isle průvodce');
-	content = content.replace(/The Isle guider/g, 'The Isle guider');
-	content = content.replace(/The Isle related/g, 'The Isle related');
-	content = content.replace(/The Isle ガイド/g, 'The Isle ガイド');
-	content = content.replace(/The Isle 가이드/g, 'The Isle 가이드');
-	content = content.replace(/The Isle指南/g, 'The Isle指南');
-	content = content.replace(/The Isle गाइड/g, 'The Isle गाइड');
-	content = content.replace(/The Isle panduan/g, 'The Isle panduan');
-	content = content.replace(/The Isle คู่มือ/g, 'The Isle คู่มือ');
-	content = content.replace(/The Isle hướng dẫn/g, 'The Isle hướng dẫn');
+	content = content.replace(/Dead by Daylight guides/g, 'Dead by Daylight guides');
+	content = content.replace(/Dead by Daylight guide/g, 'Dead by Daylight guide');
+	content = content.replace(/Dead by Daylight hileleri/g, 'Dead by Daylight hileleri');
+	content = content.replace(/Dead by Daylight hile/g, 'Dead by Daylight hile');
+	content = content.replace(/cheat Dead by Daylight/g, 'cheat Dead by Daylight');
+	content = content.replace(/cheats Dead by Daylight/g, 'cheats Dead by Daylight');
+	content = content.replace(/trucos Dead by Daylight/g, 'trucos Dead by Daylight');
+	content = content.replace(/triche Dead by Daylight/g, 'triche Dead by Daylight');
+	content = content.replace(/trucchi Dead by Daylight/g, 'trucchi Dead by Daylight');
+	content = content.replace(/cheatów Dead by Daylight/g, 'cheatów Dead by Daylight');
+	content = content.replace(/читов Dead by Daylight/g, 'читов Dead by Daylight');
+	content = content.replace(/читів Dead by Daylight/g, 'читів Dead by Daylight');
+	content = content.replace(/Dead by Daylightチート/g, 'Dead by Daylightチート');
+	content = content.replace(/Dead by Daylight 치트/g, 'Dead by Daylight 치트');
+	content = content.replace(/Dead by Daylight作弊/g, 'Dead by Daylight作弊');
+	content = content.replace(/Dead by Daylight rehberleri/g, 'Dead by Daylight rehberleri');
+	content = content.replace(/Dead by Daylight gidsen/g, 'Dead by Daylight gidsen');
+	content = content.replace(/Dead by Daylight průvodce/g, 'Dead by Daylight průvodce');
+	content = content.replace(/Dead by Daylight guider/g, 'Dead by Daylight guider');
+	content = content.replace(/Dead by Daylight related/g, 'Dead by Daylight related');
+	content = content.replace(/Dead by Daylight ガイド/g, 'Dead by Daylight ガイド');
+	content = content.replace(/Dead by Daylight 가이드/g, 'Dead by Daylight 가이드');
+	content = content.replace(/Dead by Daylight指南/g, 'Dead by Daylight指南');
+	content = content.replace(/Dead by Daylight गाइड/g, 'Dead by Daylight गाइड');
+	content = content.replace(/Dead by Daylight panduan/g, 'Dead by Daylight panduan');
+	content = content.replace(/Dead by Daylight คู่มือ/g, 'Dead by Daylight คู่มือ');
+	content = content.replace(/Dead by Daylight hướng dẫn/g, 'Dead by Daylight hướng dẫn');
 	await writeFile(file, content, 'utf8');
 	console.log('Fixed locales.ts blogUi');
 }
 
-console.log('=== The Isle Hacks SEO completion ===\n');
+console.log('=== The DBD Cheats SEO completion ===\n');
 await applyGlobalFixes();
 await createExtraPages();
 await fixLocalesBlogUi();

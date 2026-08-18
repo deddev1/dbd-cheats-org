@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/** Final pass: fix remaining The Isle references in src/. */
+/** Final pass: fix remaining Dead by Daylight references in src/. */
 import { readFile, writeFile, readdir } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -8,27 +8,27 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', 's
 const REMOVE_PAGE_IDS = ['hacks', 'cheat-download', 'mod-menu', 'soft-aim', 'best-cheats', 'aimbot-hack', 'esp-hack', 'unlock-all'];
 
 const REPLACEMENTS = [
-	['isleImages', 'isleImages'],
-	["from '../data/isle'", "from '../data/isle'"],
-	["from './isle'", "from './isle'"],
-	['/undetected-isle-hacks/', '/undetected-isle-hacks/'],
-	['/isle-wallhack/', '/isle-wallhack/'],
-	['/isle-radar-hack/', '/isle-radar-hack/'],
+	['dbdImages', 'dbdImages'],
+	["from '../data/dbd'", "from '../data/dbd'"],
+	["from './dbd'", "from './dbd'"],
+	['/undetected-dbd-cheats/', '/undetected-dbd-cheats/'],
+	['/dbd-wallhack/', '/dbd-wallhack/'],
+	['/dbd-radar-hack/', '/dbd-radar-hack/'],
 	['/eac-bypass/', '/eac-bypass/'],
-	['/isle-hacks-2026/', '/isle-hacks-2026/'],
-	['/isle-aimbot/', '/isle-aimbot/'],
-	['/isle-esp/', '/isle-esp/'],
-	['/the-isle-hacks/', '/isle-esp/'],
-	['The Isle Hacks', 'The Isle Hacks'],
-	['the isle hacks', 'the isle hacks'],
-	['isle wallhack', 'The Isle wallhack'],
-	['isle radar', 'The Isle radar'],
-	['Isle Aimbot', 'The Isle Aimbot'],
-	['Isle ESP', 'The Isle ESP'],
-	['The Isle', 'The Isle'],
+	['/dbd-cheats-2026/', '/dbd-cheats-2026/'],
+	['/dbd-aimbot/', '/dbd-aimbot/'],
+	['/dbd-esp/', '/dbd-esp/'],
+	['/dead-by-daylight-cheats/', '/dbd-esp/'],
+	['The DBD Cheats', 'The DBD Cheats'],
+	['dbd cheats', 'dbd cheats'],
+	['dbd wallhack', 'The dbd wallhack'],
+	['dbd radar', 'The dbd radar'],
+	['DBD Aimbot', 'The DBD Aimbot'],
+	['DBD ESP', 'The DBD ESP'],
+	['Dead by Daylight', 'Dead by Daylight'],
 	['Easy Anti-Cheat', 'Easy Anti-Cheat'],
 	['eac', 'eac'],
-	['theislehacks.org', 'theislehacks.org'],
+	['dbdcheats.org', 'dbdcheats.org'],
 	['operatorEsp', 'dinoEsp'],
 	['extractFight', 'ambushFight'],
 	['alMazrah', 'survivalIsland'],

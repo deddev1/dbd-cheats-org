@@ -6,39 +6,39 @@ export const LOCALES = [
 ];
 
 export const PAGE_IDS = [
-	'home', 'isle-esp', 'isle-aimbot', 'features', 'pricing', 'setup',
+	'home', 'dbd-esp', 'dbd-aimbot', 'features', 'pricing', 'setup',
 	'updates', 'faq', 'support', 'undetected', 'wallhack', 'radar', 'eac',
 	'cheats-2026', 'hacks', 'cheat-download', 'mod-menu', 'soft-aim', 'best-cheats',
 	'aimbot-hack', 'esp-hack', 'unlock-all', 'privacy', 'refund', 'terms',
 ];
 
-/** Hero image per page — simple the isle hacks keyword filenames. */
+/** Hero image per page — simple dbd cheats keyword filenames. */
 export const HERO_IMAGES = {
-	home: '/images/isle-hacks-esp.webp',
-	'isle-esp': '/images/isle-hacks-radar.webp',
-	'isle-aimbot': '/images/isle-hacks-aimbot.webp',
-	features: '/images/isle-hacks-aimbot-view.webp',
-	pricing: '/images/isle-hacks-session.webp',
-	setup: '/images/isle-hacks-radar.webp',
-	updates: '/images/isle-hacks-esp.webp',
-	faq: '/images/isle-hacks-aimbot-view.webp',
-	support: '/images/isle-hacks-session.webp',
-	undetected: '/images/isle-hacks-wallhack.webp',
-	wallhack: '/images/isle-hacks-wallhack.webp',
-	radar: '/images/isle-hacks-radar.webp',
-	eac: '/images/isle-hacks-aimbot.webp',
-	'cheats-2026': '/images/isle-hacks-esp.webp',
-	hacks: '/images/isle-hacks-session.webp',
-	'cheat-download': '/images/isle-hacks-session.webp',
-	'mod-menu': '/images/isle-hacks-radar.webp',
-	'soft-aim': '/images/isle-hacks-aimbot-view.webp',
-	'best-cheats': '/images/isle-hacks-esp.webp',
-	'aimbot-hack': '/images/isle-hacks-aimbot-view.webp',
-	'esp-hack': '/images/isle-hacks-wallhack.webp',
-	'unlock-all': '/images/isle-hacks-radar.webp',
-	privacy: '/images/isle-hacks-aimbot.webp',
-	refund: '/images/isle-hacks-session.webp',
-	terms: '/images/isle-hacks-aimbot-view.webp',
+	home: '/images/dbd-cheats-esp.webp',
+	'dbd-esp': '/images/dbd-cheats-radar.webp',
+	'dbd-aimbot': '/images/dbd-cheats-aimbot.webp',
+	features: '/images/dbd-cheats-aimbot-view.webp',
+	pricing: '/images/dbd-cheats-match.webp',
+	setup: '/images/dbd-cheats-radar.webp',
+	updates: '/images/dbd-cheats-esp.webp',
+	faq: '/images/dbd-cheats-aimbot-view.webp',
+	support: '/images/dbd-cheats-match.webp',
+	undetected: '/images/dbd-cheats-wallhack.webp',
+	wallhack: '/images/dbd-cheats-wallhack.webp',
+	radar: '/images/dbd-cheats-radar.webp',
+	eac: '/images/dbd-cheats-aimbot.webp',
+	'cheats-2026': '/images/dbd-cheats-esp.webp',
+	hacks: '/images/dbd-cheats-match.webp',
+	'cheat-download': '/images/dbd-cheats-match.webp',
+	'mod-menu': '/images/dbd-cheats-radar.webp',
+	'soft-aim': '/images/dbd-cheats-aimbot-view.webp',
+	'best-cheats': '/images/dbd-cheats-esp.webp',
+	'aimbot-hack': '/images/dbd-cheats-aimbot-view.webp',
+	'esp-hack': '/images/dbd-cheats-wallhack.webp',
+	'unlock-all': '/images/dbd-cheats-radar.webp',
+	privacy: '/images/dbd-cheats-aimbot.webp',
+	refund: '/images/dbd-cheats-match.webp',
+	terms: '/images/dbd-cheats-aimbot-view.webp',
 };
 
 export const TS_HEADER = `import type { LocaleCode } from './locales';
@@ -70,7 +70,7 @@ export type LocaleUi = {
 \t\theaderArt: string; hacksPackage: string; ambushFight: string; battleRoyale: string; survivalIsland: string;
 \t};
 };
-export type PageId = 'home' | 'isle-esp' | 'isle-aimbot' | 'features' | 'pricing' | 'setup' | 'updates' | 'faq' | 'support' | 'undetected' | 'wallhack' | 'radar' | 'eac' | 'cheats-2026' | 'hacks' | 'cheat-download' | 'mod-menu' | 'soft-aim' | 'best-cheats' | 'aimbot-hack' | 'esp-hack' | 'unlock-all' | 'privacy' | 'refund' | 'terms';
+export type PageId = 'home' | 'dbd-esp' | 'dbd-aimbot' | 'features' | 'pricing' | 'setup' | 'updates' | 'faq' | 'support' | 'undetected' | 'wallhack' | 'radar' | 'eac' | 'cheats-2026' | 'hacks' | 'cheat-download' | 'mod-menu' | 'soft-aim' | 'best-cheats' | 'aimbot-hack' | 'esp-hack' | 'unlock-all' | 'privacy' | 'refund' | 'terms';
 `;
 
 /** Clamp meta strings to SEO limits without ugly ellipsis. */
@@ -101,7 +101,7 @@ export function stripZadeyoFromMeta(text) {
 		.replace(/\s*Zadeyo delivery\.?/gi, ' instant digital delivery.')
 		.replace(/\s*and Zadeyo delivery\.?/gi, ' and instant digital delivery.')
 		.replace(/\|\s*Instant Zadeyo Delivery/g, '| Instant Digital Delivery')
-		.replace(/Buy on Zadeyo/g, 'Buy The Isle Hacks')
+		.replace(/Buy on Zadeyo/g, 'Buy The DBD Cheats')
 		.replace(/\s{2,}/g, ' ')
 		.trim();
 }
@@ -124,11 +124,11 @@ export function section(h2, ...args) {
 /** Authoritative external citation helpers (open in new tab). */
 export const EXT = {
 	activision:
-		'<a href="https://store.steampowered.com/app/376210/The_Isle/" target="_blank" rel="noopener noreferrer">The Isle</a>',
-	isle:
-		'<a href="https://store.steampowered.com/app/376210/The_Isle/" target="_blank" rel="noopener noreferrer">The Isle</a>',
+		'<a href="https://store.steampowered.com/app/381210/Dead_by_Daylight/" target="_blank" rel="noopener noreferrer">Dead by Daylight</a>',
+	dbd:
+		'<a href="https://store.steampowered.com/app/381210/Dead_by_Daylight/" target="_blank" rel="noopener noreferrer">Dead by Daylight</a>',
 	status:
-		'<a href="https://store.steampowered.com/app/376210/The_Isle/" target="_blank" rel="noopener noreferrer">The Isle on Steam</a>',
+		'<a href="https://store.steampowered.com/app/381210/Dead_by_Daylight/" target="_blank" rel="noopener noreferrer">Dead by Daylight on Steam</a>',
 	eac:
 		'<a href="https://www.easy.ac/" target="_blank" rel="noopener noreferrer">Easy Anti-Cheat</a>',
 };

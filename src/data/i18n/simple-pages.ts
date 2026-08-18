@@ -50,16 +50,16 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 			{
 				h2: 'ESP & wallhack',
 				paragraphs: [
-					'See players, wild dinosaurs, bosses, and carcasses through walls with distance readouts.',
-					'Use filters so the overlay stays clear in high-traffic zones, high-traffic zones, and growth run chaos.',
+					'See survivors, killers, bosses, and carcasses through walls with distance readouts.',
+					'Use filters so the overlay stays clear in high-traffic tiles, high-traffic zones, and chase chaos.',
 				],
-				list: ['Player boxes & distance', 'Carcass and nest markers', 'Boss and juvenile filters'],
+				list: ['Player boxes & distance', 'Carcass and generator markers', 'Boss and juvenile filters'],
 			},
 			{
 				h2: 'Aimbot & soft aim',
 				paragraphs: [
 					'Aim help you can tune to feel natural.',
-					'Set FOV, smoothness, and bone priority per species before you spawn in.',
+					'Set FOV, smoothness, and bone priority per species before you queue.',
 				],
 				list: ['Smooth aim strength', 'FOV and bone priority', 'Hotkeys mid-match'],
 			},
@@ -67,9 +67,9 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 				h2: 'Radar',
 				paragraphs: [
 					'A simple 2D radar for threats outside your view.',
-					'Spot flanks near nests and water without filling the whole screen.',
+					'Spot flanks near generators and hooks without filling the whole screen.',
 				],
-				list: ['Nearby enemy cues', 'Adjustable range', 'Works in herbivore & carnivore'],
+				list: ['Nearby enemy cues', 'Adjustable range', 'Works in survivor & killer'],
 			},
 			{
 				h2: 'Explore related topics',
@@ -77,14 +77,14 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 					'Most {game} cheat sites cover ESP, aimbot, radar, setup, and status on separate pages. Use these guides next:',
 				],
 				list: [
-					'<a href="/isle-esp/">ESP & wallhack guide</a>',
-					'<a href="/isle-aimbot/">Aimbot & soft aim</a>',
-					'<a href="/isle-radar-hack/">2D radar overlay</a>',
+					'<a href="/dbd-esp/">ESP & wallhack guide</a>',
+					'<a href="/dbd-aimbot/">Aimbot & soft aim</a>',
+					'<a href="/dbd-radar-hack/">2D radar overlay</a>',
 					'<a href="/setup/">Setup guide</a>',
 					'<a href="/updates/">Live status</a>',
-					'<a href="/blog/">Isle Intel blog</a>',
+					'<a href="/blog/">DBD Intel blog</a>',
 					'<a href="https://store.steampowered.com/app/376210/news/" target="_blank" rel="noopener noreferrer">Official Steam patch notes</a>',
-					'<a href="https://isle.fandom.com/wiki/The_Isle" target="_blank" rel="noopener noreferrer">The Isle Wiki (Fandom)</a>',
+					'<a href="https://deadbydaylight.fandom.com/wiki/The_Isle" target="_blank" rel="noopener noreferrer">Dead by Daylight Wiki (Fandom)</a>',
 				],
 			},
 			{
@@ -92,7 +92,7 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 				paragraphs: [
 					'We rebuild after big {game} or {antiCheat} patches.',
 					'Check Status before you play after a patch day.',
-					'Verify official changes on <a href="https://store.steampowered.com/app/376210/news/" target="_blank" rel="noopener noreferrer">Steam patch notes</a> and the <a href="https://isle.fandom.com/wiki/The_Isle" target="_blank" rel="noopener noreferrer">Isle Wiki</a> before you tune overlays.',
+					'Verify official changes on <a href="https://store.steampowered.com/app/376210/news/" target="_blank" rel="noopener noreferrer">Steam patch notes</a> and the <a href="https://deadbydaylight.fandom.com/wiki/The_Isle" target="_blank" rel="noopener noreferrer">Isle Wiki</a> before you tune overlays.',
 				],
 				list: ['Status on the Status page', 'Setup guide included', 'Email support with your order ID'],
 			},
@@ -141,18 +141,18 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 		h1: 'Status',
 		intro: brandCopy.statusIntro,
 		ctaPrimary: brandCopy.ctaBuy,
-		ctaSecondary: 'The Isle Hacks overview',
+		ctaSecondary: 'The DBD Cheats overview',
 		ctaSecondaryHref: '/',
 		galleryTitle: 'In-game look',
 		sections: [
 			{
 				h2: 'Current status',
 				paragraphs: [
-					'As of 13 Aug 2026 the package is online for The Isle on Windows PC. We post a new note here when a game or Easy Anti-Cheat patch needs a rebuild.',
-					'If Status is green, you can session. If we are rebuilding, wait for the next note.',
+					'As of 13 Aug 2026 the package is online for Dead by Daylight on Windows PC. We post a new note here when a game or Easy Anti-Cheat patch needs a rebuild.',
+					'If Status is green, you can trial. If we are rebuilding, wait for the next note.',
 				],
 				list: [
-					'Check this page before every session after a patch',
+					'Check this page before every trial after a patch',
 					'Monthly and lifetime licenses get rebuilds while active',
 					'No cheat stays undetected forever — status first, then play',
 				],
@@ -174,17 +174,17 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 	hacks: page({
 		title: brandSeo.previewTitle,
 		description: brandSeo.previewDescription,
-		h1: 'The Isle Hacks',
+		h1: 'The DBD Cheats',
 		intro: brandCopy.previewIntro,
 		ctaPrimary: brandCopy.ctaBuy,
 		ctaSecondary: 'View features',
 		ctaSecondaryHref: '/features/',
-		galleryTitle: 'In-session look',
+		galleryTitle: 'In-trial look',
 		sections: [
 			{
 				h2: 'What you get',
 				paragraphs: [
-					'One license for The Isle on Windows PC — built for herbivore and carnivore survival sessions.',
+					'One license for Dead by Daylight on Windows PC — built for survivor and killer trials.',
 				],
 				list: [
 					'ESP / wallhack with distance',
@@ -194,14 +194,14 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 				],
 			},
 			{
-				h2: 'Built for The Isle sessions',
+				h2: 'Built for Dead by Daylight trials',
 				paragraphs: [
-					'Read players and wild dinosaurs before you push, mark carcasses worth the risk, and stay aware near nests and water. Tune soft aim per species for high-traffic zones and long-range ambushes.',
+					'Read survivors and killers before you push, mark carcasses worth the risk, and stay aware near generators and hooks. Tune soft aim per species for high-traffic zones and skill-check ambushes.',
 				],
 				list: [
-					'<a href="/isle-esp/">ESP guide</a>',
-					'<a href="/isle-aimbot/">Aimbot controls</a>',
-					'<a href="/isle-radar-hack/">Radar overlay</a>',
+					'<a href="/dbd-esp/">ESP guide</a>',
+					'<a href="/dbd-aimbot/">Aimbot controls</a>',
+					'<a href="/dbd-radar-hack/">Radar overlay</a>',
 					'<a href="/updates/">Live status</a>',
 				],
 			},
@@ -216,25 +216,25 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 			},
 		],
 	}),
-	'isle-esp': page({
-		title: 'Isle ESP | {brand}',
+	'dbd-esp': page({
+		title: 'DBD ESP | {brand}',
 		description:
-			'Isle ESP and wallhack for The Isle on Windows PC — player boxes, distance, carcass filters, and clear overlays in sessions.',
+			'DBD ESP and wallhack for Dead by Daylight on Windows PC — player boxes, distance, carcass filters, and clear overlays in trials.',
 		h1: 'ESP',
-		intro: 'See players and carcasses through walls during The Isle sessions. Part of the same {brand} license.',
+		intro: 'See players and carcasses through walls during Dead by Daylight trials. Part of the same {brand} license.',
 		ctaPrimary: brandCopy.ctaBuy,
-		ctaSecondary: 'The Isle Hacks overview',
+		ctaSecondary: 'The DBD Cheats overview',
 		ctaSecondaryHref: '/',
-		galleryTitle: 'ESP in session',
+		galleryTitle: 'ESP in trial',
 		sections: [
 			{
 				h2: 'What ESP shows',
-				paragraphs: ['Boxes, distance, and filters for players, wild dinosaurs, bosses, and carcasses.'],
+				paragraphs: ['Boxes, distance, and filters for survivors, killers, bosses, and carcasses.'],
 				list: ['Player ESP', 'Loot markers', 'Boss and juvenile filters'],
 			},
 			{
 				h2: 'When to use it',
-				paragraphs: ['Clear high-traffic zones, and growth runs without flooding the screen.'],
+				paragraphs: ['Clear high-traffic zones, and chases without flooding the screen.'],
 				list: ['Tune opacity', 'Filter noise', 'Pair with radar'],
 			},
 			{
@@ -248,25 +248,25 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 			},
 		],
 	}),
-	'isle-aimbot': page({
-		title: 'Isle Aimbot | {brand}',
+	'dbd-aimbot': page({
+		title: 'DBD Aimbot | {brand}',
 		description:
-			'Isle Aimbot and soft aim for The Isle on Windows PC — FOV, smoothness, and bone priority you can tune per species.',
+			'DBD Aimbot and soft aim for Dead by Daylight on Windows PC — FOV, smoothness, and bone priority you can tune per species.',
 		h1: 'Aimbot',
-		intro: 'Soft aim and aim assist you can tune for The Isle. Included in the same {brand} license.',
+		intro: 'Soft aim and aim assist you can tune for Dead by Daylight. Included in the same {brand} license.',
 		ctaPrimary: brandCopy.ctaBuy,
-		ctaSecondary: 'The Isle Hacks overview',
+		ctaSecondary: 'The DBD Cheats overview',
 		ctaSecondaryHref: '/',
 		galleryTitle: 'Aimbot view',
 		sections: [
 			{
 				h2: 'Controls',
-				paragraphs: ['Set FOV, smoothness, and bone priority before you spawn in.'],
+				paragraphs: ['Set FOV, smoothness, and bone priority before you queue.'],
 				list: ['Soft aim strength', 'Bone priority', 'Hotkeys mid-match'],
 			},
 			{
 				h2: 'Play styles',
-				paragraphs: ['Keep settings subtle for longer sessions. Raise strength only when you accept more risk.'],
+				paragraphs: ['Keep settings subtle for longer trials. Raise strength only when you accept more risk.'],
 				list: ['Legit soft aim', 'Per-species profiles', 'Works with ESP'],
 			},
 			{
@@ -281,26 +281,26 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 		],
 	}),
 	radar: page({
-		title: 'The Isle Radar | {brand}',
+		title: 'Dead by Daylight Radar | {brand}',
 		description:
-			'The Isle 2D radar for The Isle on Windows PC — flank cues near nests and water without filling the whole screen.',
+			'Dead by Daylight 2D radar for Dead by Daylight on Windows PC — flank cues near generators and hooks without filling the whole screen.',
 		h1: 'Radar',
 		intro: 'A simple 2D radar for threats outside your view. Included in the same {brand} license.',
 		ctaPrimary: brandCopy.ctaBuy,
-		ctaSecondary: 'The Isle Hacks overview',
+		ctaSecondary: 'The DBD Cheats overview',
 		ctaSecondaryHref: '/',
 		galleryTitle: 'Radar overlay',
 		sections: [
 			{
 				h2: 'What it shows',
-				paragraphs: ['Nearby enemy cues with adjustable range for herbivore and carnivore.'],
+				paragraphs: ['Nearby enemy cues with adjustable range for survivor and killer.'],
 				list: ['Flank awareness', 'Nest approaches', 'Adjustable range'],
 			},
 			{
 				h2: 'With ESP',
 				paragraphs: ['Use radar for threats you cannot see yet. Use ESP when you push.'],
 				list: [
-					'<a href="/isle-esp/">ESP guide</a>',
+					'<a href="/dbd-esp/">ESP guide</a>',
 					'<a href="/">Full product</a>',
 					'<a href="/pricing/">Store</a>',
 				],

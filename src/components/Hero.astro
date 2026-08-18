@@ -62,23 +62,28 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 	}
 
 	.hero__game-link {
-		display: block;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		width: 100%;
 		height: 100%;
+		min-width: 0;
+		min-height: 0;
 		pointer-events: auto;
 	}
 
 	.hero__media picture,
-	.hero__media img,
-	.hero__game-link {
+	.hero__media img {
 		display: block;
-		width: 100%;
+		/*
+		 * Size from height so the full native aspect ratio is preserved inside the
+		 * wide banner bar — no cover crop, no stretch from width: 100% + height: 100%.
+		 */
+		width: auto;
 		height: 100%;
 		max-width: 100%;
 		max-height: 100%;
-	}
-
-	.hero__media img {
+		aspect-ratio: 1672 / 941;
 		object-fit: contain;
 		object-position: center center;
 		image-rendering: auto;
@@ -308,7 +313,7 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 			max-height: none;
 			height: auto;
 			display: grid;
-			grid-template-rows: minmax(clamp(12rem, 42vw, 18rem), auto) auto;
+			grid-template-rows: auto auto;
 			overflow: hidden;
 		}
 
@@ -317,8 +322,8 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 			inset: auto;
 			grid-row: 1;
 			width: 100%;
+			height: auto;
 			aspect-ratio: 1672 / 941;
-			max-height: clamp(12rem, 42vw, 18rem);
 		}
 
 		.hero__veil {

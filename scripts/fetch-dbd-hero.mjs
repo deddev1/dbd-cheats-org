@@ -2,9 +2,8 @@ import { writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import sharp from 'sharp';
 
-/** Official DBD main art (2022) — survivors, campfire, and killers. */
-const HERO_URL =
-	'https://pbs.twimg.com/media/FOExZQeXMAs5wty?format=jpg&name=4096x4096';
+/** Official DBD website key art — survivors, campfire, and killers (no logo). */
+const HERO_URL = 'https://assets.deadbydaylight.com/DBD_Website_Keyart_d3b7a9628d.jpg';
 const imagesDir = path.resolve('public/images');
 const HERO_WEBP = { quality: 82, effort: 6, smartSubsample: true };
 

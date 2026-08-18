@@ -167,7 +167,7 @@ export const seoFaqs: readonly FaqItem[] = [
 		answer:
 			'A {game} wallhack is an ESP overlay that shows survivors, killers, and generators through walls. {brand} includes distance readouts, generator cues, and toggleable categories.',
 		slug: 'what-is-a-dbd-wallhack',
-		seoTitle: 'What Is a {game} Wallhack? | FAQ',
+		seoTitle: 'What Is a {gameShort} Wallhack? | FAQ',
 		seoDescription:
 			'A {game} wallhack is ESP that reveals survivors, killers, and generators through walls — with distance, generators, and category toggles.',
 	}),
@@ -194,7 +194,7 @@ export const seoFaqs: readonly FaqItem[] = [
 		answer:
 			'Yes — {brand} sells monthly and lifetime licenses for Windows PC with ESP, radar, and aimbot in one stack. Compare plans on Store before checkout.',
 		slug: 'buy-undetected-dbd-cheats-windows-pc',
-		seoTitle: 'Buy Undetected {game} Cheats for Windows PC | FAQ',
+		seoTitle: 'Buy Undetected {gameShort} Cheats for Windows PC | FAQ',
 		seoDescription:
 			'Buy monthly or lifetime {brand} licenses for Windows PC — ESP, radar, and aimbot in one stack. Compare pricing before checkout.',
 	}),

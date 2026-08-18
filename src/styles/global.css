@@ -6,8 +6,8 @@
 	--font-display: "Syne Variable", "Syne", ui-sans-serif, sans-serif;
 
 	/* Near-black canvas — Linear / open-source product surface ladder */
-	--bg: #08090a;
-	--bg-panel: #0f1011;
+	--bg: #07080b;
+	--bg-panel: #121419;
 	--bg-elevated: #161618;
 	--bg-hover: #1c1c1f;
 	--line: #23252a;
@@ -17,12 +17,12 @@
 	--ink-muted: #a1a1aa;
 	--ink-faint: #8b8b93;
 
-	/* Single brand accent: magenta (user request) — used sparingly */
-	--magenta: #c026d3;
-	--magenta-soft: #e879f9;
-	--magenta-deep: #86198f;
+	/* Brand accent — DBD crimson palette */
+	--magenta: #ff3b5c;
+	--magenta-soft: #e8e9ee;
+	--magenta-deep: #b91e3d;
 	--accent: var(--magenta);
-	--accent-hover: #d946ef;
+	--accent-hover: #ff6b81;
 	--ok: #34d399;
 	--warn: #f43f5e;
 

@@ -4,8 +4,8 @@
   "description": "Undetected dbd cheats — ESP, aimbot, and radar for PC",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#07050B",
-  "theme_color": "#07050B",
+  "background_color": "#07080B",
+  "theme_color": "#07080B",
   "icons": [
     {
       "src": "/favicon.png",

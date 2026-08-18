@@ -19,7 +19,7 @@ const pairs = [
 	['undetected EAC notes', 'undetected Easy Anti-Cheat notes'],
 	['status.epicgames.com', 'store.steampowered.com/app/381210/Dead_by_Daylight'],
 	['www.epicgames.com/dbd', 'store.steampowered.com/app/381210/Dead_by_Daylight'],
-	['www.dbd.com/official server', 'store.steampowered.com/app/381210/Dead_by_Daylight'],
+	['www.dbd.com/live server', 'store.steampowered.com/app/381210/Dead_by_Daylight'],
 	['https://www.dbd.com/', 'https://store.steampowered.com/app/381210/Dead_by_Daylight/'],
 	['Dead by Daylight.com', 'Dead by Daylight'],
 	['Dead by Daylight Competitive', 'Dead by Daylight'],

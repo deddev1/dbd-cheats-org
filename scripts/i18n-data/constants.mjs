@@ -66,8 +66,8 @@ export type LocaleUi = {
 \tcommon: { buyNow: string; readGuide: string; language: string; officialLanguageNote: string; relatedPages: string };
 \tfooter: { explore: string; help: string; tagline: string };
 \timages: {
-\t\thero: string; espWallhack: string; aimbotCombat: string; packFight: string; dinoEsp: string;
-\t\theaderArt: string; hacksPackage: string; ambushFight: string; battleRoyale: string; survivalIsland: string;
+\t\thero: string; espWallhack: string; aimbotCombat: string; teamFight: string; playerEsp: string;
+\t\theaderArt: string; hacksPackage: string; chaseFight: string; battleRoyale: string; trialMap: string;
 \t};
 };
 export type PageId = 'home' | 'dbd-esp' | 'dbd-aimbot' | 'features' | 'pricing' | 'setup' | 'updates' | 'faq' | 'support' | 'undetected' | 'wallhack' | 'radar' | 'eac' | 'cheats-2026' | 'hacks' | 'cheat-download' | 'mod-menu' | 'soft-aim' | 'best-cheats' | 'aimbot-hack' | 'esp-hack' | 'unlock-all' | 'privacy' | 'refund' | 'terms';
@@ -101,7 +101,7 @@ export function stripZadeyoFromMeta(text) {
 		.replace(/\s*Zadeyo delivery\.?/gi, ' instant digital delivery.')
 		.replace(/\s*and Zadeyo delivery\.?/gi, ' and instant digital delivery.')
 		.replace(/\|\s*Instant Zadeyo Delivery/g, '| Instant Digital Delivery')
-		.replace(/Buy on Zadeyo/g, 'Buy The DBD Cheats')
+		.replace(/Buy on Zadeyo/g, 'Buy DBD Cheats')
 		.replace(/\s{2,}/g, ' ')
 		.trim();
 }

@@ -15,10 +15,10 @@ export type GuideCta = {
 /** Canonical outbound URLs — single source for CTAs, pills, and resource blocks. */
 export const externalUrls = {
 	steam: brand.gameUrl,
-	steamNews: 'https://store.steampowered.com/app/376210/news/',
+	steamNews: 'https://store.steampowered.com/app/381210/news/',
 	officialSite: 'https://www.deadbydaylight.com/',
-	wiki: 'https://deadbydaylight.fandom.com/wiki/The_Isle',
-	steamCommunity: 'https://steamcommunity.com/app/376210',
+	wiki: 'https://deadbydaylight.fandom.com/wiki/Dead_by_Daylight_Wiki',
+	steamCommunity: 'https://steamcommunity.com/app/381210',
 } as const;
 
 /** Authoritative third-party guides — cite official game sources for readers and search engines. */
@@ -36,12 +36,12 @@ export const externalResources: ExternalResource[] = [
 	{
 		label: 'Official Dead by Daylight website',
 		href: externalUrls.officialSite,
-		note: 'Game overview from Afterthought LLC.',
+		note: 'Game overview from Behaviour Interactive.',
 	},
 	{
 		label: 'Dead by Daylight Wiki (Fandom)',
 		href: externalUrls.wiki,
-		note: 'Dinosaur stats, maps, and survival mechanics.',
+		note: 'Killer stats, perks, maps, and trial mechanics.',
 	},
 	{
 		label: 'Steam Community hub',

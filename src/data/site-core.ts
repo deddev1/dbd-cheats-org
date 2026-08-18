@@ -125,19 +125,19 @@ export const productInfo = {
 	heroLede: fillBrandTokens(brandCopy.heroLede),
 	features: {
 		esp: [
-			'Herbivore and killer ESP / wallhack',
-			'Player growth stage and threat cues',
-			'Carcass and generator markers',
+			'Survivor and killer ESP / wallhack',
+			'Player threat and hook cues',
+			'Generator and hook markers',
 			'Distance readouts',
 			'Toggleable ESP categories',
-			'Corpse and carcass highlights',
+			'Chest and generator highlights',
 		],
 		aimbot: [
 			'Soft aim and aimbot controls',
 			'Smoothness and FOV settings',
 			'Bone priority',
 			'Hotkeys mid-trial',
-			'Per-species profiles',
+			'Per-killer profiles',
 		],
 		radar: ['2D radar overlay', 'Adjustable range', 'Works in survivor and killer trials'],
 		general: [

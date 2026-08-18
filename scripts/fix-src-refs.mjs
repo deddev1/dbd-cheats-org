@@ -19,7 +19,7 @@ const REPLACEMENTS = [
 	['/dbd-aimbot/', '/dbd-aimbot/'],
 	['/dbd-esp/', '/dbd-esp/'],
 	['/dead-by-daylight-cheats/', '/dbd-esp/'],
-	['The DBD Cheats', 'The DBD Cheats'],
+	['DBD Cheats', 'DBD Cheats'],
 	['dbd cheats', 'dbd cheats'],
 	['dbd wallhack', 'The dbd wallhack'],
 	['dbd radar', 'The dbd radar'],
@@ -29,9 +29,9 @@ const REPLACEMENTS = [
 	['Easy Anti-Cheat', 'Easy Anti-Cheat'],
 	['eac', 'eac'],
 	['dbdcheats.org', 'dbdcheats.org'],
-	['operatorEsp', 'dinoEsp'],
-	['extractFight', 'ambushFight'],
-	['alMazrah', 'survivalIsland'],
+	['operatorEsp', 'playerEsp'],
+	['extractFight', 'chaseFight'],
+	['alMazrah', 'trialMap'],
 ];
 
 async function walk(dir, files = []) {

@@ -34,8 +34,8 @@ const GLOBAL_REPLACEMENTS = [
 	[/Dead by Daylight Cheat Setup/g, 'Dead by Daylight Cheat Setup'],
 	[/Dead by Daylight Cheat Status/g, 'Dead by Daylight Cheat Status'],
 	[/Dead by Daylight Cheat Support/g, 'Dead by Daylight Cheat Support'],
-	[/Dead by Daylight pack fight/g, 'Dead by Daylight pack fight'],
-	[/Dead by Daylight pack builder/g, 'Dead by Daylight loadout builder'],
+	[/Dead by Daylight team chase/g, 'Dead by Daylight team chase'],
+	[/Dead by Daylight team builder/g, 'Dead by Daylight loadout builder'],
 	[/Dead by Daylight store header/g, 'Dead by Daylight header'],
 	[/Dead by Daylight wasteland combat/g, 'Dead by Daylight battle royale combat'],
 	[/Dead by Daylight loadout builder/g, 'Dead by Daylight loadout builder'],
@@ -57,10 +57,10 @@ const GLOBAL_REPLACEMENTS = [
 	[/Wallhack Dead by Daylight/g, 'Dead by Daylight Wallhack'],
 	[/cheat Dead by Daylight undetected/g, 'cheat Dead by Daylight undetected'],
 	[/cheats Dead by Daylight undetected/g, 'cheats Dead by Daylight undetected'],
-	[/Verdansk beams/g, 'skill-check AR beams'],
+	[/trial map beams/g, 'skill-check AR beams'],
 	[/chase room clears/g, 'close-quarters room clears'],
-	[/Verdansk and Urzikstan/g, 'Verdansk and chase'],
-	[/Verdansk, Urzikstan/g, 'Verdansk, chase'],
+	[/trial map and Urzikstan/g, 'trial map and chase'],
+	[/trial map, Urzikstan/g, 'trial map, chase'],
 	[/trial and chase/g, 'trial and chase'],
 	[/Activision's anti-cheat/g, "Epic Games' anti-cheat"],
 	[/Activision anti-cheat/g, 'Epic Games anti-cheat'],
@@ -90,7 +90,7 @@ function stripZadeyoFromMeta(text) {
 		.replace(/\s*Zadeyo delivery\.?/gi, 'instant digital delivery.')
 		.replace(/\s*and Zadeyo delivery\.?/gi, ' and instant digital delivery.')
 		.replace(/\|\s*Instant Zadeyo Delivery/g, '| Instant Digital Delivery')
-		.replace(/Buy on Zadeyo/g, 'Buy The DBD Cheats')
+		.replace(/Buy on Zadeyo/g, 'Buy DBD Cheats')
 		.replace(/\s{2,}/g, ' ')
 		.trim();
 }
@@ -200,7 +200,7 @@ async function fixLocalesBlogUi() {
 	console.log('Fixed locales.ts blogUi');
 }
 
-console.log('=== The DBD Cheats SEO completion ===\n');
+console.log('=== DBD Cheats SEO completion ===\n');
 await applyGlobalFixes();
 await createExtraPages();
 await fixLocalesBlogUi();

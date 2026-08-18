@@ -32,7 +32,7 @@ export type LocaleMeta = {
 	region: string;
 };
 
-/** 22 locales for global The DBD Cheats blog SEO coverage. */
+/** 22 locales for global DBD Cheats blog SEO coverage. */
 export const locales: LocaleMeta[] = [
 	{ code: 'en', name: 'English', nativeName: 'English', hreflang: 'en', ogLocale: 'en_US', dir: 'ltr', region: 'Worldwide' },
 	{ code: 'es', name: 'Spanish', nativeName: 'Español', hreflang: 'es', ogLocale: 'es_ES', dir: 'ltr', region: 'Worldwide' },
@@ -93,25 +93,25 @@ export const blogUi: Record<
 	}
 > = {
 	en: {
-		blogTitle: 'The DBD Cheats Blog | Raid Guides',
+		blogTitle: 'DBD Cheats Blog | Raid Guides',
 		blogDescription:
 			'Dead by Daylight guides — trial tips, ESP, aimbot notes, loop routes, and Easy Anti-Cheat update coverage. English blog at dbdcheats.org/blog/.',
-		blogH1: 'The DBD Cheats Intel',
+		blogH1: 'DBD Cheats Intel',
 		blogIntro:
-			'Short Dead by Daylight guides for survivor and killer trials. Pair these tips with The DBD Cheats product pages when you need ESP, soft aim, or radar.',
+			'Short Dead by Daylight guides for survivor and killer trials. Pair these tips with DBD Cheats product pages when you need ESP, soft aim, or radar.',
 		readMore: 'Read guide',
 		published: 'Published',
 		updated: 'Updated',
 		relatedPosts: 'Related guides',
 		allPosts: 'All blog posts',
-		home: 'The DBD Cheats home',
+		home: 'DBD Cheats home',
 		language: 'Language',
 	},
 	es: {
-		blogTitle: 'Blog The DBD Cheats 2026 | Guías en 22 idiomas',
+		blogTitle: 'Blog DBD Cheats 2026 | Guías en 22 idiomas',
 		blogDescription:
-			'Blog de The DBD Cheats con guías de trucos indetectables, ESP wallhack, radar y Aimbot para Dead by Daylight en PC Windows.',
-		blogH1: 'Blog The DBD Cheats — Guías globales',
+			'Blog de DBD Cheats con guías de trucos indetectables, ESP wallhack, radar y Aimbot para Dead by Daylight en PC Windows.',
+		blogH1: 'Blog DBD Cheats — Guías globales',
 		blogIntro:
 			'Guías SEO de trucos Dead by Daylight indetectables, ESP wallhack, radar hack, Aimbot y mantenimiento Easy Anti-Cheat en 22 idiomas.',
 		readMore: 'Leer guía',
@@ -119,14 +119,14 @@ export const blogUi: Record<
 		updated: 'Actualizado',
 		relatedPosts: 'Guías Dead by Daylight relacionadas',
 		allPosts: 'Todos los artículos',
-		home: 'Inicio The DBD Cheats',
+		home: 'Inicio DBD Cheats',
 		language: 'Idioma',
 	},
 	fr: {
-		blogTitle: 'Blog The DBD Cheats 2026 | Guides en 22 langues',
+		blogTitle: 'Blog DBD Cheats 2026 | Guides en 22 langues',
 		blogDescription:
-			'Blog The DBD Cheats : triches indétectables, ESP wallhack, radar et Aimbot pour Dead by Daylight sur PC Windows.',
-		blogH1: 'Blog The DBD Cheats — Guides mondiaux',
+			'Blog DBD Cheats : triches indétectables, ESP wallhack, radar et Aimbot pour Dead by Daylight sur PC Windows.',
+		blogH1: 'Blog DBD Cheats — Guides mondiaux',
 		blogIntro:
 			'Guides SEO triches Dead by Daylight indétectables, ESP wallhack, radar hack, Aimbot et Easy Anti-Cheat en 22 langues.',
 		readMore: 'Lire le guide',
@@ -134,29 +134,29 @@ export const blogUi: Record<
 		updated: 'Mis à jour',
 		relatedPosts: 'Guides Dead by Daylight associés',
 		allPosts: 'Tous les articles',
-		home: 'Accueil The DBD Cheats',
+		home: 'Accueil DBD Cheats',
 		language: 'Langue',
 	},
 	de: {
-		blogTitle: 'The DBD Cheats Blog 2026 | Guides in 22 Sprachen',
+		blogTitle: 'DBD Cheats Blog 2026 | Guides in 22 Sprachen',
 		blogDescription:
-			'The DBD Cheats Blog mit undetected ESP, Wallhack, Radar und Aimbot Guides für Dead by Daylight auf Windows PC.',
-		blogH1: 'The DBD Cheats Blog — Globale Guides',
+			'DBD Cheats Blog mit undetected ESP, Wallhack, Radar und Aimbot Guides für Dead by Daylight auf Windows PC.',
+		blogH1: 'DBD Cheats Blog — Globale Guides',
 		blogIntro:
-			'SEO-Guides für undetected The DBD Cheats, ESP Wallhack, Radar Hack, Aimbot und Easy Anti-Cheat in 22 Sprachen.',
+			'SEO-Guides für undetected DBD Cheats, ESP Wallhack, Radar Hack, Aimbot und Easy Anti-Cheat in 22 Sprachen.',
 		readMore: 'Guide lesen',
 		published: 'Veröffentlicht',
 		updated: 'Aktualisiert',
 		relatedPosts: 'Verwandte Dead by Daylight Guides',
 		allPosts: 'Alle Beiträge',
-		home: 'The DBD Cheats Start',
+		home: 'DBD Cheats Start',
 		language: 'Sprache',
 	},
 	pt: {
-		blogTitle: 'Blog The DBD Cheats 2026 | Guias em 22 idiomas',
+		blogTitle: 'Blog DBD Cheats 2026 | Guias em 22 idiomas',
 		blogDescription:
-			'Blog The DBD Cheats com guias de cheats indetectáveis, ESP wallhack, radar e Aimbot para Dead by Daylight no PC.',
-		blogH1: 'Blog The DBD Cheats — Guias globais',
+			'Blog DBD Cheats com guias de cheats indetectáveis, ESP wallhack, radar e Aimbot para Dead by Daylight no PC.',
+		blogH1: 'Blog DBD Cheats — Guias globais',
 		blogIntro:
 			'Guias SEO de cheats Dead by Daylight indetectáveis, ESP wallhack, radar hack, Aimbot e Easy Anti-Cheat em 22 idiomas.',
 		readMore: 'Ler guia',
@@ -164,14 +164,14 @@ export const blogUi: Record<
 		updated: 'Atualizado',
 		relatedPosts: 'Guias Dead by Daylight relacionados',
 		allPosts: 'Todos os posts',
-		home: 'Início The DBD Cheats',
+		home: 'Início DBD Cheats',
 		language: 'Idioma',
 	},
 	it: {
-		blogTitle: 'Blog The DBD Cheats 2026 | Guide in 22 lingue',
+		blogTitle: 'Blog DBD Cheats 2026 | Guide in 22 lingue',
 		blogDescription:
-			'Blog The DBD Cheats con guide cheat indetectable, ESP wallhack, radar e Aimbot per Dead by Daylight su PC Windows.',
-		blogH1: 'Blog The DBD Cheats — Guide globali',
+			'Blog DBD Cheats con guide cheat indetectable, ESP wallhack, radar e Aimbot per Dead by Daylight su PC Windows.',
+		blogH1: 'Blog DBD Cheats — Guide globali',
 		blogIntro:
 			'Guide SEO cheat Dead by Daylight indetectable, ESP wallhack, radar hack, Aimbot e Easy Anti-Cheat in 22 lingue.',
 		readMore: 'Leggi guida',
@@ -179,14 +179,14 @@ export const blogUi: Record<
 		updated: 'Aggiornato',
 		relatedPosts: 'Guide Dead by Daylight correlate',
 		allPosts: 'Tutti gli articoli',
-		home: 'Home The DBD Cheats',
+		home: 'Home DBD Cheats',
 		language: 'Lingua',
 	},
 	nl: {
-		blogTitle: 'The DBD Cheats Blog 2026 | Gidsen in 22 talen',
+		blogTitle: 'DBD Cheats Blog 2026 | Gidsen in 22 talen',
 		blogDescription:
-			'The DBD Cheats blog met undetected ESP, wallhack, radar en Aimbot gidsen voor Dead by Daylight op Windows PC.',
-		blogH1: 'The DBD Cheats Blog — Wereldwijde gidsen',
+			'DBD Cheats blog met undetected ESP, wallhack, radar en Aimbot gidsen voor Dead by Daylight op Windows PC.',
+		blogH1: 'DBD Cheats Blog — Wereldwijde gidsen',
 		blogIntro:
 			'SEO-gidsen voor undetected dbd cheats, ESP wallhack, radar hack, Aimbot en Easy Anti-Cheat in 22 talen.',
 		readMore: 'Lees gids',
@@ -194,14 +194,14 @@ export const blogUi: Record<
 		updated: 'Bijgewerkt',
 		relatedPosts: 'Gerelateerde Dead by Daylight gidsen',
 		allPosts: 'Alle posts',
-		home: 'The DBD Cheats home',
+		home: 'DBD Cheats home',
 		language: 'Taal',
 	},
 	pl: {
-		blogTitle: 'Blog The DBD Cheats 2026 | Poradniki w 22 językach',
+		blogTitle: 'Blog DBD Cheats 2026 | Poradniki w 22 językach',
 		blogDescription:
-			'Blog The DBD Cheats z poradnikami undetected ESP, wallhack, radar i Aimbot dla Dead by Daylight na PC.',
-		blogH1: 'Blog The DBD Cheats — Globalne poradniki',
+			'Blog DBD Cheats z poradnikami undetected ESP, wallhack, radar i Aimbot dla Dead by Daylight na PC.',
+		blogH1: 'Blog DBD Cheats — Globalne poradniki',
 		blogIntro:
 			'Poradniki SEO undetected cheatów Dead by Daylight, ESP wallhack, radar hack, Aimbot i Easy Anti-Cheat w 22 językach.',
 		readMore: 'Czytaj poradnik',
@@ -209,14 +209,14 @@ export const blogUi: Record<
 		updated: 'Zaktualizowano',
 		relatedPosts: 'Powiązane poradniki Dead by Daylight',
 		allPosts: 'Wszystkie artykuły',
-		home: 'Strona główna The DBD Cheats',
+		home: 'Strona główna DBD Cheats',
 		language: 'Język',
 	},
 	ru: {
-		blogTitle: 'Блог The DBD Cheats 2026 | Гайды на 22 языках',
+		blogTitle: 'Блог DBD Cheats 2026 | Гайды на 22 языках',
 		blogDescription:
-			'Блог The DBD Cheats: undetected ESP, wallhack, radar и Aimbot для Dead by Daylight на Windows PC.',
-		blogH1: 'Блог The DBD Cheats — Глобальные гайды',
+			'Блог DBD Cheats: undetected ESP, wallhack, radar и Aimbot для Dead by Daylight на Windows PC.',
+		blogH1: 'Блог DBD Cheats — Глобальные гайды',
 		blogIntro:
 			'SEO-гайды по undetected читам Dead by Daylight, ESP wallhack, radar hack, Aimbot и Easy Anti-Cheat на 22 языках.',
 		readMore: 'Читать гайд',
@@ -224,14 +224,14 @@ export const blogUi: Record<
 		updated: 'Обновлено',
 		relatedPosts: 'Похожие гайды Dead by Daylight',
 		allPosts: 'Все статьи',
-		home: 'Главная The DBD Cheats',
+		home: 'Главная DBD Cheats',
 		language: 'Язык',
 	},
 	tr: {
-		blogTitle: 'The DBD Cheats Blog 2026 | 22 dilde rehberler',
+		blogTitle: 'DBD Cheats Blog 2026 | 22 dilde rehberler',
 		blogDescription:
-			'The DBD Cheats blog: undetected ESP, wallhack, radar ve Aimbot rehberleri Dead by Daylight Windows PC.',
-		blogH1: 'The DBD Cheats Blog — Küresel rehberler',
+			'DBD Cheats blog: undetected ESP, wallhack, radar ve Aimbot rehberleri Dead by Daylight Windows PC.',
+		blogH1: 'DBD Cheats Blog — Küresel rehberler',
 		blogIntro:
 			'Undetected Dead by Daylight hileleri, ESP wallhack, radar hack, Aimbot ve Easy Anti-Cheat SEO rehberleri 22 dilde.',
 		readMore: 'Rehberi oku',
@@ -239,14 +239,14 @@ export const blogUi: Record<
 		updated: 'Güncellendi',
 		relatedPosts: 'İlgili Dead by Daylight rehberleri',
 		allPosts: 'Tüm yazılar',
-		home: 'The DBD Cheats ana sayfa',
+		home: 'DBD Cheats ana sayfa',
 		language: 'Dil',
 	},
 	ar: {
-		blogTitle: 'مدونة The DBD Cheats 2026 | أدلة بـ 22 لغة',
+		blogTitle: 'مدونة DBD Cheats 2026 | أدلة بـ 22 لغة',
 		blogDescription:
-			'مدونة The DBD Cheats: غش undetected وESP wallhack ورadar وAimbot لـ Dead by Daylight على Windows PC.',
-		blogH1: 'مدونة The DBD Cheats — أدلة عالمية',
+			'مدونة DBD Cheats: غش undetected وESP wallhack ورadar وAimbot لـ Dead by Daylight على Windows PC.',
+		blogH1: 'مدونة DBD Cheats — أدلة عالمية',
 		blogIntro:
 			'أدلة SEO لغش Dead by Daylight undetected وESP wallhack ورadar hack وAimbot وEasy Anti-Cheat بـ 22 لغة.',
 		readMore: 'اقرأ الدليل',
@@ -254,14 +254,14 @@ export const blogUi: Record<
 		updated: 'تم التحديث',
 		relatedPosts: 'أدلة Dead by Daylight ذات صلة',
 		allPosts: 'جميع المقالات',
-		home: 'الرئيسية The DBD Cheats',
+		home: 'الرئيسية DBD Cheats',
 		language: 'اللغة',
 	},
 	ja: {
-		blogTitle: 'The DBD Cheats ブログ 2026 | 22言語ガイド',
+		blogTitle: 'DBD Cheats ブログ 2026 | 22言語ガイド',
 		blogDescription:
-			'The DBD Cheatsブログ：undetected ESP、wallhack、radar、Aimbotガイド。Dead by Daylight Windows PC向け。',
-		blogH1: 'The DBD Cheats ブログ — グローバルガイド',
+			'DBD Cheatsブログ：undetected ESP、wallhack、radar、Aimbotガイド。Dead by Daylight Windows PC向け。',
+		blogH1: 'DBD Cheats ブログ — グローバルガイド',
 		blogIntro:
 			'undetected Dead by Daylightチート、ESP wallhack、radar hack、Aimbot、Easy Anti-CheatのSEOガイドを22言語で提供。',
 		readMore: 'ガイドを読む',
@@ -269,14 +269,14 @@ export const blogUi: Record<
 		updated: '更新日',
 		relatedPosts: '関連Dead by Daylightガイド',
 		allPosts: 'すべての記事',
-		home: 'The DBD Cheats ホーム',
+		home: 'DBD Cheats ホーム',
 		language: '言語',
 	},
 	ko: {
-		blogTitle: 'The DBD Cheats 블로그 2026 | 22개 언어 가이드',
+		blogTitle: 'DBD Cheats 블로그 2026 | 22개 언어 가이드',
 		blogDescription:
-			'The DBD Cheats 블로그: undetected ESP, wallhack, radar, Aimbot 가이드. Dead by Daylight Windows PC.',
-		blogH1: 'The DBD Cheats 블로그 — 글로벌 가이드',
+			'DBD Cheats 블로그: undetected ESP, wallhack, radar, Aimbot 가이드. Dead by Daylight Windows PC.',
+		blogH1: 'DBD Cheats 블로그 — 글로벌 가이드',
 		blogIntro:
 			'undetected Dead by Daylight 치트, ESP wallhack, radar hack, Aimbot, Easy Anti-Cheat SEO 가이드를 22개 언어로 제공.',
 		readMore: '가이드 읽기',
@@ -284,14 +284,14 @@ export const blogUi: Record<
 		updated: '업데이트',
 		relatedPosts: '관련 Dead by Daylight 가이드',
 		allPosts: '모든 게시물',
-		home: 'The DBD Cheats 홈',
+		home: 'DBD Cheats 홈',
 		language: '언어',
 	},
 	zh: {
-		blogTitle: 'The DBD Cheats 博客 2026 | 22种语言指南',
+		blogTitle: 'DBD Cheats 博客 2026 | 22种语言指南',
 		blogDescription:
-			'The DBD Cheats博客：undetected ESP、wallhack、radar和Aimbot指南，适用于Dead by Daylight Windows PC。',
-		blogH1: 'The DBD Cheats 博客 — 全球指南',
+			'DBD Cheats博客：undetected ESP、wallhack、radar和Aimbot指南，适用于Dead by Daylight Windows PC。',
+		blogH1: 'DBD Cheats 博客 — 全球指南',
 		blogIntro:
 			'undetected Dead by Daylight作弊、ESP wallhack、radar hack、Aimbot和Easy Anti-Cheat的SEO指南，共22种语言。',
 		readMore: '阅读指南',
@@ -299,14 +299,14 @@ export const blogUi: Record<
 		updated: '更新',
 		relatedPosts: '相关Dead by Daylight指南',
 		allPosts: '所有文章',
-		home: 'The DBD Cheats 首页',
+		home: 'DBD Cheats 首页',
 		language: '语言',
 	},
 	hi: {
-		blogTitle: 'The DBD Cheats ब्लॉग 2026 | 22 भाषाओं में गाइड',
+		blogTitle: 'DBD Cheats ब्लॉग 2026 | 22 भाषाओं में गाइड',
 		blogDescription:
-			'The DBD Cheats ब्लॉग: undetected ESP, wallhack, radar और Aimbot गाइड Dead by Daylight Windows PC के लिए।',
-		blogH1: 'The DBD Cheats ब्लॉग — वैश्विक गाइड',
+			'DBD Cheats ब्लॉग: undetected ESP, wallhack, radar और Aimbot गाइड Dead by Daylight Windows PC के लिए।',
+		blogH1: 'DBD Cheats ब्लॉग — वैश्विक गाइड',
 		blogIntro:
 			'undetected dbd cheats, ESP wallhack, radar hack, Aimbot और Easy Anti-Cheat SEO गाइड 22 भाषाओं में।',
 		readMore: 'गाइड पढ़ें',
@@ -314,14 +314,14 @@ export const blogUi: Record<
 		updated: 'अपडेट',
 		relatedPosts: 'संबंधित Dead by Daylight गाइड',
 		allPosts: 'सभी पोस्ट',
-		home: 'The DBD Cheats होम',
+		home: 'DBD Cheats होम',
 		language: 'भाषा',
 	},
 	id: {
-		blogTitle: 'Blog The DBD Cheats 2026 | Panduan 22 bahasa',
+		blogTitle: 'Blog DBD Cheats 2026 | Panduan 22 bahasa',
 		blogDescription:
-			'Blog The DBD Cheats: panduan undetected ESP, wallhack, radar dan Aimbot untuk Dead by Daylight di PC Windows.',
-		blogH1: 'Blog The DBD Cheats — Panduan global',
+			'Blog DBD Cheats: panduan undetected ESP, wallhack, radar dan Aimbot untuk Dead by Daylight di PC Windows.',
+		blogH1: 'Blog DBD Cheats — Panduan global',
 		blogIntro:
 			'Panduan SEO cheat Dead by Daylight undetected, ESP wallhack, radar hack, Aimbot dan Easy Anti-Cheat dalam 22 bahasa.',
 		readMore: 'Baca panduan',
@@ -329,14 +329,14 @@ export const blogUi: Record<
 		updated: 'Diperbarui',
 		relatedPosts: 'Pandua Dead by Daylight terkait',
 		allPosts: 'Semua artikel',
-		home: 'Beranda The DBD Cheats',
+		home: 'Beranda DBD Cheats',
 		language: 'Bahasa',
 	},
 	th: {
-		blogTitle: 'บล็อก The DBD Cheats 2026 | คู่มือ 22 ภาษา',
+		blogTitle: 'บล็อก DBD Cheats 2026 | คู่มือ 22 ภาษา',
 		blogDescription:
-			'บล็อก The DBD Cheats: คู่มือ undetected ESP, wallhack, radar และ Aimbot สำหรับ Dead by Daylight บน PC',
-		blogH1: 'บล็อก The DBD Cheats — คู่มือทั่วโลก',
+			'บล็อก DBD Cheats: คู่มือ undetected ESP, wallhack, radar และ Aimbot สำหรับ Dead by Daylight บน PC',
+		blogH1: 'บล็อก DBD Cheats — คู่มือทั่วโลก',
 		blogIntro:
 			'คู่มือ SEO สำหรับ cheat Dead by Daylight undetected, ESP wallhack, radar hack, Aimbot และ Easy Anti-Cheat 22 ภาษา',
 		readMore: 'อ่านคู่มือ',
@@ -344,14 +344,14 @@ export const blogUi: Record<
 		updated: 'อัปเดต',
 		relatedPosts: 'คู่มือ Dead by Daylight ที่เกี่ยวข้อง',
 		allPosts: 'บทความทั้งหมด',
-		home: 'หน้าแรก The DBD Cheats',
+		home: 'หน้าแรก DBD Cheats',
 		language: 'ภาษา',
 	},
 	vi: {
-		blogTitle: 'Blog The DBD Cheats 2026 | Hướng dẫn 22 ngôn ngữ',
+		blogTitle: 'Blog DBD Cheats 2026 | Hướng dẫn 22 ngôn ngữ',
 		blogDescription:
-			'Blog The DBD Cheats: hướng dẫn undetected ESP, wallhack, radar và Aimbot cho Dead by Daylight trên PC.',
-		blogH1: 'Blog The DBD Cheats — Hướng dẫn toàn cầu',
+			'Blog DBD Cheats: hướng dẫn undetected ESP, wallhack, radar và Aimbot cho Dead by Daylight trên PC.',
+		blogH1: 'Blog DBD Cheats — Hướng dẫn toàn cầu',
 		blogIntro:
 			'Hướng dẫn SEO cheat Dead by Daylight undetected, ESP wallhack, radar hack, Aimbot và Easy Anti-Cheat bằng 22 ngôn ngữ.',
 		readMore: 'Đọc hướng dẫn',
@@ -359,14 +359,14 @@ export const blogUi: Record<
 		updated: 'Cập nhật',
 		relatedPosts: 'Hướng dẫn Dead by Daylight liên quan',
 		allPosts: 'Tất cả bài viết',
-		home: 'Trang chủ The DBD Cheats',
+		home: 'Trang chủ DBD Cheats',
 		language: 'Ngôn ngữ',
 	},
 	uk: {
-		blogTitle: 'Блог The DBD Cheats 2026 | Гайди 22 мовами',
+		blogTitle: 'Блог DBD Cheats 2026 | Гайди 22 мовами',
 		blogDescription:
-			'Блог The DBD Cheats: undetected ESP, wallhack, radar та Aimbot для Dead by Daylight на Windows PC.',
-		blogH1: 'Блог The DBD Cheats — Глобальні гайди',
+			'Блог DBD Cheats: undetected ESP, wallhack, radar та Aimbot для Dead by Daylight на Windows PC.',
+		blogH1: 'Блог DBD Cheats — Глобальні гайди',
 		blogIntro:
 			'SEO-гайди з undetected читів Dead by Daylight, ESP wallhack, radar hack, Aimbot та Easy Anti-Cheat 22 мовами.',
 		readMore: 'Читати гайд',
@@ -374,14 +374,14 @@ export const blogUi: Record<
 		updated: 'Оновлено',
 		relatedPosts: "Пов'язані гайди Dead by Daylight",
 		allPosts: 'Усі статті',
-		home: 'Головна The DBD Cheats',
+		home: 'Головна DBD Cheats',
 		language: 'Мова',
 	},
 	cs: {
-		blogTitle: 'Blog The DBD Cheats 2026 | Průvodce ve 22 jazycích',
+		blogTitle: 'Blog DBD Cheats 2026 | Průvodce ve 22 jazycích',
 		blogDescription:
-			'Blog The DBD Cheats: undetected ESP, wallhack, radar a Aimbot pro Dead by Daylight na Windows PC.',
-		blogH1: 'Blog The DBD Cheats — Globální průvodce',
+			'Blog DBD Cheats: undetected ESP, wallhack, radar a Aimbot pro Dead by Daylight na Windows PC.',
+		blogH1: 'Blog DBD Cheats — Globální průvodce',
 		blogIntro:
 			'SEO průvodce undetected dbd cheaty, ESP wallhack, radar hack, Aimbot a Easy Anti-Cheat ve 22 jazycích.',
 		readMore: 'Číst průvodce',
@@ -389,14 +389,14 @@ export const blogUi: Record<
 		updated: 'Aktualizováno',
 		relatedPosts: 'Související Dead by Daylight průvodce',
 		allPosts: 'Všechny články',
-		home: 'Domů The DBD Cheats',
+		home: 'Domů DBD Cheats',
 		language: 'Jazyk',
 	},
 	ro: {
-		blogTitle: 'Blog The DBD Cheats 2026 | Ghiduri în 22 de limbi',
+		blogTitle: 'Blog DBD Cheats 2026 | Ghiduri în 22 de limbi',
 		blogDescription:
-			'Blog The DBD Cheats: ghiduri undetected ESP, wallhack, radar și Aimbot pentru Dead by Daylight pe PC.',
-		blogH1: 'Blog The DBD Cheats — Ghiduri globale',
+			'Blog DBD Cheats: ghiduri undetected ESP, wallhack, radar și Aimbot pentru Dead by Daylight pe PC.',
+		blogH1: 'Blog DBD Cheats — Ghiduri globale',
 		blogIntro:
 			'Ghiduri SEO cheat-uri Dead by Daylight undetected, ESP wallhack, radar hack, Aimbot și Easy Anti-Cheat în 22 de limbi.',
 		readMore: 'Citește ghidul',
@@ -404,14 +404,14 @@ export const blogUi: Record<
 		updated: 'Actualizat',
 		relatedPosts: 'Ghiduri Dead by Daylight related',
 		allPosts: 'Toate articolele',
-		home: 'Acasă The DBD Cheats',
+		home: 'Acasă DBD Cheats',
 		language: 'Limbă',
 	},
 	sv: {
-		blogTitle: 'The DBD Cheats Blogg 2026 | Guider på 22 språk',
+		blogTitle: 'DBD Cheats Blogg 2026 | Guider på 22 språk',
 		blogDescription:
-			'The DBD Cheats blogg med undetected ESP, wallhack, radar och Aimbot guider för Dead by Daylight på PC.',
-		blogH1: 'The DBD Cheats Blogg — Globala guider',
+			'DBD Cheats blogg med undetected ESP, wallhack, radar och Aimbot guider för Dead by Daylight på PC.',
+		blogH1: 'DBD Cheats Blogg — Globala guider',
 		blogIntro:
 			'SEO-guider för undetected dbd cheats, ESP wallhack, radar hack, Aimbot och Easy Anti-Cheat på 22 språk.',
 		readMore: 'Läs guide',
@@ -419,7 +419,7 @@ export const blogUi: Record<
 		updated: 'Uppdaterad',
 		relatedPosts: 'Relaterade Dead by Daylight guider',
 		allPosts: 'Alla inlägg',
-		home: 'The DBD Cheats hem',
+		home: 'DBD Cheats hem',
 		language: 'Språk',
 	},
 };

@@ -690,7 +690,7 @@ export function localizeInternalHref(href: string, locale: LocaleCode): string {
 	}
 	const trimmed = href.replace(/\/+$/, '') || '/';
 	const withSlash = trimmed === '/' ? '/' : `${trimmed}/`;
-	if (withSlash === '/dbd-hacks/' || withSlash === '/dead-by-daylight-cheats/') {
+	if (withSlash === '/dead-by-daylight-cheats/' || withSlash === '/dead-by-daylight-cheats/') {
 		return getLocalizedPath('hacks', locale);
 	}
 	for (const pageId of pageIds) {

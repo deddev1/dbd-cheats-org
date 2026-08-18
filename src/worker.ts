@@ -19,6 +19,10 @@ const LEGACY_HOSTS = new Set([
 	'www.bestdbdcheats.com',
 	'dbdcheat.org',
 	'www.dbdcheat.org',
+	'dbdcheats.org',
+	'www.dbdcheats.org',
+	'bestdbdcheats.com',
+	'www.bestdbdcheats.com',
 ]);
 
 /** /sitemap.xml and /sitemap-*.xml — must stay application/xml for Google Search Console. */

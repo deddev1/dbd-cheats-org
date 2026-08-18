@@ -11,7 +11,7 @@ const files = [
 ];
 
 const reps = [
-	['EXT.epic', 'EXT.activision'],
+	['EXT.epic', 'EXT.dbd'],
 	['Epic Games', 'Activision'],
 	['Epic platform', 'Activision platform'],
 	['Epic service', 'Activision service'],

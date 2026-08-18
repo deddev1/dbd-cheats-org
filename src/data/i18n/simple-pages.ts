@@ -50,16 +50,16 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 			{
 				h2: 'ESP & wallhack',
 				paragraphs: [
-					'See survivors, killers, bosses, and carcasses through walls with distance readouts.',
-					'Use filters so the overlay stays clear in high-traffic tiles, high-traffic zones, and chase chaos.',
+					'See survivors, killers, killeres, and generators through walls with distance readouts.',
+					'Use filters so the overlay stays clear in high-traffic tiles, high-traffic tiles, and chase chaos.',
 				],
-				list: ['Player boxes & distance', 'Carcass and generator markers', 'Boss and juvenile filters'],
+				list: ['Player boxes & distance', 'Generator and hook markers', 'Killer and survivor filters'],
 			},
 			{
 				h2: 'Aimbot & soft aim',
 				paragraphs: [
 					'Aim help you can tune to feel natural.',
-					'Set FOV, smoothness, and bone priority per species before you queue.',
+					'Set FOV, smoothness, and bone priority per killer before you queue.',
 				],
 				list: ['Smooth aim strength', 'FOV and bone priority', 'Hotkeys mid-match'],
 			},
@@ -83,8 +83,8 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 					'<a href="/setup/">Setup guide</a>',
 					'<a href="/updates/">Live status</a>',
 					'<a href="/blog/">DBD Intel blog</a>',
-					'<a href="https://store.steampowered.com/app/376210/news/" target="_blank" rel="noopener noreferrer">Official Steam patch notes</a>',
-					'<a href="https://deadbydaylight.fandom.com/wiki/The_Isle" target="_blank" rel="noopener noreferrer">Dead by Daylight Wiki (Fandom)</a>',
+					'<a href="https://store.steampowered.com/app/381210/news/" target="_blank" rel="noopener noreferrer">Official Steam patch notes</a>',
+					'<a href="https://deadbydaylight.fandom.com/wiki/Dead_by_Daylight_Wiki" target="_blank" rel="noopener noreferrer">Dead by Daylight Wiki (Fandom)</a>',
 				],
 			},
 			{
@@ -92,7 +92,7 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 				paragraphs: [
 					'We rebuild after big {game} or {antiCheat} patches.',
 					'Check Status before you play after a patch day.',
-					'Verify official changes on <a href="https://store.steampowered.com/app/376210/news/" target="_blank" rel="noopener noreferrer">Steam patch notes</a> and the <a href="https://deadbydaylight.fandom.com/wiki/The_Isle" target="_blank" rel="noopener noreferrer">Isle Wiki</a> before you tune overlays.',
+					'Verify official changes on <a href="https://store.steampowered.com/app/381210/news/" target="_blank" rel="noopener noreferrer">Steam patch notes</a> and the <a href="https://deadbydaylight.fandom.com/wiki/Dead_by_Daylight_Wiki" target="_blank" rel="noopener noreferrer">DBD Wiki</a> before you tune overlays.',
 				],
 				list: ['Status on the Status page', 'Setup guide included', 'Email support with your order ID'],
 			},
@@ -141,7 +141,7 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 		h1: 'Status',
 		intro: brandCopy.statusIntro,
 		ctaPrimary: brandCopy.ctaBuy,
-		ctaSecondary: 'The DBD Cheats overview',
+		ctaSecondary: 'DBD Cheats overview',
 		ctaSecondaryHref: '/',
 		galleryTitle: 'In-game look',
 		sections: [
@@ -174,7 +174,7 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 	hacks: page({
 		title: brandSeo.previewTitle,
 		description: brandSeo.previewDescription,
-		h1: 'The DBD Cheats',
+		h1: 'DBD Cheats',
 		intro: brandCopy.previewIntro,
 		ctaPrimary: brandCopy.ctaBuy,
 		ctaSecondary: 'View features',
@@ -196,7 +196,7 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 			{
 				h2: 'Built for Dead by Daylight trials',
 				paragraphs: [
-					'Read survivors and killers before you push, mark carcasses worth the risk, and stay aware near generators and hooks. Tune soft aim per species for high-traffic zones and skill-check ambushes.',
+					'Read survivors and killers before you push, mark generators worth the risk, and stay aware near generators and hooks. Tune soft aim per killer for high-traffic tiles and skill-check ambushes.',
 				],
 				list: [
 					'<a href="/dbd-esp/">ESP guide</a>',
@@ -219,22 +219,22 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 	'dbd-esp': page({
 		title: 'DBD ESP | {brand}',
 		description:
-			'DBD ESP and wallhack for Dead by Daylight on Windows PC — player boxes, distance, carcass filters, and clear overlays in trials.',
+			'DBD ESP and wallhack for Dead by Daylight on Windows PC — player boxes, distance, generator filters, and clear overlays in trials.',
 		h1: 'ESP',
-		intro: 'See players and carcasses through walls during Dead by Daylight trials. Part of the same {brand} license.',
+		intro: 'See players and generators through walls during Dead by Daylight trials. Part of the same {brand} license.',
 		ctaPrimary: brandCopy.ctaBuy,
-		ctaSecondary: 'The DBD Cheats overview',
+		ctaSecondary: 'DBD Cheats overview',
 		ctaSecondaryHref: '/',
 		galleryTitle: 'ESP in trial',
 		sections: [
 			{
 				h2: 'What ESP shows',
-				paragraphs: ['Boxes, distance, and filters for survivors, killers, bosses, and carcasses.'],
-				list: ['Player ESP', 'Loot markers', 'Boss and juvenile filters'],
+				paragraphs: ['Boxes, distance, and filters for survivors, killers, killeres, and generators.'],
+				list: ['Player ESP', 'Loot markers', 'Killer and survivor filters'],
 			},
 			{
 				h2: 'When to use it',
-				paragraphs: ['Clear high-traffic zones, and chases without flooding the screen.'],
+				paragraphs: ['Clear high-traffic tiles, and chases without flooding the screen.'],
 				list: ['Tune opacity', 'Filter noise', 'Pair with radar'],
 			},
 			{
@@ -251,11 +251,11 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 	'dbd-aimbot': page({
 		title: 'DBD Aimbot | {brand}',
 		description:
-			'DBD Aimbot and soft aim for Dead by Daylight on Windows PC — FOV, smoothness, and bone priority you can tune per species.',
+			'DBD Aimbot and soft aim for Dead by Daylight on Windows PC — FOV, smoothness, and bone priority you can tune per killer.',
 		h1: 'Aimbot',
 		intro: 'Soft aim and aim assist you can tune for Dead by Daylight. Included in the same {brand} license.',
 		ctaPrimary: brandCopy.ctaBuy,
-		ctaSecondary: 'The DBD Cheats overview',
+		ctaSecondary: 'DBD Cheats overview',
 		ctaSecondaryHref: '/',
 		galleryTitle: 'Aimbot view',
 		sections: [
@@ -267,7 +267,7 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 			{
 				h2: 'Play styles',
 				paragraphs: ['Keep settings subtle for longer trials. Raise strength only when you accept more risk.'],
-				list: ['Legit soft aim', 'Per-species profiles', 'Works with ESP'],
+				list: ['Legit soft aim', 'Per-killer profiles', 'Works with ESP'],
 			},
 			{
 				h2: 'Next steps',
@@ -287,14 +287,14 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 		h1: 'Radar',
 		intro: 'A simple 2D radar for threats outside your view. Included in the same {brand} license.',
 		ctaPrimary: brandCopy.ctaBuy,
-		ctaSecondary: 'The DBD Cheats overview',
+		ctaSecondary: 'DBD Cheats overview',
 		ctaSecondaryHref: '/',
 		galleryTitle: 'Radar overlay',
 		sections: [
 			{
 				h2: 'What it shows',
 				paragraphs: ['Nearby enemy cues with adjustable range for survivor and killer.'],
-				list: ['Flank awareness', 'Nest approaches', 'Adjustable range'],
+				list: ['Flank awareness', 'Hook approaches', 'Adjustable range'],
 			},
 			{
 				h2: 'With ESP',

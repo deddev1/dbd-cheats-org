@@ -116,9 +116,9 @@ export const homeFaqs: readonly FaqItem[] = [
 	faq({
 		question: 'Does this work in survivor and killer trials?',
 		answer:
-			'Yes. ESP, radar, and aimbot are built for {game} trial flow — reading survivors and killers, spotting carcasses, and staying aware near generators and hooks.',
+			'Yes. ESP, radar, and aimbot are built for {game} trial flow — reading survivors and killers, spotting generators, and staying aware near generators and hooks.',
 		slug: 'survivor-and-killer-trials',
-		seoTitle: 'Survival Session and juvenile Support | FAQ',
+		seoTitle: 'Survival Session and survivor Support | FAQ',
 		seoDescription:
 			'{brand} works in survivor and killer trials — ESP, radar, and aimbot for Windows PC.',
 	}),
@@ -165,11 +165,11 @@ export const seoFaqs: readonly FaqItem[] = [
 	faq({
 		question: 'What is a {game} wallhack?',
 		answer:
-			'A {game} wallhack is an ESP overlay that shows survivors, killers, and carcasses through walls. {brand} includes distance readouts, generator cues, and toggleable categories.',
-		slug: 'what-is-an-dbd-wallhack',
+			'A {game} wallhack is an ESP overlay that shows survivors, killers, and generators through walls. {brand} includes distance readouts, generator cues, and toggleable categories.',
+		slug: 'what-is-a-dbd-wallhack',
 		seoTitle: 'What Is a {game} Wallhack? | FAQ',
 		seoDescription:
-			'A {game} wallhack is ESP that reveals survivors, killers, and carcasses through walls — with distance, generators, and category toggles.',
+			'A {game} wallhack is ESP that reveals survivors, killers, and generators through walls — with distance, generators, and category toggles.',
 	}),
 	faq({
 		question: 'Does {brand} include a radar hack?',
@@ -216,8 +216,8 @@ export const customerReviews = [
 	reviewMeta({
 		handle: 'xKrypt0_DBD',
 		rating: 5,
-		text: 'Soft aim in The DBD Cheats feels smooth on MacMillan Estate. The menu took a few minutes to learn. After that, trials felt easy.',
-		short: 'Soft aim in The DBD Cheats feels smooth on MacMillan Estate.',
+		text: 'Soft aim in DBD Cheats feels smooth on MacMillan Estate. The menu took a few minutes to learn. After that, trials felt easy.',
+		short: 'Soft aim in DBD Cheats feels smooth on MacMillan Estate.',
 		slug: 'dbd-soft-aim-review-xkrypt0',
 		seoTitle: 'Soft Aim Review by @xKrypt0_DBD — 5/5 | {brand}',
 		seoDescription: '@xKrypt0_DBD rates {brand} soft aim 5/5 for MacMillan Estate on Windows PC.',
@@ -227,9 +227,9 @@ export const customerReviews = [
 	reviewMeta({
 		handle: 'buildsR4K',
 		rating: 4,
-		text: 'ESP boxes help on chases. You can see who is stalking a river bank before you push. Still worth the price for The DBD Cheats.',
-		short: 'ESP boxes help on chases. Still worth the price for The DBD Cheats.',
-		slug: 'dbd-esp-growth-run-review-buildsr4k',
+		text: 'ESP boxes help on chases. You can see who is stalking a river bank before you push. Still worth the price for DBD Cheats.',
+		short: 'ESP boxes help on chases. Still worth the price for DBD Cheats.',
+		slug: 'dbd-esp-chase-review-buildsr4k',
 		seoTitle: 'ESP Review by @buildsR4K — 4/5 | {brand}',
 		seoDescription: '@buildsR4K rates {brand} ESP 4/5 for chases on Windows PC.',
 		date: '2026-07-19',
@@ -238,8 +238,8 @@ export const customerReviews = [
 	reviewMeta({
 		handle: 'dma_wizard',
 		rating: 5,
-		text: 'I moved to The DBD Cheats this patch cycle. Setup was simple. It stayed up after the last Easy Anti-Cheat update when my old cheat failed. Lifetime was a good buy.',
-		short: 'The DBD Cheats stayed up after the last Easy Anti-Cheat update. Lifetime was a good buy.',
+		text: 'I moved to DBD Cheats this patch cycle. Setup was simple. It stayed up after the last Easy Anti-Cheat update when my old cheat failed. Lifetime was a good buy.',
+		short: 'DBD Cheats stayed up after the last Easy Anti-Cheat update. Lifetime was a good buy.',
 		slug: 'dbd-cloud-dma-review-dma-wizard',
 		seoTitle: 'Update Review by @dma_wizard — 5/5 | {brand}',
 		seoDescription: '@dma_wizard rates {brand} 5/5 after a {antiCheat} update on Windows PC.',
@@ -249,8 +249,8 @@ export const customerReviews = [
 	reviewMeta({
 		handle: 'ctrl_player99',
 		rating: 4,
-		text: 'Soft aim in The DBD Cheats is easy to tune on PC. I changed FOV a little and it felt natural. Menu is clear enough.',
-		short: 'Soft aim in The DBD Cheats is easy to tune on PC.',
+		text: 'Soft aim in DBD Cheats is easy to tune on PC. I changed FOV a little and it felt natural. Menu is clear enough.',
+		short: 'Soft aim in DBD Cheats is easy to tune on PC.',
 		slug: 'dbd-soft-aim-review-ctrl-player99',
 		seoTitle: 'Soft Aim Review by @ctrl_player99 — 4/5 | {brand}',
 		seoDescription: '@ctrl_player99 rates {brand} soft aim 4/5 on Windows PC.',
@@ -260,7 +260,7 @@ export const customerReviews = [
 	reviewMeta({
 		handle: 'stormChaser_07',
 		rating: 3,
-		text: 'The DBD Cheats works well once it is running. First launch was slow because Windows Defender flagged the loader. Support replied in about two hours. ESP on Autohaven Wreckers is solid.',
+		text: 'DBD Cheats works well once it is running. First launch was slow because Windows Defender flagged the loader. Support replied in about two hours. ESP on Autohaven Wreckers is solid.',
 		short: 'ESP on Autohaven Wreckers is solid. Support helped after a slow first launch.',
 		slug: 'dbd-cheat-setup-review-stormchaser07',
 		seoTitle: 'Setup Review by @stormChaser_07 — 3/5 | {brand}',
@@ -271,18 +271,18 @@ export const customerReviews = [
 	reviewMeta({
 		handle: 'lootGoblinx',
 		rating: 5,
-		text: 'Carcass ESP in The DBD Cheats pays for the monthly plan. Nest markers and distance make early trials faster.',
-		short: 'Carcass ESP in The DBD Cheats pays for the monthly plan.',
+		text: 'Generator ESP in DBD Cheats pays for the monthly plan. Generator markers and distance make early trials faster.',
+		short: 'Generator ESP in DBD Cheats pays for the monthly plan.',
 		slug: 'dbd-generator-esp-review-lootgoblinx',
-		seoTitle: 'Carcass ESP Review by @lootGoblinx — 5/5 | {brand}',
+		seoTitle: 'Generator ESP Review by @lootGoblinx — 5/5 | {brand}',
 		seoDescription: '@lootGoblinx rates {brand} generator ESP 5/5 for early trials on Windows PC.',
 		date: '2026-08-01',
 	}),
 	reviewMeta({
 		handle: 'rankedGrind42',
 		rating: 4,
-		text: 'I have used The DBD Cheats since last chapter update. Soft aim per species helps in high-traffic tiles. Status updates after Easy Anti-Cheat patches could be clearer, but it came back the next day.',
-		short: 'Soft aim per species in The DBD Cheats helps in high-traffic tiles.',
+		text: 'I have used DBD Cheats since last chapter update. Soft aim per killer helps in high-traffic tiles. Status updates after Easy Anti-Cheat patches could be clearer, but it came back the next day.',
+		short: 'Soft aim per killer in DBD Cheats helps in high-traffic tiles.',
 		slug: 'dbd-soft-aim-trial-review-rankedgrind42',
 		seoTitle: 'Raid Soft Aim by @rankedGrind42 — 4/5 | {brand}',
 		seoDescription: '@rankedGrind42 rates {brand} soft aim 4/5 for trials on Windows PC.',
@@ -292,8 +292,8 @@ export const customerReviews = [
 	reviewMeta({
 		handle: 'vanLifeDBD',
 		rating: 5,
-		text: 'Radar in The DBD Cheats saved me near generators and hooks. Seeing the third player early in pairs is huge. Boxes plus radar look clean.',
-		short: 'Radar in The DBD Cheats saved me near generators and hooks.',
+		text: 'Radar in DBD Cheats saved me near generators and hooks. Seeing the third player early in pairs is huge. Boxes plus radar look clean.',
+		short: 'Radar in DBD Cheats saved me near generators and hooks.',
 		slug: 'dbd-radar-hack-review-vanlifedbd',
 		seoTitle: 'Radar Review by @vanLifeDBD — 5/5 | {brand}',
 		seoDescription: '@vanLifeDBD rates {brand} radar 5/5 near generators and hooks on Windows PC.',
@@ -303,8 +303,8 @@ export const customerReviews = [
 	reviewMeta({
 		handle: 'patchDayMike',
 		rating: 4,
-		text: 'Most cheats go down on patch day. The DBD Cheats posted on the status page within a few hours and was back the next morning. My old tool left me waiting for days.',
-		short: 'The DBD Cheats was back the next morning after a patch.',
+		text: 'Most cheats go down on patch day. DBD Cheats posted on the status page within a few hours and was back the next morning. My old tool left me waiting for days.',
+		short: 'DBD Cheats was back the next morning after a patch.',
 		slug: 'dbd-eac-update-review-patchdaymike',
 		seoTitle: 'Status Review by @patchDayMike — 4/5 | {brand}',
 		seoDescription: '@patchDayMike rates {brand} status updates 4/5 after {antiCheat} patches.',
@@ -314,8 +314,8 @@ export const customerReviews = [
 	reviewMeta({
 		handle: 'snipezOnly_',
 		rating: 5,
-		text: 'Skill-check soft aim plus ESP in The DBD Cheats is excellent for long shots. Simple and strong.',
-		short: 'Skill-check soft aim plus ESP in The DBD Cheats is excellent.',
+		text: 'Skill-check soft aim plus ESP in DBD Cheats is excellent for long shots. Simple and strong.',
+		short: 'Skill-check soft aim plus ESP in DBD Cheats is excellent.',
 		slug: 'dbd-skill-check-soft-aim-review-snipezonly',
 		seoTitle: 'Sniper Soft Aim by @snipezOnly_ — 5/5 | {brand}',
 		seoDescription: '@snipezOnly_ rates {brand} sniper soft aim 5/5 with ESP on Windows PC.',

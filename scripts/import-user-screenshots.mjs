@@ -56,8 +56,8 @@ const REMOVE_PREFIXES = [
 	'dbd-header-art',
 	'dbd-loadout-builder',
 	'dbd-player-esp',
-	'dbd-growth-run-combat',
-	'dbd-growth-run-mode',
+	'dbd-chase-combat',
+	'dbd-chase-mode',
 	'dbd-pack-fight',
 	'dbd-verdansk-map',
 ];

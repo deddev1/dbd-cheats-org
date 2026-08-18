@@ -12,7 +12,7 @@ const bad = [
 	'Battle Pass',
 	'reboot rounds',
 	'endgame circles',
-	'Verdansk',
+	'trial map',
 	'Activision',
 	'soft aim, and .',
 	'ESP, Soft Aim,',
@@ -48,13 +48,13 @@ for (const b of [
 
 const blog = readFileSync('src/data/blog/posts.generated.ts', 'utf8');
 const reps = [
-	['V-Bucks', 'growth points'],
+	['V-Bucks', 'bloodpoints'],
 	['Item Shop', 'in-game store'],
 	['Battle Pass', 'patch cycle progression'],
 	['FNCS', 'Dead by Daylight community event'],
-	['Hammer AR', 'M4A1'],
+	['Hammer AR', 'meta killer'],
 	['mythics', 'meta guns'],
-	['island codes', 'practice server trials maps'],
+	['island codes', 'custom game trials maps'],
 	['Creative 1v1s', 'aim training'],
 	['creative 1v1s', 'aim training'],
 	['Epic health', 'Battlestate status'],

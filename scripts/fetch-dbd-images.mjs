@@ -75,12 +75,12 @@ const KEYWORD_ASSETS = [
 		overlay: 'esp',
 	},
 	{
-		file: 'dbd-growth-run-combat.webp',
+		file: 'dbd-chase-combat.webp',
 		url: `${BR}/plunder_px6d.1400.png`,
 		overlay: 'chase',
 	},
 	{
-		file: 'dbd-growth-run-mode.webp',
+		file: 'dbd-chase-mode.webp',
 		url: `${BR}/parachuting_qhh2.1400.png`,
 		overlay: 'loot',
 	},

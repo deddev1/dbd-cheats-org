@@ -119,9 +119,9 @@ export const HERO_IMAGES = {
 		/export type PageId = [^;]+;/,
 		"export type PageId = 'home' | 'dbd-esp' | 'dbd-aimbot' | 'features' | 'pricing' | 'setup' | 'updates' | 'faq' | 'support' | 'undetected' | 'wallhack' | 'radar' | 'eac' | 'cheats-2026' | 'privacy' | 'refund' | 'terms';",
 	);
-	content = content.replace(/operatorEsp/g, 'dinoEsp');
-	content = content.replace(/extractFight/g, 'ambushFight');
-	content = content.replace(/alMazrah/g, 'survivalIsland');
+	content = content.replace(/operatorEsp/g, 'playerEsp');
+	content = content.replace(/extractFight/g, 'chaseFight');
+	content = content.replace(/alMazrah/g, 'trialMap');
 	await writeFile(path.join(ROOT, 'scripts/i18n-data/constants.mjs'), content);
 	console.log('Fixed constants.mjs');
 }

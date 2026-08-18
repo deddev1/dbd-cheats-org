@@ -33,7 +33,7 @@ const LEGACY_PATTERNS = [
 	/^dbd-extract-fight/,
 	/^dbd-operator-esp/,
 	/^dbd-verdansk-combat/,
-	/^dbd-growth-run-mode/,
+	/^dbd-chase-mode/,
 	/^dbd-al-mazrah-map/,
 ];
 

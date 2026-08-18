@@ -141,7 +141,7 @@ if (breadcrumbs && breadcrumbs.length > 0) {
 }
 
 if (extraGraph.length > 0) {
-	// Nodes must not carry a nested @context inside @graph (invalid JSON-LD).
+	// Nodes must not carry a generatored @context inside @graph (invalid JSON-LD).
 	graph.push(
 		...extraGraph.map((node) => {
 			const { ['@context']: _ignored, ...rest } = node as Record<string, unknown> & {

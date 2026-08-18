@@ -139,7 +139,7 @@ export const brand = {
 			{
 				src: '/images/dbd-screenshot-01.webp',
 				title: 'Dead by Daylight gameplay screenshot 1',
-				caption: 'Dead by Daylight horror survival gameplay on Windows PC',
+				caption: 'Dead by Daylight horror horror gameplay on Windows PC',
 			},
 			{
 				src: '/images/dbd-screenshot-02.webp',

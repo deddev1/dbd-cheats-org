@@ -6,17 +6,17 @@ const imagesBlock = `images: {
 \t\thero: ${JSON.stringify(DESCRIPTIVE_IMAGE_ALTS.hero)},
 \t\tespWallhack: ${JSON.stringify(DESCRIPTIVE_IMAGE_ALTS.espWallhack)},
 \t\taimbotCombat: ${JSON.stringify(DESCRIPTIVE_IMAGE_ALTS.aimbotCombat)},
-\t\tpackFight: ${JSON.stringify(DESCRIPTIVE_IMAGE_ALTS.packFight)},
-\t\tdinoEsp: ${JSON.stringify(DESCRIPTIVE_IMAGE_ALTS.dinoEsp)},
+\t\tteamFight: ${JSON.stringify(DESCRIPTIVE_IMAGE_ALTS.teamFight)},
+\t\tplayerEsp: ${JSON.stringify(DESCRIPTIVE_IMAGE_ALTS.playerEsp)},
 \t\theaderArt: ${JSON.stringify(DESCRIPTIVE_IMAGE_ALTS.headerArt)},
 \t\thacksPackage: ${JSON.stringify(DESCRIPTIVE_IMAGE_ALTS.hacksPackage)},
-\t\tambushFight: ${JSON.stringify(DESCRIPTIVE_IMAGE_ALTS.ambushFight)},
+\t\tchaseFight: ${JSON.stringify(DESCRIPTIVE_IMAGE_ALTS.chaseFight)},
 \t\tbattleRoyale: ${JSON.stringify(DESCRIPTIVE_IMAGE_ALTS.battleRoyale)},
-\t\tsurvivalIsland: ${JSON.stringify(DESCRIPTIVE_IMAGE_ALTS.survivalIsland)},
+\t\ttrialMap: ${JSON.stringify(DESCRIPTIVE_IMAGE_ALTS.trialMap)},
 \t}`;
 
 const oldImagesRe =
-	/images:\s*\{\s*hero:\s*'[^']*',\s*espWallhack:\s*'[^']*',\s*aimbotCombat:\s*'[^']*',\s*packFight:\s*'[^']*',\s*dinoEsp:\s*'[^']*',\s*headerArt:\s*'[^']*',\s*hacksPackage:\s*'[^']*',\s*ambushFight:\s*'[^']*',\s*battleRoyale:\s*'[^']*',\s*survivalIsland:\s*'[^']*'\s*\}/g;
+	/images:\s*\{\s*hero:\s*'[^']*',\s*espWallhack:\s*'[^']*',\s*aimbotCombat:\s*'[^']*',\s*teamFight:\s*'[^']*',\s*playerEsp:\s*'[^']*',\s*headerArt:\s*'[^']*',\s*hacksPackage:\s*'[^']*',\s*chaseFight:\s*'[^']*',\s*battleRoyale:\s*'[^']*',\s*trialMap:\s*'[^']*'\s*\}/g;
 
 for (const f of ['scripts/i18n-data/ui-strings-part1.mjs', 'scripts/i18n-data/ui-strings-part2.mjs']) {
 	let s = fs.readFileSync(f, 'utf8');

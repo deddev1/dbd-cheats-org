@@ -17,7 +17,7 @@ const CATEGORY_NAMES = {
 	'survival-game-meta': 'trial Meta',
 	'zero-build-strategies': 'chase',
 	'skin-leaks-cosmetics': 'Skin Previews & Cosmetics',
-	'weapon-tier-lists': 'Dinosaur Tier Lists',
+	'weapon-tier-lists': 'Killer Tier Lists',
 	'pro-player-setups': 'Pro Player Setups',
 	'creative-mode-maps': 'Creative Mode',
 	'esports-community-events': 'Esports & Tournaments',
@@ -25,14 +25,14 @@ const CATEGORY_NAMES = {
 };
 
 const IMAGE_KEYS = {
-	'zero-build-meta-broken-aggressive-strategies': 'survivalCombat',
-	'secret-loot-routes-full-gold': 'survivalIslandMap',
+	'zero-build-meta-broken-aggressive-strategies': 'trialCombat',
+	'secret-loot-routes-full-gold': 'trialMapMap',
 	'hammer-ar-s-tier-data-analysis': 'aimbotCombat',
 	'chapter-7-season-3-skin-leaks-vbucks': 'headerArt',
-	'fncs-meta-watch-community-event-drops': 'ambushFight',
+	'fncs-meta-watch-community-event-drops': 'chaseFight',
 	'bugha-settings-pro-setup': 'hacksPackage',
-	'creative-warmup-maps-pros-use': 'dinoEsp',
-	'patch-notes-buffs-nerfs-vaults': 'packFight',
+	'creative-warmup-maps-pros-use': 'playerEsp',
+	'patch-notes-buffs-nerfs-vaults': 'teamFight',
 };
 
 const POST_FILES = [

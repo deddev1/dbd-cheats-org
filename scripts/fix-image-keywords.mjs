@@ -2,10 +2,10 @@
 import { readFileSync, writeFileSync } from 'node:fs';
 
 const SIMPLE =
-	"images: { hero: 'dbd cheats', espWallhack: 'dbd cheats wallhack', aimbotCombat: 'dbd cheats aimbot', packFight: 'dbd cheats', dinoEsp: 'dbd cheats esp', headerArt: 'dbd cheats aimbot', hacksPackage: 'dbd cheats radar', ambushFight: 'dbd cheats aimbot', battleRoyale: 'dbd cheats', survivalIsland: 'dbd cheats esp' }";
+	"images: { hero: 'dbd cheats', espWallhack: 'dbd cheats wallhack', aimbotCombat: 'dbd cheats aimbot', teamFight: 'dbd cheats', playerEsp: 'dbd cheats esp', headerArt: 'dbd cheats aimbot', hacksPackage: 'dbd cheats radar', chaseFight: 'dbd cheats aimbot', battleRoyale: 'dbd cheats', trialMap: 'dbd cheats esp' }";
 
 const re =
-	/images: \{ hero: '[^']+', espWallhack: '[^']+', aimbotCombat: '[^']+', packFight: '[^']+', dinoEsp: '[^']+', headerArt: '[^']+', hacksPackage: '[^']+', ambushFight: '[^']+', battleRoyale: '[^']+', survivalIsland: '[^']+' \}/g;
+	/images: \{ hero: '[^']+', espWallhack: '[^']+', aimbotCombat: '[^']+', teamFight: '[^']+', playerEsp: '[^']+', headerArt: '[^']+', hacksPackage: '[^']+', chaseFight: '[^']+', battleRoyale: '[^']+', trialMap: '[^']+' \}/g;
 
 for (const f of ['scripts/i18n-data/ui-strings-part1.mjs', 'scripts/i18n-data/ui-strings-part2.mjs']) {
 	const c = readFileSync(f, 'utf8');
@@ -35,7 +35,7 @@ const altMap = [
 	["imageAlt: 'Best dbd cheats 2026 ESP'", "imageAlt: 'best dbd cheats'"],
 	["imageAlt: 'DBD Aimbot hack combat'", "imageAlt: 'dbd cheats aimbot'"],
 	["imageAlt: 'DBD ESP hack wallhack'", "imageAlt: 'dbd cheats esp'"],
-	["imageAlt: 'Dead by Daylight unlock all species ESP aimbot guide'", "imageAlt: 'dbd cheats'"],
+	["imageAlt: 'Dead by Daylight unlock all killers ESP aimbot guide'", "imageAlt: 'dbd cheats'"],
 	["imageAlt: 'dbd cheats privacy policy'", "imageAlt: 'dbd cheats'"],
 	["imageAlt: 'dbd cheats refund policy'", "imageAlt: 'dbd cheats'"],
 	["imageAlt: 'dbd cheats terms of use'", "imageAlt: 'dbd cheats'"],
@@ -51,11 +51,11 @@ let i18n = readFileSync('scripts/i18n-data/pages-i18n.mjs', 'utf8');
 i18n = i18n
 	.split("imageAlt: `Dead by Daylight ${meta.altKeyword}`")
 	.join("imageAlt: 'dbd cheats'")
-	.split("galleryTitle: `The DBD Cheats ${topicName}`")
+	.split("galleryTitle: `DBD Cheats ${topicName}`")
 	.join("galleryTitle: 'dbd cheats'")
 	.split("imageAlt: `dbd cheats ${kind} policy`")
 	.join("imageAlt: 'dbd cheats'")
-	.split("galleryTitle: `The DBD Cheats ${kind} resources`")
+	.split("galleryTitle: `DBD Cheats ${kind} resources`")
 	.join("galleryTitle: 'dbd cheats'");
 writeFileSync('scripts/i18n-data/pages-i18n.mjs', i18n);
 console.log('pages-i18n image alts simplified');

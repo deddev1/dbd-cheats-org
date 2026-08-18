@@ -16,13 +16,13 @@ const imageMap: Record<BlogImageKey, string> = {
 	espWallhack: dbdImages.espWallhack,
 	aimbotCombat: dbdImages.aimbotCombat,
 	aimbotSkeleton: dbdImages.aimbotSkeleton,
-	packFight: dbdImages.aimbotCombat,
-	headerArt: dbdImages.dinoEsp,
+	teamFight: dbdImages.aimbotCombat,
+	headerArt: dbdImages.playerEsp,
 	hacksPackage: dbdImages.espWallhack,
-	dinoEsp: dbdImages.dinoEsp,
-	ambushFight: dbdImages.aimbotCombat,
-	survivalCombat: dbdImages.hacksCombat,
-	survivalIslandMap: dbdImages.espWallhack,
+	playerEsp: dbdImages.playerEsp,
+	chaseFight: dbdImages.aimbotCombat,
+	trialCombat: dbdImages.hacksCombat,
+	trialMapMap: dbdImages.espWallhack,
 };
 
 const FALLBACK_BLOG_IMAGE = dbdImages.espWallhack;
@@ -194,7 +194,7 @@ export function getBlogSitemapEntriesForLocale(locale: LocaleCode) {
 	for (const post of blogPosts) {
 		const t = post.translations[locale];
 		const imageSrc = getBlogImageSrc(post.imageKey);
-		const isProductPost = /The DBD Cheats|Aimbot|ESP|Undetected|Comparisons/i.test(post.category);
+		const isProductPost = /DBD Cheats|Aimbot|ESP|Undetected|Comparisons/i.test(post.category);
 		entries.push({
 			path: getBlogPostPath(locale, t.slug),
 			lastmod: post.updated,

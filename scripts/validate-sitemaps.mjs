@@ -88,7 +88,7 @@ const REDIRECT_ONLY_PATHS = new Set([
 	'/dbd-cheat-download/',
 	'/eac-bypass/',
 	'/dead-by-daylight-cheats/',
-	'/dbd-hacks/',
+	'/dead-by-daylight-cheats/',
 ]);
 
 const ENGLISH_PATHS = [
@@ -114,8 +114,8 @@ const ENGLISH_PATHS = [
 	'/refund-policy/',
 	'/terms/',
 	'/blog/',
-	'/blog/dbd-growth-run-aggressive-strategies/',
-	'/blog/dbd-loot-routes-guide/',
+	'/blog/dbd-chase-aggressive-strategies/',
+	'/blog/dbd-loop-routes-guide/',
 	'/blog/dbd-killer-tier-list/',
 	'/blog/dbd-skin-leaks-guide/',
 	'/blog/dbd-competitive-meta-guide/',
@@ -133,7 +133,7 @@ const ENGLISH_PATHS = [
 	'/blog/dbd-hacks-vs-ghostware-features-pricing/',
 	'/reviews/',
 	'/reviews/dbd-soft-aim-review-xkrypt0/',
-	'/reviews/dbd-esp-growth-run-review-buildsr4k/',
+	'/reviews/dbd-esp-chase-review-buildsr4k/',
 	'/reviews/dbd-cloud-dma-review-dma-wizard/',
 	'/reviews/dbd-soft-aim-review-ctrl-player99/',
 	'/reviews/dbd-cheat-setup-review-stormchaser07/',
@@ -149,7 +149,7 @@ const ENGLISH_PATHS = [
 	'/faq/how-are-licenses-delivered/',
 	'/faq/where-to-check-updates/',
 	'/faq/how-to-contact-support/',
-	'/faq/what-is-an-dbd-wallhack/',
+	'/faq/what-is-a-dbd-wallhack/',
 	'/faq/does-dbd-cheats-include-radar-hack/',
 	'/faq/eac-anti-cheat-and-dbd-cheats/',
 	'/faq/buy-undetected-dbd-cheats-windows-pc/',

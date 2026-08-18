@@ -26,7 +26,7 @@
     "subtitleShort": "DBD ESP, radar & aimbot for PC",
     "buyNow": "Get Access",
     "seeFeatures": "See Features",
-    "title": "The DBD Cheats",
+    "title": "DBD Cheats",
     "priceFrom": "from",
     "imageAlt": "{{brand}} — The DBD ESP and aimbot overlay",
     "chipEsp": "ESP / wallhack",
@@ -40,7 +40,7 @@
   },
   "trust": {
     "status": "Online",
-    "statusNote": "The DBD Cheats — undetected dbd cheats live for Dead by Daylight on Windows PC.",
+    "statusNote": "DBD Cheats — undetected dbd cheats live for Dead by Daylight on Windows PC.",
     "statusShort": "Live",
     "delivery": "Instant digital delivery",
     "platform": "Windows 10 & 11",
@@ -48,7 +48,7 @@
     "antiCheatShort": "Easy Anti-Cheat supported"
   },
   "product": {
-    "title": "The DBD Cheats",
+    "title": "DBD Cheats",
     "addToCart": "Add to Cart",
     "monthly": "Monthly",
     "lifetime": "Lifetime",
@@ -66,18 +66,18 @@
   },
   "reviews": {
     "title": "What players say",
-    "subtitle": "Recent feedback from The DBD Cheats buyers",
+    "subtitle": "Recent feedback from DBD Cheats buyers",
     "outOf": "out of 5",
     "countLabel": "reviews",
     "eyebrow": "Reviews",
-    "homeTitle": "The DBD Cheats reviews",
+    "homeTitle": "DBD Cheats reviews",
     "buyerReviews": "{{count}} buyer reviews",
     "averageAria": "{{rating}} average from {{count}} reviews",
     "outOfFiveAria": "{{rating}} out of 5",
     "readAll": "Read all reviews →"
   },
   "common": {
-    "buyNow": "Buy The DBD Cheats",
+    "buyNow": "Buy DBD Cheats",
     "readGuide": "Read guide",
     "language": "Language",
     "officialLanguageNote": "English is official; other locales are translated.",
@@ -118,9 +118,9 @@
   },
   "home": {
     "aboutTitle": "Undetected dbd cheats for Dead by Daylight",
-    "aboutP1": "The DBD Cheats is an undetected dbd cheats package for Dead by Daylight on Windows PC. One license includes ESP wallhack, soft aim, and 2D radar, with Easy Anti-Cheat rebuilds after game patches. Compare plans on Store, then check Status before you queue.",
+    "aboutP1": "DBD Cheats is an undetected dbd cheats package for Dead by Daylight on Windows PC. One license includes ESP wallhack, soft aim, and 2D radar, with Easy Anti-Cheat rebuilds after game patches. Compare plans on Store, then check Status before you queue.",
     "aboutP2Before": "Start with the",
-    "aboutPillar": "The DBD Cheats pillar",
+    "aboutPillar": "DBD Cheats pillar",
     "aboutEsp": "ESP guide",
     "aboutAimbot": "aimbot controls",
     "aboutUndetected": "undetected status",
@@ -189,10 +189,10 @@
     "blog": "Blog"
   },
   "internalLinks": {
-    "relatedLede": "Explore more The DBD Cheats guides — the same topics covered on other cheat sites, mapped to our canonical pages.",
+    "relatedLede": "Explore more DBD Cheats guides — the same topics covered on other cheat sites, mapped to our canonical pages.",
     "topicsTitle": "Product guides",
     "topicsLabel": "Product topic guides",
-    "topicsLede": "Jump to the main The DBD Cheats pages for ESP, aimbot, radar, setup, and status."
+    "topicsLede": "Jump to the main DBD Cheats pages for ESP, aimbot, radar, setup, and status."
   },
   "externalResources": {
     "title": "Official game guides & resources",
@@ -201,28 +201,28 @@
     "pillsLabel": "Official Dead by Daylight guides"
   },
   "images": {
-    "hero": "The DBD Cheats hero — ESP and aimbot overlay in Dead by Daylight",
+    "hero": "DBD Cheats hero — ESP and aimbot overlay in Dead by Daylight",
     "espWallhack": "Wallhack outlines showing survivors and killers through walls",
     "aimbotCombat": "Soft aim assist overlay during a Dead by Daylight trial",
-    "packFight": "The DBD Cheats combat overlay during a pack fight",
-    "dinoEsp": "Player ESP boxes and distance readouts in a Dead by Daylight trial",
+    "teamFight": "DBD Cheats combat overlay during a team chase",
+    "playerEsp": "Player ESP boxes and distance readouts in a Dead by Daylight trial",
     "headerArt": "Aimbot view and bone priority controls for Dead by Daylight",
     "hacksPackage": "2D radar threat overlay for Dead by Daylight",
-    "ambushFight": "Aimbot assist during a Dead by Daylight chase",
-    "battleRoyale": "The DBD Cheats in-trial overview for Windows PC",
-    "survivalIsland": "ESP markers for carcasses and generators in Dead by Daylight"
+    "chaseFight": "Aimbot assist during a Dead by Daylight chase",
+    "battleRoyale": "DBD Cheats in-trial overview for Windows PC",
+    "trialMap": "ESP markers for generators and hooks in Dead by Daylight"
   },
   "blog": {
-    "blogTitle": "The DBD Cheats Blog | ESP, Cheats & Meta Tips",
+    "blogTitle": "DBD Cheats Blog | ESP, Cheats & Meta Tips",
     "blogDescription": "dbd cheats and dbd cheats guides — ESP, aimbot, ranked meta, loop routes, and Easy Anti-Cheat updates. Global English blog at dbdcheats.org/blog/.",
-    "blogH1": "The DBD Cheats Intel",
+    "blogH1": "DBD Cheats Intel",
     "blogIntro": "Actionable Dead by Daylight guides for trial and chase — meta breakdowns, loop routes, killer tiers, and pro warmup routines. Pair these tips with our dbd cheats pages for ESP boxes, soft aim, and cloud DMA when you need in-match tools.",
     "readMore": "Read guide",
     "published": "Published",
     "updated": "Updated",
     "relatedPosts": "Related Dead by Daylight guides",
     "allPosts": "All blog posts",
-    "home": "The DBD Cheats home",
+    "home": "DBD Cheats home",
     "language": "Language",
     "label": "DBD Intel"
   },
@@ -230,7 +230,7 @@
     "eyebrow": "the dbd cheats",
     "title": "dbd cheats gallery",
     "subtitle": "Simple dbd cheats visuals — ESP, wallhack, aimbot, and radar for Dead by Daylight on PC.",
-    "lead": "The DBD Cheats helps you spot survivors, killers, carcasses, and generators with ESP, aimbot, and radar in one license.",
+    "lead": "DBD Cheats helps you spot survivors, killers, generators, and generators with ESP, aimbot, and radar in one license.",
     "highlightEspTitle": "dbd cheats esp",
     "highlightEspCopy": "See players through walls with dbd cheats esp and wallhack overlays.",
     "highlightRadarTitle": "dbd cheats radar",

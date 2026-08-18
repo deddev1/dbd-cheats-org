@@ -57,8 +57,8 @@ async function generateFavicons(logoBuffer) {
 
 async function generateWebManifest() {
 	const manifest = {
-		name: 'The DBD Cheats',
-		short_name: 'The DBD Cheats',
+		name: 'DBD Cheats',
+		short_name: 'DBD Cheats',
 		description: 'Undetected dbd cheats — ESP, aimbot, radar and for PC',
 		start_url: '/',
 		display: 'standalone',

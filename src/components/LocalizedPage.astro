@@ -10,6 +10,7 @@ import { simplePageCopy } from '../data/i18n/simple-pages';
 import { getT } from '../i18n/server';
 import { getPageCrawlImage } from '../data/page-images';
 import { getExternalSecondaryCta } from '../data/external-resources';
+import { getCannibalTarget } from '../data/seo-canonical';
 
 interface Props {
 	locale: LocaleCode;
@@ -17,6 +18,8 @@ interface Props {
 }
 
 const { locale, pageId } = Astro.props;
+const canonicalPageId = getCannibalTarget(pageId);
+const canonicalPath = getLocalizedPath(canonicalPageId, locale);
 const page = getPageContent(locale, pageId);
 const ui = getUi(locale);
 const t = getT(locale);
@@ -103,7 +106,7 @@ const eyebrowByPage: Partial<Record<PageId, string>> = {
 <PageLayout
 	title={simple?.title ?? page.title}
 	description={simple?.description ?? page.description}
-	canonicalPath={getLocalizedPath(pageId, locale)}
+	canonicalPath={canonicalPath}
 	heading={heading}
 	intro={intro}
 	introEdit={introEdit}

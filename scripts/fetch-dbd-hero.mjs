@@ -1,16 +1,24 @@
-import { readFile, writeFile } from 'node:fs/promises';
+import { writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import sharp from 'sharp';
 
-/** Official DBD key art — survivors, campfire, and killers (matches homepage hero). */
-const HERO_SOURCE = path.resolve('tmp/hero-source/header.jpg');
+/** Official DBD main art (2022) — survivors, campfire, and killers. */
+const HERO_URL =
+	'https://pbs.twimg.com/media/FOExZQeXMAs5wty?format=jpg&name=4096x4096';
 const imagesDir = path.resolve('public/images');
 const HERO_WEBP = { quality: 82, effort: 6, smartSubsample: true };
 
 /** Match homepage hero bar — same wide banner ratio as before (3.15:1). */
 const BANNER_RATIO = 3.15;
 
-const heroBuffer = await readFile(HERO_SOURCE);
+const heroBuffer = Buffer.from(
+	await fetch(HERO_URL, {
+		headers: { 'User-Agent': 'Mozilla/5.0 (compatible; TheDbdCheatsSite/1.0)' },
+	}).then((r) => {
+		if (!r.ok) throw new Error(`HTTP ${r.status}`);
+		return r.arrayBuffer();
+	}),
+);
 
 function bannerHeight(width) {
 	return Math.round(width / BANNER_RATIO);
@@ -44,4 +52,4 @@ await writeFile(
 		.toBuffer(),
 );
 
-console.log(`Done — hero banner ${BANNER_RATIO}:1 (1024x${canonicalHeight}) from ${HERO_SOURCE}`);
+console.log(`Done — hero banner ${BANNER_RATIO}:1 (1024x${canonicalHeight})`);

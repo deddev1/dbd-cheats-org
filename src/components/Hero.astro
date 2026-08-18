@@ -35,8 +35,8 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 		--hero-pad-y: clamp(1rem, 2vw, 1.75rem);
 		--hero-stack: clamp(0.5rem, 1.1vw, 0.75rem);
 		/*
-		 * Wide banner bar (3.15:1). Key art is taller (~1.78:1) — object-fit: contain
-		 * shows the full image inside this fixed bar (side letterboxing matches #07080b).
+		 * Bar is a bit shorter than the native 1024/409 (~2.5:1) art.
+		 * Image stays undistorted via object-fit: cover (crops edges, no squash).
 		 */
 		--hero-ratio: 3.15 / 1;
 		position: relative;
@@ -44,7 +44,7 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 		display: grid;
 		align-items: center;
 		overflow: hidden;
-		background: #07080b;
+		background: #050506;
 		aspect-ratio: var(--hero-ratio);
 		width: 100%;
 		height: auto;
@@ -62,29 +62,24 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 		display: block;
 		width: 100%;
 		height: 100%;
-		min-width: 0;
-		min-height: 0;
 		pointer-events: auto;
 	}
 
 	.hero__media picture,
-	.hero__media img {
+	.hero__media img,
+	.hero__game-link {
 		display: block;
 		width: 100%;
 		height: 100%;
-		max-width: 100%;
-		max-height: 100%;
-		object-fit: contain;
-		object-position: center center;
+	}
+
+	.hero__media img {
+		/* Cover = keep proportions; crop top/bottom of the shorter bar */
+		object-fit: cover;
+		object-position: center 45%;
 		image-rendering: auto;
 		transform: translateZ(0);
 		animation: hero-in 0.9s ease-out both;
-	}
-
-	/* Beat global `img { height: auto }` — required for object-fit sizing. */
-	.hero .hero__media img {
-		height: 100%;
-		width: 100%;
 	}
 
 	.hero__veil {
@@ -297,49 +292,40 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 		}
 	}
 
-	/* Phones / small tablets: stack image above copy. */
+	/*
+	 * Phones / small tablets: stop using the ultra-wide 3.15:1 bar.
+	 * That ratio collapses to ~120px tall on a 390px phone and clips the CTA.
+	 * Mobile = taller full-bleed panel; height grows with copy.
+	 */
 	@media (max-width: 900px) {
 		.hero {
 			aspect-ratio: auto;
 			min-height: 0;
 			max-height: none;
 			height: auto;
-			display: grid;
-			grid-template-rows: auto auto;
+			display: block;
 			overflow: hidden;
 		}
 
-		.hero__media {
-			position: relative;
-			inset: auto;
-			grid-row: 1;
-			width: 100%;
-			height: auto;
-			aspect-ratio: 1672 / 941;
-		}
-
 		.hero__media img {
-			width: 100%;
-			height: 100%;
+			object-fit: cover;
+			object-position: 78% 10%;
 		}
 
 		.hero__veil {
 			background: linear-gradient(
 				180deg,
-				rgba(7, 8, 11, 0.22) 0%,
-				rgba(7, 8, 11, 0.48) 42%,
-				rgba(7, 8, 11, 0.88) 78%,
-				rgba(7, 8, 11, 0.96) 100%
+				rgba(5, 5, 6, 0.28) 0%,
+				rgba(5, 5, 6, 0.52) 42%,
+				rgba(5, 5, 6, 0.9) 78%,
+				rgba(5, 5, 6, 0.96) 100%
 			);
 		}
 
 		.hero__content {
-			grid-row: 2;
-			position: relative;
-			z-index: 2;
 			transform: none;
 			width: 100%;
-			min-height: 0;
+			min-height: clamp(18.5rem, 56svh, 28rem);
 			display: flex;
 			align-items: flex-end;
 			padding-block: 1.35rem 1.2rem;
@@ -398,6 +384,7 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 
 	@media (max-width: 480px) {
 		.hero__content {
+			min-height: clamp(17.5rem, 60svh, 26rem);
 			padding-block: 1.2rem 1.1rem;
 		}
 
@@ -420,6 +407,10 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 	}
 
 	@media (max-width: 360px) {
+		.hero__content {
+			min-height: clamp(16.5rem, 64svh, 24rem);
+		}
+
 		.hero__brand {
 			font-size: 1.45rem;
 		}
@@ -432,6 +423,7 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 
 	@media (max-width: 900px) and (orientation: landscape) and (max-height: 480px) {
 		.hero__content {
+			min-height: min(70svh, 16.5rem);
 			padding-block: 0.85rem 0.8rem;
 		}
 

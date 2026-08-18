@@ -43,23 +43,22 @@ export function contentSrcSet(baseSrc: string): string | undefined {
 export const heroResponsive: ResponsiveWidth[] = [
 	{ src: '/images/dbd-cheats-hero-640w.webp', width: 640 },
 	{ src: '/images/dbd-cheats-hero-1024w.webp', width: 1024 },
-	{ src: '/images/dbd-cheats-hero-1536w.webp', width: 1536 },
 ];
 
 export const heroDesktopResponsive: ResponsiveWidth[] = heroResponsive;
 
-/** Default LCP src — full native-aspect art (no banner crop). */
-export const heroSrc = '/images/dbd-hero-source.png';
+/** Default LCP src — mid ladder WebP. */
+export const heroSrc = '/images/dbd-cheats-hero-1024w.webp';
 export const heroSrcSet = buildSrcSet(heroResponsive);
 export const heroSizes = '100vw';
 
-/** LCP preload — compressed WebP fallback for faster paint. */
-export const heroPreloadSrc = '/images/dbd-cheats-hero-1024w.webp';
+/** LCP preload — same compressed WebP. */
+export const heroPreloadSrc = heroSrc;
 export const heroMimeType = 'image/webp';
 
-/** Intrinsic dimensions of the source art (1672×941 PNG). */
-export const heroWidth = 1672;
-export const heroHeight = 941;
+/** Intrinsic dimensions of the default LCP asset (1024w variant). */
+export const heroWidth = 1024;
+export const heroHeight = 325;
 
 /** Responsive widths for below-fold content images. */
 export const contentWidths = [480, 960] as const;

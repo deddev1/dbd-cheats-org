@@ -9,6 +9,11 @@ const SOURCE_FILE = path.resolve('public/images/dbd-hero-source.png');
 const imagesDir = path.resolve('public/images');
 const HERO_WEBP = { quality: 82, effort: 6, smartSubsample: true };
 
+/** Wide banner bar — matches Hero.astro --hero-ratio: 3.15 / 1 */
+function bannerHeight(width) {
+	return Math.round(width / 3.15);
+}
+
 async function loadHeroBuffer() {
 	try {
 		await access(SOURCE_FILE);
@@ -34,14 +39,10 @@ const meta = await sharp(heroBuffer).metadata();
 const nativeWidth = meta.width ?? 1672;
 const nativeHeight = meta.height ?? 941;
 
-function scaledHeight(width) {
-	return Math.round((nativeHeight / nativeWidth) * width);
-}
-
-for (const width of [640, 1024, 1536]) {
-	const height = scaledHeight(width);
+for (const width of [640, 1024]) {
+	const height = bannerHeight(width);
 	const webp = await sharp(heroBuffer)
-		.resize(width, height, { fit: 'inside', withoutEnlargement: true })
+		.resize(width, height, { fit: 'cover', position: 'centre' })
 		.webp(HERO_WEBP)
 		.toBuffer();
 	await writeFile(path.join(imagesDir, `dbd-cheats-hero-${width}w.webp`), webp);
@@ -49,9 +50,9 @@ for (const width of [640, 1024, 1536]) {
 }
 
 const canonicalWidth = 1024;
-const canonicalHeight = scaledHeight(canonicalWidth);
+const canonicalHeight = bannerHeight(canonicalWidth);
 const canonical = await sharp(heroBuffer)
-	.resize(canonicalWidth, canonicalHeight, { fit: 'inside', withoutEnlargement: true })
+	.resize(canonicalWidth, canonicalHeight, { fit: 'cover', position: 'centre' })
 	.webp(HERO_WEBP)
 	.toBuffer();
 
@@ -62,9 +63,9 @@ for (const name of ['dbd-cheats-hero.webp', 'dbd-hero-banner.webp', 'hero-banner
 await writeFile(
 	path.join(imagesDir, 'dbd-cheats-hero.png'),
 	await sharp(heroBuffer)
-		.resize(canonicalWidth, canonicalHeight, { fit: 'inside', withoutEnlargement: true })
+		.resize(canonicalWidth, canonicalHeight, { fit: 'cover', position: 'centre' })
 		.png({ compressionLevel: 9 })
 		.toBuffer(),
 );
 
-console.log(`Done — native hero ${nativeWidth}x${nativeHeight} (canonical ${canonicalWidth}x${canonicalHeight})`);
+console.log(`Done — source ${nativeWidth}x${nativeHeight}, banner ${canonicalWidth}x${canonicalHeight} (3.15:1)`);

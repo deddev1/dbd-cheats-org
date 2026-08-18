@@ -35,8 +35,8 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 		--hero-pad-y: clamp(1rem, 2vw, 1.75rem);
 		--hero-stack: clamp(0.5rem, 1.1vw, 0.75rem);
 		/*
-		 * Bar is a bit shorter than the native 1024/409 (~2.5:1) art.
-		 * Image stays undistorted via object-fit: cover (crops edges, no squash).
+		 * Wide banner bar (3.15:1). Source key art is taller (~1.8:1).
+		 * object-fit: contain shows the full image with letterboxing — no crop.
 		 */
 		--hero-ratio: 3.15 / 1;
 		position: relative;
@@ -74,9 +74,8 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 	}
 
 	.hero__media img {
-		/* Cover = keep proportions; crop top/bottom of the shorter bar */
-		object-fit: cover;
-		object-position: center 45%;
+		object-fit: contain;
+		object-position: center center;
 		image-rendering: auto;
 		transform: translateZ(0);
 		animation: hero-in 0.9s ease-out both;
@@ -308,8 +307,8 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 		}
 
 		.hero__media img {
-			object-fit: cover;
-			object-position: 78% 10%;
+			object-fit: contain;
+			object-position: center center;
 		}
 
 		.hero__veil {

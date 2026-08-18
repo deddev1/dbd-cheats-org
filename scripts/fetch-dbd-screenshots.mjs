@@ -40,8 +40,8 @@ const LEGACY_MAP = {
 	'dbd-screenshot-09': ['dbd-esp-player-tags.webp', 'dbd-esp-radar.webp'],
 	'dbd-screenshot-10': ['dbd-aimbot-skeleton.webp', 'dbd-aimbot-sniper.webp'],
 	'dbd-screenshot-11': ['dbd-extract-fight.webp'],
-	'dbd-screenshot-12': ['dbd-chase-combat.webp', 'dbd-growth-run-combat.webp'],
-	'dbd-screenshot-13': ['dbd-chase-mode.webp', 'dbd-growth-run-mode.webp'],
+	'dbd-screenshot-12': ['dbd-chase-combat.webp', 'dbd-chase-combat.webp'],
+	'dbd-screenshot-13': ['dbd-chase-mode.webp', 'dbd-chase-mode.webp'],
 	'dbd-screenshot-14': ['dbd-verdansk-map.webp'],
 	'dbd-screenshot-15': ['dbd-wallhack-skeleton.webp'],
 };

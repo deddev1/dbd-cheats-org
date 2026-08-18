@@ -10,7 +10,7 @@ const publicDir = path.resolve('public');
 const ME_G = 'https://sm.ign.com/t/ign_me/gallery/c/call-of-du';
 const ME = 'https://sm.ign.com/t/ign_me/screenshot/c/call-of-du';
 const NL = 'https://sm.ign.com/t/ign_nl/screenshot/c/call-of-du';
-const BR = 'https://sm.ign.com/t/ign_br/screenshot/default';
+const trial = 'https://sm.ign.com/t/ign_br/screenshot/default';
 const PK = 'https://sm.ign.com/t/ign_pk/screenshot/default';
 
 /**

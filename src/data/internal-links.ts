@@ -247,7 +247,7 @@ const gameplayIntelCategories = new Set([
 	'Cosmetics',
 	'Weapons',
 	'Chases',
-	'Loot Routes',
+	'Loop Routes',
 	'Settings',
 	'Warmup',
 ]);

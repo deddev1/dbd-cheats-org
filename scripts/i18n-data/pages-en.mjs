@@ -47,11 +47,11 @@ export const enPages = {
 			section(
 				'What DBD ESP solves in trials',
 				'Dead by Daylight maps punish incomplete information. DBD Cheats ESP wallhack helps you spot enemy teams early, spot survivors and killers before they push your angle, and mark high-value objectives worth the detour.',
-				'On trial, chase, and live servers, that visibility gap is often the difference between a clean third-party and a patched team. ESP ships bundled with radar overlays and Aimbot in one license.',
+				'On trial, chase, and live servers, that visibility gap is often the difference between a clean generator repair and a safe rotation. ESP ships bundled with radar overlays and Aimbot in one license.',
 				`Dead by Daylight’s live seasons and map updates are published by Behaviour Interactive (${EXT.dbd}). When tiles or trial rules shift, ESP categories stay useful because they track players and generators — not a single static landmark.`,
 			),
 			section(
-				'Player, apex, and generator ESP wallhack categories',
+				'Survivor, killer, and generator ESP wallhack categories',
 				'Toggle enemy player outlines, killer markers, generator cues, and generator pins so only trial-critical ESP wallhack overlays stay active during rotations.',
 				'Distance readouts and snapline options help you control engagement range. Team and enemy colour coding supports survivor and killer trials alike.',
 				'Compare category detail on the <a href="/dbd-esp/">wallhack page</a> and pair visibility with the <a href="/dbd-radar-hack/">radar hack</a> for flanks outside your FOV.',
@@ -604,7 +604,7 @@ export const enPages = {
 		sections: [
 			section(
 				'What Dead by Daylight soft aim means',
-				'Dead by Daylight soft aim refers to Aimbot behavior tuned for smooth, natural-looking tracking rather than instant snap. DBD Cheats exposes smoothness, FOV, and aim smoothing sliders so you control how assist feels in BR chases.',
+				'Dead by Daylight soft aim refers to Aimbot behavior tuned for smooth, natural-looking tracking rather than instant snap. DBD Cheats exposes smoothness, FOV, and aim smoothing sliders so you control how assist feels in killer and survivor chases.',
 				'Bone priority and target selection cover closest player, lowest health, or highest-threat targets during team chases.',
 				'Full Aimbot documentation: <a href="/dbd-aimbot/">DBD Aimbot</a>. Alternate wording: <a href="/dbd-aimbot/">aimbot hack</a>.',
 			),
@@ -637,7 +637,7 @@ export const enPages = {
 		sections: [
 			section(
 				'What makes dbd cheats in 2026',
-				'The dbd hacks combine active Easy Anti-Cheat maintenance, a full ESP wallhack and radar stack, configurable Aimbot, and clear update communication — not a stale build from a prior season.',
+				'DBD hacks combine active Easy Anti-Cheat maintenance, a full ESP wallhack and radar stack, configurable Aimbot, and clear update communication — not a stale build from a prior season.',
 				'DBD Cheats covers trial and chase with in-client toggles and post-patch rebuilds.',
 				`Verify the live game is healthy via ${EXT.status}, then confirm our <a href="/updates/">Updates</a> note before you judge any package “best.”`,
 			),
@@ -677,7 +677,7 @@ export const enPages = {
 			section(
 				'Aimbot hack controls and hotkeys',
 				'Bone priority options cover head, chest, or dynamic targets. Hotkeys enable or disable aimbot hack mid-match without opening menus during rotations or late-trial generators.',
-				'Per-killer profile slots separate skill-check AR tuning from close-quarters SMG settings.',
+				'Per-killer profile slots separate long-range chase tuning from close-quarters killer settings.',
 				`Balance patches from ${EXT.dbd} can change ideal FOV — retune after major killer balance updates.`,
 			),
 			section(
@@ -704,7 +704,7 @@ export const enPages = {
 			section(
 				'What a DBD ESP hack shows',
 				'A DBD ESP hack renders enemy player outlines, killer positions, and generator pins through walls and terrain — closing the information gap before you commit to a fight.',
-				'Distance readouts and snapline options help control engagement range during team chases and third-party scenarios.',
+				'Distance readouts and snapline options help control engagement range during chases and generator rotations.',
 				'Canonical visibility guide: <a href="/dbd-esp/">DBD ESP</a>. Wallhack wording: <a href="/dbd-esp/">wallhack</a>.',
 			),
 			section(

@@ -150,12 +150,12 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "What DBD ESP solves in trials",
 							paragraphs: [
 								"Dead by Daylight maps punish incomplete information. DBD Cheats ESP wallhack helps you spot enemy teams early, spot survivors and killers before they push your angle, and mark high-value objectives worth the detour.",
-								"On trial, chase, and live servers, that visibility gap is often the difference between a clean third-party and a patched team. ESP ships bundled with radar overlays and Aimbot in one license.",
+								"On trial, chase, and live servers, that visibility gap is often the difference between a clean generator repair and a safe rotation. ESP ships bundled with radar overlays and Aimbot in one license.",
 								"Dead by Daylight’s live seasons and map updates are published by Behaviour Interactive (<a href=\"https://store.steampowered.com/app/381210/Dead_by_Daylight/\" target=\"_blank\" rel=\"noopener noreferrer\">Dead by Daylight</a>). When tiles or trial rules shift, ESP categories stay useful because they track players and generators — not a single static landmark.",
 							],
 						},
 						{
-							h2: "Player, apex, and generator ESP wallhack categories",
+							h2: "Survivor, killer, and generator ESP wallhack categories",
 							paragraphs: [
 								"Toggle enemy player outlines, killer markers, generator cues, and generator pins so only trial-critical ESP wallhack overlays stay active during rotations.",
 								"Distance readouts and snapline options help you control engagement range. Team and enemy colour coding supports survivor and killer trials alike.",
@@ -793,7 +793,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "What Dead by Daylight soft aim means",
 							paragraphs: [
-								"Dead by Daylight soft aim refers to Aimbot behavior tuned for smooth, natural-looking tracking rather than instant snap. DBD Cheats exposes smoothness, FOV, and aim smoothing sliders so you control how assist feels in BR chases.",
+								"Dead by Daylight soft aim refers to Aimbot behavior tuned for smooth, natural-looking tracking rather than instant snap. DBD Cheats exposes smoothness, FOV, and aim smoothing sliders so you control how assist feels in killer and survivor chases.",
 								"Bone priority and target selection cover closest player, lowest health, or highest-threat targets during team chases.",
 								"Full Aimbot documentation: <a href=\"/dbd-aimbot/\">DBD Aimbot</a>. Alternate wording: <a href=\"/dbd-aimbot/\">aimbot hack</a>.",
 							],
@@ -831,7 +831,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "What makes dbd cheats in 2026",
 							paragraphs: [
-								"The dbd hacks combine active Easy Anti-Cheat maintenance, a full ESP wallhack and radar stack, configurable Aimbot, and clear update communication — not a stale build from a prior season.",
+								"DBD hacks combine active Easy Anti-Cheat maintenance, a full ESP wallhack and radar stack, configurable Aimbot, and clear update communication — not a stale build from a prior season.",
 								"DBD Cheats covers trial and chase with in-client toggles and post-patch rebuilds.",
 								"Verify the live game is healthy via <a href=\"https://store.steampowered.com/app/381210/Dead_by_Daylight/\" target=\"_blank\" rel=\"noopener noreferrer\">Dead by Daylight on Steam</a>, then confirm our <a href=\"/updates/\">Updates</a> note before you judge any package “best.”",
 							],
@@ -878,7 +878,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Aimbot hack controls and hotkeys",
 							paragraphs: [
 								"Bone priority options cover head, chest, or dynamic targets. Hotkeys enable or disable aimbot hack mid-match without opening menus during rotations or late-trial generators.",
-								"Per-killer profile slots separate skill-check AR tuning from close-quarters SMG settings.",
+								"Per-killer profile slots separate long-range chase tuning from close-quarters killer settings.",
 								"Balance patches from <a href=\"https://store.steampowered.com/app/381210/Dead_by_Daylight/\" target=\"_blank\" rel=\"noopener noreferrer\">Dead by Daylight</a> can change ideal FOV — retune after major killer balance updates.",
 							],
 						},
@@ -908,7 +908,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "What a DBD ESP hack shows",
 							paragraphs: [
 								"A DBD ESP hack renders enemy player outlines, killer positions, and generator pins through walls and terrain — closing the information gap before you commit to a fight.",
-								"Distance readouts and snapline options help control engagement range during team chases and third-party scenarios.",
+								"Distance readouts and snapline options help control engagement range during chases and generator rotations.",
 								"Canonical visibility guide: <a href=\"/dbd-esp/\">DBD ESP</a>. Wallhack wording: <a href=\"/dbd-esp/\">wallhack</a>.",
 							],
 						},
@@ -1169,7 +1169,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Por qué eligen DBD Cheats en 2026",
 							paragraphs: [
-								"DBD Cheats ofrece ESP wallhack, radar hack y DBD Aimbot indetectables para Dead by Daylight en Windows PC. Ideal para leer escuadrones enemigos en BR y chase.",
+								"DBD Cheats ofrece ESP wallhack, radar hack y DBD Aimbot indetectables para Dead by Daylight en Windows PC. Ideal para ver killers y supervivientes en trials y chases.",
 								"Licencias con entrega digital instantánea vía checkout Zadeyo. Planes $35/mes y $150 de por vida incluyen mantenimiento Easy Anti-Cheat.",
 							],
 						},
@@ -2112,7 +2112,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Pourquoi choisir DBD Cheats en 2026",
 							paragraphs: [
-								"DBD Cheats combine ESP wallhack, radar hack et DBD Aimbot indétectables pour Dead by Daylight sur PC Windows. Parfait pour lire les escouades ennemies en BR et chase.",
+								"DBD Cheats combine ESP wallhack, radar hack et DBD Aimbot indétectables pour Dead by Daylight sur PC Windows. Parfait pour repérer killers et survivants en trials et chases.",
 								"Licences avec livraison numérique instantanée via checkout Zadeyo. Forfaits 35 $/mois et 150 $ à vie incluent la maintenance Easy Anti-Cheat.",
 							],
 						},
@@ -3055,7 +3055,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Warum DBD Cheats 2026 führt",
 							paragraphs: [
-								"DBD Cheats bündelt ESP wallhack, radar hack und DBD Aimbot als undetected Paket für Dead by Daylight auf Windows PC. Ideal um feindliche Squads in BR und chase zu lesen.",
+								"DBD Cheats bündelt ESP wallhack, radar hack und DBD Aimbot als undetected Paket für Dead by Daylight auf Windows PC. Ideal um Killer und Survivors in Trials und Chases zu sehen.",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Easy Anti-Cheat-Wartung.",
 							],
 						},
@@ -3998,7 +3998,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Por que escolher DBD Cheats em 2026",
 							paragraphs: [
-								"DBD Cheats reúne ESP wallhack, radar hack e DBD Aimbot indetectáveis para Dead by Daylight no PC Windows. Ideal para ler epackrões inimigos em BR e chase.",
+								"DBD Cheats reúne ESP wallhack, radar hack e DBD Aimbot indetectáveis para Dead by Daylight no PC Windows. Ideal para ver killers e sobreviventes em trials e chases.",
 								"Licenças com entrega digital instantânea via checkout Zadeyo. Planos $35/mês e $150 vitalício incluem manutenção Easy Anti-Cheat.",
 							],
 						},
@@ -4941,7 +4941,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Perché scegliere DBD Cheats nel 2026",
 							paragraphs: [
-								"DBD Cheats unisce ESP wallhack, radar hack e DBD Aimbot indetectable per Dead by Daylight su PC Windows. Ideale per leggere teamre nemiche in BR e chase.",
+								"DBD Cheats unisce ESP wallhack, radar hack e DBD Aimbot indetectable per Dead by Daylight su PC Windows. Ideale per vedere killer e survivor nemici in trial e chase.",
 								"Licenze con consegna digitale istantanea via checkout Zadeyo. Piani $35/mese e $150 a vita includono manutenzione Easy Anti-Cheat.",
 							],
 						},
@@ -5884,7 +5884,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Waarom DBD Cheats in 2026",
 							paragraphs: [
-								"DBD Cheats bundelt ESP wallhack, radar hack en DBD Aimbot als undetected pakket voor Dead by Daylight op Windows PC. Ideaal om vijandelijke teams te lezen in BR en chase.",
+								"DBD Cheats bundelt ESP wallhack, radar hack en DBD Aimbot als undetected pakket voor Dead by Daylight op Windows PC. Ideaal om killers en survivors te zien in trials en chases.",
 								"Licenties met directe digitale levering via Zadeyo checkout. $35/maand en $150 lifetime incl. Easy Anti-Cheat-onderhoud.",
 							],
 						},
@@ -6827,7 +6827,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Dlaczego DBD Cheats w 2026",
 							paragraphs: [
-								"DBD Cheats łączy ESP wallhack, radar hack i DBD Aimbot jako pakiet undetected dla Dead by Daylight na PC Windows. Idealny do czytania wrogich teamów w BR i chase.",
+								"DBD Cheats łączy ESP wallhack, radar hack i DBD Aimbot jako pakiet undetected dla Dead by Daylight na PC Windows. Idealny do wykrywania killerów i survivorów w trial i chase.",
 								"Licencje z natychmiastowa dostawa cyfrowa przez checkout Zadeyo. Plany $35/mies. i $150 lifetime z konserwacją Easy Anti-Cheat.",
 							],
 						},
@@ -7770,7 +7770,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Почему выбирают DBD Cheats в 2026",
 							paragraphs: [
-								"DBD Cheats объединяет ESP wallhack, radar hack и DBD Aimbot в undetected пакете для Dead by Daylight на Windows PC. Идеально для чтения вражеских отрядов в BR и chase.",
+								"DBD Cheats объединяет ESP wallhack, radar hack и DBD Aimbot в undetected пакете для Dead by Daylight на Windows PC. Идеально для отслеживания киллеров и выживших в trial и chase.",
 								"Лицензии с мгновенная цифровая доставка через checkout Zadeyo. Тарифы $35/мес и $150 навсегда включают обслуживание Easy Anti-Cheat.",
 							],
 						},
@@ -8713,7 +8713,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "2026'da neden DBD Cheats",
 							paragraphs: [
-								"DBD Cheats, Dead by Daylight için Windows PC üzerinde ESP wallhack, radar hack ve DBD Aimbot undetected paket sunar. BR ve chase'da düşman team okumak için ideal.",
+								"DBD Cheats, Dead by Daylight için Windows PC üzerinde ESP wallhack, radar hack ve DBD Aimbot undetected paket sunar. Trial ve chase'da killer ve survivor görmek için ideal.",
 								"Zadeyo checkout ile anında dijital teslimat. $35/ay ve $150 ömür boyu planları Easy Anti-Cheat bakımı içerir.",
 							],
 						},
@@ -9656,7 +9656,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "لماذا DBD Cheats في 2026",
 							paragraphs: [
-								"DBD Cheats يجمع ESP wallhack وradar hack وDBD Aimbot غير مكتشف لـ Dead by Daylight على Windows PC. مثالي لقراءة فرق العدو في BR وchase.",
+								"DBD Cheats يجمع ESP wallhack وradar hack وDBD Aimbot غير مكتشف لـ Dead by Daylight على Windows PC. مثالي لرؤية القتلة والناجين في trial وchase.",
 								"تراخيص مع تسليم رقمي فوري عبر checkout Zadeyo. خطط 35$/شهر و150$ مدى الحياة تشمل صيانة Easy Anti-Cheat.",
 							],
 						},
@@ -10599,7 +10599,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "2026年にDBD Cheatsを選ぶ理由",
 							paragraphs: [
-								"DBD CheatsはDead by Daylight向けWindows PC用ESP wallhack、radar hack、DBD Aimbotのundetectedパッケージです。BRとchaseで敵スクワッドを読むのに最適。",
+								"DBD CheatsはDead by Daylight向けWindows PC用ESP wallhack、radar hack、DBD Aimbotのundetectedパッケージです。trialとchaseでキラーとサバイバーを把握するのに最適。",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにEasy Anti-Cheatメンテナンス含む。",
 							],
 						},
@@ -11542,7 +11542,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "2026년 DBD Cheats를 선택하는 이유",
 							paragraphs: [
-								"DBD Cheats는 Dead by Daylight Windows PC용 ESP wallhack, radar hack, DBD Aimbot undetected 패키지입니다. BR 및 chase에서 적 분대 읽기에 이상적.",
+								"DBD Cheats는 Dead by Daylight Windows PC용 ESP wallhack, radar hack, DBD Aimbot undetected 패키지입니다. trial 및 chase에서 킬러와 생존자를 보기에 이상적.",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 Easy Anti-Cheat 유지보수 포함.",
 							],
 						},
@@ -12485,7 +12485,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "2026年选择DBD Cheats的原因",
 							paragraphs: [
-								"DBD Cheats为Dead by DaylightWindows PC提供ESP wallhack、radar hack和DBD Aimbotundetected套餐。适合在BR和chase中读取敌方小队。",
+								"DBD Cheats为Dead by DaylightWindows PC提供ESP wallhack、radar hack和DBD Aimbotundetected套餐。适合在trial和chase中查看杀手与幸存者。",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含Easy Anti-Cheat维护。",
 							],
 						},
@@ -13428,7 +13428,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "2026 में DBD Cheats क्यों",
 							paragraphs: [
-								"DBD Cheats Dead by Daylight के लिए Windows PC पर ESP wallhack, radar hack और DBD Aimbot undetected पैकेज देता है। BR और chase में दुश्मन team पढ़ने के लिए आदर्श.",
+								"DBD Cheats Dead by Daylight के लिए Windows PC पर ESP wallhack, radar hack और DBD Aimbot undetected पैकेज देता है। trial और chase में killer और survivor देखने के लिए आदर्श.",
 								"Zadeyo checkout से तुरंत डिजिटल डिलीवरी। $35/माह और $150 लाइफ़टाइम में Easy Anti-Cheat maintenance शामिल।",
 							],
 						},
@@ -14371,7 +14371,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Mengapa DBD Cheats di 2026",
 							paragraphs: [
-								"DBD Cheats menyediakan ESP wallhack, radar hack, dan DBD Aimbot undetected untuk Dead by Daylight di PC Windows. Ideal membaca team musuh di BR dan chase.",
+								"DBD Cheats menyediakan ESP wallhack, radar hack, dan DBD Aimbot undetected untuk Dead by Daylight di PC Windows. Ideal melihat killer dan survivor di trial dan chase.",
 								"pengiriman digital instan via checkout Zadeyo. Paket $35/bulan dan $150 seumur hidup termasuk pemeliharaan Easy Anti-Cheat.",
 							],
 						},
@@ -15314,7 +15314,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "ทำไมเลือก DBD Cheats ปี 2026",
 							paragraphs: [
-								"DBD Cheats รวม ESP wallhack, radar hack และ DBD Aimbot แบบ undetected สำหรับ Dead by Daylight บน Windows PC เหมาะสำหรับอ่าน team ศัตรูใน BR และ chase",
+								"DBD Cheats รวม ESP wallhack, radar hack และ DBD Aimbot แบบ undetected สำหรับ Dead by Daylight บน Windows PC เหมาะสำหรับมอง killer และ survivor ใน trial และ chase",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล Easy Anti-Cheat",
 							],
 						},
@@ -16257,7 +16257,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Vì sao chọn DBD Cheats 2026",
 							paragraphs: [
-								"DBD Cheats cung cấp ESP wallhack, radar hack và DBD Aimbot undetected cho Dead by Daylight trên PC Windows. Lý tưởng đọc team địch trong BR và chase.",
+								"DBD Cheats cung cấp ESP wallhack, radar hack và DBD Aimbot undetected cho Dead by Daylight trên PC Windows. Lý tưởng để thấy killer và survivor trong trial và chase.",
 								"giao hàng kỹ thuật số tức thì qua checkout Zadeyo. Gói $35/tháng và $150 trọn đời gồm bảo trì Easy Anti-Cheat.",
 							],
 						},
@@ -17200,7 +17200,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Чому DBD Cheats у 2026",
 							paragraphs: [
-								"DBD Cheats об'єднує ESP wallhack, radar hack і DBD Aimbot у undetected пакеті для Dead by Daylight на Windows PC. Ідеально для читання ворожих загонів у BR і chase.",
+								"DBD Cheats об'єднує ESP wallhack, radar hack і DBD Aimbot у undetected пакеті для Dead by Daylight на Windows PC. Ідеально для відстеження killerів і survivorів у trial і chase.",
 								"Ліцензії з миттєва цифрова доставка через checkout Zadeyo. Тарифи $35/міс і $150 назавжди включають обслуговування Easy Anti-Cheat.",
 							],
 						},
@@ -18143,7 +18143,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Proč DBD Cheats v roce 2026",
 							paragraphs: [
-								"DBD Cheats spojuje ESP wallhack, radar hack a DBD Aimbot jako undetected balíček pro Dead by Daylight na Windows PC. Ideální pro čtení nepřátelských teamů v BR a chase.",
+								"DBD Cheats spojuje ESP wallhack, radar hack a DBD Aimbot jako undetected balíček pro Dead by Daylight na Windows PC. Ideální pro sledování killerů a survivorů v trial a chase.",
 								"Licence s okamžité digitální doručení přes checkout Zadeyo. Plány $35/měs. a $150 lifetime včetně údržby Easy Anti-Cheat.",
 							],
 						},
@@ -19086,7 +19086,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "De ce DBD Cheats în 2026",
 							paragraphs: [
-								"DBD Cheats combină ESP wallhack, radar hack și DBD Aimbot undetected pentru Dead by Daylight pe PC Windows. Ideal pentru citirea team-urilor inamice în BR și chase.",
+								"DBD Cheats combină ESP wallhack, radar hack și DBD Aimbot undetected pentru Dead by Daylight pe PC Windows. Ideal pentru a vedea killeri și survivor în trial și chase.",
 								"Licențe cu livrare digitală instantă via checkout Zadeyo. Planuri $35/lună și $150 pe viață includ mentenanță Easy Anti-Cheat.",
 							],
 						},
@@ -20029,7 +20029,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Varför DBD Cheats 2026",
 							paragraphs: [
-								"DBD Cheats kombinerar ESP wallhack, radar hack och DBD Aimbot som undetected paket för Dead by Daylight på Windows PC. Ideal för att läsa fiendepacks i BR och chase.",
+								"DBD Cheats kombinerar ESP wallhack, radar hack och DBD Aimbot som undetected paket för Dead by Daylight på Windows PC. Ideal för att se killers och survivors i trial och chase.",
 								"Licenser med omedelbar digital leverans via Zadeyo checkout. $35/mån och $150 lifetime inkl. Easy Anti-Cheat-underhåll.",
 							],
 						},

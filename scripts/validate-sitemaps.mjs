@@ -129,7 +129,7 @@ const ENGLISH_PATHS = [
 	'/blog/dbd-esp-wallhack-explained/',
 	'/blog/undetected-dbd-cheats-eac/',
 	'/blog/dbd-hacks-vs-cheatvault-comparison/',
-	'/blog/elitefn-vs-dbd-hacks-two-week-test/',
+	'/blog/budget-dbd-cheat-vs-dbd-cheats-two-week-test/',
 	'/blog/dbd-hacks-vs-ghostware-features-pricing/',
 	'/reviews/',
 	'/reviews/dbd-soft-aim-review-xkrypt0/',

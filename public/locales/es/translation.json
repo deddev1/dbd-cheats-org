@@ -28,7 +28,7 @@
     "seeFeatures": "Ver funciones",
     "title": "Trucos Dead by Daylight indetectables",
     "priceFrom": "desde",
-    "imageAlt": "{{brand}} — The DBD ESP and aimbot overlay",
+    "imageAlt": "{{brand}} — DBD ESP and aimbot cheats overlay",
     "chipEsp": "ESP / wallhack",
     "chipAim": "Soft aim",
     "chipRadar": "Radar 2D",
@@ -214,17 +214,17 @@
     "label": "Intel de Dead by Daylight"
   },
   "gallery": {
-    "eyebrow": "DBD Cheats",
-    "title": "Galería Dead by Daylight",
-    "subtitle": "Visuales de Dead by Daylight con loadouts, peleas de escuadrón y combate trial — junto a herramientas ESP, radar y Aimbot.",
-    "lead": "DBD Cheats está pensado para el loop de Dead by Daylight: leer el mapa, rastrear escuadrones enemigos, generatorsear y sobrevivir al extract.",
-    "highlightEspTitle": "ESP de jugadores y escuadrones",
-    "highlightEspCopy": "Detecta jugadores enemigos y contornos de escuadrón en MacMillan Estate y chase para elegir peleas con mejor información.",
-    "highlightRadarTitle": "Marcadores de generators y cofres",
-    "highlightRadarCopy": "Resalta loadouts, cofres y generators de alto nivel sin saturar la pantalla en plena partida.",
-    "highlightAimbotTitle": "Controles Aimbot Dead by Daylight",
-    "highlightAimbotCopy": "Ajusta suavidad, prioridad de objetivo y teclas para AR, SMG y francotirador antes de comprar.",
-    "updatesLabel": "Actualizaciones DBD Cheats",
+    "eyebrow": "dbd cheats",
+    "title": "Galería dbd cheats",
+    "subtitle": "Visuales de dbd cheats — ESP, wallhack, aimbot y radar para Dead by Daylight en PC.",
+    "lead": "DBD Cheats te ayuda a ver supervivientes, killers, generators y hooks con ESP, aimbot y radar en una licencia.",
+    "highlightEspTitle": "dbd cheats esp",
+    "highlightEspCopy": "Ve supervivientes y killers a través de paredes con ESP y wallhack de dbd cheats.",
+    "highlightRadarTitle": "dbd cheats radar",
+    "highlightRadarCopy": "Rastrea killers cercanos con el radar de dbd cheats antes de rotar o reparar generators.",
+    "highlightAimbotTitle": "dbd cheats aimbot",
+    "highlightAimbotCopy": "Usa soft aim y aimbot ajustados para chases de killer y superviviente en Dead by Daylight.",
+    "updatesLabel": "Actualizaciones dbd cheats",
     "updatesShort": "Actualizaciones"
   }
 }

@@ -46,7 +46,7 @@ const REPLACEMENTS = [
 	['DBD Cheats je', 'DBD Cheats je'],
 	['DBD Cheats este', 'DBD Cheats este'],
 	['DBD Cheats är', 'DBD Cheats är'],
-	['DBD Aimbot', 'The DBD Aimbot'],
+	['DBD Aimbot', 'DBD Aimbot'],
 	['Aimbot Dead by Daylight', 'Aimbot Dead by Daylight'],
 	['Actualizaciones DBD Cheats', 'Actualizaciones DBD Cheats'],
 	['Mises à jour DBD Cheats', 'Mises à jour DBD Cheats'],

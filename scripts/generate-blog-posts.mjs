@@ -42,7 +42,7 @@ const sources = [
 		intro:
 			'When Behaviour Interactive drops a patch, most players skim the headline and queue anyway. That is how you walk into MacMillan Estate with the wrong perks and a killer that just lost its chase pressure. Here is a calmer way to read Dead by Daylight patch notes so your next trial still makes sense.',
 		keywords: [
-			'the dbd patch notes',
+			'dbd patch notes',
 			'dbd major update',
 			'eac patch',
 			'killer build',
@@ -54,7 +54,7 @@ const sources = [
 				h2: 'What actually matters in a Dead by Daylight patch?',
 				paragraphs: [
 					`Official notes live on ${EXT.dbd}. Treat that page as the source of truth — Discord rumors and streamer hot takes come second. Ask three plain questions for every bullet: Does this change how high-tier killers chase? Does this change what generators are worth repairing? Does this change which generator or map I should play tonight?`,
-					'Growth stat tables, killer tiers, killer spawn rates, and killer unlocks move the real economy. A small lunge timing tweak on an mid-tier killer looks boring in a video title, but it quietly reshapes mid-range fights on Autohaven Wreckers and MacMillan Estate. Cosmetic lines and UI polish almost never decide whether you survive high-traffic tiles.',
+					'Perk tables, killer tiers, killer spawn rates, and killer unlocks move the real economy. A small lunge timing tweak on a mid-tier killer looks boring in a video title, but it quietly reshapes mid-game chases on Autohaven Wreckers and MacMillan Estate. Cosmetic lines and UI polish almost never decide whether you escape high-traffic tiles.',
 					`If you also run third-party tools, separate game balance from anti-cheat maintenance. After a ${EXT.eac} or client update, check our <a href="/updates/">DBD Cheats status page</a> before you blame your own aim.`,
 				],
 			},
@@ -62,13 +62,13 @@ const sources = [
 				h2: 'Buffs, nerfs, and removed items — a simple framework',
 				paragraphs: [
 					'When an item is removed from trial generator pools, delete it from your mental shopping list the same day. Heavy nerfs demote a killer from “default killer” to “situational.” Light nerfs are fine if you already play cleaner than most lobbies. Buffs deserve a short test block — ten focused trials — before you rebuild your entire bloodweb around them.',
-					'Growth stats and attack damage changes usually matter more than a single killer’s lunge timing number. If a popular perk loses penetration against high-tier killers, your MacMillan Estate push into team chases suddenly needs a different perk. Pair this reading habit with our <a href="/blog/dbd-killer-tier-list/">Dead by Daylight killer tier list</a> so you are not chasing streamer builds that ignore your budget.',
+					'Perk changes and attack damage updates usually matter more than a single killer’s lunge timing number. If a popular perk loses effect against high-tier killers, your MacMillan Estate chase suddenly needs a different build. Pair this reading habit with our <a href="/blog/dbd-killer-tier-list/">Dead by Daylight killer tier list</a> so you are not chasing streamer builds that ignore your bloodpoint budget.',
 				],
 			},
 			{
 				h2: 'How patches reshuffle loadouts and map plans',
 				paragraphs: [
-					'When mid-tier killers feel strong, prioritize perks and add-ons that win 40–70 meter peeks. When exhaustion recovery get tighter, play more conservatively near generators and hooks and avoid ego third-partys. When a map tile shifts — new locked rooms, moved spawns, killer spawn changes — rewrite your first three minutes on that map before you farm it for bloodpoint goals.',
+					'When mid-tier killers feel strong, prioritize perks and add-ons that win chases in pallet loops. When exhaustion recovery gets tighter, play more conservatively near generators and hooks and avoid ego chases. When a map tile shifts — new locked rooms, moved spawns, killer spawn changes — rewrite your first three minutes on that map before you farm it for bloodpoint goals.',
 					'Keep in-game cosmetics chatter out of patch-day focus. Skin talk is fun; chase pressure and camping patterns are what get you killed. For aggressive survivor timing after a meta shift, see our <a href="/blog/dbd-chase-aggressive-strategies/">chase strategies</a>.',
 					`On big mornings, confirm ${EXT.status} looks healthy before you assume your client is broken. Then run a short checklist: note removed items, update your bloodweb buy list, play five intentional trials, and only then lock a new main killer.`,
 				],
@@ -93,7 +93,7 @@ const sources = [
 			'dbd skins',
 			'dbd cosmetics',
 			'in-game store skins',
-			'the dbd skins',
+			'dbd store',
 			'dbd intel',
 		],
 		imageAlt: 'Dead by Daylight character cosmetics and skin appearance options',
@@ -101,7 +101,7 @@ const sources = [
 			{
 				h2: 'Why most impulse cosmetic buys feel bad after a week',
 				paragraphs: [
-					`Shop rotations and official skins come from ${EXT.dbd}. Leaks are entertainment, not a shopping list. Many players spend hard-earned in-game currency the night before a patch cycle, then realize they still need exhaustion recovery, ammo, and a backup kit.`,
+					`Shop rotations and official skins come from ${EXT.dbd}. Leaks are entertainment, not a shopping list. Many players spend hard-earned in-game currency the night before a patch cycle, then realize they still need med-kits, perks, and a backup build.`,
 					'Controversial but useful: most cosmetics do not raise your escape rate. Some loud patterns even make you easier to spot in grass on Autohaven Wreckers or near pallets. Pros often prefer quieter silhouettes so enemy outlines stay readable in chaotic peeks.',
 				],
 			},
@@ -147,23 +147,23 @@ const sources = [
 			{
 				h2: 'How should you define S-tier in Dead by Daylight?',
 				paragraphs: [
-					'S-tier means the best expected value across a hundred player encounters on maps like MacMillan Estate, Autohaven, and MacMillan Estate — not the killer that looks strongest in a controlled custom game. Mid-range rifles win many of the fights that actually decide trials: forty to seventy meters through doorways, parking lots, and tree lines.',
-					'Stealth killers still own tight tiles. Skill-checks still punish long peeks on Haddonfield and Ormond. Everything between those extremes is usually chase-killer territory, which is why a well-built meta killer or reliable chase build stays relevant patch cycle after patch cycle when ammo and mods are available.',
+					'S-tier means the best expected value across a hundred player encounters on maps like MacMillan Estate, Autohaven Wreckers, and Haddonfield — not the killer that looks strongest in a controlled custom game. Mid-range killers win many of the chases that actually decide trials: pallet loops, indoor tiles, and open fields.',
+					'Stealth killers still own tight tiles. Skill-check perks still punish long chases on Haddonfield and Ormond. Everything between those extremes is usually chase-killer territory, which is why a well-built meta killer or reliable chase build stays relevant patch cycle after patch cycle when perks and add-ons are available.',
 					`Always re-check live values after patches on ${EXT.dbd}. The hierarchy logic stays useful even when numbers nudge.`,
 				],
 			},
 			{
-				h2: 'Ammo, chase pressure, and peek discipline matter more than brand names',
+				h2: 'Perks, chase pressure, and loop discipline matter more than brand names',
 				paragraphs: [
-					'Time-to-kill in Dead by Daylight is really chase outcome. A soft killer with the right rounds beats a loud meta rifle feeding trash ammo into high-tier killers. Learn which rounds you can afford this patch cycle, then pick a platform that controls lunge timing at your skill level.',
-					'First-hit accuracy decides many peeks. A clean cadence — peek, land a clean hit, jiggle back, re-peek — beats standing still for ego lunges. Pair this mid-game plan with generator discipline from our <a href="/blog/dbd-loop-routes-guide/">loop routes guide</a> so you actually start with the loadout you planned to use.',
+					'Chase outcome in Dead by Daylight is really pressure and timing. A stealth killer with the right add-ons beats a loud meta killer feeding bad reads into high-tier survivors. Learn which perks you can afford this patch cycle, then pick a killer that controls lunges at your skill level.',
+					'First-hit accuracy decides many chases. A clean cadence — commit, land a hit, break line of sight, re-engage — beats standing still for ego lunges. Pair this mid-game plan with generator discipline from our <a href="/blog/dbd-loop-routes-guide/">loop routes guide</a> so you actually start with the build you planned to use.',
 				],
 			},
 			{
 				h2: 'Loadout pairings and common mistakes',
 				paragraphs: [
-					'A durable kit is usually a reliable mid-tier killer, a killer build in high-traffic tiles, enough exhaustion recovery, and an killer tier you can replace after deaths. In chases, that same spine supports the aggression patterns in our <a href="/blog/dbd-chase-aggressive-strategies/">chase strategies article</a>.',
-					'Common mistakes: overcommitting from eighty meters, re-peeking the same pixel, swapping to an killer at long range out of habit, and never practicing controlled lunges offline. If you also use aim-assist tooling, lock aim smoothing and fundamentals first, then review <a href="/dbd-aimbot/">DBD Aimbot settings</a>.',
+					'A durable build is usually a reliable mid-tier killer, a perk set for high-traffic tiles, enough exhaustion recovery, and add-ons you can replace after deaths. In chases, that same spine supports the aggression patterns in our <a href="/blog/dbd-chase-aggressive-strategies/">chase strategies article</a>.',
+					'Common mistakes: overcommitting from long range, re-chasing the same loop, swapping to the wrong killer at the wrong time out of habit, and never practicing controlled lunges in custom games. If you also use aim-assist tooling, lock mouse mouse sensitivity and fundamentals first, then review <a href="/dbd-aimbot/">DBD Aimbot settings</a>.',
 				],
 			},
 		],
@@ -178,14 +178,14 @@ const sources = [
 		slug: 'dbd-chase-aggressive-strategies',
 		title: 'Dead by Daylight Chase Strategies That Actually Find Generators',
 		metaDescription:
-			'Five aggressive but smart Dead by Daylight chase strategies — timings, generators, third-partys, and how to leave trials with bloodpoints instead of low bloodpoints.',
+			'Five aggressive but smart Dead by Daylight chase strategies — timings, generators, chases, and how to leave trials with bloodpoints instead of empty builds.',
 		h1: 'Dead by Daylight Chase Strategies: How to Leave With Bloodpoints',
 		intro:
 			'Passive survivor players wait behind a bush while two player teams erase each other, then spray into the mess and die. Strong chases manufacture a short advantage, grab what matters, and escape before the trial ends collapses on you.',
 		keywords: [
 			'dbd chase',
 			'chase strategies',
-			'the dbd survivor',
+			'dbd survivor',
 			'dbd generators',
 			'DBD ESP',
 		],
@@ -194,22 +194,22 @@ const sources = [
 			{
 				h2: 'Why so many chases feel soft',
 				paragraphs: [
-					'survivor builds are random, timers are limited, and player killers can turn on you. Waiting forever for a “perfect” third-party often means you arrive late to a patched lobby with nothing left. Information tools like <a href="/dbd-esp/">DBD ESP</a> can help you see fights early — but you still need an exit plan.',
-					'Decide your loop route before you swing. Take a clear damage window, grab high-value objectives, then leave. The usual third-party clock in hot tiles is only a few seconds long once chase starts.',
+					'Survivor builds are random, timers are limited, and killers can turn on you. Waiting forever for a “perfect” chase often means you arrive late to a patched lobby with nothing left. Information tools like <a href="/dbd-esp/">DBD ESP</a> can help you see threats early — but you still need an exit plan.',
+					'Decide your loop route before you rotate. Take a clear repair window, finish high-value generators, then leave. The usual chase clock in hot tiles is only a few seconds long once the killer commits.',
 				],
 			},
 			{
 				h2: 'Five aggressive habits that still work',
 				paragraphs: [
-					'Pre-aim common corners on MacMillan Estate high-traffic tiles and MacMillan Estate tech stores so you clear angles in under a second. Enter rooms with an exit path, not a panic turn. Fake one side of a doorway, then finish from the safer angle when their stamina is low.',
-					`Stay close to hard cover while you move — never more than a short sprint from a wall or vehicle. Pressure late rotates near generators and hooks when players are silhouetted and greedy. Mode rules evolve with ${EXT.dbd} patch cycles; the geometry of first-shot advantage does not.`,
+					'Pre-aim common corners on MacMillan Estate high-traffic tiles and Haddonfield loops so you clear angles in under a second. Enter tiles with an exit path, not a panic turn. Fake one side of a pallet, then finish from the safer angle when exhaustion is low.',
+					`Stay close to hard cover while you move — never more than a short sprint from a pallet or window. Pressure late rotates near generators and hooks when survivors are greedy. Trial rules evolve with ${EXT.dbd} patch cycles; the geometry of first-hit advantage does not.`,
 				],
 			},
 			{
 				h2: 'Warmup checklist before you start as a survivor',
 				paragraphs: [
 					'Know your map’s main generators, bring a simple med plan, and pick two tiles with cover ladders instead of open fields. Pair this article with <a href="/blog/dbd-loop-routes-guide/">loop routes</a>, <a href="/blog/dbd-killer-tier-list/">killer tiers</a>, and <a href="/blog/dbd-warmup-maps-ranked/">warmup routines</a>.',
-					'Try one trial where you force early contact only when you have armor and a usable killer — then track whether you extracted before the third-party window closed.',
+					'Try one trial where you force early contact only when you have items and a usable perk — then track whether you escaped before the chase window closed.',
 				],
 			},
 		],
@@ -247,7 +247,7 @@ const sources = [
 			{
 				h2: 'Spawn EV and loadout patterns that keep showing up',
 				paragraphs: [
-					'Score every queue on contest rate, generator progress in the first few minutes, generator safety, exit paths, and split potential with teammates. Edge spawns with clean exits often beat “sexy” mid-map landmarks that look good on stream and then get third-partyed.',
+					'Score every queue on contest rate, generator progress in the first few minutes, generator safety, exit paths, and split potential with teammates. Edge spawns with clean exits often beat “sexy” mid-map landmarks that look good on stream and then collapse under killer pressure.',
 					'Expect a reliable mid-tier killer, a killer build, mobility or stamina management, and enough exhaustion recovery. High-tier generators are taken when free, not forced — matching the mindset in our <a href="/blog/dbd-killer-tier-list/">killer tier list</a>.',
 				],
 			},
@@ -265,42 +265,42 @@ const sources = [
 		imageKey: 'trialMapMap',
 		published: '2026-07-18',
 		updated: '2026-08-13',
-		category: 'Loot Routes',
+		category: 'Loop Routes',
 		featured: true,
 		slug: 'dbd-loop-routes-guide',
-		title: 'Dead by Daylight Loot Routes That Leave Spawn Ready to Fight',
+		title: 'Dead by Daylight Loop Routes That Leave Spawn Ready to Chase',
 		metaDescription:
-			'High-percentage Dead by Daylight loop routes for MacMillan Estate, Autohaven, and MacMillan Estate — how to leave start with guns, armor, and exhaustion recovery that win mid-trial fights.',
-		h1: 'Dead by Daylight Loot Routes: Leave Spawn Ready to Fight',
+			'High-percentage Dead by Daylight loop routes for MacMillan Estate, Autohaven Wreckers, and Haddonfield — how to leave start with perks, items, and generator progress that win mid-trial chases.',
+		h1: 'Dead by Daylight Loop Routes: Leave Spawn Ready to Chase',
 		intro:
-			'Winning in Dead by Daylight starts before the first gunfight. Random routing gets you killed with a pistol and no exhaustion recovery. These route habits consistently convert a queueto a kit you can actually fight with.',
+			'Winning in Dead by Daylight starts before the first chase. Random routing gets you downed with no perks and no generator progress. These route habits consistently convert a queue into a build you can actually survive with.',
 		keywords: [
 			'dbd loop routes',
 			'MacMillan Estate generator routes',
-			'MacMillan Estate generator spawns',
+			'Haddonfield generator spawns',
 			'dbd spawn guide',
 			'DBD ESP',
 		],
-		imageAlt: 'Loot route planning across a Dead by Daylight map',
+		imageAlt: 'Loop route planning across a Dead by Daylight map',
 		sections: [
 			{
-				h2: 'Why early inventory is the real bottleneck',
+				h2: 'Why early generator progress is the real bottleneck',
 				paragraphs: [
-					'Many early trial deaths happen because players repair generators without a plan. Strong players treat the first ninety seconds like a shopping list: usable loadout, enough perks, basic items, and a med-kit. Drop spot matters less than sequence — a mediocre tile with discipline beats a stacked landmark with panic routing.',
-					'Secure a primary prestige level and exhaustion recovery before chaseing kills. Early ego chases are how hot-spawn players stay broke.',
+					'Many early trial deaths happen because players repair generators without a plan. Strong players treat the first ninety seconds like a checklist: usable perks, enough items, basic med-kits, and exhaustion recovery. Spawn location matters less than sequence — a mediocre tile with discipline beats a stacked landmark with panic routing.',
+					'Secure generator progress and exhaustion recovery before ego chases. Early killer commits are how hot-spawn survivors stay on the hook.',
 				],
 			},
 			{
-				h2: 'Three route archetypes that keep printing gear',
+				h2: 'Three route archetypes that keep printing progress',
 				paragraphs: [
-					'Contested edge tile: land outer generators, snake inward, leave before late third parties. Uncontested chain: sacrifice early fights for a fuller kit by minute three. Mid-map surge: vacuum piles ninety to one hundred fifty seconds after hot spawns empty out.',
-					`Timing targets help: first generator quickly, clear a cluster, grab heals, then upgrade or leave. Slot priority is usually perks, items, items, exhaustion recovery, then flex objectives. tile names shift with ${EXT.dbd} patch cycles — keep the geometry, not just the landmark brand.`,
+					'Contested edge tile: land outer generators, snake inward, leave before late killer pressure. Uncontested chain: sacrifice early chases for fuller progress by minute three. Mid-map surge: finish generators ninety to one hundred fifty seconds after hot spawns empty out.',
+					`Timing targets help: first generator quickly, clear a cluster, grab heals, then rotate or escape. Slot priority is usually perks, items, med-kits, exhaustion recovery, then flex objectives. Tile names shift with ${EXT.dbd} patch cycles — keep the geometry, not just the landmark brand.`,
 				],
 			},
 			{
 				h2: 'Convert a strong queueto a win',
 				paragraphs: [
-					'Pair these routes with <a href="/blog/dbd-chase-aggressive-strategies/">chase aggression</a> and <a href="/blog/dbd-killer-tier-list/">killer tiers</a>. Leave start with perk advantage so mid-trial becomes a skill check instead of a desperate growth panic.',
+					'Pair these routes with <a href="/blog/dbd-chase-aggressive-strategies/">chase aggression</a> and <a href="/blog/dbd-killer-tier-list/">killer tiers</a>. Leave start with perk advantage so mid-trial becomes a skill check instead of a desperate escape panic.',
 					'If you practice with generator markers, read <a href="/dbd-esp/">DBD ESP</a> for category toggles — then still run the timer so your habits stay sharp without overlays.',
 				],
 			},
@@ -725,13 +725,13 @@ const sources = [
 		],
 	},
 	{
-		id: 'elitefn-two-week-test',
+		id: 'budget-dbd-cheat-two-week-test',
 		imageKey: 'aimbotSkeleton',
 		published: '2026-07-08',
 		updated: '2026-08-13',
 		category: 'Comparisons',
 		featured: false,
-		slug: 'elitefn-vs-dead-by-daylight-cheats-two-week-test',
+		slug: 'budget-dbd-cheat-vs-dbd-cheats-two-week-test',
 		title: 'I Tested Another Dead by Daylight Cheat for 2 Weeks First',
 		metaDescription:
 			'A two-week test of another budget dbd hack before switching to DBD Cheats — ESP feel, soft aim, patch downtime, and support differences.',
@@ -757,7 +757,7 @@ const sources = [
 			{
 				h2: 'Soft aim and the mid-trial feel',
 				paragraphs: [
-					'Conservative FOV soft aim helped SMG and AR tracking. Sniping needed manual profile swaps that slowed me down. When I pushed smoothness too low, corrections looked obvious in review clips. Tuning toward smoother tracking fixed kills and reduced the robotic look.',
+					'Conservative FOV soft aim helped killer chases and pallet loops. Long-range profiles needed manual profile swaps that slowed me down. When I pushed smoothness too low, corrections looked obvious in review clips. Tuning toward smoother tracking fixed downs and reduced the robotic look.',
 					'On DBD Cheats I relied more on per-killer profiles so high-traffic tiles and long peeks did not share one magnet. Details are in the <a href="/dbd-aimbot/">aimbot guide</a>.',
 				],
 			},
@@ -850,11 +850,11 @@ function normalizeKeywords(keywords) {
 const POST_META = {
 	'patch-notes-breakdown': {
 		h1: 'How to Read Dead by Daylight Patch Notes',
-		keywords: ['the dbd patch notes', 'dbd updates', 'eac patch'],
+		keywords: ['dbd patch notes', 'dbd updates', 'eac patch'],
 	},
 	'dbd-skin-leaks': {
 		h1: 'Dead by Daylight Cosmetics Buying Guide',
-		keywords: ['dbd skins', 'dbd cosmetics', 'the dbd store'],
+		keywords: ['dbd skins', 'dbd cosmetics', 'dbd store'],
 	},
 	'dbd-killer-tier-list': {
 		h1: 'Dead by Daylight Killer Tier List for 2026',
@@ -862,15 +862,15 @@ const POST_META = {
 	},
 	'dbd-chase-meta': {
 		h1: 'Dead by Daylight Chase Strategies',
-		keywords: ['dbd chase', 'the dbd survivor', 'dbd generators'],
+		keywords: ['dbd chase', 'dbd survivor', 'dbd generators'],
 	},
 	'dbd-competitive-meta': {
 		h1: 'Competitive Dead by Daylight Meta Guide',
 		keywords: ['dbd competitive', 'dbd meta', 'live servers'],
 	},
 	'dbd-loot-routes': {
-		h1: 'Dead by Daylight Loot Routes Guide',
-		keywords: ['dbd loot routes', 'dbd spawn guide', 'dbd esp'],
+		h1: 'Dead by Daylight Loop Routes Guide',
+		keywords: ['dbd loop routes', 'dbd spawn guide', 'dbd esp'],
 	},
 	'dbd-pro-settings': {
 		h1: 'Dead by Daylight Pro Settings Guide',
@@ -893,11 +893,11 @@ const POST_META = {
 		keywords: ['dbd hacks 2026', 'eac updates', 'hack status'],
 	},
 	'dbd-aimbot-settings-guide': {
-		h1: 'The DBD Aimbot Settings Guide',
+		h1: 'DBD Aimbot Settings Guide',
 		keywords: ['dbd aimbot', 'soft aim', 'aimbot fov'],
 	},
 	'dbd-esp-wallhack-explained': {
-		h1: 'The DBD ESP and Wallhack Guide',
+		h1: 'DBD ESP and Wallhack Guide',
 		keywords: ['dbd esp', 'dbd wallhack', 'dbd cheats'],
 	},
 	'undetected-dbd-cheats-eac': {
@@ -908,7 +908,7 @@ const POST_META = {
 		h1: 'DBD Cheats vs Budget Shops',
 		keywords: ['dbd hacks comparison', 'budget dbd hacks', 'esp radar'],
 	},
-	'elitefn-two-week-test': {
+	'budget-dbd-cheat-two-week-test': {
 		h1: 'Two-Week DBD Cheat Comparison Test',
 		keywords: ['dbd hacks review', 'hack comparison', 'soft aim test'],
 	},
@@ -951,7 +951,7 @@ const EXTRA_SECTIONS = {
 		{
 			h2: 'Chases and information tools work together',
 			paragraphs: [
-				'Survivor timing is about seconds. Seeing a fight early — through sound, map knowledge, or <a href="/dbd-esp/">ESP</a> — lets you third-party with a plan instead of sprinting into a crossfire.',
+				'Survivor timing is about seconds. Seeing a killer early — through sound, map knowledge, or <a href="/dbd-esp/">ESP</a> — lets you rotate with a plan instead of sprinting into a chase blind.',
 				'After a strong chase, protect the kit with conservative settings from our <a href="/dbd-aimbot/">aimbot guide</a> and check <a href="/updates/">Updates</a> before long trials on patch weeks.',
 			],
 		},
@@ -960,7 +960,7 @@ const EXTRA_SECTIONS = {
 		{
 			h2: 'Competitive habits that pair with DBD Cheats tools',
 			paragraphs: [
-				'High-level players win on information timing: who rotates first, who holds generator, who peeks with armor. That is the same loop <a href="/features/">ESP, radar, and soft aim</a> support when tuned conservatively.',
+				'High-level players win on information timing: who rotates first, who holds generator, who commits with perks. That is the same loop <a href="/features/">ESP, radar, and soft aim</a> support when tuned conservatively.',
 				'If you study competitive meta, also read <a href="/dead-by-daylight-cheats/">DBD Cheats</a> and <a href="/setup/">Setup</a> so your overlay stack stays readable instead of noisy during real fights.',
 			],
 		},
@@ -978,7 +978,7 @@ const EXTRA_SECTIONS = {
 		{
 			h2: 'Settings that support ESP and aim tools',
 			paragraphs: [
-				'Stable FPS and clean silhouettes make every tool better. Before you tune <a href="/dbd-aimbot/">soft aim</a>, fix mouse mouse sensitivity and visibility here so assists feel natural instead of robotic.',
+				'Stable FPS and clean silhouettes make every tool better. Before you tune <a href="/dbd-aimbot/">soft aim</a>, fix mouse mouse mouse sensitivity and visibility here so assists feel natural instead of robotic.',
 				'Audio and shadow clarity also reduce how much you need to toggle <a href="/dbd-esp/">ESP categories</a> mid-fight. Revisit settings after major patches on <a href="/updates/">Updates</a>.',
 			],
 		},
@@ -1055,7 +1055,7 @@ const EXTRA_SECTIONS = {
 			],
 		},
 	],
-	'elitefn-two-week-test': [
+	'budget-dbd-cheat-two-week-test': [
 		{
 			h2: 'How to run your own fair comparison',
 			paragraphs: [

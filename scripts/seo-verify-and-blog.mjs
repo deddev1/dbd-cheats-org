@@ -5,7 +5,7 @@ const pages = readFileSync('scripts/i18n-data/pages-en.mjs', 'utf8');
 const bad = [
 	'supply-drop',
 	'BR-critical',
-	'BR loop',
+	'trial loop',
 	'vehicles',
 	'ranked block',
 	'Controllers',

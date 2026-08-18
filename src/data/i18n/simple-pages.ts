@@ -50,7 +50,7 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 			{
 				h2: 'ESP & wallhack',
 				paragraphs: [
-					'See survivors, killers, killeres, and generators through walls with distance readouts.',
+					'See survivors, killers, and generators through walls with distance readouts.',
 					'Use filters so the overlay stays clear in high-traffic tiles, high-traffic tiles, and chase chaos.',
 				],
 				list: ['Player boxes & distance', 'Generator and hook markers', 'Killer and survivor filters'],
@@ -229,7 +229,7 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 		sections: [
 			{
 				h2: 'What ESP shows',
-				paragraphs: ['Boxes, distance, and filters for survivors, killers, killeres, and generators.'],
+				paragraphs: ['Boxes, distance, and filters for survivors, killers, and generators.'],
 				list: ['Player ESP', 'Loot markers', 'Killer and survivor filters'],
 			},
 			{

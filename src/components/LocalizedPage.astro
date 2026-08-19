@@ -32,7 +32,7 @@ function localizeParagraphHtml(html: string): string {
 		.replace(/href="(\/[^"]+)"/g, (_, path: string) => `href="${localizeInternalHref(path, locale)}"`);
 }
 
-const heading = simple?.h1 ?? page.h1;
+const heading = page.h1;
 const intro = simple?.intro ?? page.intro;
 const sections = simple?.sections ?? page.sections;
 const ctaPrimaryLabel = simple?.ctaPrimary ?? page.ctaPrimary;
@@ -90,7 +90,7 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 const lifetime = productInfo.plans.find((p) => p.id === 'lifetime') ?? productInfo.plans[1];
 const showStorePlans = pageId === 'pricing' && locale === 'en';
 
-const eyebrowByPage: Partial<Record<PageId, string>> = {
+const breadcrumbLabelByPage: Partial<Record<PageId, string>> = {
 	features: ui.nav.features,
 	pricing: ui.nav.pricing,
 	updates: ui.nav.updates,
@@ -99,6 +99,7 @@ const eyebrowByPage: Partial<Record<PageId, string>> = {
 	'dbd-aimbot': ui.nav.aimbot,
 	radar: 'Radar',
 	setup: ui.nav.setup,
+	support: t('common.support'),
 	faq: ui.nav.faq,
 };
 ---
@@ -108,9 +109,9 @@ const eyebrowByPage: Partial<Record<PageId, string>> = {
 	description={simple?.description ?? page.description}
 	canonicalPath={canonicalPath}
 	heading={heading}
+	breadcrumbLabel={breadcrumbLabelByPage[pageId]}
 	intro={intro}
 	introEdit={introEdit}
-	eyebrow={eyebrowByPage[pageId]}
 	heroImage={crawl.src}
 	heroAlt={page.imageAlt || crawl.caption}
 	gallery={gallery}

@@ -29,6 +29,8 @@ interface Props {
 	description: string;
 	canonicalPath?: string;
 	heading: string;
+	/** Short nav label for breadcrumbs when H1 is a longer SEO headline. */
+	breadcrumbLabel?: string;
 	intro: string;
 	eyebrow?: string;
 	heroImage?: string;
@@ -52,6 +54,7 @@ const {
 	description,
 	canonicalPath = '/',
 	heading,
+	breadcrumbLabel,
 	intro,
 	eyebrow,
 	heroImage = dbdImages.hero,
@@ -84,7 +87,10 @@ function resolvePageId(path: string): PageId | undefined {
 const pageId = pageIdProp ?? resolvePageId(canonicalPath);
 const ui = getUi(locale);
 const homeHref = getLocalizedPath('home', locale);
+const resolvedBreadcrumbLabel = breadcrumbLabel ?? heading;
 const resolvedEyebrow = eyebrow ?? ui.product.title;
+const showEyebrow =
+	resolvedEyebrow !== resolvedBreadcrumbLabel && resolvedEyebrow !== heading;
 
 const normalizedGallery = gallery
 	.map((item) => {
@@ -98,7 +104,7 @@ const normalizedGallery = gallery
 
 const breadcrumbs = [
 	{ label: ui.nav.home, href: homeHref },
-	{ label: heading },
+	{ label: resolvedBreadcrumbLabel },
 ];
 
 const useHomeHero =
@@ -163,9 +169,9 @@ const useHomeHero =
 					<nav class="banner__crumbs" aria-label={t('common.breadcrumb')}>
 						<a href={homeHref}>{ui.nav.home}</a>
 						<span aria-hidden="true">/</span>
-						<span aria-current="page">{heading}</span>
+						<span aria-current="page">{resolvedBreadcrumbLabel}</span>
 					</nav>
-					<p class="banner__eyebrow">{resolvedEyebrow}</p>
+					{showEyebrow && <p class="banner__eyebrow">{resolvedEyebrow}</p>}
 					<h1 class="banner__title">{heading}</h1>
 					<p class="banner__intro" data-edit={introEdit || undefined}>{intro}</p>
 					{

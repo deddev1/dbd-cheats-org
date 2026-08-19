@@ -14,15 +14,12 @@ const CANONICAL_ORIGIN = 'https://dbdcheats.org';
 const CANONICAL_HOST = 'dbdcheats.org';
 const WWW_HOST = `www.${CANONICAL_HOST}`;
 
+/** Alternate domains only — never include CANONICAL_HOST or WWW_HOST (infinite redirect loop). */
 const LEGACY_HOSTS = new Set([
 	'bestdbdcheats.com',
 	'www.bestdbdcheats.com',
 	'dbdcheat.org',
 	'www.dbdcheat.org',
-	'dbdcheats.org',
-	'www.dbdcheats.org',
-	'bestdbdcheats.com',
-	'www.bestdbdcheats.com',
 ]);
 
 /** /sitemap.xml and /sitemap-*.xml — must stay application/xml for Google Search Console. */

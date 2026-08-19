@@ -66,7 +66,7 @@ const PAGES_PER_LOCALE = PRODUCT_PAGES_PER_LOCALE + BLOG_PAGES_PER_LOCALE;
 const I18N_URLS = I18N_LOCALES * PAGES_PER_LOCALE;
 const TOTAL_PAGES = ENGLISH_PAGES + I18N_URLS;
 /** Full EN HTML may still emit redirect stubs for cannibal URLs; sitemaps omit them */
-const ENGLISH_HTML_PAGES = 24 + BLOG_PAGES + REVIEW_PAGES + FAQ_PAGES;
+const ENGLISH_HTML_PAGES = 25 + BLOG_PAGES + REVIEW_PAGES + FAQ_PAGES;
 /** Locale HTML = product pages + blog redirect stubs (index + 17 posts) that are omitted from sitemaps */
 const LOCALE_BLOG_REDIRECT_PAGES = 18;
 const TOTAL_HTML_PAGES =
@@ -122,15 +122,15 @@ const ENGLISH_PATHS = [
 	'/blog/dbd-pro-settings-guide/',
 	'/blog/dbd-warmup-maps-ranked/',
 	'/blog/dbd-patch-notes-guide/',
-	'/blog/dbd-hacks-complete-guide-2026/',
-	'/blog/dbd-hacks-buyers-guide/',
+	'/blog/dead-by-daylight-cheats-complete-guide-2026/',
+	'/blog/dead-by-daylight-cheats-buyers-guide/',
 	'/blog/dbd-cheats-2026-whats-new/',
 	'/blog/dbd-aimbot-settings-guide/',
 	'/blog/dbd-esp-wallhack-explained/',
 	'/blog/undetected-dbd-cheats-eac/',
-	'/blog/dbd-hacks-vs-cheatvault-comparison/',
+	'/blog/dead-by-daylight-cheats-vs-cheatvault-comparison/',
 	'/blog/budget-dbd-cheat-vs-dbd-cheats-two-week-test/',
-	'/blog/dbd-hacks-vs-ghostware-features-pricing/',
+	'/blog/dead-by-daylight-cheats-vs-ghostware-features-pricing/',
 	'/reviews/',
 	'/reviews/dbd-soft-aim-review-xkrypt0/',
 	'/reviews/dbd-esp-chase-review-buildsr4k/',

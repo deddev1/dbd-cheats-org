@@ -2,7 +2,7 @@
 
 export const uiStringsPart2 = {
 	ar: {
-		nav: { home: 'الرئيسية', hacks: 'Hacks', aimbot: 'Aimbot', esp: 'ESP', features: 'الميزات', pricing: 'الأسعار', setup: 'التثبيت', updates: 'التحديثات', faq: 'الأسئلة', buyNow: 'اشترِ الآن' },
+		nav: { home: 'الرئيسية', hacks: 'Cheats', aimbot: 'Aimbot', esp: 'ESP', features: 'الميزات', pricing: 'الأسعار', setup: 'التثبيت', updates: 'التحديثات', faq: 'الأسئلة', buyNow: 'اشترِ الآن' },
 		hero: { accent: 'غش Dead by Daylight غير مكتشف', accentShort: 'DBD Cheats', subtitle: 'ESP wallhack ورadar hack وAimbot لـ Dead by Daylight على Windows PC — صيانة Easy Anti-Cheat مشمولة.', subtitleShort: 'ESP ورadar وAimbot لـ Dead by Daylight PC', buyNow: 'اشترِ الآن', seeFeatures: 'عرض الميزات' },
 		trust: { status: 'متصل', statusNote: 'حزمة DBD Cheats نشطة لـ Dead by Daylight على Windows PC.', statusShort: 'نشط', delivery: 'تسليم رقمي فوري', platform: 'Windows 10 و11', antiCheat: 'دعم صيانة Easy Anti-Cheat', antiCheatShort: 'دعم Easy Anti-Cheat' },
 		product: { title: 'DBD Cheats', addToCart: 'أضف إلى السلة', monthly: 'شهري', lifetime: 'مدى الحياة', available: 'متوفر الآن', gameBadge: 'Dead by Daylight', platformBadge: 'Windows PC', statusBadge: 'حزمة غير مكتشفة' },
@@ -23,7 +23,7 @@ export const uiStringsPart2 = {
 	},
 	},
 	ja: {
-		nav: { home: 'ホーム', hacks: 'Hacks', aimbot: 'Aimbot', esp: 'ESP', features: '機能', pricing: '料金', setup: 'セットアップ', updates: '更新', faq: 'FAQ', buyNow: '今すぐ購入' },
+		nav: { home: 'ホーム', hacks: 'Cheats', aimbot: 'Aimbot', esp: 'ESP', features: '機能', pricing: '料金', setup: 'セットアップ', updates: '更新', faq: 'FAQ', buyNow: '今すぐ購入' },
 		hero: { accent: 'Undetected Dead by Daylightチート', accentShort: 'DBD Cheats', subtitle: 'Dead by Daylight Windows PC向けESP wallhack、radar hack、Aimbot — Easy Anti-Cheatメンテナンス付き。', subtitleShort: 'Dead by Daylight PC向けESP・radar・Aimbot', buyNow: '今すぐ購入', seeFeatures: '機能を見る' },
 		trust: { status: 'オンライン', statusNote: 'DBD CheatsパッケージはDead by Daylight Windows PCで利用可能です。', statusShort: '稼働中', delivery: '即時デジタル配信', platform: 'Windows 10 & 11', antiCheat: 'Easy Anti-Cheatメンテナンス対応', antiCheatShort: 'Easy Anti-Cheat対応' },
 		product: { title: 'DBD Cheats', addToCart: 'カートに追加', monthly: '月額', lifetime: '永久', available: '現在利用可能', gameBadge: 'Dead by Daylight', platformBadge: 'Windows PC', statusBadge: 'Undetectedパッケージ' },
@@ -44,7 +44,7 @@ export const uiStringsPart2 = {
 	},
 	},
 	ko: {
-		nav: { home: '홈', hacks: 'Hacks', aimbot: 'Aimbot', esp: 'ESP', features: '기능', pricing: '가격', setup: '설치', updates: '업데이트', faq: 'FAQ', buyNow: '구매하기' },
+		nav: { home: '홈', hacks: 'Cheats', aimbot: 'Aimbot', esp: 'ESP', features: '기능', pricing: '가격', setup: '설치', updates: '업데이트', faq: 'FAQ', buyNow: '구매하기' },
 		hero: { accent: 'Undetected Dead by Daylight 치트', accentShort: 'DBD Cheats', subtitle: 'Dead by Daylight Windows PC용 ESP wallhack, radar hack, Aimbot — Easy Anti-Cheat 유지보수 포함.', subtitleShort: 'Dead by Daylight PC용 ESP, radar, Aimbot', buyNow: '지금 구매', seeFeatures: '기능 보기' },
 		trust: { status: '온라인', statusNote: 'DBD Cheats 패키지는 Dead by Daylight Windows PC에서 이용 가능합니다.', statusShort: '가동 중', delivery: '즉시 디지털 배송', platform: 'Windows 10 & 11', antiCheat: 'Easy Anti-Cheat 유지보수 지원', antiCheatShort: 'Easy Anti-Cheat 지원' },
 		product: { title: 'DBD Cheats', addToCart: '장바구니에 추가', monthly: '월간', lifetime: '평생', available: '지금 이용 가능', gameBadge: 'Dead by Daylight', platformBadge: 'Windows PC', statusBadge: 'Undetected 패키지' },
@@ -65,7 +65,7 @@ export const uiStringsPart2 = {
 	},
 	},
 	zh: {
-		nav: { home: '首页', hacks: 'Hacks', aimbot: 'Aimbot', esp: 'ESP', features: '功能', pricing: '价格', setup: '安装', updates: '更新', faq: '常见问题', buyNow: '立即购买' },
+		nav: { home: '首页', hacks: 'Cheats', aimbot: 'Aimbot', esp: 'ESP', features: '功能', pricing: '价格', setup: '安装', updates: '更新', faq: '常见问题', buyNow: '立即购买' },
 		hero: { accent: 'Undetected Dead by Daylight作弊', accentShort: 'DBD Cheats', subtitle: '适用于Dead by Daylight Windows PC的ESP wallhack、radar hack和Aimbot — 含Easy Anti-Cheat维护。', subtitleShort: 'Dead by Daylight PC版ESP、radar与Aimbot', buyNow: '立即购买', seeFeatures: '查看功能' },
 		trust: { status: '在线', statusNote: 'DBD Cheats套餐已在Dead by Daylight Windows PC上线。', statusShort: '运行中', delivery: '即时数字交付', platform: 'Windows 10 和 11', antiCheat: '支持Easy Anti-Cheat维护', antiCheatShort: 'Easy Anti-Cheat支持' },
 		product: { title: 'DBD Cheats', addToCart: '加入购物车', monthly: '月付', lifetime: '终身', available: '现已可用', gameBadge: 'Dead by Daylight', platformBadge: 'Windows PC', statusBadge: 'Undetected套餐' },
@@ -86,7 +86,7 @@ export const uiStringsPart2 = {
 	},
 	},
 	hi: {
-		nav: { home: 'होम', hacks: 'Hacks', aimbot: 'Aimbot', esp: 'ESP', features: 'फ़ीचर्स', pricing: 'कीमत', setup: 'सेटअप', updates: 'अपडेट', faq: 'FAQ', buyNow: 'अभी खरीदें' },
+		nav: { home: 'होम', hacks: 'Cheats', aimbot: 'Aimbot', esp: 'ESP', features: 'फ़ीचर्स', pricing: 'कीमत', setup: 'सेटअप', updates: 'अपडेट', faq: 'FAQ', buyNow: 'अभी खरीदें' },
 		hero: { accent: 'Undetected dbd cheats', accentShort: 'DBD Cheats', subtitle: 'Dead by Daylight Windows PC के लिए ESP wallhack, radar hack और Aimbot — Easy Anti-Cheat maintenance शामिल।', subtitleShort: 'Dead by Daylight PC के लिए ESP, radar और Aimbot', buyNow: 'अभी खरीदें', seeFeatures: 'फ़ीचर्स देखें' },
 		trust: { status: 'ऑनलाइन', statusNote: 'DBD Cheats पैकेज Dead by Daylight Windows PC के लिए सक्रिय है।', statusShort: 'सक्रिय', delivery: 'तुरंत डिजिटल डिलीवरी', platform: 'Windows 10 और 11', antiCheat: 'Easy Anti-Cheat maintenance समर्थित', antiCheatShort: 'Easy Anti-Cheat समर्थित' },
 		product: { title: 'DBD Cheats', addToCart: 'कार्ट में जोड़ें', monthly: 'मासिक', lifetime: 'लाइफ़टाइम', available: 'अभी उपलब्ध', gameBadge: 'Dead by Daylight', platformBadge: 'Windows PC', statusBadge: 'Undetected पैकेज' },
@@ -107,7 +107,7 @@ export const uiStringsPart2 = {
 	},
 	},
 	id: {
-		nav: { home: 'Beranda', hacks: 'Hacks', aimbot: 'Aimbot', esp: 'ESP', features: 'Fitur', pricing: 'Harga', setup: 'Setup', updates: 'Pembaruan', faq: 'FAQ', buyNow: 'Beli sekarang' },
+		nav: { home: 'Beranda', hacks: 'Cheats', aimbot: 'Aimbot', esp: 'ESP', features: 'Fitur', pricing: 'Harga', setup: 'Setup', updates: 'Pembaruan', faq: 'FAQ', buyNow: 'Beli sekarang' },
 		hero: { accent: 'Cheat Dead by Daylight undetected', accentShort: 'DBD Cheats', subtitle: 'ESP wallhack, radar hack, dan Aimbot untuk Dead by Daylight di PC Windows — pemeliharaan Easy Anti-Cheat termasuk.', subtitleShort: 'ESP, radar & Aimbot untuk Dead by Daylight PC', buyNow: 'Beli sekarang', seeFeatures: 'Lihat fitur' },
 		trust: { status: 'Online', statusNote: 'Paket DBD Cheats aktif untuk Dead by Daylight di PC Windows.', statusShort: 'Aktif', delivery: 'Pengiriman digital instan', platform: 'Windows 10 & 11', antiCheat: 'Pemeliharaan Easy Anti-Cheat didukung', antiCheatShort: 'Easy Anti-Cheat didukung' },
 		product: { title: 'DBD Cheats', addToCart: 'Tambah ke keranjang', monthly: 'Bulanan', lifetime: 'Seumur hidup', available: 'Tersedia sekarang', gameBadge: 'Dead by Daylight', platformBadge: 'Windows PC', statusBadge: 'Paket undetected' },
@@ -128,7 +128,7 @@ export const uiStringsPart2 = {
 	},
 	},
 	th: {
-		nav: { home: 'หน้าแรก', hacks: 'Hacks', aimbot: 'Aimbot', esp: 'ESP', features: 'ฟีเจอร์', pricing: 'ราคา', setup: 'ติดตั้ง', updates: 'อัปเดต', faq: 'FAQ', buyNow: 'ซื้อเลย' },
+		nav: { home: 'หน้าแรก', hacks: 'Cheats', aimbot: 'Aimbot', esp: 'ESP', features: 'ฟีเจอร์', pricing: 'ราคา', setup: 'ติดตั้ง', updates: 'อัปเดต', faq: 'FAQ', buyNow: 'ซื้อเลย' },
 		hero: { accent: 'dbd cheats ไม่ถูกตรวจจับ', accentShort: 'DBD Cheats', subtitle: 'ESP wallhack, radar hack และ Aimbot สำหรับ Dead by Daylight บน Windows PC — รวมการดูแล Easy Anti-Cheat', subtitleShort: 'ESP, radar และ Aimbot สำหรับ Dead by Daylight PC', buyNow: 'ซื้อเลย', seeFeatures: 'ดูฟีเจอร์' },
 		trust: { status: 'ออนไลน์', statusNote: 'แพ็กเกจ DBD Cheats พร้อมใช้งานสำหรับ Dead by Daylight บน Windows PC', statusShort: 'ใช้งาน', delivery: 'จัดส่งดิจิทัลทันที', platform: 'Windows 10 และ 11', antiCheat: 'รองรับการดูแล Easy Anti-Cheat', antiCheatShort: 'Easy Anti-Cheat รองรับ' },
 		product: { title: 'DBD Cheats', addToCart: 'เพิ่มในตะกร้า', monthly: 'รายเดือน', lifetime: 'ตลอดชีพ', available: 'พร้อมใช้งาน', gameBadge: 'Dead by Daylight', platformBadge: 'Windows PC', statusBadge: 'แพ็กเกจ undetected' },
@@ -149,7 +149,7 @@ export const uiStringsPart2 = {
 	},
 	},
 	vi: {
-		nav: { home: 'Trang chủ', hacks: 'Hacks', aimbot: 'Aimbot', esp: 'ESP', features: 'Tính năng', pricing: 'Giá', setup: 'Cài đặt', updates: 'Cập nhật', faq: 'FAQ', buyNow: 'Mua ngay' },
+		nav: { home: 'Trang chủ', hacks: 'Cheats', aimbot: 'Aimbot', esp: 'ESP', features: 'Tính năng', pricing: 'Giá', setup: 'Cài đặt', updates: 'Cập nhật', faq: 'FAQ', buyNow: 'Mua ngay' },
 		hero: { accent: 'Cheat Dead by Daylight undetected', accentShort: 'DBD Cheats', subtitle: 'ESP wallhack, radar hack và Aimbot cho Dead by Daylight trên PC Windows — bảo trì Easy Anti-Cheat bao gồm.', subtitleShort: 'ESP, radar & Aimbot cho Dead by Daylight PC', buyNow: 'Mua ngay', seeFeatures: 'Xem tính năng' },
 		trust: { status: 'Trực tuyến', statusNote: 'Gói DBD Cheats đang hoạt động cho Dead by Daylight trên PC Windows.', statusShort: 'Hoạt động', delivery: 'Giao hàng kỹ thuật số tức thì', platform: 'Windows 10 & 11', antiCheat: 'Hỗ trợ bảo trì Easy Anti-Cheat', antiCheatShort: 'Hỗ trợ Easy Anti-Cheat' },
 		product: { title: 'DBD Cheats', addToCart: 'Thêm vào giỏ', monthly: 'Hàng tháng', lifetime: 'Trọn đời', available: 'Có sẵn ngay', gameBadge: 'Dead by Daylight', platformBadge: 'Windows PC', statusBadge: 'Gói undetected' },
@@ -170,7 +170,7 @@ export const uiStringsPart2 = {
 	},
 	},
 	uk: {
-		nav: { home: 'Головна', hacks: 'Hacks', aimbot: 'Aimbot', esp: 'ESP', features: 'Функції', pricing: 'Ціни', setup: 'Встановлення', updates: 'Оновлення', faq: 'FAQ', buyNow: 'Купити' },
+		nav: { home: 'Головна', hacks: 'Cheats', aimbot: 'Aimbot', esp: 'ESP', features: 'Функції', pricing: 'Ціни', setup: 'Встановлення', updates: 'Оновлення', faq: 'FAQ', buyNow: 'Купити' },
 		hero: { accent: 'Undetected чіти Dead by Daylight', accentShort: 'DBD Cheats', subtitle: 'ESP wallhack, radar hack і Aimbot для Dead by Daylight на Windows PC — обслуговування Easy Anti-Cheat включено.', subtitleShort: 'ESP, radar і Aimbot для Dead by Daylight PC', buyNow: 'Купити', seeFeatures: 'Дивитися функції' },
 		trust: { status: 'Онлайн', statusNote: 'Пакет DBD Cheats активний для Dead by Daylight на Windows PC.', statusShort: 'Активний', delivery: 'Миттєва цифрова доставка', platform: 'Windows 10 і 11', antiCheat: 'Підтримка обслуговування Easy Anti-Cheat', antiCheatShort: 'Easy Anti-Cheat підтримка' },
 		product: { title: 'DBD Cheats', addToCart: 'До кошика', monthly: 'Щомісяця', lifetime: 'Назавжди', available: 'Доступно зараз', gameBadge: 'Dead by Daylight', platformBadge: 'Windows PC', statusBadge: 'Undetected пакет' },
@@ -191,7 +191,7 @@ export const uiStringsPart2 = {
 	},
 	},
 	cs: {
-		nav: { home: 'Domů', hacks: 'Hacks', aimbot: 'Aimbot', esp: 'ESP', features: 'Funkce', pricing: 'Ceny', setup: 'Instalace', updates: 'Aktualizace', faq: 'FAQ', buyNow: 'Koupit' },
+		nav: { home: 'Domů', hacks: 'Cheats', aimbot: 'Aimbot', esp: 'ESP', features: 'Funkce', pricing: 'Ceny', setup: 'Instalace', updates: 'Aktualizace', faq: 'FAQ', buyNow: 'Koupit' },
 		hero: { accent: 'Undetected dbd cheaty', accentShort: 'DBD Cheats', subtitle: 'ESP wallhack, radar hack a Aimbot pro Dead by Daylight na Windows PC — údržba Easy Anti-Cheat v ceně.', subtitleShort: 'ESP, radar a Aimbot pro Dead by Daylight PC', buyNow: 'Koupit', seeFeatures: 'Zobrazit funkce' },
 		trust: { status: 'Online', statusNote: 'Balíček DBD Cheats je aktivní pro Dead by Daylight na Windows PC.', statusShort: 'Aktivní', delivery: 'Okamžité digitální doručení', platform: 'Windows 10 a 11', antiCheat: 'Podpora údržby Easy Anti-Cheat', antiCheatShort: 'Easy Anti-Cheat podpora' },
 		product: { title: 'DBD Cheats', addToCart: 'Přidat do košíku', monthly: 'Měsíčně', lifetime: 'Doživotně', available: 'Dostupné nyní', gameBadge: 'Dead by Daylight', platformBadge: 'Windows PC', statusBadge: 'Undetected balíček' },
@@ -212,7 +212,7 @@ export const uiStringsPart2 = {
 	},
 	},
 	ro: {
-		nav: { home: 'Acasă', hacks: 'Hacks', aimbot: 'Aimbot', esp: 'ESP', features: 'Funcții', pricing: 'Prețuri', setup: 'Instalare', updates: 'Actualizări', faq: 'FAQ', buyNow: 'Cumpără' },
+		nav: { home: 'Acasă', hacks: 'Cheats', aimbot: 'Aimbot', esp: 'ESP', features: 'Funcții', pricing: 'Prețuri', setup: 'Instalare', updates: 'Actualizări', faq: 'FAQ', buyNow: 'Cumpără' },
 		hero: { accent: 'Cheats Dead by Daylight undetected', accentShort: 'DBD Cheats', subtitle: 'ESP wallhack, radar hack și Aimbot pentru Dead by Daylight pe PC Windows — mentenanță Easy Anti-Cheat inclusă.', subtitleShort: 'ESP, radar și Aimbot pentru Dead by Daylight PC', buyNow: 'Cumpără acum', seeFeatures: 'Vezi funcții' },
 		trust: { status: 'Online', statusNote: 'Pachetul DBD Cheats este activ pentru Dead by Daylight pe PC Windows.', statusShort: 'Activ', delivery: 'Livrare digitală instantă', platform: 'Windows 10 și 11', antiCheat: 'Mentenanță Easy Anti-Cheat suportată', antiCheatShort: 'Easy Anti-Cheat suportat' },
 		product: { title: 'DBD Cheats', addToCart: 'Adaugă în coș', monthly: 'Lunar', lifetime: 'Pe viață', available: 'Disponibil acum', gameBadge: 'Dead by Daylight', platformBadge: 'Windows PC', statusBadge: 'Pachet undetected' },
@@ -233,7 +233,7 @@ export const uiStringsPart2 = {
 	},
 	},
 	sv: {
-		nav: { home: 'Hem', hacks: 'Hacks', aimbot: 'Aimbot', esp: 'ESP', features: 'Funktioner', pricing: 'Priser', setup: 'Installation', updates: 'Uppdateringar', faq: 'FAQ', buyNow: 'Köp nu' },
+		nav: { home: 'Hem', hacks: 'Cheats', aimbot: 'Aimbot', esp: 'ESP', features: 'Funktioner', pricing: 'Priser', setup: 'Installation', updates: 'Uppdateringar', faq: 'FAQ', buyNow: 'Köp nu' },
 		hero: { accent: 'Undetected dbd cheats', accentShort: 'DBD Cheats', subtitle: 'ESP wallhack, radar hack och Aimbot för Dead by Daylight på Windows PC — Easy Anti-Cheat-underhåll ingår.', subtitleShort: 'ESP, radar & Aimbot för Dead by Daylight PC', buyNow: 'Köp nu', seeFeatures: 'Se funktioner' },
 		trust: { status: 'Online', statusNote: 'DBD Cheats-paketet är live för Dead by Daylight på Windows PC.', statusShort: 'Live', delivery: 'Omedelbar digital leverans', platform: 'Windows 10 & 11', antiCheat: 'Easy Anti-Cheat-underhåll stöds', antiCheatShort: 'Easy Anti-Cheat stöd' },
 		product: { title: 'DBD Cheats', addToCart: 'Lägg i varukorg', monthly: 'Månadsvis', lifetime: 'Lifetime', available: 'Tillgänglig nu', gameBadge: 'Dead by Daylight', platformBadge: 'Windows PC', statusBadge: 'Undetected paket' },

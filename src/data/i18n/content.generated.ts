@@ -34,7 +34,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 			ui: {
 				nav: {
 					home: "Home",
-					hacks: "Hacks",
+					hacks: "Cheats",
 					aimbot: "Aimbot",
 					esp: "ESP",
 					features: "Features",
@@ -1085,7 +1085,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 			ui: {
 				nav: {
 					home: "Inicio",
-					hacks: "Hacks",
+					hacks: "Cheats",
 					aimbot: "Aimbot",
 					esp: "ESP",
 					features: "Funciones",
@@ -2028,7 +2028,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 			ui: {
 				nav: {
 					home: "Accueil",
-					hacks: "Hacks",
+					hacks: "Cheats",
 					aimbot: "Aimbot",
 					esp: "ESP",
 					features: "Fonctions",
@@ -2971,7 +2971,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 			ui: {
 				nav: {
 					home: "Start",
-					hacks: "Hacks",
+					hacks: "Cheats",
 					aimbot: "Aimbot",
 					esp: "ESP",
 					features: "Features",
@@ -3914,7 +3914,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 			ui: {
 				nav: {
 					home: "Início",
-					hacks: "Hacks",
+					hacks: "Cheats",
 					aimbot: "Aimbot",
 					esp: "ESP",
 					features: "Recursos",
@@ -4857,7 +4857,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 			ui: {
 				nav: {
 					home: "Home",
-					hacks: "Hacks",
+					hacks: "Cheats",
 					aimbot: "Aimbot",
 					esp: "ESP",
 					features: "Funzioni",
@@ -5800,7 +5800,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 			ui: {
 				nav: {
 					home: "Home",
-					hacks: "Hacks",
+					hacks: "Cheats",
 					aimbot: "Aimbot",
 					esp: "ESP",
 					features: "Functies",
@@ -6743,7 +6743,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 			ui: {
 				nav: {
 					home: "Strona główna",
-					hacks: "Hacks",
+					hacks: "Cheats",
 					aimbot: "Aimbot",
 					esp: "ESP",
 					features: "Funkcje",
@@ -7686,7 +7686,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 			ui: {
 				nav: {
 					home: "Главная",
-					hacks: "Hacks",
+					hacks: "Cheats",
 					aimbot: "Aimbot",
 					esp: "ESP",
 					features: "Функции",
@@ -8629,7 +8629,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 			ui: {
 				nav: {
 					home: "Ana sayfa",
-					hacks: "Hacks",
+					hacks: "Cheats",
 					aimbot: "Aimbot",
 					esp: "ESP",
 					features: "Özellikler",
@@ -9572,7 +9572,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 			ui: {
 				nav: {
 					home: "الرئيسية",
-					hacks: "Hacks",
+					hacks: "Cheats",
 					aimbot: "Aimbot",
 					esp: "ESP",
 					features: "الميزات",
@@ -10515,7 +10515,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 			ui: {
 				nav: {
 					home: "ホーム",
-					hacks: "Hacks",
+					hacks: "Cheats",
 					aimbot: "Aimbot",
 					esp: "ESP",
 					features: "機能",
@@ -11458,7 +11458,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 			ui: {
 				nav: {
 					home: "홈",
-					hacks: "Hacks",
+					hacks: "Cheats",
 					aimbot: "Aimbot",
 					esp: "ESP",
 					features: "기능",
@@ -12401,7 +12401,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 			ui: {
 				nav: {
 					home: "首页",
-					hacks: "Hacks",
+					hacks: "Cheats",
 					aimbot: "Aimbot",
 					esp: "ESP",
 					features: "功能",
@@ -13344,7 +13344,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 			ui: {
 				nav: {
 					home: "होम",
-					hacks: "Hacks",
+					hacks: "Cheats",
 					aimbot: "Aimbot",
 					esp: "ESP",
 					features: "फ़ीचर्स",
@@ -14287,7 +14287,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 			ui: {
 				nav: {
 					home: "Beranda",
-					hacks: "Hacks",
+					hacks: "Cheats",
 					aimbot: "Aimbot",
 					esp: "ESP",
 					features: "Fitur",
@@ -15230,7 +15230,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 			ui: {
 				nav: {
 					home: "หน้าแรก",
-					hacks: "Hacks",
+					hacks: "Cheats",
 					aimbot: "Aimbot",
 					esp: "ESP",
 					features: "ฟีเจอร์",
@@ -16173,7 +16173,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 			ui: {
 				nav: {
 					home: "Trang chủ",
-					hacks: "Hacks",
+					hacks: "Cheats",
 					aimbot: "Aimbot",
 					esp: "ESP",
 					features: "Tính năng",
@@ -17116,7 +17116,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 			ui: {
 				nav: {
 					home: "Головна",
-					hacks: "Hacks",
+					hacks: "Cheats",
 					aimbot: "Aimbot",
 					esp: "ESP",
 					features: "Функції",
@@ -18059,7 +18059,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 			ui: {
 				nav: {
 					home: "Domů",
-					hacks: "Hacks",
+					hacks: "Cheats",
 					aimbot: "Aimbot",
 					esp: "ESP",
 					features: "Funkce",
@@ -19002,7 +19002,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 			ui: {
 				nav: {
 					home: "Acasă",
-					hacks: "Hacks",
+					hacks: "Cheats",
 					aimbot: "Aimbot",
 					esp: "ESP",
 					features: "Funcții",
@@ -19945,7 +19945,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 			ui: {
 				nav: {
 					home: "Hem",
-					hacks: "Hacks",
+					hacks: "Cheats",
 					aimbot: "Aimbot",
 					esp: "ESP",
 					features: "Funktioner",

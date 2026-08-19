@@ -20,7 +20,7 @@ const TOPIC_LINKS = {
 	pricing: { kind: 'page' as const, pageId: 'pricing' as const, label: 'Store & pricing' },
 	setup: { kind: 'page' as const, pageId: 'setup' as const, label: L('{gameShort} setup guide') },
 	status: { kind: 'page' as const, pageId: 'updates' as const, label: L('Live {gameShort} status') },
-	faq: { kind: 'page' as const, pageId: 'faq' as const, label: L('{gameShort} hacks FAQ') },
+	faq: { kind: 'page' as const, pageId: 'faq' as const, label: L('{gameShort} cheats FAQ') },
 	support: { kind: 'page' as const, pageId: 'support' as const, label: L('{brand} support') },
 	blog: { kind: 'path' as const, path: '/blog/', label: L('{gameShort} Intel blog') },
 	reviews: { kind: 'path' as const, path: '/reviews/', label: L('{brand} buyer reviews') },
@@ -28,7 +28,7 @@ const TOPIC_LINKS = {
 	undetected: {
 		kind: 'page' as const,
 		pageId: 'undetected' as const,
-		label: L('Undetected {gameShort} hacks'),
+		label: L('Undetected {gameShort} cheats'),
 	},
 } satisfies Record<string, InternalLinkTarget>;
 

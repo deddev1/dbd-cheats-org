@@ -53,22 +53,18 @@ if (!workerSrc.includes('host === CANONICAL_HOST && proto === \'https\'')) {
 	ok('src/worker.ts: canonical apex HTTPS early-return present');
 }
 
-if (!workerSrc.includes('isBuiltSitemapPath')) {
-	fail('src/worker.ts: must use isBuiltSitemapPath (legacy sitemap-index.xml must not 404)');
+if (!workerSrc.includes('resolveSitemapAssetPath(url.pathname)')) {
+	fail('src/worker.ts: must resolve sitemap aliases before any redirects');
 } else {
-	ok('src/worker.ts: uses explicit built sitemap path matcher');
+	ok('src/worker.ts: resolves sitemap aliases before redirects');
 }
 
-if (!workerSrc.includes('resolvePathRedirect(url.pathname)') || !workerSrc.includes('isBuiltSitemapPath(url.pathname)')) {
-	fail('src/worker.ts: path redirects must run before built sitemap asset fetch');
+const serveIdx = workerSrc.indexOf('const sitemapAsset = resolveSitemapAssetPath(url.pathname)');
+const hostIdx = workerSrc.indexOf('const hostRedirect = canonicalHostRedirect(request, url)');
+if (serveIdx === -1 || hostIdx === -1 || serveIdx > hostIdx) {
+	fail('src/worker.ts: sitemap asset fetch must run before canonicalHostRedirect');
 } else {
-	const redirectIdx = workerSrc.indexOf('const pathRedirect = resolvePathRedirect(url.pathname)');
-	const assetIdx = workerSrc.indexOf('if (isBuiltSitemapPath(url.pathname))');
-	if (redirectIdx === -1 || assetIdx === -1 || redirectIdx > assetIdx) {
-		fail('src/worker.ts: path redirects must run before built sitemap asset fetch');
-	} else {
-		ok('src/worker.ts: path redirects run before sitemap asset fetch');
-	}
+	ok('src/worker.ts: sitemap served before host/path redirects (avoids GSC HTTP 301)');
 }
 
 if (!workerSrc.includes('WWW_HOST && proto === \'https\' && isSitemapRelatedPath')) {

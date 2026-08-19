@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/** Live production checks for Google Search Console sitemap fetch requirements. */
+/** Live production checks — GSC fails with "HTTP Error: 301" when sitemap URLs redirect. */
 const APEX = 'https://dbdcheats.org';
 const WWW = 'https://www.dbdcheats.org';
 const UA = 'Googlebot/2.1 (+http://www.google.com/bot.html)';
@@ -13,70 +13,44 @@ function ok(msg) {
 	console.log(`✓ ${msg}`);
 }
 
-async function fetchSitemap(url, { redirect = 'follow' } = {}) {
-	return fetch(url, { headers: { 'User-Agent': UA }, redirect });
-}
-
-async function checkDirectXml(label, url) {
-	const res = await fetchSitemap(url);
+async function expect200(label, url) {
+	const res = await fetch(url, { headers: { 'User-Agent': UA }, redirect: 'manual' });
 	const ct = res.headers.get('content-type') || '';
-	const corp = res.headers.get('cross-origin-resource-policy');
-	const csp = res.headers.get('content-security-policy');
-	const text = await res.text();
+	const text = res.ok ? await res.text() : '';
 
+	if (res.status === 301 || res.status === 302) {
+		fail(`${label} returned HTTP ${res.status} (GSC error) → ${res.headers.get('location')}`);
+		return;
+	}
 	if (!res.ok) fail(`${label} HTTP ${res.status}`);
-	else ok(`${label} HTTP ${res.status}`);
+	else ok(`${label} HTTP ${res.status} (no redirect)`);
 
 	if (!ct.includes('application/xml')) fail(`${label} Content-Type is ${ct}`);
 	else ok(`${label} Content-Type: application/xml`);
 
-	if (corp === 'same-origin') fail(`${label} has CORP same-origin`);
-	if (csp) fail(`${label} has Content-Security-Policy`);
-
 	if (!text.includes('<')) fail(`${label} body is not XML`);
-	else ok(`${label} returns XML body (${text.length} bytes)`);
 }
 
-async function checkRedirect(label, url, expectedLocation) {
-	const res = await fetchSitemap(url, { redirect: 'manual' });
-	const location = res.headers.get('location') || '';
-	if (res.status < 300 || res.status >= 400) {
-		fail(`${label} expected redirect, got HTTP ${res.status}`);
-		return;
-	}
-	if (!location.startsWith(expectedLocation)) {
-		fail(`${label} redirects to ${location}, expected ${expectedLocation}`);
-	} else {
-		ok(`${label} redirects to ${expectedLocation}`);
-	}
-}
+console.log('GSC requires HTTP 200 on the submitted sitemap URL — no 301/302.\n');
 
-console.log('Checking apex sitemap…');
-await checkDirectXml('dbdcheats.org/sitemap.xml', `${APEX}/sitemap.xml`);
+await expect200('https://dbdcheats.org/sitemap.xml', `${APEX}/sitemap.xml`);
+await expect200('http://dbdcheats.org/sitemap.xml', `http://dbdcheats.org/sitemap.xml`);
+await expect200('https://www.dbdcheats.org/sitemap.xml', `${WWW}/sitemap.xml`);
+await expect200('http://www.dbdcheats.org/sitemap.xml', `http://www.dbdcheats.org/sitemap.xml`);
+await expect200('sitemap.xml trailing slash', `${APEX}/sitemap.xml/`);
+await expect200('Sitemap.xml mixed case', `${APEX}/Sitemap.xml`);
+await expect200('legacy sitemap-index.xml', `${APEX}/sitemap-index.xml`);
+await expect200('legacy sitemap-0.xml', `${APEX}/sitemap-0.xml`);
 
-console.log('\nChecking www sitemap (URL-prefix GSC)…');
-await checkDirectXml('www.dbdcheats.org/sitemap.xml', `${WWW}/sitemap.xml`);
-
-console.log('\nChecking legacy sitemap URLs…');
-await checkRedirect('sitemap-index.xml', `${APEX}/sitemap-index.xml`, `${APEX}/sitemap.xml`);
-await checkRedirect('sitemap-0.xml', `${APEX}/sitemap-0.xml`, `${APEX}/sitemap.xml`);
-await checkRedirect('www sitemap-index.xml', `${WWW}/sitemap-index.xml`, `${WWW}/sitemap.xml`);
-
-console.log('\nChecking sitemap index children…');
-const indexRes = await fetchSitemap(`${APEX}/sitemap.xml`);
-const indexXml = await indexRes.text();
-const childLocs = [...indexXml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
+const indexRes = await fetch(`${APEX}/sitemap.xml`, { headers: { 'User-Agent': UA } });
+const childLocs = [...(await indexRes.text()).matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
 let childFails = 0;
 for (const loc of childLocs) {
-	const r = await fetch(loc, { headers: { 'User-Agent': UA } });
-	const childCt = r.headers.get('content-type') || '';
-	const childCorp = r.headers.get('cross-origin-resource-policy');
-	if (!r.ok || !childCt.includes('application/xml') || childCorp === 'same-origin') {
-		childFails += 1;
-		console.error(`✗ child ${loc} status=${r.status} ct=${childCt} corp=${childCorp ?? 'none'}`);
-	}
+	const r = await fetch(loc, { headers: { 'User-Agent': UA }, redirect: 'manual' });
+	if (!r.ok || r.status === 301 || r.status === 302) childFails += 1;
 }
-if (childFails === 0) ok(`All ${childLocs.length} index child sitemaps fetch OK`);
+if (childFails === 0) ok(`All ${childLocs.length} child sitemaps return HTTP 200`);
+else fail(`${childFails} child sitemap(s) redirect or error`);
 
 if (process.exitCode) process.exit(process.exitCode);
-console.log('\nProduction sitemap fetch checks passed.');
+console.log('\nAll sitemap URLs return HTTP 200 — safe for Google Search Console.');

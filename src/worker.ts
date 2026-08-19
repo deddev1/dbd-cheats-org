@@ -30,8 +30,17 @@ function isBuiltSitemapPath(pathname: string): boolean {
 	return BUILT_SITEMAP_PATH.test(pathname);
 }
 
-function isSitemapRelatedPath(pathname: string): boolean {
-	return /^\/sitemap/i.test(pathname);
+function resolveSitemapAssetPath(pathname: string): string | null {
+	const lower = pathname.toLowerCase();
+	if (lower === '/sitemap-index.xml' || lower === '/sitemap-0.xml') {
+		return '/sitemap.xml';
+	}
+	if (lower.endsWith('.xml/')) {
+		const trimmed = lower.slice(0, -1);
+		if (isBuiltSitemapPath(trimmed)) return trimmed;
+	}
+	if (isBuiltSitemapPath(lower)) return lower;
+	return null;
 }
 
 function requestHost(request: Request, url: URL): string {
@@ -40,10 +49,14 @@ function requestHost(request: Request, url: URL): string {
 
 /** Keep www sitemap URLs on www — GSC URL-prefix properties require a direct 200 on the same host. */
 function redirectOrigin(host: string, pathname: string): string {
-	if (host === WWW_HOST && isSitemapRelatedPath(pathname)) {
+	if (host === WWW_HOST && /^\/sitemap/i.test(pathname)) {
 		return `https://${WWW_HOST}`;
 	}
 	return CANONICAL_ORIGIN;
+}
+
+function isSitemapRelatedPath(pathname: string): boolean {
+	return resolveSitemapAssetPath(pathname) !== null;
 }
 
 function getClientProtocol(request: Request, url: URL): string {
@@ -133,6 +146,13 @@ export default {
 	async fetch(request: Request, env: Env): Promise<Response> {
 		const url = new URL(request.url);
 
+		// Serve sitemap XML with HTTP 200 on every alias (http/www/trailing slash/legacy names).
+		// GSC reports "HTTP Error: 301" when the submitted sitemap URL redirects.
+		const sitemapAsset = resolveSitemapAssetPath(url.pathname);
+		if (sitemapAsset) {
+			return fetchSitemapAsset(env, sitemapAsset);
+		}
+
 		const hostRedirect = canonicalHostRedirect(request, url);
 		if (hostRedirect) return hostRedirect;
 
@@ -144,26 +164,11 @@ export default {
 			return new Response(notFound.body, { status: 200, headers });
 		}
 
-		const host = requestHost(request, url);
-
-		// Normalize /Sitemap.xml → /sitemap.xml before redirect/asset handling.
-		if (isSitemapRelatedPath(url.pathname) && url.pathname !== url.pathname.toLowerCase()) {
-			const target = new URL(
-				url.pathname.toLowerCase() + url.search,
-				redirectOrigin(host, url.pathname),
-			);
-			return redirectResponse(target.toString());
-		}
-
-		// Legacy sitemap URLs (sitemap-index.xml, sitemap-0.xml, trailing slashes) before asset fetch.
 		const pathRedirect = resolvePathRedirect(url.pathname);
 		if (pathRedirect) {
+			const host = requestHost(request, url);
 			const target = new URL(pathRedirect + url.search, redirectOrigin(host, url.pathname));
 			return redirectResponse(target.toString());
-		}
-
-		if (isBuiltSitemapPath(url.pathname)) {
-			return fetchSitemapAsset(env, url.pathname);
 		}
 
 		const response = await env.ASSETS.fetch(request);

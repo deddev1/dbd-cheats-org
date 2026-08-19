@@ -13,7 +13,7 @@ export const brand = {
 	locale: 'en',
 	market: 'Worldwide',
 	supportEmail: 'support@dbdcheats.org',
-	checkoutUrl: 'https://zadeyo.com/go/QRH?to=%2Fproducts%2Fdead-by-daylight',
+	checkoutUrl: 'https://zadeyo.com/go/QRH?to=%2Fproducts%2Fdbd',
 
 	/** Game this template instance targets */
 	game: 'Dead by Daylight',

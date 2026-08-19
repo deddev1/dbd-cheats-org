@@ -32,7 +32,53 @@ function localizeParagraphHtml(html: string): string {
 		.replace(/href="(\/[^"]+)"/g, (_, path: string) => `href="${localizeInternalHref(path, locale)}"`);
 }
 
-const heading = page.h1;
+function normalizeLabel(value: string): string {
+	return value.trim().toLowerCase();
+}
+
+/** Prefer a short H1 that does not repeat the breadcrumb nav label. */
+function resolvePageHeading(
+	pageContent: { h1: string; title: string },
+	simpleH1: string | undefined,
+	breadcrumbLabel: string | undefined,
+): string {
+	const candidate = simpleH1 ?? pageContent.h1;
+	if (!breadcrumbLabel || normalizeLabel(candidate) !== normalizeLabel(breadcrumbLabel)) {
+		return candidate;
+	}
+
+	const dashClause = pageContent.h1.split(/\s[—–-]\s/).slice(1).join(' — ').trim();
+	if (dashClause && normalizeLabel(dashClause) !== normalizeLabel(breadcrumbLabel)) {
+		return dashClause;
+	}
+
+	const titleParts = pageContent.title.split('|').map((part) => part.trim()).filter(Boolean);
+	const titleTail = titleParts.slice(1).find((part) => normalizeLabel(part) !== normalizeLabel(breadcrumbLabel));
+	if (titleTail) return titleTail;
+
+	const titleLead = titleParts[0];
+	if (titleLead && normalizeLabel(titleLead) !== normalizeLabel(breadcrumbLabel)) {
+		return titleLead;
+	}
+
+	return candidate;
+}
+
+const breadcrumbLabelByPage: Partial<Record<PageId, string>> = {
+	features: ui.nav.features,
+	pricing: ui.nav.pricing,
+	updates: ui.nav.updates,
+	hacks: locale === 'en' ? t('nav.preview') : ui.nav.hacks,
+	'dbd-esp': ui.nav.esp,
+	'dbd-aimbot': ui.nav.aimbot,
+	radar: 'Radar',
+	setup: ui.nav.setup,
+	support: t('common.support'),
+	faq: ui.nav.faq,
+};
+
+const breadcrumbLabel = breadcrumbLabelByPage[pageId];
+const heading = resolvePageHeading(page, simple?.h1, breadcrumbLabel);
 const intro = simple?.intro ?? page.intro;
 const sections = simple?.sections ?? page.sections;
 const ctaPrimaryLabel = simple?.ctaPrimary ?? page.ctaPrimary;
@@ -89,19 +135,6 @@ const resolvedSecondaryHref = externalSecondary?.href ?? ctaSecondaryHref;
 const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo.plans[0];
 const lifetime = productInfo.plans.find((p) => p.id === 'lifetime') ?? productInfo.plans[1];
 const showStorePlans = pageId === 'pricing' && locale === 'en';
-
-const breadcrumbLabelByPage: Partial<Record<PageId, string>> = {
-	features: ui.nav.features,
-	pricing: ui.nav.pricing,
-	updates: ui.nav.updates,
-	hacks: locale === 'en' ? t('nav.preview') : ui.nav.hacks,
-	'dbd-esp': ui.nav.esp,
-	'dbd-aimbot': ui.nav.aimbot,
-	radar: 'Radar',
-	setup: ui.nav.setup,
-	support: t('common.support'),
-	faq: ui.nav.faq,
-};
 ---
 
 <PageLayout

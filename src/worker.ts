@@ -29,16 +29,23 @@ function isSitemapPath(pathname: string): boolean {
 	return SITEMAP_PATH.test(pathname);
 }
 
-function isInsecureRequest(request: Request, url: URL): boolean {
+function getClientProtocol(request: Request, url: URL): string {
+	const cfVisitor = request.headers.get('CF-Visitor');
+	if (cfVisitor) {
+		try {
+			const scheme = JSON.parse(cfVisitor).scheme;
+			if (scheme) return String(scheme).toLowerCase();
+		} catch {
+			// ignore malformed CF-Visitor
+		}
+	}
+
 	const forwarded = request.headers.get('X-Forwarded-Proto');
 	if (forwarded) {
-		return forwarded.split(',')[0]?.trim().toLowerCase() !== 'https';
+		return forwarded.split(',')[0]?.trim().toLowerCase() ?? 'https';
 	}
-	const cfVisitor = request.headers.get('CF-Visitor');
-	if (cfVisitor?.includes('"scheme":"https"')) {
-		return false;
-	}
-	return url.protocol === 'http:';
+
+	return url.protocol.replace(':', '').toLowerCase();
 }
 
 function redirectResponse(target: string, status = 301): Response {
@@ -54,14 +61,24 @@ function redirectResponse(target: string, status = 301): Response {
 
 function canonicalHostRedirect(request: Request, url: URL): Response | null {
 	const host = (request.headers.get('host') || url.hostname).split(':')[0].toLowerCase();
+	const proto = getClientProtocol(request, url);
+
+	// Never redirect the canonical apex over HTTPS (prevents self-redirect loops on sitemaps).
+	if (host === CANONICAL_HOST && proto === 'https') {
+		return null;
+	}
+
 	const isLegacy = LEGACY_HOSTS.has(host);
 	const isWww = host === WWW_HOST || url.hostname === WWW_HOST;
-	const isHttp = isInsecureRequest(request, url);
+	const needsHttps =
+		proto !== 'https' && (host === CANONICAL_HOST || host === WWW_HOST || isLegacy);
 
-	if (!isLegacy && !isWww && !isHttp) return null;
+	if (!isLegacy && !isWww && !needsHttps) return null;
 
 	const mappedPath = resolvePathRedirect(url.pathname) ?? url.pathname;
 	const target = new URL(mappedPath + url.search, CANONICAL_ORIGIN);
+	if (target.href === url.href) return null;
+
 	return redirectResponse(target.toString());
 }
 
@@ -105,14 +122,14 @@ export default {
 			return new Response(notFound.body, { status: 200, headers });
 		}
 
+		if (isSitemapPath(url.pathname)) {
+			return fetchSitemapAsset(env, url.pathname);
+		}
+
 		const pathRedirect = resolvePathRedirect(url.pathname);
 		if (pathRedirect) {
 			const target = new URL(pathRedirect + url.search, CANONICAL_ORIGIN);
 			return redirectResponse(target.toString());
-		}
-
-		if (isSitemapPath(url.pathname)) {
-			return fetchSitemapAsset(env, url.pathname);
 		}
 
 		const response = await env.ASSETS.fetch(request);

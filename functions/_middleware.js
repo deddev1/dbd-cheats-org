@@ -195,20 +195,28 @@ export async function onRequest(context) {
 
 	const isLegacyHost = LEGACY_HOSTS.has(host);
 	const isProductionHost = host === APEX_HOST || host === WWW_HOST || isLegacyHost;
-	const needsHostRedirect = host === WWW_HOST || isLegacyHost;
-	const needsHttpsRedirect = isProductionHost && proto === 'http';
 
-	if (needsHostRedirect || needsHttpsRedirect) {
-		const mappedPath = PATH_REDIRECTS[url.pathname] ?? url.pathname;
-		const target = new URL(mappedPath + url.search, CANONICAL_ORIGIN);
-		const headers = new Headers({
-			Location: target.toString(),
-			'Cache-Control': 'no-store',
-			'CDN-Cache-Control': 'no-store',
-			'Cloudflare-CDN-Cache-Control': 'no-store',
-		});
-		applySecurityHeaders(headers);
-		return new Response(null, { status: 301, headers });
+	// Never redirect canonical apex over HTTPS (prevents sitemap self-redirect loops).
+	if (host === APEX_HOST && proto === 'https') {
+		// fall through to path handling
+	} else {
+		const needsHostRedirect = host === WWW_HOST || isLegacyHost;
+		const needsHttpsRedirect = isProductionHost && proto === 'http';
+
+		if (needsHostRedirect || needsHttpsRedirect) {
+			const mappedPath = PATH_REDIRECTS[url.pathname] ?? url.pathname;
+			const target = new URL(mappedPath + url.search, CANONICAL_ORIGIN);
+			if (target.href !== url.href) {
+				const headers = new Headers({
+					Location: target.toString(),
+					'Cache-Control': 'no-store',
+					'CDN-Cache-Control': 'no-store',
+					'Cloudflare-CDN-Cache-Control': 'no-store',
+				});
+				applySecurityHeaders(headers);
+				return new Response(null, { status: 301, headers });
+			}
+		}
 	}
 
 	const pathRedirect =

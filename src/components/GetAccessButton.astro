@@ -1,0 +1,17 @@
+---
+import { siteConfig } from '../data/site';
+import { getT } from '../i18n/server';
+import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
+
+interface Props {
+	locale?: LocaleCode;
+	class?: string;
+}
+
+const { locale = defaultLocale, class: className } = Astro.props;
+const t = getT(locale);
+---
+
+<a class:list={['btn-buy', className]} href={siteConfig.checkoutUrl} rel="noopener noreferrer">
+	<span data-edit="ctaBuy">{t('cta.buy')}</span>
+</a>

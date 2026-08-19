@@ -1,0 +1,24 @@
+# CI Workers Builds project name (repo: dead-by-daylight-cheats-.org → Worker: dead-by-daylight-cheats--org)
+name = "dbdcheats"
+compatibility_date = "2026-01-01"
+main = "src/worker.ts"
+
+# Attach apex + www to this Worker on deploy (Cloudflare creates proxied DNS when the zone is on the account).
+[[routes]]
+pattern = "dbdcheats.org"
+custom_domain = true
+
+[[routes]]
+pattern = "www.dbdcheats.org"
+custom_domain = true
+
+# Local/CLI deploy: Wrangler runs this before upload. Workers Builds also uses postinstall.
+[build]
+command = "npm run build"
+
+[assets]
+directory = "./dist"
+binding = "ASSETS"
+not_found_handling = "404-page"
+# Worker serves sitemaps with a single Content-Type (avoids _headers rule stacking on static XML).
+run_worker_first = true

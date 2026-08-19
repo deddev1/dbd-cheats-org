@@ -1,0 +1,386 @@
+import type { PageId } from './content.generated';
+import { fillBrandTokens, seoDescription } from '../brand';
+import { brandCopy, brandSeo, seoPageTitle } from '../site-core';
+
+export type SimpleSection = {
+	h2: string;
+	paragraphs: string[];
+	list?: string[];
+};
+
+export type SimplePageCopy = {
+	title: string;
+	description: string;
+	h1: string;
+	intro: string;
+	ctaPrimary: string;
+	ctaSecondary?: string;
+	ctaSecondaryHref?: string;
+	galleryTitle: string;
+	sections: SimpleSection[];
+};
+
+function page(copy: SimplePageCopy): SimplePageCopy {
+	return {
+		...copy,
+		title: seoPageTitle(copy.title),
+		description: seoDescription(copy.description),
+		intro: fillBrandTokens(copy.intro),
+		sections: copy.sections.map((section) => ({
+			...section,
+			h2: fillBrandTokens(section.h2),
+			paragraphs: section.paragraphs.map(fillBrandTokens),
+			list: section.list?.map(fillBrandTokens),
+		})),
+	};
+}
+
+/** Short, plain-English overrides for key EN nav pages — meta from brand.seo */
+export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
+	features: page({
+		title: brandSeo.featuresTitle,
+		description: brandSeo.featuresDescription,
+		h1: 'Features',
+		intro: brandCopy.featuresIntro,
+		ctaPrimary: brandCopy.ctaBuy,
+		ctaSecondary: 'View store',
+		ctaSecondaryHref: '/pricing/',
+		galleryTitle: 'In-game look',
+		sections: [
+			{
+				h2: 'ESP & wallhack',
+				paragraphs: [
+					'See survivors, killers, and generators through walls with distance readouts.',
+					'Use filters so the overlay stays clear in high-traffic tiles, high-traffic tiles, and chase chaos.',
+				],
+				list: ['Player boxes & distance', 'Generator and hook markers', 'Killer and survivor filters'],
+			},
+			{
+				h2: 'Aimbot & soft aim',
+				paragraphs: [
+					'Aim help you can tune to feel natural.',
+					'Set FOV, smoothness, and bone priority per killer before you queue.',
+				],
+				list: ['Smooth aim strength', 'FOV and bone priority', 'Hotkeys mid-match'],
+			},
+			{
+				h2: 'Radar',
+				paragraphs: [
+					'A simple 2D radar for threats outside your view.',
+					'Spot flanks near generators and hooks without filling the whole screen.',
+				],
+				list: ['Nearby enemy cues', 'Adjustable range', 'Works in survivor & killer'],
+			},
+			{
+				h2: 'Explore related topics',
+				paragraphs: [
+					'Most {game} cheat sites cover ESP, aimbot, radar, setup, and status on separate pages. Use these guides next:',
+				],
+				list: [
+					'<a href="/dbd-esp/">ESP & wallhack guide</a>',
+					'<a href="/dbd-aimbot/">Aimbot & soft aim</a>',
+					'<a href="/dbd-radar-hack/">2D radar overlay</a>',
+					'<a href="/setup/">Setup guide</a>',
+					'<a href="/updates/">Live status</a>',
+					'<a href="/blog/">DBD Intel blog</a>',
+					'<a href="https://store.steampowered.com/app/381210/news/" target="_blank" rel="noopener noreferrer">Official Steam patch notes</a>',
+					'<a href="https://deadbydaylight.fandom.com/wiki/Dead_by_Daylight_Wiki" target="_blank" rel="noopener noreferrer">Dead by Daylight Wiki (Fandom)</a>',
+				],
+			},
+			{
+				h2: 'Updates & support',
+				paragraphs: [
+					'We rebuild after big {game} or {antiCheat} patches.',
+					'Check Status before you play after a patch day.',
+					'Verify official changes on <a href="https://store.steampowered.com/app/381210/news/" target="_blank" rel="noopener noreferrer">Steam patch notes</a> and the <a href="https://deadbydaylight.fandom.com/wiki/Dead_by_Daylight_Wiki" target="_blank" rel="noopener noreferrer">DBD Wiki</a> before you tune overlays.',
+				],
+				list: ['Status on the Status page', 'Setup guide included', 'Email support with your order ID'],
+			},
+		],
+	}),
+	pricing: page({
+		title: brandSeo.storeTitle,
+		description: brandSeo.storeDescription,
+		h1: 'Store',
+		intro: brandCopy.storeIntro,
+		ctaPrimary: brandCopy.ctaBuy,
+		ctaSecondary: 'Setup guide',
+		ctaSecondaryHref: '/setup/',
+		galleryTitle: 'In-game look',
+		sections: [
+			{
+				h2: 'What you get',
+				paragraphs: [
+					'Full package access for Windows 10 / 11.',
+					'Same ESP, soft aim, and radar on monthly and lifetime plans.',
+				],
+				list: ['ESP, aimbot, and radar', 'Patch rebuilds while active', 'Digital delivery after checkout'],
+			},
+			{
+				h2: 'Plans',
+				paragraphs: [
+					'Pick monthly to try first, or lifetime for one payment.',
+					'Both plans unlock the same features after checkout.',
+				],
+				list: ['Monthly — 30 days', 'Lifetime — one-time', 'Instant license by email'],
+			},
+			{
+				h2: 'Before you buy',
+				paragraphs: ['Read the refund policy if you need it. Contact support with your order ID for help.'],
+				list: [
+					'<a href="/refund-policy/">Refund policy</a>',
+					'<a href="/faq/">FAQ</a>',
+					'<a href="/support/">Support</a>',
+				],
+			},
+		],
+	}),
+	updates: page({
+		title: brandSeo.statusTitle,
+		description: brandSeo.statusDescription,
+		h1: 'Status',
+		intro: brandCopy.statusIntro,
+		ctaPrimary: brandCopy.ctaBuy,
+		ctaSecondary: 'DBD Cheats overview',
+		ctaSecondaryHref: '/',
+		galleryTitle: 'In-game look',
+		sections: [
+			{
+				h2: 'Current status',
+				paragraphs: [
+					'As of 13 Aug 2026 the package is online for Dead by Daylight on Windows PC. We post a new note here when a game or Easy Anti-Cheat patch needs a rebuild.',
+					'If Status is green, you can trial. If we are rebuilding, wait for the next note.',
+				],
+				list: [
+					'Check this page before every trial after a patch',
+					'Monthly and lifetime licenses get rebuilds while active',
+					'No cheat stays undetected forever — status first, then play',
+				],
+			},
+			{
+				h2: 'After a patch',
+				paragraphs: [
+					'Wait for our rebuild note, then launch. Do not play on an old build after a big update.',
+				],
+				list: ['Read the latest status note', 'Follow setup if something fails', 'Email support with your order ID'],
+			},
+			{
+				h2: 'Important',
+				paragraphs: ['No cheat is 100% safe forever. Stay updated and use safe settings.'],
+				list: ['Status first, then play', '<a href="/support/">Support</a> for license help'],
+			},
+		],
+	}),
+	hacks: page({
+		title: brandSeo.previewTitle,
+		description: brandSeo.previewDescription,
+		h1: 'DBD Cheats',
+		intro: brandCopy.previewIntro,
+		ctaPrimary: brandCopy.ctaBuy,
+		ctaSecondary: 'View features',
+		ctaSecondaryHref: '/features/',
+		galleryTitle: 'In-trial look',
+		sections: [
+			{
+				h2: 'What you get',
+				paragraphs: [
+					'One license for Dead by Daylight on Windows PC — built for survivor and killer trials.',
+				],
+				list: [
+					'ESP / wallhack with distance',
+					'Soft aim & aimbot profiles',
+					'2D radar for flanks',
+					'Easy Anti-Cheat rebuilds after patches',
+				],
+			},
+			{
+				h2: 'Built for Dead by Daylight trials',
+				paragraphs: [
+					'Read survivors and killers before you push, mark generators worth the risk, and stay aware near generators and hooks. Tune soft aim per killer for high-traffic tiles and skill-check ambushes.',
+				],
+				list: [
+					'<a href="/dbd-esp/">ESP guide</a>',
+					'<a href="/dbd-aimbot/">Aimbot controls</a>',
+					'<a href="/dbd-radar-hack/">Radar overlay</a>',
+					'<a href="/updates/">Live status</a>',
+				],
+			},
+			{
+				h2: 'How to start',
+				paragraphs: ['Buy a plan, get your license by email, then follow setup. Check Status after every major patch.'],
+				list: [
+					'<a href="/pricing/">Open store</a>',
+					'<a href="/setup/">Setup guide</a>',
+					'<a href="/updates/">Check status</a>',
+				],
+			},
+		],
+	}),
+	'dbd-esp': page({
+		title: 'DBD ESP | {brand}',
+		description:
+			'DBD ESP and wallhack for Dead by Daylight on Windows PC — player boxes, distance, generator filters, and clear overlays in trials.',
+		h1: 'ESP',
+		intro: 'See players and generators through walls during Dead by Daylight trials. Part of the same {brand} license.',
+		ctaPrimary: brandCopy.ctaBuy,
+		ctaSecondary: 'DBD Cheats overview',
+		ctaSecondaryHref: '/',
+		galleryTitle: 'ESP in trial',
+		sections: [
+			{
+				h2: 'What ESP shows',
+				paragraphs: ['Boxes, distance, and filters for survivors, killers, and generators.'],
+				list: ['Player ESP', 'Loot markers', 'Killer and survivor filters'],
+			},
+			{
+				h2: 'When to use it',
+				paragraphs: ['Clear high-traffic tiles, and chases without flooding the screen.'],
+				list: ['Tune opacity', 'Filter noise', 'Pair with radar'],
+			},
+			{
+				h2: 'Next steps',
+				paragraphs: ['ESP is included with aimbot and radar in one plan.'],
+				list: [
+					'<a href="/">Full product</a>',
+					'<a href="/features/">All features</a>',
+					'<a href="/pricing/">Store</a>',
+				],
+			},
+		],
+	}),
+	'dbd-aimbot': page({
+		title: 'DBD Aimbot | {brand}',
+		description:
+			'DBD Aimbot and soft aim for Dead by Daylight on Windows PC — FOV, smoothness, and bone priority you can tune per killer.',
+		h1: 'Aimbot',
+		intro: 'Soft aim and aim assist you can tune for Dead by Daylight. Included in the same {brand} license.',
+		ctaPrimary: brandCopy.ctaBuy,
+		ctaSecondary: 'DBD Cheats overview',
+		ctaSecondaryHref: '/',
+		galleryTitle: 'Aimbot view',
+		sections: [
+			{
+				h2: 'Controls',
+				paragraphs: ['Set FOV, smoothness, and bone priority before you queue.'],
+				list: ['Soft aim strength', 'Bone priority', 'Hotkeys mid-match'],
+			},
+			{
+				h2: 'Play styles',
+				paragraphs: ['Keep settings subtle for longer trials. Raise strength only when you accept more risk.'],
+				list: ['Legit soft aim', 'Per-killer profiles', 'Works with ESP'],
+			},
+			{
+				h2: 'Next steps',
+				paragraphs: ['Aimbot ships with ESP and radar in one license.'],
+				list: [
+					'<a href="/">Full product</a>',
+					'<a href="/features/">All features</a>',
+					'<a href="/pricing/">Store</a>',
+				],
+			},
+		],
+	}),
+	radar: page({
+		title: 'Dead by Daylight Radar | {brand}',
+		description:
+			'Dead by Daylight 2D radar for Dead by Daylight on Windows PC — flank cues near generators and hooks without filling the whole screen.',
+		h1: 'Radar',
+		intro: 'A simple 2D radar for threats outside your view. Included in the same {brand} license.',
+		ctaPrimary: brandCopy.ctaBuy,
+		ctaSecondary: 'DBD Cheats overview',
+		ctaSecondaryHref: '/',
+		galleryTitle: 'Radar overlay',
+		sections: [
+			{
+				h2: 'What it shows',
+				paragraphs: ['Nearby enemy cues with adjustable range for survivor and killer.'],
+				list: ['Flank awareness', 'Hook approaches', 'Adjustable range'],
+			},
+			{
+				h2: 'With ESP',
+				paragraphs: ['Use radar for threats you cannot see yet. Use ESP when you push.'],
+				list: [
+					'<a href="/dbd-esp/">ESP guide</a>',
+					'<a href="/">Full product</a>',
+					'<a href="/pricing/">Store</a>',
+				],
+			},
+		],
+	}),
+	setup: page({
+		title: brandSeo.setupTitle,
+		description: brandSeo.setupDescription,
+		h1: 'Setup',
+		intro: brandCopy.setupIntro,
+		ctaPrimary: brandCopy.ctaBuy,
+		ctaSecondary: 'Check status',
+		ctaSecondaryHref: '/updates/',
+		galleryTitle: 'In-game look',
+		sections: [
+			{
+				h2: 'Before you install',
+				paragraphs: ['Buy a plan first. You get a license by email.'],
+				list: ['Windows 10 / 11 PC', 'Disable conflicting overlays', 'Have your order email ready'],
+			},
+			{
+				h2: 'Install steps',
+				paragraphs: ['Run the loader as admin, paste your license, then launch {game}.'],
+				list: ['Download the loader from your delivery email', 'Paste license key', 'Launch the game'],
+			},
+			{
+				h2: 'If something fails',
+				paragraphs: ['Check Status after a patch. Email {email} with your order ID.'],
+				list: ['<a href="/updates/">Status page</a>', '<a href="/support/">Support</a>', '<a href="/faq/">FAQ</a>'],
+			},
+		],
+	}),
+	support: page({
+		title: brandSeo.supportTitle,
+		description: brandSeo.supportDescription,
+		h1: 'Support',
+		intro: brandCopy.supportIntro,
+		ctaPrimary: brandCopy.ctaBuy,
+		ctaSecondary: 'FAQ',
+		ctaSecondaryHref: '/faq/',
+		galleryTitle: 'In-game look',
+		sections: [
+			{
+				h2: 'How to contact us',
+				paragraphs: ['Email {email}. Include your order ID and a short note about the issue.'],
+				list: ['Order ID from your receipt', 'Windows version', 'What you already tried'],
+			},
+			{
+				h2: 'Faster answers',
+				paragraphs: ['Check FAQ and Status before you write. Many setup questions are already covered.'],
+				list: ['<a href="/faq/">FAQ</a>', '<a href="/updates/">Status</a>', '<a href="/setup/">Setup</a>'],
+			},
+		],
+	}),
+	faq: page({
+		title: brandSeo.faqTitle,
+		description: brandSeo.faqDescription,
+		h1: 'FAQ',
+		intro: brandCopy.faqIntro,
+		ctaPrimary: brandCopy.ctaBuy,
+		ctaSecondary: 'Support',
+		ctaSecondaryHref: '/support/',
+		galleryTitle: 'In-game look',
+		sections: [
+			{
+				h2: 'Buying & delivery',
+				paragraphs: ['You get a digital license by email after payment.'],
+				list: ['Instant delivery after checkout', 'Keep your order email', 'One license per purchase'],
+			},
+			{
+				h2: 'Setup & updates',
+				paragraphs: ['Follow Setup after you buy. Check Status after big {game} or {antiCheat} patches.'],
+				list: ['<a href="/setup/">Setup guide</a>', '<a href="/updates/">Status</a>'],
+			},
+			{
+				h2: 'Refunds',
+				paragraphs: ['Read the refund policy before you buy if you need details.'],
+				list: ['<a href="/refund-policy/">Refund policy</a>', '<a href="/support/">Support</a>'],
+			},
+		],
+	}),
+};

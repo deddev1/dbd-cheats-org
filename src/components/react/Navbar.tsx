@@ -18,6 +18,7 @@ type Props = {
 	locales: LocaleMeta[];
 	hrefForLocale: Record<string, string>;
 	showLocaleSwitcher?: boolean;
+	isHomePage?: boolean;
 	links: NavLink[];
 };
 
@@ -42,6 +43,7 @@ function NavbarInner({
 	locales,
 	hrefForLocale,
 	showLocaleSwitcher = true,
+	isHomePage = false,
 	links,
 }: Props) {
 	const { t } = useTranslation();
@@ -87,28 +89,53 @@ function NavbarInner({
 				...item,
 				label: t(item.labelKey),
 				active: isActive(item.href),
+				// Home + Cheats both resolve to / on the homepage — show as current page, not links.
+				staticOnHome: isHomePage && (item.id === 'home' || item.id === 'hacks'),
 			})),
-		[links, t, currentPath, locale, reviewsBasePath],
+		[links, t, currentPath, locale, reviewsBasePath, isHomePage],
 	);
+
+	const renderNavItem = (item: (typeof navLinks)[number], onNavigate?: () => void) => {
+		const content = (
+			<>
+				<svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+					<path
+						d={icons[item.id]}
+						stroke="currentColor"
+						strokeWidth="1.6"
+						strokeLinecap="round"
+						strokeLinejoin="round"
+					/>
+				</svg>
+				<span data-edit={item.edit}>{item.label}</span>
+			</>
+		);
+
+		if (item.staticOnHome) {
+			return (
+				<span key={item.id} className="is-active is-current" aria-current="page">
+					{content}
+				</span>
+			);
+		}
+
+		return (
+			<a
+				key={item.id}
+				href={item.href}
+				className={item.active ? 'is-active' : undefined}
+				onClick={onNavigate}
+			>
+				{content}
+			</a>
+		);
+	};
 
 	return (
 		<header className={`site-header${scrolled || open ? ' is-scrolled' : ''}${open ? ' is-open' : ''}`} data-nav>
 			<div className="shell site-header__bar">
 				<nav className="site-nav" aria-label={t('nav.primaryAria')}>
-					{navLinks.map((item) => (
-						<a key={item.id} href={item.href} className={item.active ? 'is-active' : undefined}>
-							<svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-								<path
-									d={icons[item.id]}
-									stroke="currentColor"
-									strokeWidth="1.6"
-									strokeLinecap="round"
-									strokeLinejoin="round"
-								/>
-							</svg>
-							<span data-edit={item.edit}>{item.label}</span>
-						</a>
-					))}
+					{navLinks.map((item) => renderNavItem(item))}
 				</nav>
 
 				<div className="site-tools">
@@ -159,25 +186,7 @@ function NavbarInner({
 				<div className="site-panel" id="site-nav-panel">
 					<div className="shell site-panel__inner">
 						<nav className="site-panel__nav" aria-label={t('nav.mobileAria')}>
-							{navLinks.map((item) => (
-								<a
-									key={item.id}
-									href={item.href}
-									className={item.active ? 'is-active' : undefined}
-									onClick={() => setOpen(false)}
-								>
-									<svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-										<path
-											d={icons[item.id]}
-											stroke="currentColor"
-											strokeWidth="1.6"
-											strokeLinecap="round"
-											strokeLinejoin="round"
-										/>
-									</svg>
-									<span>{item.label}</span>
-								</a>
-							))}
+							{navLinks.map((item) => renderNavItem(item, () => setOpen(false)))}
 						</nav>
 						<div className="site-panel__foot">
 							{showLocaleSwitcher ? (

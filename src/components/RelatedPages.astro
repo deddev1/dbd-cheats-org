@@ -1,6 +1,6 @@
 ---
 import { getRelatedLinks, productTopicLinks, type InternalLinkTarget } from '../data/internal-links';
-import { getLocalizedPath, localizeInternalHref, type PageId } from '../data/i18n/routing';
+import { getLocalizedPath, getPillarPath, localizeInternalHref, type PageId } from '../data/i18n/routing';
 import type { LocaleCode } from '../data/i18n/locales';
 import { getT } from '../i18n/server';
 
@@ -21,7 +21,7 @@ const source = links ?? (variant === 'topics' ? productTopicLinks : getRelatedLi
 
 function resolveHref(target: InternalLinkTarget): string {
 	if (target.kind === 'page') {
-		return getLocalizedPath(target.pageId, locale);
+		return getPillarPath(target.pageId, locale);
 	}
 	return localizeInternalHref(target.path, locale);
 }

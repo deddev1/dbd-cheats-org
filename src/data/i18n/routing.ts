@@ -683,6 +683,11 @@ export function getLocalizedPath(pageId: PageId, locale: LocaleCode): string {
 	return slug ? `/${locale}/${slug}/` : `/${locale}/`;
 }
 
+/** Internal links and locale switches target pillar URLs (respects cannibal map). */
+export function getPillarPath(pageId: PageId, locale: LocaleCode): string {
+	return getLocalizedPath(getCannibalTargetId(pageId) as PageId, locale);
+}
+
 /** Map English root paths to the correct locale URL (for CTAs and inline links). */
 export function localizeInternalHref(href: string, locale: LocaleCode): string {
 	if (!href || href.startsWith('http') || href.startsWith('mailto:') || href.startsWith('#')) {
@@ -690,9 +695,6 @@ export function localizeInternalHref(href: string, locale: LocaleCode): string {
 	}
 	const trimmed = href.replace(/\/+$/, '') || '/';
 	const withSlash = trimmed === '/' ? '/' : `${trimmed}/`;
-	if (withSlash === '/dead-by-daylight-cheats/' || withSlash === '/dead-by-daylight-cheats/') {
-		return getLocalizedPath('hacks', locale);
-	}
 	for (const pageId of pageIds) {
 		const english = englishPaths[pageId];
 		if (english === withSlash || english.replace(/\/+$/, '') === trimmed) {
@@ -815,7 +817,7 @@ export function resolvePageContextFromPath(pathname: string): PageContext {
 /** Target URL for the same page in another locale (non-blog pages). */
 export function getPageLocaleSwitchHref(context: PageContext, targetLocale: LocaleCode): string {
 	if (context.pageId) {
-		return getLocalizedPath(context.pageId, targetLocale);
+		return getPillarPath(context.pageId, targetLocale);
 	}
 	return getLocalizedPath('home', targetLocale);
 }
@@ -862,7 +864,7 @@ export function localeFromAcceptLanguage(header: string | null): LocaleCode {
 export function getNavForLocale(locale: LocaleCode, labels: Record<string, string>) {
 	const items: { label: string; href: string; pageId?: PageId }[] = [
 		{ label: labels.home, href: getLocalizedPath('home', locale), pageId: 'home' },
-	{ label: labels.hacks ?? 'Cheats', href: getLocalizedPath('hacks', locale), pageId: 'hacks' },
+	{ label: labels.hacks ?? 'Cheats', href: getPillarPath('hacks', locale), pageId: 'hacks' },
 		{ label: labels.aimbot, href: getLocalizedPath('dbd-aimbot', locale), pageId: 'dbd-aimbot' },
 		{ label: labels.esp, href: getLocalizedPath('dbd-esp', locale), pageId: 'dbd-esp' },
 		{ label: 'Blog', href: locale === defaultLocale ? '/blog/' : `/${locale}/blog/` },

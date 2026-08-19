@@ -11,7 +11,7 @@ import SiteFooter from '../components/SiteFooter.astro';
 import { getLocaleContent, getPageContent } from '../data/i18n';
 import { getLocalizedPath } from '../data/i18n/routing';
 import type { LocaleCode } from '../data/i18n/locales';
-import { homeFaqs, homeSeo, productInfo, siteConfig, customerReviewStats } from '../data/site';
+import { homeSeo, productInfo, siteConfig, customerReviewStats } from '../data/site';
 import { heroPreloadSrc, heroSizes, heroSrcSet } from '../lib/responsive-images';
 import { defaultCrawlImageSrc } from '../data/page-images';
 
@@ -27,7 +27,6 @@ const enHome = homeSeo();
 const title = locale === 'en' ? enHome.title : home.title;
 const description = locale === 'en' ? enHome.description : home.description;
 const canonicalPath = getLocalizedPath('home', locale);
-const canonicalURL = new URL(canonicalPath, siteConfig.url).href;
 /** Canonical product entity — always the English money URL, even on locale home pages. */
 const canonicalProductUrl = new URL('/', siteConfig.url).href;
 const heroImage = new URL(siteConfig.defaultOgImage || defaultCrawlImageSrc, siteConfig.url).href;
@@ -72,19 +71,6 @@ const extraGraph: Record<string, unknown>[] = [
 			})),
 		},
 	},
-	{
-		'@type': 'FAQPage',
-		'@id': `${canonicalURL}#faq`,
-		mainEntity: homeFaqs.map((item) => ({
-			'@type': 'Question',
-			name: item.question,
-			url: `${siteConfig.url}/faq/${item.slug}/`,
-			acceptedAnswer: {
-				'@type': 'Answer',
-				text: item.answer,
-			},
-		})),
-	},
 ];
 ---
 
@@ -101,7 +87,7 @@ const extraGraph: Record<string, unknown>[] = [
 	locale={locale}
 	pageId="home"
 	breadcrumbs={[{ label: ui.nav.home }]}
-	extraGraph={locale === 'en' ? extraGraph : extraGraph.filter((n) => n['@type'] !== 'FAQPage')}
+	extraGraph={extraGraph}
 	lcpImage={heroPreloadSrc}
 	lcpImageSrcSet={heroSrcSet}
 	lcpImageSizes={heroSizes}

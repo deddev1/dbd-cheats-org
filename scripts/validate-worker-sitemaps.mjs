@@ -53,6 +53,30 @@ if (!workerSrc.includes('host === CANONICAL_HOST && proto === \'https\'')) {
 	ok('src/worker.ts: canonical apex HTTPS early-return present');
 }
 
+if (!workerSrc.includes('isBuiltSitemapPath')) {
+	fail('src/worker.ts: must use isBuiltSitemapPath (legacy sitemap-index.xml must not 404)');
+} else {
+	ok('src/worker.ts: uses explicit built sitemap path matcher');
+}
+
+if (!workerSrc.includes('resolvePathRedirect(url.pathname)') || !workerSrc.includes('isBuiltSitemapPath(url.pathname)')) {
+	fail('src/worker.ts: path redirects must run before built sitemap asset fetch');
+} else {
+	const redirectIdx = workerSrc.indexOf('const pathRedirect = resolvePathRedirect(url.pathname)');
+	const assetIdx = workerSrc.indexOf('if (isBuiltSitemapPath(url.pathname))');
+	if (redirectIdx === -1 || assetIdx === -1 || redirectIdx > assetIdx) {
+		fail('src/worker.ts: path redirects must run before built sitemap asset fetch');
+	} else {
+		ok('src/worker.ts: path redirects run before sitemap asset fetch');
+	}
+}
+
+if (!workerSrc.includes('WWW_HOST && proto === \'https\' && isSitemapRelatedPath')) {
+	fail('src/worker.ts: www host must serve sitemap XML directly for GSC URL-prefix properties');
+} else {
+	ok('src/worker.ts: www serves sitemap paths without apex redirect');
+}
+
 if (!middlewareSrc.includes('host === APEX_HOST && proto === \'https\'')) {
 	fail('functions/_middleware.js: missing canonical apex HTTPS early-return');
 } else {

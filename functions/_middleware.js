@@ -174,6 +174,17 @@ function applySecurityHeaders(headers, { html = false } = {}) {
 	}
 }
 
+function isSitemapRelatedPath(pathname) {
+	return /^\/sitemap/i.test(pathname);
+}
+
+function redirectOrigin(host, pathname) {
+	if (host === WWW_HOST && isSitemapRelatedPath(pathname)) {
+		return `https://${WWW_HOST}`;
+	}
+	return CANONICAL_ORIGIN;
+}
+
 /** Flat .xml sitemaps — redirect any other *.xml/ trailing-slash URL (locale sitemaps). */
 function xmlTrailingSlashRedirect(pathname) {
 	if (!pathname.endsWith('.xml/')) return null;
@@ -199,6 +210,8 @@ export async function onRequest(context) {
 	// Never redirect canonical apex over HTTPS (prevents sitemap self-redirect loops).
 	if (host === APEX_HOST && proto === 'https') {
 		// fall through to path handling
+	} else if (host === WWW_HOST && proto === 'https' && isSitemapRelatedPath(url.pathname)) {
+		// Serve sitemap XML on www for GSC URL-prefix properties.
 	} else {
 		const needsHostRedirect = host === WWW_HOST || isLegacyHost;
 		const needsHttpsRedirect = isProductionHost && proto === 'http';
@@ -219,6 +232,15 @@ export async function onRequest(context) {
 		}
 	}
 
+	if (isSitemapRelatedPath(url.pathname) && url.pathname !== url.pathname.toLowerCase()) {
+		const headers = new Headers({
+			Location: new URL(url.pathname.toLowerCase() + url.search, redirectOrigin(host, url.pathname)).toString(),
+			'Cache-Control': 'no-store',
+		});
+		applySecurityHeaders(headers);
+		return new Response(null, { status: 301, headers });
+	}
+
 	const pathRedirect =
 		PATH_REDIRECTS[url.pathname] ??
 		CANNIBAL_REDIRECTS[url.pathname] ??
@@ -226,7 +248,7 @@ export async function onRequest(context) {
 		trailingSlashRedirect(url.pathname);
 	if (pathRedirect) {
 		const headers = new Headers({
-			Location: new URL(pathRedirect + url.search, CANONICAL_ORIGIN).toString(),
+			Location: new URL(pathRedirect + url.search, redirectOrigin(host, url.pathname)).toString(),
 			'Cache-Control': 'no-store',
 		});
 		applySecurityHeaders(headers);

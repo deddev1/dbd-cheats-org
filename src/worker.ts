@@ -22,11 +22,28 @@ const LEGACY_HOSTS = new Set([
 	'www.dbdcheat.org',
 ]);
 
-/** /sitemap.xml and /sitemap-*.xml — must stay application/xml for Google Search Console. */
-const SITEMAP_PATH = /^\/sitemap(?:-[a-z0-9-]+)?\.xml$/;
+/** Built sitemap assets only — excludes legacy names like sitemap-index.xml / sitemap-0.xml. */
+const BUILT_SITEMAP_PATH =
+	/^\/sitemap(?:\.xml|-(?:en|i18n|images|es|fr|de|pt|it|nl|pl|ru|tr|ar|ja|ko|zh|hi|id|th|vi|uk|cs|ro|sv)\.xml)$/;
 
-function isSitemapPath(pathname: string): boolean {
-	return SITEMAP_PATH.test(pathname);
+function isBuiltSitemapPath(pathname: string): boolean {
+	return BUILT_SITEMAP_PATH.test(pathname);
+}
+
+function isSitemapRelatedPath(pathname: string): boolean {
+	return /^\/sitemap/i.test(pathname);
+}
+
+function requestHost(request: Request, url: URL): string {
+	return (request.headers.get('host') || url.hostname).split(':')[0].toLowerCase();
+}
+
+/** Keep www sitemap URLs on www — GSC URL-prefix properties require a direct 200 on the same host. */
+function redirectOrigin(host: string, pathname: string): string {
+	if (host === WWW_HOST && isSitemapRelatedPath(pathname)) {
+		return `https://${WWW_HOST}`;
+	}
+	return CANONICAL_ORIGIN;
 }
 
 function getClientProtocol(request: Request, url: URL): string {
@@ -60,11 +77,16 @@ function redirectResponse(target: string, status = 301): Response {
 }
 
 function canonicalHostRedirect(request: Request, url: URL): Response | null {
-	const host = (request.headers.get('host') || url.hostname).split(':')[0].toLowerCase();
+	const host = requestHost(request, url);
 	const proto = getClientProtocol(request, url);
 
 	// Never redirect the canonical apex over HTTPS (prevents self-redirect loops on sitemaps).
 	if (host === CANONICAL_HOST && proto === 'https') {
+		return null;
+	}
+
+	// Serve sitemap XML directly on www (do not 301 to apex — breaks www URL-prefix GSC properties).
+	if (host === WWW_HOST && proto === 'https' && isSitemapRelatedPath(url.pathname)) {
 		return null;
 	}
 
@@ -122,14 +144,26 @@ export default {
 			return new Response(notFound.body, { status: 200, headers });
 		}
 
-		if (isSitemapPath(url.pathname)) {
-			return fetchSitemapAsset(env, url.pathname);
+		const host = requestHost(request, url);
+
+		// Normalize /Sitemap.xml → /sitemap.xml before redirect/asset handling.
+		if (isSitemapRelatedPath(url.pathname) && url.pathname !== url.pathname.toLowerCase()) {
+			const target = new URL(
+				url.pathname.toLowerCase() + url.search,
+				redirectOrigin(host, url.pathname),
+			);
+			return redirectResponse(target.toString());
 		}
 
+		// Legacy sitemap URLs (sitemap-index.xml, sitemap-0.xml, trailing slashes) before asset fetch.
 		const pathRedirect = resolvePathRedirect(url.pathname);
 		if (pathRedirect) {
-			const target = new URL(pathRedirect + url.search, CANONICAL_ORIGIN);
+			const target = new URL(pathRedirect + url.search, redirectOrigin(host, url.pathname));
 			return redirectResponse(target.toString());
+		}
+
+		if (isBuiltSitemapPath(url.pathname)) {
+			return fetchSitemapAsset(env, url.pathname);
 		}
 
 		const response = await env.ASSETS.fetch(request);

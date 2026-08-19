@@ -1,6 +1,8 @@
 #!/usr/bin/env node
-/** Quick live check of production sitemap fetchability (for GSC debugging). */
-const SITE = 'https://dbdcheats.org';
+/** Live production checks for Google Search Console sitemap fetch requirements. */
+const APEX = 'https://dbdcheats.org';
+const WWW = 'https://www.dbdcheats.org';
+const UA = 'Googlebot/2.1 (+http://www.google.com/bot.html)';
 
 function fail(msg) {
 	console.error(`✗ ${msg}`);
@@ -11,44 +13,62 @@ function ok(msg) {
 	console.log(`✓ ${msg}`);
 }
 
-async function head(path) {
-	const res = await fetch(`${SITE}${path}`, {
-		headers: { 'User-Agent': 'Googlebot/2.1 (+http://www.google.com/bot.html)' },
-		redirect: 'follow',
-	});
-	return res;
+async function fetchSitemap(url, { redirect = 'follow' } = {}) {
+	return fetch(url, { headers: { 'User-Agent': UA }, redirect });
 }
 
-const indexRes = await head('/sitemap.xml');
-const ct = indexRes.headers.get('content-type') || '';
-const corp = indexRes.headers.get('cross-origin-resource-policy');
-const csp = indexRes.headers.get('content-security-policy');
+async function checkDirectXml(label, url) {
+	const res = await fetchSitemap(url);
+	const ct = res.headers.get('content-type') || '';
+	const corp = res.headers.get('cross-origin-resource-policy');
+	const csp = res.headers.get('content-security-policy');
+	const text = await res.text();
 
-if (!indexRes.ok) fail(`sitemap.xml HTTP ${indexRes.status}`);
-else ok(`sitemap.xml HTTP ${indexRes.status}`);
+	if (!res.ok) fail(`${label} HTTP ${res.status}`);
+	else ok(`${label} HTTP ${res.status}`);
 
-if (!ct.includes('application/xml')) fail(`sitemap.xml Content-Type is ${ct}`);
-else ok(`sitemap.xml Content-Type: ${ct.split(';')[0]}`);
+	if (!ct.includes('application/xml')) fail(`${label} Content-Type is ${ct}`);
+	else ok(`${label} Content-Type: application/xml`);
 
-if (corp === 'same-origin') {
-	fail('sitemap.xml has Cross-Origin-Resource-Policy: same-origin (can block GSC fetch)');
-} else {
-	ok('sitemap.xml has no restrictive CORP header');
+	if (corp === 'same-origin') fail(`${label} has CORP same-origin`);
+	if (csp) fail(`${label} has Content-Security-Policy`);
+
+	if (!text.includes('<')) fail(`${label} body is not XML`);
+	else ok(`${label} returns XML body (${text.length} bytes)`);
 }
 
-if (csp) fail('sitemap.xml should not include Content-Security-Policy');
-else ok('sitemap.xml has no CSP header');
+async function checkRedirect(label, url, expectedLocation) {
+	const res = await fetchSitemap(url, { redirect: 'manual' });
+	const location = res.headers.get('location') || '';
+	if (res.status < 300 || res.status >= 400) {
+		fail(`${label} expected redirect, got HTTP ${res.status}`);
+		return;
+	}
+	if (!location.startsWith(expectedLocation)) {
+		fail(`${label} redirects to ${location}, expected ${expectedLocation}`);
+	} else {
+		ok(`${label} redirects to ${expectedLocation}`);
+	}
+}
 
+console.log('Checking apex sitemap…');
+await checkDirectXml('dbdcheats.org/sitemap.xml', `${APEX}/sitemap.xml`);
+
+console.log('\nChecking www sitemap (URL-prefix GSC)…');
+await checkDirectXml('www.dbdcheats.org/sitemap.xml', `${WWW}/sitemap.xml`);
+
+console.log('\nChecking legacy sitemap URLs…');
+await checkRedirect('sitemap-index.xml', `${APEX}/sitemap-index.xml`, `${APEX}/sitemap.xml`);
+await checkRedirect('sitemap-0.xml', `${APEX}/sitemap-0.xml`, `${APEX}/sitemap.xml`);
+await checkRedirect('www sitemap-index.xml', `${WWW}/sitemap-index.xml`, `${WWW}/sitemap.xml`);
+
+console.log('\nChecking sitemap index children…');
+const indexRes = await fetchSitemap(`${APEX}/sitemap.xml`);
 const indexXml = await indexRes.text();
-if (!indexXml.includes('<sitemapindex')) fail('sitemap.xml is not a sitemap index');
-else ok('sitemap.xml body is valid sitemap index XML');
-
 const childLocs = [...indexXml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
 let childFails = 0;
 for (const loc of childLocs) {
-	const r = await fetch(loc, {
-		headers: { 'User-Agent': 'Googlebot/2.1 (+http://www.google.com/bot.html)' },
-	});
+	const r = await fetch(loc, { headers: { 'User-Agent': UA } });
 	const childCt = r.headers.get('content-type') || '';
 	const childCorp = r.headers.get('cross-origin-resource-policy');
 	if (!r.ok || !childCt.includes('application/xml') || childCorp === 'same-origin') {
@@ -56,8 +76,7 @@ for (const loc of childLocs) {
 		console.error(`✗ child ${loc} status=${r.status} ct=${childCt} corp=${childCorp ?? 'none'}`);
 	}
 }
-if (childFails === 0) ok(`All ${childLocs.length} index child sitemaps fetch OK for Googlebot`);
-else fail(`${childFails} child sitemap(s) failed Googlebot fetch checks`);
+if (childFails === 0) ok(`All ${childLocs.length} index child sitemaps fetch OK`);
 
 if (process.exitCode) process.exit(process.exitCode);
 console.log('\nProduction sitemap fetch checks passed.');

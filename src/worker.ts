@@ -91,15 +91,15 @@ async function fetchSitemapAsset(env: Env, pathname: string): Promise<Response> 
 	if (!response.ok || upstreamType.includes('text/html')) {
 		const headers = new Headers();
 		headers.set('Content-Type', 'text/plain; charset=utf-8');
-		applySecurityHeaders(headers, { html: false });
+		applySecurityHeaders(headers, { html: false, minimal: true });
 		return new Response('Sitemap not found', { status: 404, headers });
 	}
 
 	// Fresh headers — do not copy ASSETS/_headers (duplicate Content-Type breaks browsers + GSC).
 	const headers = new Headers();
 	headers.set('Content-Type', 'application/xml; charset=utf-8');
-	headers.set('Cache-Control', 'public, max-age=3600');
-	applySecurityHeaders(headers, { html: false });
+	headers.set('Cache-Control', 'public, max-age=3600, must-revalidate');
+	applySecurityHeaders(headers, { html: false, minimal: true });
 	return new Response(response.body, {
 		status: response.status,
 		statusText: response.statusText,

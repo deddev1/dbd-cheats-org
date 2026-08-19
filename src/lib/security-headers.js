@@ -44,7 +44,14 @@ export const SECURITY_HEADERS = {
 	'Content-Security-Policy': CONTENT_SECURITY_POLICY,
 };
 
-export function applySecurityHeaders(headers, { html = false, dev = false } = {}) {
+export function applySecurityHeaders(headers, { html = false, dev = false, minimal = false } = {}) {
+	if (minimal) {
+		// Sitemaps/robots: skip CSP/CORP/COEP/COOP — they can cause GSC "Couldn't fetch" errors.
+		headers.set('Strict-Transport-Security', SECURITY_HEADERS['Strict-Transport-Security']);
+		headers.set('X-Content-Type-Options', 'nosniff');
+		return;
+	}
+
 	for (const [key, value] of Object.entries(SECURITY_HEADERS)) {
 		headers.set(key, value);
 	}
